@@ -151,14 +151,14 @@ CABECA = """<!doctype html>
 <link rel="stylesheet" href="{base}estilo.css">
 </head>
 <body>
-<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<nav class="atalhos" aria-label="Atalhos de acessibilidade"><a href="#conteudo" accesskey="1">Ir para o conteúdo <kbd>Alt+1</kbd></a><a href="#menu" accesskey="2">Ir para o menu <kbd>Alt+2</kbd></a><a href="{base}index.html#busca" accesskey="3">Ir para a busca <kbd>Alt+3</kbd></a><a href="#rodape" accesskey="4">Ir para o rodapé <kbd>Alt+4</kbd></a></nav>
 <header class="topo"><a href="{base}index.html" class="marca">{marca}<span>Radar <strong>Cáceres</strong></span></a>
-<nav aria-label="Principal"><a href="{base}index.html#busca">Bairros</a><a href="{base}index.html#vereadores">Vereadores</a><a href="{base}sobre.html">Como funciona</a></nav></header>
+<nav id="menu" aria-label="Principal"><a href="{base}index.html#busca">Bairros</a><a href="{base}index.html#vereadores">Vereadores</a><a href="{base}sobre.html">Como funciona</a></nav></header>
 <main id="conteudo">
 """
 
 RODAPE = """</main>
-<footer>
+<footer id="rodape">
 <p><b>Radar Cáceres</b> · feito só com dados oficiais do <a href="{sapl}">SAPL da Câmara Municipal de Cáceres-MT</a>.
 Última conferência: {coleta}.</p>
 <p>Viu um erro? <a href="https://github.com/eltoncesar/radar-caceres/issues">Avise aqui</a> e a gente corrige.
@@ -303,22 +303,23 @@ def gerar_busca():
 <body><p><a href="index.html#busca">A busca por bairro está na página inicial.</a></p></body></html>"""
 
 
-ESTILO = """/* Material Design 3 — esquema gerado com material-color-utilities a partir de #1b6b57 */
+ESTILO = """/* Material Design 3 — esquema gerado com material-color-utilities a partir de #1b6b57.
+   Tons de texto escurecidos no mesmo matiz para contraste AAA (>= 7:1). */
 :root{
---md-primary:#006b56;--md-on-primary:#fff;--md-primary-container:#7ef8d4;--md-on-primary-container:#002018;
---md-secondary:#4b635b;--md-secondary-container:#cee9dd;--md-on-secondary-container:#072019;
+--md-primary:#005342;--md-on-primary:#fff;--md-primary-container:#7ef8d4;--md-on-primary-container:#002018;
+--md-secondary:#364d46;--md-secondary-container:#cee9dd;--md-on-secondary-container:#072019;
 --md-tertiary-container:#c4e7ff;--md-on-tertiary-container:#001e2c;
 --md-error:#ba1a1a;--md-error-container:#ffdad6;--md-on-error-container:#410002;
 --md-surface:#fff;--md-on-surface:#191c1b;--md-on-surface-variant:#3f4945;
 --md-surface-container-lowest:#fff;--md-surface-container-low:#f2f4f1;--md-surface-container:#eceeeb;
 --md-surface-container-high:#e6e9e6;--md-surface-container-highest:#e1e3e0;
 --md-outline:#6f7975;--md-outline-variant:#bfc9c3;--md-inverse-surface:#2e312f;--md-inverse-on-surface:#eff1ee;--md-inverse-primary:#60dbb9;
---g-melhoria:#085eb0;--g-melhoria-c:#d5e3ff;--g-melhoria-on:#001c3b;
---g-cobranca:#8c5000;--g-cobranca-c:#ffdcbf;--g-cobranca-on:#2d1600;
---g-homenagem:#b91a30;--g-homenagem-c:#ffdad9;--g-homenagem-on:#410008;
---g-lei:#006c51;--g-lei-c:#83f8ce;--g-lei-on:#002117;
---g-outros:#4b635b;--g-outros-c:#cee9dd;--g-outros-on:#072019;
---md-destaque:#bb1428;--md-destaque-c:#ffdad8;
+--g-melhoria:#00498c;--g-melhoria-c:#d5e3ff;--g-melhoria-on:#001c3b;
+--g-cobranca:#6e3e00;--g-cobranca-c:#ffdcbf;--g-cobranca-on:#2d1600;
+--g-homenagem:#970020;--g-homenagem-c:#ffdad9;--g-homenagem-on:#410008;
+--g-lei:#00543e;--g-lei-c:#83f8ce;--g-lei-on:#002117;
+--g-outros:#364d46;--g-outros-c:#cee9dd;--g-outros-on:#072019;
+--md-destaque:#97001a;--md-destaque-c:#ffdad8;
 --shape-xs:4px;--shape-s:8px;--shape-m:12px;--shape-l:16px;--shape-xl:28px;--shape-full:999px;
 --elev-1:0 1px 2px rgba(0,0,0,.3),0 1px 3px 1px rgba(0,0,0,.15);
 --elev-2:0 1px 2px rgba(0,0,0,.3),0 2px 6px 2px rgba(0,0,0,.15);
@@ -336,8 +337,10 @@ b{font-weight:700}
 .ms{font-family:"Material Symbols Rounded";font-weight:400;font-style:normal;font-size:1.25rem;line-height:1;display:inline-block;
  letter-spacing:normal;text-transform:none;white-space:nowrap;direction:ltr;-webkit-font-feature-settings:"liga";font-feature-settings:"liga";
  font-variation-settings:"FILL" 0,"wght" 400,"GRAD" 0,"opsz" 24;vertical-align:-.22em;flex:none}
-.pular{position:absolute;left:-999px;top:8px;background:var(--md-inverse-surface);color:var(--md-inverse-on-surface);padding:10px 16px;border-radius:var(--shape-s);z-index:9}
-.pular:focus{left:8px}
+.atalhos{position:absolute;left:8px;top:8px;z-index:9;display:flex;flex-wrap:wrap;gap:8px}
+.atalhos a{position:absolute;left:-9999px;background:var(--md-inverse-surface);color:var(--md-inverse-on-surface);padding:10px 16px;border-radius:var(--shape-s);font-weight:500;text-decoration:none}
+.atalhos a:focus{position:static}
+.atalhos kbd{font:inherit;opacity:.8;margin-left:6px}
 :focus-visible{outline:3px solid var(--md-primary);outline-offset:2px;border-radius:var(--shape-xs)}
 main,footer{max-width:1040px;margin:0 auto;padding:0 16px}
 /* Tipografia M3 */
@@ -451,7 +454,7 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .rep.oculto{display:none}
 .vezes{display:grid;place-content:center;text-align:center;min-width:72px;min-height:72px;padding:8px;border-radius:var(--shape-l);background:var(--md-destaque-c);color:var(--md-destaque)}
 .vezes b{font-size:1.75rem;line-height:2rem;font-weight:600;font-variant-numeric:tabular-nums}
-.vezes span{font-size:.75rem;line-height:1rem;font-weight:500;letter-spacing:.03em}
+.vezes span{font-size:.75rem;line-height:1rem;font-weight:500;letter-spacing:.03em;color:#410006}
 .rua{margin:0;font-size:1.125rem;line-height:1.5rem;font-weight:500;color:var(--md-on-surface)}
 .bairro{display:block;color:var(--md-on-surface-variant);font-size:.875rem;margin-bottom:8px}
 .rep .meta{margin:8px 0 0}
