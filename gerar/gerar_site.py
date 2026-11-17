@@ -507,7 +507,7 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .ficha{position:relative;display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:auto;min-height:40px;padding:0 16px;border:1px solid var(--md-outline);border-radius:var(--shape-full);color:var(--md-primary);font-size:.875rem;font-weight:500;text-decoration:none;overflow:hidden}
 .ficha .ms{font-size:1.125rem}
 /* Situação: resposta da Prefeitura e projetos que viraram lei */
-.sit{display:inline-flex;align-items:center;gap:4px;height:24px;padding:0 8px;border-radius:var(--shape-s);font-size:.75rem;line-height:1rem;font-weight:500;letter-spacing:.03em;border:1px solid var(--md-outline-variant);color:var(--md-on-surface-variant);background:var(--md-surface)}
+.sit{display:inline-flex;align-items:center;gap:4px;min-height:28px;padding:4px 10px;border-radius:var(--shape-s);font-size:.75rem;line-height:1rem;font-weight:500;letter-spacing:.03em;border:1px solid var(--md-outline-variant);color:var(--md-on-surface-variant);background:var(--md-surface)}
 .sit .ms{font-size:1rem}
 .s-respondido,.s-virou_norma{background:var(--g-lei-c);border-color:var(--g-lei-c);color:var(--g-lei-on)}
 .s-aguardando{background:var(--g-cobranca-c);border-color:var(--g-cobranca-c);color:var(--g-cobranca-on)}
