@@ -157,6 +157,22 @@ def bloco_presenca(v, esc, data_br, sapl):
 <a href="../index.html#fontes">Como contamos</a>.</p></section>"""
 
 
+def bloco_discursos(v, esc, data_br):
+    ds = v.get("discursos") or []
+    if not ds:
+        return """<section class="presenca" id="tribuna"><h2>Na tribuna</h2>
+<p class="sub">Nenhum discurso registrado no sistema da Câmara nesta legislatura.</p></section>"""
+    itens = "".join(
+        f'<li><a href="{esc(d["link"])}">{data_br(d["data"])}'
+        f'{icone("play_circle") if d["video"] else ""}<span class="sr">{" (vídeo da sessão)" if d["video"] else " (página da sessão)"}</span></a></li>'
+        for d in ds)
+    return f"""<section class="presenca" id="tribuna"><h2>Na tribuna</h2>
+<p class="pct"><b>{len(ds)}</b> <span>{"vez" if len(ds) == 1 else "vezes"} na lista de oradores das sessões</span></p>
+<p class="sub">Cada data abre o vídeo da sessão inteira, quando a Câmara publicou o vídeo.</p>
+<ul class="datas">{itens}</ul>
+<p class="nota">Vem da lista de oradores que a Câmara registra no sistema. Algumas sessões não têm oradores registrados.</p></section>"""
+
+
 def nome_proprio(nome):
     """'ELIS FERNANDA DE MELO SILVA' -> 'Elis Fernanda de Melo Silva'."""
     pequenas = {"da", "de", "do", "das", "dos", "e"}
@@ -264,7 +280,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
             f'<li class="g-{g}"><a href="vereador/{v["slug"]}.html#{g}"><span>{esc(GRUPOS[g][0])}</span><b>{c[g]}</b>'
             f'<i style="--w:{100 * c[g] / maior:.0f}%"></i></a></li>' for g in ORDEM_GRUPOS if c[g] or g != "outros")
         dados = " ".join(f'data-{g}="{c[g]}"' for g in ORDEM_GRUPOS)
-        dados += f' data-viraram="{contas_situacao(v["propostas"])[2]}" data-faltas="{len(v["presenca"]["faltas"])}"'
+        dados += f' data-viraram="{contas_situacao(v["propostas"])[2]}" data-faltas="{len(v["presenca"]["faltas"])}" data-discursos="{len(v["discursos"])}"'
         return (f'<li class="cracha" data-nome="{esc(v["nome"].lower())}" data-partido="{esc(v["partido"])}" '
                 f'data-total="{len(v["propostas"])}" data-titular="{1 if v["titular"] else 0}" {dados}>'
                 f'<div class="cab">{foto(v, "")}<div><h3 class="nome"><a href="vereador/{v["slug"]}.html">{esc(v["nome"])}</a></h3>'
@@ -272,6 +288,8 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
                 f'<p class="partido">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p>'
                 f'{f"""<p class="cargo">{esc(v["cargo"])}</p>""" if v["cargo"] else ""}</div></div>'
                 f'{presenca_cracha(v)}'
+                f'<a class="tribuna" href="vereador/{v["slug"]}.html#tribuna">{icone("record_voice_over")}'
+                f'Falou na tribuna <b>{len(v["discursos"])}</b> {"vez" if len(v["discursos"]) == 1 else "vezes"}</a>'
                 f'<p class="total"><b>{len(v["propostas"])}</b> propostas até agora</p>'
                 f'<p class="rot">O que propôs</p><ul class="barras">{linhas}</ul>{resultado(v)}'
                 f'<a class="ficha" href="{sapl}/parlamentar/{v["id"]}">Ficha oficial na Câmara{icone("open_in_new")}</a></li>')
@@ -305,12 +323,13 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
 <label>Ordenar por<select id="f-ordem">
 <option value="nome">Titulares primeiro (A–Z)</option><option value="total">Mais propostas</option>
 <option value="melhoria">Mais pedidos de melhoria</option><option value="cobranca">Mais perguntas e cobranças</option>
-<option value="lei">Mais projetos de lei</option><option value="viraram">Mais projetos que viraram lei</option><option value="faltas">Quem mais faltou</option><option value="homenagem">Mais homenagens</option></select></label>
+<option value="lei">Mais projetos de lei</option><option value="viraram">Mais projetos que viraram lei</option><option value="faltas">Quem mais faltou</option><option value="discursos">Mais vezes na tribuna</option><option value="homenagem">Mais homenagens</option></select></label>
 </div>
 <p class="sub" id="f-conta"></p>
 <ul class="crachas" id="crachas">{crachas}</ul>
 </section>"""
 
+    sessoes_sem_oradores = "algumas"
     fontes = f"""<section id="fontes" class="secao entra">
 <h2>De onde vêm os números</h2>
 <p class="sub">Tudo sai do sistema da própria Câmara Municipal de Cáceres, o SAPL. Nada é digitado à mão.</p>
@@ -325,6 +344,8 @@ e quando recebe a resposta. Resposta recebida não quer dizer problema resolvido
 <div><dt>Presença</dt><dd>Conta as sessões ordinárias. Vem das listas de presença do SAPL, que conferimos com as atas: batem.
 Licença não é falta: os períodos de licença saem das Portarias da Câmara, revisadas uma a uma, com link em cada vereador.
 Ausência justificada é a que a Câmara registrou como justificada.</dd></div>
+<div><dt>Discursos na tribuna</dt><dd>Vêm da lista de oradores que a Câmara registra em cada sessão. O link abre o vídeo da
+sessão inteira. Em {sessoes_sem_oradores} das sessões ordinárias não há oradores registrados, então a conta pode ficar abaixo do real.</dd></div>
 <div><dt>Votos</dt><dd>A Câmara não registra o voto de cada vereador desde agosto de 2020. Só aparece o resultado geral,
 como “aprovado por unanimidade”. Por isso não há como mostrar quem votou contra.</dd></div>
 <div><dt>Salário</dt><dd>Não mostramos estimativas. Só entra no site o que tiver fonte oficial.</dd></div>

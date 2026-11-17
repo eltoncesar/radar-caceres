@@ -23,6 +23,9 @@
   "composicao_mesa": 52,
   "cargos_mesa": 20,
   "status_tramitacao": 54,
-  "tramitacoes": 15831
+  "tramitacoes": 15831,
+  "oradores": 945,
+  "tipos_norma": 11,
+  "normas": 845
  }
 }

@@ -1,0 +1,101 @@
+[
+{
+"id": 1,
+"__str__": "Lei Ordinária",
+"link_detail_backend": "/sistema/norma/tipo/1",
+"metadata": {},
+"equivalente_lexml": "lei",
+"sigla": "LO",
+"descricao": "Lei Ordinária"
+},
+{
+"id": 2,
+"__str__": "Lei Complementar",
+"link_detail_backend": "/sistema/norma/tipo/2",
+"metadata": {},
+"equivalente_lexml": "lei.complementar",
+"sigla": "LC",
+"descricao": "Lei Complementar"
+},
+{
+"id": 3,
+"__str__": "Lei Orgânica Municipal",
+"link_detail_backend": "/sistema/norma/tipo/3",
+"metadata": {},
+"equivalente_lexml": "lei.organica",
+"sigla": "LOM",
+"descricao": "Lei Orgânica Municipal"
+},
+{
+"id": 4,
+"__str__": "Emenda à Lei Orgânica",
+"link_detail_backend": "/sistema/norma/tipo/4",
+"metadata": {},
+"equivalente_lexml": "emenda.lei.organica",
+"sigla": "ELO",
+"descricao": "Emenda à Lei Orgânica"
+},
+{
+"id": 5,
+"__str__": "Resolução",
+"link_detail_backend": "/sistema/norma/tipo/5",
+"metadata": {},
+"equivalente_lexml": "resolucao",
+"sigla": "RES",
+"descricao": "Resolução"
+},
+{
+"id": 7,
+"__str__": "Decreto Legislativo",
+"link_detail_backend": "/sistema/norma/tipo/7",
+"metadata": {},
+"equivalente_lexml": "decreto.legislativo",
+"sigla": "DL",
+"descricao": "Decreto Legislativo"
+},
+{
+"id": 9,
+"__str__": "Portaria",
+"link_detail_backend": "/sistema/norma/tipo/9",
+"metadata": {},
+"equivalente_lexml": "decreto",
+"sigla": "POR",
+"descricao": "Portaria"
+},
+{
+"id": 10,
+"__str__": "Ação Direta de Inconstitucionalidade",
+"link_detail_backend": "/sistema/norma/tipo/10",
+"metadata": {},
+"equivalente_lexml": "constituicao",
+"sigla": "ADI",
+"descricao": "Ação Direta de Inconstitucionalidade"
+},
+{
+"id": 11,
+"__str__": "Instrução Normativa",
+"link_detail_backend": "/sistema/norma/tipo/11",
+"metadata": {},
+"equivalente_lexml": "",
+"sigla": "IN",
+"descricao": "Instrução Normativa"
+},
+{
+"id": 12,
+"__str__": "Ato da Mesa Diretora",
+"link_detail_backend": "/sistema/norma/tipo/12",
+"metadata": {},
+"equivalente_lexml": "",
+"sigla": "AMD",
+"descricao": "Ato da Mesa Diretora"
+},
+{
+"id": 13,
+"__str__": "Ato da Presidência",
+"link_detail_backend": "/sistema/norma/tipo/13",
+"metadata": {},
+"equivalente_lexml": "",
+"sigla": "APR",
+"descricao": "Ato da Presidência"
+}
+]

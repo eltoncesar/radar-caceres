@@ -217,5 +217,27 @@
     "Portaria 106/2026": 2295
    }
   }
+ ],
+ "normas_revisadas_sem_efeito": [
+  {
+   "id": 1837,
+   "nome": "Portaria 187/2025",
+   "motivo": "Revoga a Portaria 184/2025; a licença de Valdeníria está na Portaria 195/2025."
+  },
+  {
+   "id": 1901,
+   "nome": "Portaria 224/2025",
+   "motivo": "Anulada pela Portaria 228/2025; a licença de Rubens Macedo está na Portaria 233/2025."
+  },
+  {
+   "id": 1833,
+   "nome": "Portaria 184/2025",
+   "motivo": "Revogada pela Portaria 187/2025 e substituída pela 195/2025."
+  },
+  {
+   "id": 2218,
+   "nome": "Ato da Presidência 1/2026",
+   "motivo": "Indeferiu o retorno antecipado de Magaly; ela segue licenciada até a recondução judicial (Portaria 103/2026), já na tabela."
+  }
  ]
 }

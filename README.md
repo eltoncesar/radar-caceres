@@ -33,6 +33,11 @@ versão boa. Também dá para rodar à mão em **Actions → Coletar e publicar 
 workflow**. Quando o código muda na `main`, o site é gerado de novo com os dados
 que já estão salvos.
 
+Na rodada da madrugada, o robô também procura Portarias novas sobre licença,
+convocação ou retorno de vereador (`conferencia/novas_portarias.py`). Se achar
+alguma que ainda não está em `dados/licencas.json`, abre um aviso (issue) no
+GitHub com o link de cada ato, para revisão manual.
+
 Requisito: em **Settings → Pages → Source**, escolher **GitHub Actions**.
 
 ## Grupos de propostas

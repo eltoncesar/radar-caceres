@@ -47,6 +47,9 @@ CONJUNTOS = {
     "cargos_mesa": "parlamentares/cargomesa/",
     "status_tramitacao": "materia/statustramitacao/",
     "tramitacoes": "materia/tramitacao/?data_tramitacao__gte=2025-01-01",
+    "oradores": "sessao/orador/",
+    "tipos_norma": "norma/tiponormajuridica/",
+    "normas": "norma/normajuridica/?data__gte=2025-01-01",
 }
 
 

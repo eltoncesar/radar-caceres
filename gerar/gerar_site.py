@@ -120,6 +120,17 @@ def montar_dados():
                              [carregar("presenca_abertura"), carregar("presenca_ordem_dia")],
                              carregar("justificativas_ausencia"), carregar("mandatos"), licencas, hoje)
 
+    # Discursos na tribuna (oradores registrados no SAPL), só nesta legislatura.
+    sessoes_leg = {x["id"]: x for x in carregar("sessoes")}
+    discursos = collections.defaultdict(list)
+    for o in carregar("oradores"):
+        se = sessoes_leg.get(o["sessao_plenaria"])
+        if not se:
+            continue
+        link = (o.get("url_discurso") or se.get("url_video") or f'{SAPL}/sessao/{se["id"]}').replace("http://", "https://")
+        discursos[o["parlamentar"]].append({"data": se["data_inicio"], "sessao": se["id"], "link": link,
+                                            "video": bool(o.get("url_discurso") or se.get("url_video"))})
+
     vereadores = []
     for mand in carregar("mandatos"):
         p = parlamentares[mand["parlamentar"]]
@@ -142,6 +153,7 @@ def montar_dados():
             "propostas": lista,
             "cargo": rotulo_cargo(cargo.get(p["id"], "")),
             "presenca": pres[p["id"]],
+            "discursos": sorted(discursos[p["id"]], key=lambda d: d["data"], reverse=True),
         })
     vereadores.sort(key=lambda v: (not v["titular"], v["nome"]))
     return vereadores
@@ -165,7 +177,7 @@ CABECA = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,play_circle,record_voice_over,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
 <link rel="stylesheet" href="{base}estilo.css">
 </head>
 <body>
@@ -265,6 +277,7 @@ def gerar_vereador(v, coleta):
 <p class="sub">{principal} como autor principal · {total - principal} assinadas junto com outros vereadores</p>
 {pagina_inicial.resumo_situacao(v["propostas"], esc)}</section>
 {pagina_inicial.bloco_presenca(v, esc, data_br, SAPL)}
+{pagina_inicial.bloco_discursos(v, esc, data_br)}
 {f'<ul class="resumo">{resumo}</ul><p class="sub">Toque num grupo para ler proposta por proposta.</p>' if grupos else "<p>Nenhuma proposta registrada no período.</p>"}
 {"".join(blocos)}
 {AVISO_VOTO}
@@ -546,6 +559,9 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .datas{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
 .datas a{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border:1px solid var(--md-outline);border-radius:var(--shape-s);font-size:.875rem;text-decoration:none}
 .lic{margin:0;padding-left:20px}.lic li{margin:6px 0}
+.tribuna{position:relative;display:flex;align-items:center;gap:8px;min-height:40px;margin:8px 0 0;color:var(--md-on-surface);font-size:.875rem;text-decoration:none}
+.tribuna .ms{color:var(--md-primary)}.tribuna b{font-weight:600;font-variant-numeric:tabular-nums}.tribuna:hover{text-decoration:underline}
+.datas .ms{font-size:1rem;margin-left:4px;color:var(--md-primary)}
 /* De onde vêm os números */
 .fontes{display:grid;gap:12px;margin:16px 0 0}
 .fontes div{border-radius:var(--shape-m);padding:16px;background:var(--md-surface-container-low)}
