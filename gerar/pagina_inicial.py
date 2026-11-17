@@ -5,6 +5,7 @@ import json
 from assuntos import ASSUNTOS, assuntos
 from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS
 from locais import Rotulos, bairros, ruas
+import situacao as sit
 
 SIGLA = {
     "Indicação": "IND", "Requerimento": "REQ", "Moção": "MOC", "Projeto de Lei": "PL",
@@ -38,6 +39,7 @@ def montar(vereadores):
                     "i": p["id"], "t": SIGLA.get(p["tipo"], p["tipo"]), "tn": p["tipo"],
                     "n": f'{p["numero"]}/{p["ano"]}', "d": p["data"], "e": p["ementa"], "g": p["grupo"],
                     "s": assuntos(p["ementa"]) if eh_pedido else [],
+                    "x": p.get("situacao") or "", "xr": rotulo_situacao(p), "xs": p.get("status", ""),
                     "r": rr.anotar(ruas(p["ementa"])) if eh_pedido else [],
                     "b": rb.anotar(bairros(p["ementa"])) if eh_pedido else [],
                     "a": [],
@@ -78,13 +80,49 @@ def dados_json(vereadores, coleta):
         "coleta": coleta,
         "grupos": {g: GRUPOS[g][0] for g in ORDEM_GRUPOS},
         "assuntos": NOME_ASSUNTO,
-        "icones": {**ICONE_ASSUNTO, **{"g_" + g: i for g, i in ICONE_GRUPO.items()}},
+        "icones": {**ICONE_ASSUNTO, **{"g_" + g: i for g, i in ICONE_GRUPO.items()},
+                   **{"x_" + k: i for k, i in sit.ICONE.items()}},
         "ruas": rr,
         "bairros": rb,
         "vereadores": {v["id"]: {"nome": v["nome"], "partido": v["partido"], "slug": v["slug"],
                                  "foto": v["foto"]} for v in vereadores},
         "propostas": lista,
     }
+
+
+TIPOS_LEI_DE_FATO = {"Projeto de Lei", "Projeto de Lei Complementar", "Proposta de Emenda à Lei Orgânica"}
+
+
+def rotulo_situacao(p):
+    x = p.get("situacao")
+    if x == sit.VIROU_NORMA and p["tipo"] not in TIPOS_LEI_DE_FATO:
+        return "Aprovado"
+    return sit.ROTULO.get(x, "")
+
+
+def etiqueta_situacao(p, esc):
+    x = p.get("situacao")
+    if not x:
+        return ""
+    return (f' <span class="sit s-{x}" title="Última movimentação oficial: {esc(p.get("status", ""))}">'
+            f'{icone(sit.ICONE[x])}{esc(rotulo_situacao(p))}</span>')
+
+
+def contas_situacao(propostas):
+    pedidos = [p for p in propostas if p["tipo"] in sit.TIPOS_PEDIDO]
+    leis = [p for p in propostas if p["tipo"] in TIPOS_LEI_DE_FATO]
+    return (sum(p["situacao"] == sit.RESPONDIDO for p in pedidos), len(pedidos),
+            sum(p["situacao"] == sit.VIROU_NORMA for p in leis), len(leis))
+
+
+def resumo_situacao(propostas, esc):
+    resp, ped, viraram, leis = contas_situacao(propostas)
+    partes = []
+    if ped:
+        partes.append(f"{resp} de {ped} pedidos já têm resposta escrita da Prefeitura")
+    if leis:
+        partes.append(f"{viraram} de {leis} projetos de lei viraram lei")
+    return f'<p class="sub">{esc(" · ".join(partes))}.</p>' if partes else ""
 
 
 def nome_proprio(nome):
@@ -194,6 +232,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
             f'<li class="g-{g}"><a href="vereador/{v["slug"]}.html#{g}"><span>{esc(GRUPOS[g][0])}</span><b>{c[g]}</b>'
             f'<i style="--w:{100 * c[g] / maior:.0f}%"></i></a></li>' for g in ORDEM_GRUPOS if c[g] or g != "outros")
         dados = " ".join(f'data-{g}="{c[g]}"' for g in ORDEM_GRUPOS)
+        dados += f' data-viraram="{contas_situacao(v["propostas"])[2]}"'
         return (f'<li class="cracha" data-nome="{esc(v["nome"].lower())}" data-partido="{esc(v["partido"])}" '
                 f'data-total="{len(v["propostas"])}" data-titular="{1 if v["titular"] else 0}" {dados}>'
                 f'<div class="cab">{foto(v, "")}<div><h3 class="nome"><a href="vereador/{v["slug"]}.html">{esc(v["nome"])}</a></h3>'
@@ -201,8 +240,19 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
                 f'<p class="partido">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p>'
                 f'{f"""<p class="cargo">{esc(v["cargo"])}</p>""" if v["cargo"] else ""}</div></div>'
                 f'<p class="total"><b>{len(v["propostas"])}</b> propostas até agora</p>'
-                f'<p class="rot">O que propôs</p><ul class="barras">{linhas}</ul>'
+                f'<p class="rot">O que propôs</p><ul class="barras">{linhas}</ul>{resultado(v)}'
                 f'<a class="ficha" href="{sapl}/parlamentar/{v["id"]}">Ficha oficial na Câmara{icone("open_in_new")}</a></li>')
+    def resultado(v):
+        resp, ped, viraram, leis = contas_situacao(v["propostas"])
+        itens = []
+        if ped:
+            itens.append(f'<li><span>Pedidos com resposta da Prefeitura</span><b>{resp} de {ped}</b>'
+                         f'<i style="--w:{100 * resp / ped:.0f}%"></i></li>')
+        if leis:
+            itens.append(f'<li><span>Projetos de lei que viraram lei</span><b>{viraram} de {leis}</b>'
+                         f'<i style="--w:{100 * viraram / leis:.0f}%"></i></li>')
+        return f'<p class="rot">O que aconteceu</p><ul class="resultado">{"".join(itens)}</ul>' if itens else ""
+
     crachas = "".join(cracha(v) for v in vereadores)
     titulares = sum(v["titular"] for v in vereadores)
     vereadores_html = f"""<section id="vereadores" class="secao entra">
@@ -214,7 +264,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
 <label>Ordenar por<select id="f-ordem">
 <option value="nome">Titulares primeiro (A–Z)</option><option value="total">Mais propostas</option>
 <option value="melhoria">Mais pedidos de melhoria</option><option value="cobranca">Mais perguntas e cobranças</option>
-<option value="lei">Mais projetos de lei</option><option value="homenagem">Mais homenagens</option></select></label>
+<option value="lei">Mais projetos de lei</option><option value="viraram">Mais projetos que viraram lei</option><option value="homenagem">Mais homenagens</option></select></label>
 </div>
 <p class="sub" id="f-conta"></p>
 <ul class="crachas" id="crachas">{crachas}</ul>
@@ -229,6 +279,8 @@ Em 17/11/2026 conferimos o total de cada um dos 21 vereadores e 45 propostas sor
 <div><dt>Grupos e assuntos</dt><dd>Uma regra automática, igual para todos, separa as propostas pelo tipo oficial e por palavras do resumo.
 Pode errar em casos raros. <a href="sobre.html#regra">Veja a regra</a>.</dd></div>
 <div><dt>Bairros e ruas</dt><dd>Lidos do resumo oficial de cada pedido. Se o resumo não cita o lugar, o pedido não aparece na busca.</dd></div>
+<div><dt>Respostas da Prefeitura</dt><dd>Vêm da tramitação oficial de cada pedido: a Câmara registra quando manda o ofício
+e quando recebe a resposta. Resposta recebida não quer dizer problema resolvido. Conferimos 12 propostas sorteadas com o SAPL: todas batem.</dd></div>
 <div><dt>Presença</dt><dd>Ainda não mostramos. A lista de presença do SAPL bate com as atas, mas as licenças dos vereadores só aparecem
 nas Portarias da Câmara. Licença não é falta, então vamos cruzar uma por uma antes de publicar.</dd></div>
 <div><dt>Votos</dt><dd>A Câmara não registra o voto de cada vereador desde agosto de 2020. Só aparece o resultado geral,
@@ -270,6 +322,7 @@ function cartao(p){{
   var ic=p.s.length?D.icones[p.s[0]]:D.icones["g_"+p.g];
   return '<li class="prop"><span class="ms ic-prop g-'+p.g+'" aria-hidden="true">'+ic+'</span><div class="prop-corpo"><p class="ementa" tabindex="0" title="Toque para ler tudo">'+esc(p.e||"Sem resumo no sistema oficial.")+'</p>'
     +'<p class="meta">'+tags+'<span>'+data(p.d)+' · '+esc(p.t)+' '+p.n+'</span></p>'
+    +(p.x?'<p class="meta"><span class="sit s-'+p.x+'" title="Última movimentação oficial: '+esc(p.xs)+'"><span class="ms" aria-hidden="true">'+D.icones["x_"+p.x]+'</span>'+esc(p.xr)+'</span></p>':'')
     +'<div class="autores">'+autores+'</div><a class="link" href="'+SAPL+'/materia/'+p.i+'">Abrir na Câmara<span class="ms" aria-hidden="true">open_in_new</span><span class="sr"> (abre o site oficial)</span></a></div></li>';
 }}
 function barras(titulo,itens,max){{
@@ -285,6 +338,9 @@ function desenhar(){{
   var grupo='';document.querySelectorAll(".aba").forEach(function(a){{a.setAttribute("aria-pressed",a.getAttribute("data-aba")===est.g?"true":"false");}});
   if(!achados.length){{out.innerHTML=grupo+'<p class="vazio">Nenhuma proposta '+(qv?'cita “'+esc(qv)+'”':'neste grupo')+'. Tente outro jeito de escrever o nome.</p>';ligar();return;}}
   var h=grupo+'<p class="grande"><b>'+num(achados.length)+'</b></p><p class="sub-grande">propostas '+onde+' até agora</p>';
+  var ped=achados.filter(function(p){{return p.tn==="Indicação"||p.tn==="Requerimento";}}),resp=ped.filter(function(p){{return p.x==="respondido";}}).length,agu=ped.filter(function(p){{return p.x==="aguardando";}}).length;
+  if(ped.length)h+='<div class="respostas"><p><b>'+num(resp)+'</b> de '+num(ped.length)+' pedidos já têm resposta escrita da Prefeitura'+(agu?' · <b>'+num(agu)+'</b> aguardando':'')+'.</p>'
+    +'<i style="--w:'+Math.round(100*resp/ped.length)+'%"></i><p class="sub">Resposta recebida não quer dizer que o problema foi resolvido: abra o pedido na Câmara para ler a resposta.</p></div>';
   var tv=ranking(porVer,5);
   h+=barras("Quem mais propôs",tv.map(function(a){{var v=D.vereadores[a];return [avatar(a)+esc(v.nome)+(v.partido?' <small>· '+esc(v.partido)+'</small>':''),porVer[a]];}}),porVer[tv[0]]||1);
   var ta=ranking(porAss,5);

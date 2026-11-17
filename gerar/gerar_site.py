@@ -15,6 +15,7 @@ import unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS, REGRA_EXPLICADA, classificar  # noqa: E402
 import pagina_inicial  # noqa: E402
+import situacao as sit  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRUTOS = os.path.join(RAIZ, "dados", "brutos")
@@ -81,6 +82,9 @@ def montar_dados():
         if not f["data_desfiliacao"]:
             filiacao_atual[f["parlamentar"]] = partidos.get(f["partido"], {}).get("sigla", "")
 
+    status_nome = {x["id"]: x["descricao"] for x in carregar("status_tramitacao")}
+    ultima = sit.ultimas(carregar("tramitacoes"), status_nome)
+
     propostas = collections.defaultdict(list)
     for a in carregar("autorias"):
         pid = autor_para_parl.get(a["autor"])
@@ -96,6 +100,9 @@ def montar_dados():
             "ementa": limpar(m["ementa"]),
             "primeiro_autor": a["primeiro_autor"],
             "grupo": classificar(tipos[m["tipo"]], m["ementa"]),
+            "status": ultima.get(m["id"], (None, ""))[1],
+            "status_data": ultima.get(m["id"], (None, ""))[0],
+            "situacao": sit.situacao(tipos[m["tipo"]], ultima.get(m["id"], (None, ""))[1]),
         })
 
     # Cargo na Mesa Diretora mais recente (a de maior id é a do ano corrente).
@@ -147,7 +154,7 @@ CABECA = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,landscape,lightbulb,local_hospital,location_on,more_horiz,open_in_new,park,school,search,traffic,water_drop&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
 <link rel="stylesheet" href="{base}estilo.css">
 </head>
 <body>
@@ -221,6 +228,7 @@ def gerar_vereador(v, coleta):
         itens = "".join(
             f'<li><a href="{SAPL}/materia/{p["id"]}">{esc(p["tipo"])} nº {p["numero"]}/{p["ano"]}</a>'
             f'<span class="data">{data_br(p["data"])}{"" if p["primeiro_autor"] else " · coautor"}</span>'
+            f'{pagina_inicial.etiqueta_situacao(p, esc)}'
             f'<p>{esc(p["ementa"]) or "<em>Sem resumo no sistema oficial.</em>"}</p></li>'
             for p in por_grupo[g])
         blocos.append(f'<details id="{g}"><summary>{esc(GRUPOS[g][0])} <span class="contagem">{len(por_grupo[g])}</span></summary>'
@@ -240,7 +248,8 @@ def gerar_vereador(v, coleta):
 {f'<p class="sub">Gabinete: {" · ".join(contato)}</p>' if contato else ""}
 <p class="sub"><a href="{SAPL}/parlamentar/{v["id"]}">Ficha oficial na Câmara</a></p></div></div>
 <section class="destaque"><p><b>{total}</b> propostas em {" e ".join(ANOS)}</p>
-<p class="sub">{principal} como autor principal · {total - principal} assinadas junto com outros vereadores</p></section>
+<p class="sub">{principal} como autor principal · {total - principal} assinadas junto com outros vereadores</p>
+{pagina_inicial.resumo_situacao(v["propostas"], esc)}</section>
 {f'<ul class="resumo">{resumo}</ul><p class="sub">Toque num grupo para ler proposta por proposta.</p>' if grupos else "<p>Nenhuma proposta registrada no período.</p>"}
 {"".join(blocos)}
 {AVISO_VOTO}
@@ -497,6 +506,20 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .barras .g-melhoria{--c:var(--g-melhoria)}.barras .g-cobranca{--c:var(--g-cobranca)}.barras .g-homenagem{--c:var(--g-homenagem)}.barras .g-lei{--c:var(--g-lei)}.barras .g-outros{--c:var(--g-outros)}
 .ficha{position:relative;display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:auto;min-height:40px;padding:0 16px;border:1px solid var(--md-outline);border-radius:var(--shape-full);color:var(--md-primary);font-size:.875rem;font-weight:500;text-decoration:none;overflow:hidden}
 .ficha .ms{font-size:1.125rem}
+/* Situação: resposta da Prefeitura e projetos que viraram lei */
+.sit{display:inline-flex;align-items:center;gap:4px;height:24px;padding:0 8px;border-radius:var(--shape-s);font-size:.75rem;line-height:1rem;font-weight:500;letter-spacing:.03em;border:1px solid var(--md-outline-variant);color:var(--md-on-surface-variant);background:var(--md-surface)}
+.sit .ms{font-size:1rem}
+.s-respondido,.s-virou_norma{background:var(--g-lei-c);border-color:var(--g-lei-c);color:var(--g-lei-on)}
+.s-aguardando{background:var(--g-cobranca-c);border-color:var(--g-cobranca-c);color:var(--g-cobranca-on)}
+.respostas{margin:16px 0 0;padding:16px;border-radius:var(--shape-m);background:var(--md-surface-container-low)}
+.respostas p{margin:0}.respostas b{font-weight:600;font-variant-numeric:tabular-nums}
+.respostas i{display:block;height:4px;margin:10px 0;border-radius:var(--shape-full);background:linear-gradient(90deg,var(--g-lei) var(--w),var(--md-secondary-container) var(--w))}
+.respostas .sub{font-size:.875rem;line-height:1.25rem}
+.resultado{list-style:none;padding:0;margin:4px 0 8px}
+.resultado li{display:grid;grid-template-columns:1fr auto;gap:6px 8px;padding:8px 0;font-size:.875rem}
+.resultado b{font-weight:500;font-variant-numeric:tabular-nums}
+.resultado i{grid-column:1/-1;height:4px;border-radius:var(--shape-full);background:linear-gradient(90deg,var(--g-lei) var(--w),var(--md-surface-container-high) var(--w))}
+.propostas .sit{margin-left:8px;vertical-align:middle}
 /* De onde vêm os números */
 .fontes{display:grid;gap:12px;margin:16px 0 0}
 .fontes div{border-radius:var(--shape-m);padding:16px;background:var(--md-surface-container-low)}

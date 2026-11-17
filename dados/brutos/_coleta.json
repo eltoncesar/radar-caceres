@@ -21,6 +21,8 @@
   "votos_nominais": 352,
   "mesas": 10,
   "composicao_mesa": 52,
-  "cargos_mesa": 20
+  "cargos_mesa": 20,
+  "status_tramitacao": 54,
+  "tramitacoes": 15831
  }
 }

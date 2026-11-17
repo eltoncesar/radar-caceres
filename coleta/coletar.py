@@ -45,6 +45,8 @@ CONJUNTOS = {
     "mesas": "parlamentares/mesadiretora/",
     "composicao_mesa": "parlamentares/composicaomesa/",
     "cargos_mesa": "parlamentares/cargomesa/",
+    "status_tramitacao": "materia/statustramitacao/",
+    "tramitacoes": "materia/tramitacao/?data_tramitacao__gte=2025-01-01",
 }
 
 

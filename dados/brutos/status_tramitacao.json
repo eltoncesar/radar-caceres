@@ -1,0 +1,488 @@
+[
+{
+"id": 1,
+"__str__": "Adiada Discussão e Votação",
+"link_detail_backend": "/sistema/materia/status-tramitacao/1",
+"metadata": {},
+"sigla": "ADIAVOTAC",
+"descricao": "Adiada Discussão e Votação",
+"indicador": "R"
+},
+{
+"id": 2,
+"__str__": "Juntado ao Projeto Matriz",
+"link_detail_backend": "/sistema/materia/status-tramitacao/2",
+"metadata": {},
+"sigla": "JUNTADO",
+"descricao": "Juntado ao Projeto Matriz",
+"indicador": "F"
+},
+{
+"id": 3,
+"__str__": "Norma Sancionada",
+"link_detail_backend": "/sistema/materia/status-tramitacao/3",
+"metadata": {},
+"sigla": "NORMSANCIO",
+"descricao": "Norma Sancionada",
+"indicador": "F"
+},
+{
+"id": 4,
+"__str__": "Aguardando a Inclusão no Expediente",
+"link_detail_backend": "/sistema/materia/status-tramitacao/4",
+"metadata": {},
+"sigla": "AIPEXP",
+"descricao": "Aguardando a Inclusão no Expediente",
+"indicador": "R"
+},
+{
+"id": 5,
+"__str__": "Aguardando Emissão(ões) de Parecer(es)",
+"link_detail_backend": "/sistema/materia/status-tramitacao/5",
+"metadata": {},
+"sigla": "AGPARECER",
+"descricao": "Aguardando Emissão(ões) de Parecer(es)",
+"indicador": "R"
+},
+{
+"id": 6,
+"__str__": "Aguardando Promulgação",
+"link_detail_backend": "/sistema/materia/status-tramitacao/6",
+"metadata": {},
+"sigla": "AGPROM",
+"descricao": "Aguardando Promulgação",
+"indicador": "R"
+},
+{
+"id": 11,
+"__str__": "Apresentada em Plenário",
+"link_detail_backend": "/sistema/materia/status-tramitacao/11",
+"metadata": {},
+"sigla": "APRESENT",
+"descricao": "Apresentada em Plenário",
+"indicador": "R"
+},
+{
+"id": 12,
+"__str__": "Proposição Aprovada em 1º Turno",
+"link_detail_backend": "/sistema/materia/status-tramitacao/12",
+"metadata": {},
+"sigla": "PAPROV1TUR",
+"descricao": "Proposição Aprovada em 1º Turno",
+"indicador": "R"
+},
+{
+"id": 13,
+"__str__": "Proposição Aprovada em Turno Único",
+"link_detail_backend": "/sistema/materia/status-tramitacao/13",
+"metadata": {},
+"sigla": "APROTURUNC",
+"descricao": "Proposição Aprovada em Turno Único",
+"indicador": "R"
+},
+{
+"id": 14,
+"__str__": "Proposição Arquivada",
+"link_detail_backend": "/sistema/materia/status-tramitacao/14",
+"metadata": {},
+"sigla": "PARQUIVADA",
+"descricao": "Proposição Arquivada",
+"indicador": "F"
+},
+{
+"id": 16,
+"__str__": "Proposição Desarquivada pelo Autor",
+"link_detail_backend": "/sistema/materia/status-tramitacao/16",
+"metadata": {},
+"sigla": "DESARQUIV",
+"descricao": "Proposição Desarquivada pelo Autor",
+"indicador": "R"
+},
+{
+"id": 17,
+"__str__": "Distribuída à(s) Comissão(ões) de Mérito",
+"link_detail_backend": "/sistema/materia/status-tramitacao/17",
+"metadata": {},
+"sigla": "DISTRIBCOM",
+"descricao": "Distribuída à(s) Comissão(ões) de Mérito",
+"indicador": "R"
+},
+{
+"id": 18,
+"__str__": "Inclusa na Ordem do Dia",
+"link_detail_backend": "/sistema/materia/status-tramitacao/18",
+"metadata": {},
+"sigla": "INCLORDIA",
+"descricao": "Inclusa na Ordem do Dia",
+"indicador": "R"
+},
+{
+"id": 21,
+"__str__": "Parecer pela Manutenção do Veto",
+"link_detail_backend": "/sistema/materia/status-tramitacao/21",
+"metadata": {},
+"sigla": "MANUTVETO",
+"descricao": "Parecer pela Manutenção do Veto",
+"indicador": "R"
+},
+{
+"id": 22,
+"__str__": "Norma Promulgada",
+"link_detail_backend": "/sistema/materia/status-tramitacao/22",
+"metadata": {},
+"sigla": "NORMPROMUL",
+"descricao": "Norma Promulgada",
+"indicador": "F"
+},
+{
+"id": 23,
+"__str__": "Parecer Contrário da Comissão de Mérito",
+"link_detail_backend": "/sistema/materia/status-tramitacao/23",
+"metadata": {},
+"sigla": "PARECCONTR",
+"descricao": "Parecer Contrário da Comissão de Mérito",
+"indicador": "R"
+},
+{
+"id": 24,
+"__str__": "Parecer(es) Favorável(eis) da(s) Comissão(ões) de Mérito",
+"link_detail_backend": "/sistema/materia/status-tramitacao/24",
+"metadata": {},
+"sigla": "PARECERFAV",
+"descricao": "Parecer(es) Favorável(eis) da(s) Comissão(ões) de Mérito",
+"indicador": "R"
+},
+{
+"id": 27,
+"__str__": "Proposição Prejudicada",
+"link_detail_backend": "/sistema/materia/status-tramitacao/27",
+"metadata": {},
+"sigla": "PREJUD",
+"descricao": "Proposição Prejudicada",
+"indicador": "F"
+},
+{
+"id": 29,
+"__str__": "Proposição Reprovada em 1º Turno",
+"link_detail_backend": "/sistema/materia/status-tramitacao/29",
+"metadata": {},
+"sigla": "PROREP1ºTU",
+"descricao": "Proposição Reprovada em 1º Turno",
+"indicador": "F"
+},
+{
+"id": 30,
+"__str__": "Parecer pela Rejeição do Veto",
+"link_detail_backend": "/sistema/materia/status-tramitacao/30",
+"metadata": {},
+"sigla": "REJEIVETO",
+"descricao": "Parecer pela Rejeição do Veto",
+"indicador": "R"
+},
+{
+"id": 31,
+"__str__": "Proposição Retirada pelo Autor/Líder do Governo",
+"link_detail_backend": "/sistema/materia/status-tramitacao/31",
+"metadata": {},
+"sigla": "PRAUTORLID",
+"descricao": "Proposição Retirada pelo Autor/Líder do Governo",
+"indicador": "F"
+},
+{
+"id": 32,
+"__str__": "Proposição Retirada do Expediente/Ordem do Dia",
+"link_detail_backend": "/sistema/materia/status-tramitacao/32",
+"metadata": {},
+"sigla": "PRETEORDIA",
+"descricao": "Proposição Retirada do Expediente/Ordem do Dia",
+"indicador": "R"
+},
+{
+"id": 33,
+"__str__": "Norma Promulgada com Veto Parcial",
+"link_detail_backend": "/sistema/materia/status-tramitacao/33",
+"metadata": {},
+"sigla": "NPROVETPAR",
+"descricao": "Norma Promulgada com Veto Parcial",
+"indicador": "F"
+},
+{
+"id": 40,
+"__str__": "Mensagem do Veto Integral Publicada",
+"link_detail_backend": "/sistema/materia/status-tramitacao/40",
+"metadata": {},
+"sigla": "MENVETINTP",
+"descricao": "Mensagem do Veto Integral Publicada",
+"indicador": "F"
+},
+{
+"id": 41,
+"__str__": "Proposição Aprovada em 2º Turno",
+"link_detail_backend": "/sistema/materia/status-tramitacao/41",
+"metadata": {},
+"sigla": "PROAP2TUR",
+"descricao": "Proposição Aprovada em 2º Turno",
+"indicador": "R"
+},
+{
+"id": 42,
+"__str__": "Veto Rejeitado",
+"link_detail_backend": "/sistema/materia/status-tramitacao/42",
+"metadata": {},
+"sigla": "VETOREJEIT",
+"descricao": "Veto Rejeitado",
+"indicador": "R"
+},
+{
+"id": 43,
+"__str__": "Norma Sancionada com Veto Parcial",
+"link_detail_backend": "/sistema/materia/status-tramitacao/43",
+"metadata": {},
+"sigla": "NSANVETPAR",
+"descricao": "Norma Sancionada com Veto Parcial",
+"indicador": "F"
+},
+{
+"id": 44,
+"__str__": "Proposição Reprovada em Turno Único",
+"link_detail_backend": "/sistema/materia/status-tramitacao/44",
+"metadata": {},
+"sigla": "PROREPTUNI",
+"descricao": "Proposição Reprovada em Turno Único",
+"indicador": "F"
+},
+{
+"id": 45,
+"__str__": "Proposição Reprovada pela Mesa Diretora",
+"link_detail_backend": "/sistema/materia/status-tramitacao/45",
+"metadata": {},
+"sigla": "PRMD",
+"descricao": "Proposição Reprovada pela Mesa Diretora",
+"indicador": "F"
+},
+{
+"id": 46,
+"__str__": "Aguardando Sanção",
+"link_detail_backend": "/sistema/materia/status-tramitacao/46",
+"metadata": {},
+"sigla": "AGUSAN",
+"descricao": "Aguardando Sanção",
+"indicador": "R"
+},
+{
+"id": 47,
+"__str__": "Veto Total Mantido",
+"link_detail_backend": "/sistema/materia/status-tramitacao/47",
+"metadata": {},
+"sigla": "VETOTOTAL",
+"descricao": "Veto Total Mantido",
+"indicador": "F"
+},
+{
+"id": 49,
+"__str__": "Proposição Reprovada em 2º Turno",
+"link_detail_backend": "/sistema/materia/status-tramitacao/49",
+"metadata": {},
+"sigla": "PROREP2ºTU",
+"descricao": "Proposição Reprovada em 2º Turno",
+"indicador": "F"
+},
+{
+"id": 50,
+"__str__": "Aguardando Ofício Resposta da Propositura",
+"link_detail_backend": "/sistema/materia/status-tramitacao/50",
+"metadata": {},
+"sigla": "AGOFICRESP",
+"descricao": "Aguardando Ofício Resposta da Propositura",
+"indicador": "R"
+},
+{
+"id": 51,
+"__str__": "Recebido Ofício Resposta da Propositura",
+"link_detail_backend": "/sistema/materia/status-tramitacao/51",
+"metadata": {},
+"sigla": "RECOFRESPR",
+"descricao": "Recebido Ofício Resposta da Propositura",
+"indicador": "F"
+},
+{
+"id": 52,
+"__str__": "Deliberada para Leitura em Plenário",
+"link_detail_backend": "/sistema/materia/status-tramitacao/52",
+"metadata": {},
+"sigla": "DELIBLEIT",
+"descricao": "Deliberada para Leitura em Plenário",
+"indicador": "R"
+},
+{
+"id": 53,
+"__str__": "Mensagem do Veto Integral",
+"link_detail_backend": "/sistema/materia/status-tramitacao/53",
+"metadata": {},
+"sigla": "MVI",
+"descricao": "Mensagem do Veto Integral",
+"indicador": "R"
+},
+{
+"id": 54,
+"__str__": "Mensagem do Veto Parcial",
+"link_detail_backend": "/sistema/materia/status-tramitacao/54",
+"metadata": {},
+"sigla": "MVP",
+"descricao": "Mensagem do Veto Parcial",
+"indicador": "R"
+},
+{
+"id": 55,
+"__str__": "Veto Parcial Mantido",
+"link_detail_backend": "/sistema/materia/status-tramitacao/55",
+"metadata": {},
+"sigla": "VETOPARCIA",
+"descricao": "Veto Parcial Mantido",
+"indicador": "R"
+},
+{
+"id": 56,
+"__str__": "Proposição Entregue ao Autor",
+"link_detail_backend": "/sistema/materia/status-tramitacao/56",
+"metadata": {},
+"sigla": "PROPENT",
+"descricao": "Proposição Entregue ao Autor",
+"indicador": "F"
+},
+{
+"id": 57,
+"__str__": "Aguardando Audiência Pública",
+"link_detail_backend": "/sistema/materia/status-tramitacao/57",
+"metadata": {},
+"sigla": "AUDPUBL",
+"descricao": "Aguardando Audiência Pública",
+"indicador": "R"
+},
+{
+"id": 58,
+"__str__": "Pedido de Vista",
+"link_detail_backend": "/sistema/materia/status-tramitacao/58",
+"metadata": {},
+"sigla": "Vista",
+"descricao": "Pedido de Vista",
+"indicador": "R"
+},
+{
+"id": 59,
+"__str__": "Pedido de Dilação de Prazo",
+"link_detail_backend": "/sistema/materia/status-tramitacao/59",
+"metadata": {},
+"sigla": "PDP",
+"descricao": "Pedido de Dilação de Prazo",
+"indicador": "R"
+},
+{
+"id": 60,
+"__str__": "Notificação de Inconstitucionalidade ou Ilegalidade",
+"link_detail_backend": "/sistema/materia/status-tramitacao/60",
+"metadata": {},
+"sigla": "INCONSTILE",
+"descricao": "Notificação de Inconstitucionalidade ou Ilegalidade",
+"indicador": "F"
+},
+{
+"id": 61,
+"__str__": "Notificação de Prejudicabilidade",
+"link_detail_backend": "/sistema/materia/status-tramitacao/61",
+"metadata": {},
+"sigla": "PREJUD",
+"descricao": "Notificação de Prejudicabilidade",
+"indicador": "F"
+},
+{
+"id": 62,
+"__str__": "Notificação de Diligência",
+"link_detail_backend": "/sistema/materia/status-tramitacao/62",
+"metadata": {},
+"sigla": "DELIG",
+"descricao": "Notificação de Diligência",
+"indicador": "F"
+},
+{
+"id": 63,
+"__str__": "Inclusa no Pequeno Expediente",
+"link_detail_backend": "/sistema/materia/status-tramitacao/63",
+"metadata": {},
+"sigla": "INCPEQEXP",
+"descricao": "Inclusa no Pequeno Expediente",
+"indicador": "R"
+},
+{
+"id": 64,
+"__str__": "Proposição com Emenda/Substitutivo",
+"link_detail_backend": "/sistema/materia/status-tramitacao/64",
+"metadata": {},
+"sigla": "PROPEMENDA",
+"descricao": "Proposição com Emenda/Substitutivo",
+"indicador": "F"
+},
+{
+"id": 65,
+"__str__": "Proposição com Mensagem de Veto",
+"link_detail_backend": "/sistema/materia/status-tramitacao/65",
+"metadata": {},
+"sigla": "PROMENVETO",
+"descricao": "Proposição com Mensagem de Veto",
+"indicador": "R"
+},
+{
+"id": 66,
+"__str__": "Proposição Entregue ao(s) Homenageado(s)",
+"link_detail_backend": "/sistema/materia/status-tramitacao/66",
+"metadata": {},
+"sigla": "PROPENTHOM",
+"descricao": "Proposição Entregue ao(s) Homenageado(s)",
+"indicador": "F"
+},
+{
+"id": 67,
+"__str__": "Recebido Relatório do Pedido de Vista",
+"link_detail_backend": "/sistema/materia/status-tramitacao/67",
+"metadata": {},
+"sigla": "RELPV",
+"descricao": "Recebido Relatório do Pedido de Vista",
+"indicador": "R"
+},
+{
+"id": 68,
+"__str__": "Encaminhado ao Mensageiro para Tramitação",
+"link_detail_backend": "/sistema/materia/status-tramitacao/68",
+"metadata": {},
+"sigla": "MENSA",
+"descricao": "Encaminhado ao Mensageiro para Tramitação",
+"indicador": "R"
+},
+{
+"id": 70,
+"__str__": "Ofício Devolvido",
+"link_detail_backend": "/sistema/materia/status-tramitacao/70",
+"metadata": {},
+"sigla": "DEVOLV",
+"descricao": "Ofício Devolvido",
+"indicador": "F"
+},
+{
+"id": 71,
+"__str__": "Aguardando a Inclusão na Ordem do Dia",
+"link_detail_backend": "/sistema/materia/status-tramitacao/71",
+"metadata": {},
+"sigla": "AIGEODIA",
+"descricao": "Aguardando a Inclusão na Ordem do Dia",
+"indicador": "R"
+},
+{
+"id": 72,
+"__str__": "Proposição Entregue à Família do Homenageado",
+"link_detail_backend": "/sistema/materia/status-tramitacao/72",
+"metadata": {},
+"sigla": "PESAR",
+"descricao": "Proposição Entregue à Família do Homenageado",
+"indicador": "F"
+}
+]

@@ -9,6 +9,7 @@ Feita em 17/11/2026, antes de publicar o site.
 | Total de propostas de cada vereador | Site comparado com a busca por autor da API do SAPL | **21 de 21 batem** |
 | Propostas uma a uma | 45 propostas sorteadas, pelo menos uma de cada vereador, comparadas com a página pública de cada matéria no SAPL e com a aba de autoria (`conferencia/conferir_amostra.py`) | **45 de 45 batem** em tipo, número, ano, data, resumo e autores |
 | Presença registrada no SAPL | Lista de presentes das 10 sessões ordinárias que têm ata publicada no SAPL comparada com a lista de abertura do SAPL | **10 de 10 iguais** |
+| Situação de cada proposta (resposta da Prefeitura, virou lei) | Última movimentação de 12 propostas sorteadas comparada com o endereço `ultima_tramitacao` do SAPL | **12 de 12 batem** |
 | Grupos de propostas | Leitura de 12 propostas sorteadas de cada grupo | Todas no grupo que a regra declara |
 
 ## O que não bate, e por quê
