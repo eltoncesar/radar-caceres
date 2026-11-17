@@ -24,6 +24,17 @@ Para gerar o site na pasta `site/`:
 python3 gerar/gerar_site.py
 ```
 
+## Publicação automática
+
+O robô em `.github/workflows/publicar.yml` roda toda madrugada (03h17 em Cáceres):
+coleta os dados de novo, salva no repositório, gera o site e publica no GitHub
+Pages. Se a coleta vier estranha, ele para com erro e o site continua com a última
+versão boa. Também dá para rodar à mão em **Actions → Coletar e publicar → Run
+workflow**. Quando o código muda na `main`, o site é gerado de novo com os dados
+que já estão salvos.
+
+Requisito: em **Settings → Pages → Source**, escolher **GitHub Actions**.
+
 ## Grupos de propostas
 
 As propostas são separadas em cinco grupos: pedidos de melhoria, perguntas e

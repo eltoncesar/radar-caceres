@@ -99,6 +99,9 @@ def main():
     for nome, itens in novos.items():
         with open(os.path.join(destino, f"{nome}.json"), "w", encoding="utf-8") as f:
             json.dump(itens, f, ensure_ascii=False, indent=0)
+    with open(os.path.join(destino, "_coleta.json"), "w", encoding="utf-8") as f:
+        totais = {nome: len(itens) for nome, itens in novos.items()}
+        json.dump({"data": time.strftime("%Y-%m-%d"), "totais": totais}, f, ensure_ascii=False, indent=1)
     print(f"Gravado em {destino}")
 
     baixar_fotos(novos, os.path.join(os.path.dirname(os.path.abspath(destino)), "fotos"))

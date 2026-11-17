@@ -418,7 +418,8 @@ footer{border-top:1px solid var(--linha);margin-top:32px;padding-top:12px;paddin
 
 def main():
     vereadores = montar_dados()
-    coleta = data_br(datetime.date.fromtimestamp(os.path.getmtime(os.path.join(BRUTOS, "autorias.json"))).isoformat())
+    with open(os.path.join(BRUTOS, "_coleta.json"), encoding="utf-8") as f:
+        coleta = data_br(json.load(f)["data"])
     if os.path.exists(SAIDA):
         shutil.rmtree(SAIDA)
     os.makedirs(os.path.join(SAIDA, "vereador"))

@@ -1,0 +1,73 @@
+name: Coletar e publicar
+
+# Roda toda madrugada (03h17 em Cáceres, que é 07h17 UTC), quando o código muda
+# na main e quando alguém clica em "Run workflow".
+on:
+  schedule:
+    - cron: "17 7 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # para salvar os dados novos no repositório
+  pages: write      # para publicar no GitHub Pages
+  id-token: write
+
+# Nunca duas execuções ao mesmo tempo.
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  coletar-e-gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install pillow
+
+      # Só coleta de novo na rodada da madrugada ou quando pedida à mão.
+      # Se a coleta vier vazia, com linhas repetidas ou bem menor que a anterior,
+      # o script para com erro e nada abaixo roda: o site fica com a última versão boa.
+      - name: Coletar dados da Câmara
+        if: github.event_name != 'push'
+        run: python3 coleta/coletar.py dados/brutos
+
+      - name: Salvar dados novos no repositório
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "radar-robo"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados
+          if git diff --cached --quiet; then
+            echo "Nada mudou na Câmara desde a última coleta."
+          else
+            git commit -m "Coleta automática de $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Gerar o site
+        run: python3 gerar/gerar_site.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publicar:
+    needs: coletar-e-gerar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
