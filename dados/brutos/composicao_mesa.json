@@ -1,0 +1,470 @@
+[
+{
+"id": 1,
+"__str__": "PROFESSOR DOMINGOS - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 10,
+"cargo": 1,
+"mesa_diretora": 1
+},
+{
+"id": 6,
+"__str__": "PROFESSOR DOMINGOS - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 10,
+"cargo": 1,
+"mesa_diretora": 2
+},
+{
+"id": 12,
+"__str__": "RUBENS MACEDO - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 5,
+"cargo": 1,
+"mesa_diretora": 3
+},
+{
+"id": 17,
+"__str__": "RUBENS MACEDO - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 5,
+"cargo": 1,
+"mesa_diretora": 4
+},
+{
+"id": 43,
+"__str__": "PROFESSOR DOMINGOS - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 10,
+"cargo": 1,
+"mesa_diretora": 5
+},
+{
+"id": 72,
+"__str__": "PROFESSOR DOMINGOS - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 10,
+"cargo": 1,
+"mesa_diretora": 6
+},
+{
+"id": 73,
+"__str__": "ISAÍAS BEZERRA - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 26,
+"cargo": 3,
+"mesa_diretora": 6
+},
+{
+"id": 74,
+"__str__": "ENGENHEIRO CELSO SILVA - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 24,
+"cargo": 5,
+"mesa_diretora": 6
+},
+{
+"id": 80,
+"__str__": "ISAÍAS BEZERRA - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 26,
+"cargo": 3,
+"mesa_diretora": 5
+},
+{
+"id": 81,
+"__str__": "ENGENHEIRO CELSO SILVA - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 24,
+"cargo": 5,
+"mesa_diretora": 5
+},
+{
+"id": 82,
+"__str__": "MAZÉH SILVA - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 28,
+"cargo": 7,
+"mesa_diretora": 5
+},
+{
+"id": 83,
+"__str__": "FLÁVIO NEGAÇÃO - TESOUREIRO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 21,
+"cargo": 11,
+"mesa_diretora": 5
+},
+{
+"id": 84,
+"__str__": "ZÉ EDUARDO TORRES - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 4,
+"cargo": 3,
+"mesa_diretora": 1
+},
+{
+"id": 85,
+"__str__": "ALENCAR BICICLETAS - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 8,
+"cargo": 5,
+"mesa_diretora": 1
+},
+{
+"id": 86,
+"__str__": "WAGNER BARONE - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 6,
+"cargo": 7,
+"mesa_diretora": 1
+},
+{
+"id": 87,
+"__str__": "ELIAS PEREIRA - TESOUREIRO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 13,
+"cargo": 11,
+"mesa_diretora": 1
+},
+{
+"id": 88,
+"__str__": "ZÉ EDUARDO TORRES - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 4,
+"cargo": 3,
+"mesa_diretora": 2
+},
+{
+"id": 89,
+"__str__": "ALENCAR BICICLETAS - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 8,
+"cargo": 5,
+"mesa_diretora": 2
+},
+{
+"id": 90,
+"__str__": "WAGNER BARONE - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 6,
+"cargo": 7,
+"mesa_diretora": 2
+},
+{
+"id": 91,
+"__str__": "ELIAS PEREIRA - TESOUREIRO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 13,
+"cargo": 11,
+"mesa_diretora": 2
+},
+{
+"id": 92,
+"__str__": "WAGNER BARONE - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 6,
+"cargo": 3,
+"mesa_diretora": 3
+},
+{
+"id": 93,
+"__str__": "CLAUDIO HENRIQUE - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 3,
+"cargo": 5,
+"mesa_diretora": 3
+},
+{
+"id": 94,
+"__str__": "DONA ELZA DA COLONIA - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 7,
+"cargo": 7,
+"mesa_diretora": 3
+},
+{
+"id": 95,
+"__str__": "PROFESSOR DOMINGOS - TESOUREIRO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 10,
+"cargo": 11,
+"mesa_diretora": 3
+},
+{
+"id": 96,
+"__str__": "WAGNER BARONE - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 6,
+"cargo": 3,
+"mesa_diretora": 4
+},
+{
+"id": 97,
+"__str__": "CLAUDIO HENRIQUE - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 3,
+"cargo": 5,
+"mesa_diretora": 4
+},
+{
+"id": 98,
+"__str__": "DONA ELZA DA COLONIA - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 7,
+"cargo": 7,
+"mesa_diretora": 4
+},
+{
+"id": 99,
+"__str__": "PROFESSOR DOMINGOS - TESOUREIRO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 10,
+"cargo": 11,
+"mesa_diretora": 4
+},
+{
+"id": 103,
+"__str__": "LUIZ LANDIM - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 22,
+"cargo": 1,
+"mesa_diretora": 7
+},
+{
+"id": 104,
+"__str__": "PASTOR JÚNIOR - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 27,
+"cargo": 3,
+"mesa_diretora": 7
+},
+{
+"id": 105,
+"__str__": "MARCOS RIBEIRO - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 20,
+"cargo": 5,
+"mesa_diretora": 7
+},
+{
+"id": 106,
+"__str__": "LACERDA DO AKI - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 29,
+"cargo": 7,
+"mesa_diretora": 7
+},
+{
+"id": 107,
+"__str__": "MANGA ROSA - 3° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 25,
+"cargo": 9,
+"mesa_diretora": 7
+},
+{
+"id": 108,
+"__str__": "LUIZ LANDIM - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 22,
+"cargo": 1,
+"mesa_diretora": 8
+},
+{
+"id": 109,
+"__str__": "PASTOR JÚNIOR - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 27,
+"cargo": 3,
+"mesa_diretora": 8
+},
+{
+"id": 110,
+"__str__": "MARCOS RIBEIRO - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 20,
+"cargo": 5,
+"mesa_diretora": 8
+},
+{
+"id": 111,
+"__str__": "LACERDA DO AKI - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 29,
+"cargo": 7,
+"mesa_diretora": 8
+},
+{
+"id": 112,
+"__str__": "MANGA ROSA - 3° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 25,
+"cargo": 9,
+"mesa_diretora": 8
+},
+{
+"id": 113,
+"__str__": "VALDENÍRIA - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 2,
+"cargo": 7,
+"mesa_diretora": 6
+},
+{
+"id": 114,
+"__str__": "FLÁVIO NEGAÇÃO - 3° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 21,
+"cargo": 9,
+"mesa_diretora": 6
+},
+{
+"id": 115,
+"__str__": "MAZÉH SILVA - EX-MEMBRO DA MESA DIRETORA",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 28,
+"cargo": 16,
+"mesa_diretora": 6
+},
+{
+"id": 116,
+"__str__": "PASTOR JÚNIOR - EX-MEMBRO SUBSTITUTO",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 27,
+"cargo": 18,
+"mesa_diretora": 6
+},
+{
+"id": 117,
+"__str__": "FLÁVIO NEGAÇÃO - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 21,
+"cargo": 1,
+"mesa_diretora": 9
+},
+{
+"id": 131,
+"__str__": "ISAÍAS BEZERRA - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 26,
+"cargo": 3,
+"mesa_diretora": 9
+},
+{
+"id": 132,
+"__str__": "ELIS ENFERMEIRA - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 46,
+"cargo": 5,
+"mesa_diretora": 9
+},
+{
+"id": 133,
+"__str__": "PASTORELLO - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 1,
+"cargo": 7,
+"mesa_diretora": 9
+},
+{
+"id": 134,
+"__str__": "PACHECO CABELEIREIRO - 3° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 30,
+"cargo": 9,
+"mesa_diretora": 9
+},
+{
+"id": 135,
+"__str__": "FLÁVIO NEGAÇÃO - PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 21,
+"cargo": 1,
+"mesa_diretora": 10
+},
+{
+"id": 138,
+"__str__": "ISAÍAS BEZERRA - VICE-PRESIDENTE",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 26,
+"cargo": 3,
+"mesa_diretora": 10
+},
+{
+"id": 139,
+"__str__": "ELIS ENFERMEIRA - 1° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 46,
+"cargo": 5,
+"mesa_diretora": 10
+},
+{
+"id": 140,
+"__str__": "PASTORELLO - 2° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 1,
+"cargo": 7,
+"mesa_diretora": 10
+},
+{
+"id": 141,
+"__str__": "PACHECO CABELEIREIRO - 3° SECRETÁRIO(A)",
+"link_detail_backend": "",
+"metadata": {},
+"parlamentar": 30,
+"cargo": 9,
+"mesa_diretora": 10
+}
+]

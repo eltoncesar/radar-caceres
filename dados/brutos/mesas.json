@@ -1,0 +1,102 @@
+[
+{
+"id": 1,
+"__str__": "Mesa da 1º (2017 - 2017)  sessao da 18ª (2017 - 2020)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": "2017-01-01",
+"data_fim": "2017-12-17",
+"descricao": "",
+"sessao_legislativa": 1
+},
+{
+"id": 2,
+"__str__": "Mesa da 2º (2018 - 2018)  sessao da 18ª (2017 - 2020)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": "2018-02-01",
+"data_fim": "2018-12-23",
+"descricao": "",
+"sessao_legislativa": 2
+},
+{
+"id": 3,
+"__str__": "Mesa da 3º (2019 - 2019)  sessao da 18ª (2017 - 2020)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": "2019-02-01",
+"data_fim": "2019-12-23",
+"descricao": "",
+"sessao_legislativa": 5
+},
+{
+"id": 4,
+"__str__": "Mesa da 4º (2020 - 2020)  sessao da 18ª (2017 - 2020)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": "2020-02-01",
+"data_fim": "2020-12-23",
+"descricao": "",
+"sessao_legislativa": 6
+},
+{
+"id": 5,
+"__str__": "Mesa da 1º (2021 - 2021)  sessao da 19ª (2021 - 2024)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": "2021-01-01",
+"data_fim": "2021-12-23",
+"descricao": "",
+"sessao_legislativa": 7
+},
+{
+"id": 6,
+"__str__": "Mesa da 2º (2022 - 2022)  sessao da 19ª (2021 - 2024)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": null,
+"data_fim": null,
+"descricao": "",
+"sessao_legislativa": 8
+},
+{
+"id": 7,
+"__str__": "Mesa da 3º (2023 - 2023)  sessao da 19ª (2021 - 2024)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": null,
+"data_fim": null,
+"descricao": "",
+"sessao_legislativa": 9
+},
+{
+"id": 8,
+"__str__": "Mesa da 4º (2024 - 2024)  sessao da 19ª (2021 - 2024)  Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": null,
+"data_fim": null,
+"descricao": "",
+"sessao_legislativa": 10
+},
+{
+"id": 9,
+"__str__": "Mesa da 1º (2025 - 2025)  sessao da 20ª (2025 - 2028) (Atual) Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": null,
+"data_fim": null,
+"descricao": "",
+"sessao_legislativa": 11
+},
+{
+"id": 10,
+"__str__": "Mesa da 2º (2026 - 2026) (Atual) sessao da 20ª (2025 - 2028) (Atual) Legislatura",
+"link_detail_backend": "",
+"metadata": {},
+"data_inicio": null,
+"data_fim": null,
+"descricao": "",
+"sessao_legislativa": 12
+}
+]

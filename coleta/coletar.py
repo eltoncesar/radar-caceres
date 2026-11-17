@@ -42,6 +42,9 @@ CONJUNTOS = {
     "justificativas_ausencia": "sessao/justificativaausencia/",
     "votacoes": "sessao/registrovotacao/",
     "votos_nominais": "sessao/votoparlamentar/",
+    "mesas": "parlamentares/mesadiretora/",
+    "composicao_mesa": "parlamentares/composicaomesa/",
+    "cargos_mesa": "parlamentares/cargomesa/",
 }
 
 

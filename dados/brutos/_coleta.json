@@ -18,6 +18,9 @@
   "presenca_ordem_dia": 7167,
   "justificativas_ausencia": 78,
   "votacoes": 9380,
-  "votos_nominais": 352
+  "votos_nominais": 352,
+  "mesas": 10,
+  "composicao_mesa": 52,
+  "cargos_mesa": 20
  }
 }

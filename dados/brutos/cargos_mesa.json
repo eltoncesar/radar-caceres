@@ -1,0 +1,182 @@
+[
+{
+"id": 1,
+"__str__": "PRESIDENTE",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/1",
+"metadata": {},
+"descricao": "PRESIDENTE",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 2,
+"__str__": "PRESIDENTE EM EXERCÍCIO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/2",
+"metadata": {},
+"descricao": "PRESIDENTE EM EXERCÍCIO",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 3,
+"__str__": "VICE-PRESIDENTE",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/3",
+"metadata": {},
+"descricao": "VICE-PRESIDENTE",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 4,
+"__str__": "VICE-PRESIDENTE EM EXERCÍCIO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/4",
+"metadata": {},
+"descricao": "VICE-PRESIDENTE EM EXERCÍCIO",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 5,
+"__str__": "1° SECRETÁRIO(A)",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/5",
+"metadata": {},
+"descricao": "1° SECRETÁRIO(A)",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 6,
+"__str__": "1° SECRETÁRIO(A) EM EXERCÍCIO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/6",
+"metadata": {},
+"descricao": "1° SECRETÁRIO(A) EM EXERCÍCIO",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 7,
+"__str__": "2° SECRETÁRIO(A)",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/7",
+"metadata": {},
+"descricao": "2° SECRETÁRIO(A)",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 8,
+"__str__": "2° SECRETÁRIO(A) EM EXERCÍCIO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/8",
+"metadata": {},
+"descricao": "2° SECRETÁRIO(A) EM EXERCÍCIO",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 9,
+"__str__": "3° SECRETÁRIO(A)",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/9",
+"metadata": {},
+"descricao": "3° SECRETÁRIO(A)",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 10,
+"__str__": "3° SECRETÁRIO(A) EM EXERCÍCIO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/10",
+"metadata": {},
+"descricao": "3° SECRETÁRIO(A) EM EXERCÍCIO",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 11,
+"__str__": "TESOUREIRO(A)",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/11",
+"metadata": {},
+"descricao": "TESOUREIRO(A)",
+"unico": true,
+"id_ordenacao": null
+},
+{
+"id": 12,
+"__str__": "MEMBRO EM LICENÇA",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/12",
+"metadata": {},
+"descricao": "MEMBRO EM LICENÇA",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 13,
+"__str__": "MEMBRO EM LICENÇA",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/13",
+"metadata": {},
+"descricao": "MEMBRO EM LICENÇA",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 14,
+"__str__": "MEMBRO EM AFASTAMENTO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/14",
+"metadata": {},
+"descricao": "MEMBRO EM AFASTAMENTO",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 15,
+"__str__": "MEMBRO EM AFASTAMENTO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/15",
+"metadata": {},
+"descricao": "MEMBRO EM AFASTAMENTO",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 16,
+"__str__": "EX-MEMBRO DA MESA DIRETORA",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/16",
+"metadata": {},
+"descricao": "EX-MEMBRO DA MESA DIRETORA",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 17,
+"__str__": "EX-MEMBRO DA MESA DIRETORA",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/17",
+"metadata": {},
+"descricao": "EX-MEMBRO DA MESA DIRETORA",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 18,
+"__str__": "EX-MEMBRO SUBSTITUTO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/18",
+"metadata": {},
+"descricao": "EX-MEMBRO SUBSTITUTO",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 19,
+"__str__": "EX-MEMBRO SUBSTITUTO",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/19",
+"metadata": {},
+"descricao": "EX-MEMBRO SUBSTITUTO",
+"unico": false,
+"id_ordenacao": null
+},
+{
+"id": 20,
+"__str__": "SECRETÁRIO(A) AD HOC",
+"link_detail_backend": "/sistema/mesa-diretora/cargo-mesa/20",
+"metadata": {},
+"descricao": "SECRETÁRIO(A) AD HOC",
+"unico": true,
+"id_ordenacao": null
+}
+]

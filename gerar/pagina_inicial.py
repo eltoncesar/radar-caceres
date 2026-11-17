@@ -12,6 +12,16 @@ SIGLA = {
     "Proposta de Emenda à Lei Orgânica": "PELO", "Emenda Parlamentar": "EMD",
 }
 NOME_ASSUNTO = {c: n for c, n, _ in ASSUNTOS}
+# Ícones Material Symbols para cada assunto e grupo.
+ICONE_ASSUNTO = {"iluminacao": "lightbulb", "asfalto": "add_road", "estrada": "landscape", "limpeza": "cleaning_services",
+                 "agua": "water_drop", "drenagem": "flood", "transito": "traffic", "saude": "local_hospital",
+                 "educacao": "school", "lazer": "park", "arvores": "forest", "transporte": "directions_bus"}
+ICONE_GRUPO = {"melhoria": "construction", "cobranca": "contact_support", "homenagem": "celebration",
+               "lei": "gavel", "outros": "more_horiz"}
+
+
+def icone(nome, extra=""):
+    return f'<span class="ms{(" " + extra) if extra else ""}" aria-hidden="true">{nome}</span>'
 MIN_REPETE = 3
 
 
@@ -55,7 +65,7 @@ def repetidos(lista, rotulos_rua, rotulos_bairro):
         autores = {a for p in ps for a in p["a"]}
         saida.append({
             "rua": rotulos_rua[r], "bairro": rotulos_bairro[bairro[0][0]] if bairro else "",
-            "assunto": NOME_ASSUNTO[s], "vezes": len(ps), "autores": len(autores),
+            "assunto": NOME_ASSUNTO[s], "icone": ICONE_ASSUNTO[s], "vezes": len(ps), "autores": len(autores),
             "de": datas[0] if datas else "", "ate": datas[-1] if datas else "",
         })
     saida.sort(key=lambda x: (-x["vezes"], -x["autores"], x["rua"]))
@@ -68,12 +78,19 @@ def dados_json(vereadores, coleta):
         "coleta": coleta,
         "grupos": {g: GRUPOS[g][0] for g in ORDEM_GRUPOS},
         "assuntos": NOME_ASSUNTO,
+        "icones": {**ICONE_ASSUNTO, **{"g_" + g: i for g, i in ICONE_GRUPO.items()}},
         "ruas": rr,
         "bairros": rb,
         "vereadores": {v["id"]: {"nome": v["nome"], "partido": v["partido"], "slug": v["slug"],
                                  "foto": v["foto"]} for v in vereadores},
         "propostas": lista,
     }
+
+
+def nome_proprio(nome):
+    """'ELIS FERNANDA DE MELO SILVA' -> 'Elis Fernanda de Melo Silva'."""
+    pequenas = {"da", "de", "do", "das", "dos", "e"}
+    return " ".join(p if p in pequenas else p.capitalize() for p in (nome or "").lower().split())
 
 
 def _num(n):
@@ -102,33 +119,32 @@ def gerar(vereadores, coleta_br, esc, foto, periodo, sapl, anos, exemplos_lugar)
         for g, rotulo in (("melhoria", "pedidos de melhoria nos bairros"), ("cobranca", "perguntas e cobranças"),
                           ("homenagem", "homenagens"), ("lei", "projetos de lei e regras")))
     topo = f"""<section class="hero entra">
-<p class="selo"><span class="ponto" aria-hidden="true"></span>Dados oficiais · conferidos em {coleta_br}</p>
+<p class="selo">Dados oficiais · última conferência em {coleta_br}</p>
 <h1 class="tit-hero">O que cada vereador de Cáceres <em>fez</em> desde a posse.</h1>
 <p class="lead">Tudo que os vereadores apresentaram na Câmara em {" e ".join(anos)}, organizado para qualquer
 pessoa entender. Cada número leva ao documento oficial.</p>
 <div class="radar-total">
-<div class="radar" aria-hidden="true"><span class="anel a1"></span><span class="anel a2"></span><span class="anel a3"></span><span class="feixe"></span><span class="eco e1"></span><span class="eco e2"></span><span class="eco e3"></span></div>
+<div class="radar" aria-hidden="true"><span class="anel a1"></span><span class="anel a2"></span><span class="anel a3"></span><span class="feixe"></span><span class="eco e1"></span><span class="eco e2"></span></div>
 <div class="radar-num"><b data-conta="{total}">{_num(total)}</b><span>propostas apresentadas pelos vereadores até agora</span></div>
 </div>
 <div class="contadores">{contadores}</div>
-<p class="nota">O robô confere o sistema da Câmara toda madrugada.</p>
+<p class="nota">O robô volta ao sistema da Câmara toda madrugada. <a href="#fontes">De onde vêm os números</a></p>
 </section>"""
 
     # ---------- Busca ----------
-    chips = "".join(f'<button type="button" class="chip" data-q="{esc(x)}">{esc(x)}</button>' for x in exemplos_lugar)
+    chips = "".join(f'<button type="button" class="chip" data-q="{esc(x)}">{icone("location_on")}{esc(x)}</button>' for x in exemplos_lugar)
     curtos = {"melhoria": "Pedidos", "cobranca": "Cobranças", "homenagem": "Homenagens", "lei": "Leis", "outros": "Outros"}
-    abas = '<button type="button" role="tab" class="aba g-todos" data-aba="" aria-selected="true">Todos</button>' + "".join(
-        f'<button type="button" role="tab" class="aba g-{g}" data-aba="{g}" aria-selected="false">{curtos[g]}</button>'
+    abas = '<button type="button" class="aba" data-aba="" aria-pressed="true">Todos</button>' + "".join(
+        f'<button type="button" class="aba" data-aba="{g}" aria-pressed="false">{curtos[g]}</button>'
         for g in ORDEM_GRUPOS[:4])
     busca = f"""<section id="busca" class="secao entra">
-<p class="sobretitulo"><span>01</span>Comece por aqui</p>
-<h2>O que pediram para o seu bairro?</h2>
+<h2>O que pediram pelo seu bairro?</h2>
 <p class="sub">Digite o bairro, a rua ou a comunidade. Sem nada digitado, você vê a cidade inteira.</p>
 <label class="campo-busca"><span class="sr">Bairro, rua ou comunidade</span>
-<svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+{icone("search")}
 <input id="q" type="search" autocomplete="off" placeholder="Digite seu bairro ou sua rua"></label>
-<div class="chips" role="list">{chips}</div>
-<div class="abas" role="tablist" aria-label="Tipo de proposta">{abas}</div>
+<div class="chips">{chips}</div>
+<div class="abas" role="group" aria-label="Filtrar por tipo de proposta">{abas}</div>
 <div id="painel" class="painel" aria-live="polite"><p class="sub">Carregando as propostas…</p></div>
 <noscript><p>A busca precisa de JavaScript. Você ainda pode ver cada vereador mais abaixo.</p></noscript>
 </section>"""
@@ -139,17 +155,16 @@ pessoa entender. Cada número leva ao documento oficial.</p>
         periodo_txt = (f'de {mes_ano(x["de"])} a {mes_ano(x["ate"])}' if mes_ano(x["de"]) != mes_ano(x["ate"])
                        else f'em {mes_ano(x["de"])}')
         return (f'<li class="rep{" oculto" if escondido else ""}"><div class="vezes"><b>{x["vezes"]}</b><span>vezes</span></div>'
-                f'<div><p class="rua">{esc(x["rua"])}</p>{lugar}<span class="tag">{esc(x["assunto"])}</span>'
+                f'<div><p class="rua">{esc(x["rua"])}</p>{lugar}<span class="tag">{icone(x["icone"])}{esc(x["assunto"])}</span>'
                 f'<p class="meta">{x["autores"]} vereador{"es" if x["autores"] > 1 else ""} pediram · {periodo_txt}</p>'
                 f'<button type="button" class="link" data-q="{esc(x["rua"])}">Ver os pedidos →</button></div></li>')
     reps_html = "".join(cartao_rep(x, i >= 6) for i, x in enumerate(reps))
     mais_reps = (f'<button type="button" class="botao" id="mais-reps">Mostrar mais ruas ({len(reps) - 6} na fila)</button>'
                  if len(reps) > 6 else "")
     repete = f"""<section class="secao entra">
-<p class="sobretitulo"><span>02</span>Cruzamento</p>
 <h2>O problema que não some</h2>
-<p class="sub">Quando o mesmo assunto é pedido várias vezes para a mesma rua, pode ser sinal de que o problema
-continua lá. O site da Câmara mostra cada pedido sozinho; aqui eles são cruzados.</p>
+<p class="sub">Quando o mesmo assunto volta várias vezes para a mesma rua, pode ser sinal de que o problema
+continua lá. O site da Câmara mostra cada pedido sozinho; aqui eles são cruzados um por um.</p>
 <ol class="reps">{reps_html}</ol>{mais_reps}
 <p class="aviso-curto">Pedido repetido não prova que a Prefeitura ignorou: pode ser outro trecho da mesma rua,
 um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma coisa. Abra os pedidos e leia.</p>
@@ -157,15 +172,14 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
 
     # ---------- Homenagem ou trabalho ----------
     cartoes_grupo = "".join(
-        f'<li class="grupo g-{g}"><b>{_num(cont[g])}</b><p class="nome-grupo">{esc(GRUPOS[g][0])}</p>'
+        f'<li class="grupo g-{g}">{icone(ICONE_GRUPO[g], "ic-grupo")}<b>{_num(cont[g])}</b><p class="nome-grupo">{esc(GRUPOS[g][0])}</p>'
         f'<p class="sub">{esc(GRUPOS[g][1])}</p>'
         f'<button type="button" class="link" data-g="{g}">Ver todas →</button></li>'
         for g in ORDEM_GRUPOS if cont[g])
     trabalho = f"""<section class="secao entra">
-<p class="sobretitulo"><span>03</span>O trabalho da Câmara</p>
 <h2>Homenagem ou trabalho?</h2>
-<p class="sub">São {_num(total)} propostas. Separamos em grupos com a mesma regra para todos.
-<a href="sobre.html#regra">Veja como separamos</a>.</p>
+<p class="sub">São {_num(total)} propostas até agora. Toque em um grupo para ler cada uma.
+A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a>.</p>
 <ul class="grupos">{cartoes_grupo}</ul>
 </section>"""
 
@@ -177,22 +191,23 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
         c = collections.Counter(p["grupo"] for p in v["propostas"])
         maior = max([c[g] for g in ORDEM_GRUPOS] + [1])
         linhas = "".join(
-            f'<li class="g-{g}"><span>{esc(GRUPOS[g][0])}</span><b>{c[g]}</b>'
-            f'<i style="--w:{100 * c[g] / maior:.0f}%"></i></li>' for g in ORDEM_GRUPOS[:4])
+            f'<li class="g-{g}"><a href="vereador/{v["slug"]}.html#{g}"><span>{esc(GRUPOS[g][0])}</span><b>{c[g]}</b>'
+            f'<i style="--w:{100 * c[g] / maior:.0f}%"></i></a></li>' for g in ORDEM_GRUPOS if c[g] or g != "outros")
         dados = " ".join(f'data-{g}="{c[g]}"' for g in ORDEM_GRUPOS)
         return (f'<li class="cracha" data-nome="{esc(v["nome"].lower())}" data-partido="{esc(v["partido"])}" '
                 f'data-total="{len(v["propostas"])}" data-titular="{1 if v["titular"] else 0}" {dados}>'
-                f'<a href="vereador/{v["slug"]}.html">'
-                f'<div class="cab">{foto(v, "")}<div><p class="nome">{esc(v["nome"])}</p>'
-                f'<p class="sub">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p></div></div>'
-                f'<p class="total"><b>{len(v["propostas"])}</b> propostas</p><ul class="barras">{linhas}</ul>'
-                f'<span class="link">Ver cada proposta →</span></a></li>')
+                f'<div class="cab">{foto(v, "")}<div><h3 class="nome"><a href="vereador/{v["slug"]}.html">{esc(v["nome"])}</a></h3>'
+                f'<p class="sub">{esc(nome_proprio(v["nome_completo"]))}</p>'
+                f'<p class="partido">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p>'
+                f'{f"""<p class="cargo">{esc(v["cargo"])}</p>""" if v["cargo"] else ""}</div></div>'
+                f'<p class="total"><b>{len(v["propostas"])}</b> propostas até agora</p>'
+                f'<p class="rot">O que propôs</p><ul class="barras">{linhas}</ul>'
+                f'<a class="ficha" href="{sapl}/parlamentar/{v["id"]}">Ficha oficial na Câmara{icone("open_in_new")}</a></li>')
     crachas = "".join(cracha(v) for v in vereadores)
     titulares = sum(v["titular"] for v in vereadores)
     vereadores_html = f"""<section id="vereadores" class="secao entra">
-<p class="sobretitulo"><span>04</span>Um por um</p>
-<h2>Os {titulares} vereadores e os suplentes que assumiram</h2>
-<p class="sub">Toque no crachá para ver cada proposta, com link para o documento oficial.</p>
+<h2>Os {titulares} vereadores</h2>
+<p class="sub">E os {len(vereadores) - titulares} suplentes que já assumiram uma vaga. Toque nos números do crachá para ver cada proposta.</p>
 <div class="filtros">
 <label>Buscar por nome<input id="f-nome" type="search" autocomplete="off"></label>
 <label>Partido<select id="f-partido"><option value="">Todos</option>{opcoes_partido}</select></label>
@@ -203,6 +218,26 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
 </div>
 <p class="sub" id="f-conta"></p>
 <ul class="crachas" id="crachas">{crachas}</ul>
+</section>"""
+
+    fontes = f"""<section id="fontes" class="secao entra">
+<h2>De onde vêm os números</h2>
+<p class="sub">Tudo sai do sistema da própria Câmara Municipal de Cáceres, o SAPL. Nada é digitado à mão.</p>
+<dl class="fontes">
+<div><dt>Propostas</dt><dd>Cada indicação, requerimento, moção e projeto, com seus autores, vem da consulta pública do SAPL.
+Em 17/11/2026 conferimos o total de cada um dos 21 vereadores e 45 propostas sorteadas, uma a uma: todos batem.</dd></div>
+<div><dt>Grupos e assuntos</dt><dd>Uma regra automática, igual para todos, separa as propostas pelo tipo oficial e por palavras do resumo.
+Pode errar em casos raros. <a href="sobre.html#regra">Veja a regra</a>.</dd></div>
+<div><dt>Bairros e ruas</dt><dd>Lidos do resumo oficial de cada pedido. Se o resumo não cita o lugar, o pedido não aparece na busca.</dd></div>
+<div><dt>Presença</dt><dd>Ainda não mostramos. A lista de presença do SAPL bate com as atas, mas as licenças dos vereadores só aparecem
+nas Portarias da Câmara. Licença não é falta, então vamos cruzar uma por uma antes de publicar.</dd></div>
+<div><dt>Votos</dt><dd>A Câmara não registra o voto de cada vereador desde agosto de 2020. Só aparece o resultado geral,
+como “aprovado por unanimidade”. Por isso não há como mostrar quem votou contra.</dd></div>
+<div><dt>Salário</dt><dd>Não mostramos estimativas. Só entra no site o que tiver fonte oficial.</dd></div>
+</dl>
+<p class="nota">O código e os dados estão abertos no <a href="https://github.com/eltoncesar/radar-caceres">GitHub</a>,
+com o <a href="https://github.com/eltoncesar/radar-caceres/blob/main/CONFERENCIA.md">relatório de conferência</a>.
+Achou um erro? <a href="https://github.com/eltoncesar/radar-caceres/issues">Avise aqui</a>.</p>
 </section>"""
 
     avisos = """<section class="secao avisos">
@@ -232,9 +267,10 @@ function avatar(id){{var v=D.vereadores[id];return v&&v.foto?'<img src="fotos/'+
 function cartao(p){{
   var tags='<span class="tag g-'+p.g+'">'+esc(D.grupos[p.g])+'</span>'+p.s.slice(0,2).map(function(s){{return '<span class="tag">'+esc(D.assuntos[s])+'</span>';}}).join("");
   var autores=p.a.slice(0,3).map(function(a){{var v=D.vereadores[a];return '<a class="autor" href="vereador/'+v.slug+'.html">'+avatar(a)+esc(v.nome)+'</a>';}}).join("")+(p.a.length>3?'<span class="mais-aut">+'+(p.a.length-3)+'</span>':'');
-  return '<li class="prop g-'+p.g+'"><p class="ementa" tabindex="0">'+esc(p.e||"Sem resumo no sistema oficial.")+'</p>'
+  var ic=p.s.length?D.icones[p.s[0]]:D.icones["g_"+p.g];
+  return '<li class="prop"><span class="ms ic-prop g-'+p.g+'" aria-hidden="true">'+ic+'</span><div class="prop-corpo"><p class="ementa" tabindex="0" title="Toque para ler tudo">'+esc(p.e||"Sem resumo no sistema oficial.")+'</p>'
     +'<p class="meta">'+tags+'<span>'+data(p.d)+' · '+esc(p.t)+' '+p.n+'</span></p>'
-    +'<div class="autores">'+autores+'</div><a class="link" href="'+SAPL+'/materia/'+p.i+'">Abrir na Câmara ↗</a></li>';
+    +'<div class="autores">'+autores+'</div><a class="link" href="'+SAPL+'/materia/'+p.i+'">Abrir na Câmara<span class="ms" aria-hidden="true">open_in_new</span><span class="sr"> (abre o site oficial)</span></a></div></li>';
 }}
 function barras(titulo,itens,max){{
   if(!itens.length)return"";
@@ -246,7 +282,7 @@ function desenhar(){{
   var porVer={{}},porAss={{}},porBairro={{}};
   achados.forEach(function(p){{p.a.forEach(function(a){{porVer[a]=(porVer[a]||0)+1;}});p.s.forEach(function(s){{porAss[s]=(porAss[s]||0)+1;}});p.b.forEach(function(b){{porBairro[b]=(porBairro[b]||0)+1;}});}});
   var onde=qv?'que citam <b>“'+esc(qv)+'”</b>':'para <b>a cidade inteira</b>';
-  var grupo='';document.querySelectorAll(".aba").forEach(function(a){{a.setAttribute("aria-selected",a.getAttribute("data-aba")===est.g?"true":"false");}});
+  var grupo='';document.querySelectorAll(".aba").forEach(function(a){{a.setAttribute("aria-pressed",a.getAttribute("data-aba")===est.g?"true":"false");}});
   if(!achados.length){{out.innerHTML=grupo+'<p class="vazio">Nenhuma proposta '+(qv?'cita “'+esc(qv)+'”':'neste grupo')+'. Tente outro jeito de escrever o nome.</p>';ligar();return;}}
   var h=grupo+'<p class="grande"><b>'+num(achados.length)+'</b></p><p class="sub-grande">propostas '+onde+' até agora</p>';
   var tv=ranking(porVer,5);
@@ -297,7 +333,7 @@ function crachas(){{
 ["f-nome","f-partido","f-ordem"].forEach(function(id){{$(id).addEventListener("input",crachas);}});crachas();
 }})();
 </script>"""
-    return topo + busca + repete + trabalho + vereadores_html + avisos + script
+    return topo + busca + repete + trabalho + vereadores_html + fontes + script
 
 
 def escrever_dados(caminho, vereadores, coleta):
