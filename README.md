@@ -24,6 +24,14 @@ Para gerar o site na pasta `site/`:
 python3 gerar/gerar_site.py
 ```
 
+## Grupos de propostas
+
+As propostas são separadas em cinco grupos: pedidos de melhoria, perguntas e
+cobranças, homenagens, projetos de lei e regras, e outros. A regra está em
+`gerar/classificar.py`, é a mesma para todos os vereadores e é explicada no site,
+na página "Como funciona". Em nov/2026 só 5 das 2.580 propostas de vereadores
+caíram em "Outros".
+
 ## Conferência
 
 Em 17/11/2026 o total de propostas de cada um dos 21 vereadores no site foi

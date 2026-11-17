@@ -9,7 +9,11 @@ import json
 import os
 import re
 import shutil
+import sys
 import unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS, REGRA_EXPLICADA, classificar  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRUTOS = os.path.join(RAIZ, "dados", "brutos")
@@ -31,7 +35,6 @@ EXPLICA_TIPO = {
     "Proposta de Emenda à Lei Orgânica": "Mudança na Lei Orgânica, que funciona como a Constituição do município.",
     "Emenda Parlamentar": "Proposta de mudança no texto de outro projeto.",
 }
-ORDEM_TIPOS = list(EXPLICA_TIPO)
 
 
 def carregar(nome):
@@ -83,6 +86,7 @@ def montar_dados():
             "data": m["data_apresentacao"],
             "ementa": limpar(m["ementa"]),
             "primeiro_autor": a["primeiro_autor"],
+            "grupo": classificar(tipos[m["tipo"]], m["ementa"]),
         })
 
     vereadores = []
@@ -166,10 +170,13 @@ Só vamos publicar quando pudermos conferir cada número.</aside>
 def gerar_index(vereadores, coleta):
     def cartao(v):
         total = len(v["propostas"])
+        cont = collections.Counter(p["grupo"] for p in v["propostas"])
+        partes = " · ".join(f"{cont[g]} {GRUPOS[g][0].lower()}" for g in ORDEM_GRUPOS[:4] if cont[g])
         return (f'<li><a class="cartao" href="vereador/{v["slug"]}.html">{foto(v, "")}'
                 f'<span class="info"><span class="nome">{esc(v["nome"])}</span>'
                 f'<span class="sub">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</span>'
-                f'<span class="num"><b>{total}</b> propostas</span></span></a></li>')
+                f'<span class="num"><b>{total}</b> propostas</span>'
+                f'<span class="sub">{esc(partes)}</span></span></a></li>')
 
     titulares = [v for v in vereadores if v["titular"]]
     suplentes = [v for v in vereadores if not v["titular"]]
@@ -182,32 +189,34 @@ Toque no nome para ver cada proposta, com link para o documento oficial.</p>
 <p>Ocupam a cadeira quando um titular se afasta.</p>
 <ul class="lista">{"".join(cartao(v) for v in suplentes)}</ul>
 <p class="nota">O número soma todas as propostas em que o vereador aparece como autor,
-inclusive as assinadas junto com outros. A mesma regra vale para todos.
-<a href="sobre.html">Veja como contamos</a>.</p>
+inclusive as assinadas junto com outros. As propostas são separadas em pedidos de melhoria,
+perguntas e cobranças, homenagens e projetos de lei, com a mesma regra para todos.
+<a href="sobre.html">Veja como separamos</a>.</p>
 {AVISO_VOTO}{AVISO_PRESENCA}"""
     return pagina("Radar Cáceres — o que fazem os vereadores",
                   "Propostas de cada vereador de Cáceres-MT, com dados oficiais da Câmara.", corpo, "", coleta)
 
 
 def gerar_vereador(v, coleta):
-    por_tipo = collections.defaultdict(list)
+    por_grupo = collections.defaultdict(list)
     for p in v["propostas"]:
-        por_tipo[p["tipo"]].append(p)
-    tipos = sorted(por_tipo, key=lambda t: (ORDEM_TIPOS.index(t) if t in ORDEM_TIPOS else 99, t))
+        por_grupo[p["grupo"]].append(p)
+    grupos = [g for g in ORDEM_GRUPOS if por_grupo[g]]
     total = len(v["propostas"])
     principal = sum(p["primeiro_autor"] for p in v["propostas"])
 
-    resumo = "".join(f'<li><a href="#{slug(t)}"><b>{len(por_tipo[t])}</b> {esc(t)}</a></li>' for t in tipos)
+    resumo = "".join(
+        f'<li><a href="#{g}"><b>{len(por_grupo[g])}</b><span>{esc(GRUPOS[g][0])}</span></a></li>' for g in grupos)
     blocos = []
-    for t in tipos:
+    for g in grupos:
         itens = "".join(
-            f'<li><a href="{SAPL}/materia/{p["id"]}">{esc(t)} nº {p["numero"]}/{p["ano"]}</a>'
+            f'<li><a href="{SAPL}/materia/{p["id"]}">{esc(p["tipo"])} nº {p["numero"]}/{p["ano"]}</a>'
             f'<span class="data">{data_br(p["data"])}{"" if p["primeiro_autor"] else " · coautor"}</span>'
             f'<p>{esc(p["ementa"]) or "<em>Sem resumo no sistema oficial.</em>"}</p></li>'
-            for p in por_tipo[t])
-        explica = EXPLICA_TIPO.get(t, "")
-        blocos.append(f'<details id="{slug(t)}"><summary>{esc(t)} <span class="contagem">{len(por_tipo[t])}</span></summary>'
-                      f'{f"<p class=explica>{esc(explica)}</p>" if explica else ""}<ol class="propostas">{itens}</ol></details>')
+            for p in por_grupo[g])
+        blocos.append(f'<details id="{g}"><summary>{esc(GRUPOS[g][0])} <span class="contagem">{len(por_grupo[g])}</span></summary>'
+                      f'<p class="explica">{esc(GRUPOS[g][1])} <a href="../sobre.html#regra">Como separamos</a>.</p>'
+                      f'<ol class="propostas">{itens}</ol></details>')
 
     contato = []
     if v["email"]:
@@ -223,7 +232,7 @@ def gerar_vereador(v, coleta):
 <p class="sub"><a href="{SAPL}/parlamentar/{v["id"]}">Ficha oficial na Câmara</a></p></div></div>
 <section class="destaque"><p><b>{total}</b> propostas em {" e ".join(ANOS)}</p>
 <p class="sub">{principal} como autor principal · {total - principal} assinadas junto com outros vereadores</p></section>
-{f'<ul class="resumo">{resumo}</ul>' if tipos else "<p>Nenhuma proposta registrada no período.</p>"}
+{f'<ul class="resumo">{resumo}</ul><p class="sub">Toque num grupo para ler proposta por proposta.</p>' if grupos else "<p>Nenhuma proposta registrada no período.</p>"}
 {"".join(blocos)}
 {AVISO_VOTO}
 <script>
@@ -236,6 +245,7 @@ addEventListener("hashchange",abrir);abrir();
 
 def gerar_sobre(coleta):
     tipos = "".join(f"<dt>{esc(t)}</dt><dd>{esc(e)}</dd>" for t, e in EXPLICA_TIPO.items())
+    regra = "".join(f"<dt>{esc(g)}</dt><dd>{esc(e)}</dd>" for g, e in REGRA_EXPLICADA)
     corpo = f"""<h1>Como funciona</h1>
 <p>O Radar Cáceres mostra o que está registrado no sistema oficial da Câmara Municipal,
 o <a href="{SAPL}">SAPL</a>. Não damos nota nem opinião: só organizamos o dado e
@@ -247,13 +257,19 @@ colocamos o link para a fonte.</p>
 separamos o que ele apresentou como autor principal e o que assinou junto.</li>
 <li>Quantidade não é qualidade. Uma lei pode valer mais do que cem pedidos, e o contrário também.</li>
 </ul>
+<h2 id="regra">Como separamos as propostas</h2>
+<p>A Câmara tem muitos tipos de documento. Para facilitar, separamos tudo em cinco grupos.
+A regra olha o tipo oficial da proposta e algumas palavras do resumo, e é a mesma para todos os vereadores:</p>
+<dl class="glossario">{regra}</dl>
+<p>Uma regra automática pode errar em casos raros. Se achar uma proposta no grupo errado,
+<a href="https://github.com/eltoncesar/radar-caceres/issues">avise</a>.</p>
 <h2>O que cada tipo de proposta quer dizer</h2>
 <dl class="glossario">{tipos}</dl>
 <h2>O que não mostramos, e por quê</h2>
 <ul>
 <li><b>Voto de cada vereador:</b> a Câmara não registra no sistema desde agosto de 2020.</li>
-<li><b>Presença:</b> há duas listas de presença por sessão que não batem entre si, e as licenças
-não aparecem no sistema. Só vamos mostrar depois de conferir.</li>
+<li><b>Presença:</b> as licenças dos vereadores não aparecem no sistema, então uma licença
+pareceria falta. Só vamos mostrar depois de conferir.</li>
 <li><b>Contatos pessoais:</b> mostramos só o e-mail institucional e o telefone do gabinete.</li>
 </ul>
 <h2>Achou um erro?</h2>
@@ -274,7 +290,7 @@ h1{font-size:1.6rem;line-height:1.2;margin:20px 0 8px}
 h2{font-size:1.2rem;margin:28px 0 8px}
 .lead{font-size:1.05rem;color:var(--fraco)}
 .lista{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-.cartao{display:flex;gap:12px;align-items:center;padding:12px;border:1px solid var(--linha);border-radius:12px;text-decoration:none;color:inherit;min-height:64px}
+.cartao{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--linha);border-radius:12px;text-decoration:none;color:inherit;min-height:64px}
 .cartao:hover,.cartao:focus{border-color:var(--link)}
 .foto{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none;background:var(--suave)}
 .foto.vazia{display:inline-block}
@@ -291,8 +307,9 @@ h2{font-size:1.2rem;margin:28px 0 8px}
 .perfil .foto{width:88px;height:88px;margin-top:12px}
 .destaque{background:var(--suave);border-radius:12px;padding:12px 16px;margin:16px 0}
 .destaque p{margin:0}.destaque b{font-size:1.6rem}
-.resumo{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.resumo a{display:inline-block;padding:6px 12px;border:1px solid var(--linha);border-radius:999px;text-decoration:none;color:var(--texto)}
+.resumo{list-style:none;padding:0;margin:16px 0 4px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.resumo a{display:flex;flex-direction:column;padding:10px 12px;border:1px solid var(--linha);border-radius:12px;text-decoration:none;color:var(--texto);height:100%}
+.resumo b{font-size:1.4rem;line-height:1.1}.resumo span{font-size:.92rem}
 details{border-top:1px solid var(--linha)}
 summary{cursor:pointer;padding:14px 0;font-weight:700;font-size:1.05rem}
 .contagem{color:var(--fraco);font-weight:400}
