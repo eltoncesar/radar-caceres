@@ -98,29 +98,37 @@ def gerar(vereadores, coleta_br, esc, foto, periodo, sapl, anos, exemplos_lugar)
 
     # ---------- Topo ----------
     contadores = "".join(
-        f'<div class="contador g-{g}"><b>{_num(cont[g])}</b><span>{esc(rotulo)}</span></div>'
+        f'<div class="contador g-{g}"><b data-conta="{cont[g]}">{_num(cont[g])}</b><span>{esc(rotulo)}</span></div>'
         for g, rotulo in (("melhoria", "pedidos de melhoria nos bairros"), ("cobranca", "perguntas e cobranças"),
                           ("homenagem", "homenagens"), ("lei", "projetos de lei e regras")))
-    topo = f"""<section class="hero">
+    topo = f"""<section class="hero entra">
 <p class="selo"><span class="ponto" aria-hidden="true"></span>Dados oficiais · conferidos em {coleta_br}</p>
-<h1 class="tit-hero">O que cada vereador de Cáceres fez desde a posse.</h1>
+<h1 class="tit-hero">O que cada vereador de Cáceres <em>fez</em> desde a posse.</h1>
 <p class="lead">Tudo que os vereadores apresentaram na Câmara em {" e ".join(anos)}, organizado para qualquer
-pessoa entender. Cada número tem link para o documento oficial.</p>
-<div class="destaque-total"><b>{_num(total)}</b><span>propostas apresentadas pelos vereadores até agora</span></div>
+pessoa entender. Cada número leva ao documento oficial.</p>
+<div class="radar-total">
+<div class="radar" aria-hidden="true"><span class="anel a1"></span><span class="anel a2"></span><span class="anel a3"></span><span class="feixe"></span><span class="eco e1"></span><span class="eco e2"></span><span class="eco e3"></span></div>
+<div class="radar-num"><b data-conta="{total}">{_num(total)}</b><span>propostas apresentadas pelos vereadores até agora</span></div>
+</div>
 <div class="contadores">{contadores}</div>
 <p class="nota">O robô confere o sistema da Câmara toda madrugada.</p>
 </section>"""
 
     # ---------- Busca ----------
     chips = "".join(f'<button type="button" class="chip" data-q="{esc(x)}">{esc(x)}</button>' for x in exemplos_lugar)
-    busca = f"""<section id="busca" class="secao">
-<p class="sobretitulo">Comece por aqui</p>
+    curtos = {"melhoria": "Pedidos", "cobranca": "Cobranças", "homenagem": "Homenagens", "lei": "Leis", "outros": "Outros"}
+    abas = '<button type="button" role="tab" class="aba g-todos" data-aba="" aria-selected="true">Todos</button>' + "".join(
+        f'<button type="button" role="tab" class="aba g-{g}" data-aba="{g}" aria-selected="false">{curtos[g]}</button>'
+        for g in ORDEM_GRUPOS[:4])
+    busca = f"""<section id="busca" class="secao entra">
+<p class="sobretitulo"><span>01</span>Comece por aqui</p>
 <h2>O que pediram para o seu bairro?</h2>
 <p class="sub">Digite o bairro, a rua ou a comunidade. Sem nada digitado, você vê a cidade inteira.</p>
 <label class="campo-busca"><span class="sr">Bairro, rua ou comunidade</span>
 <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
 <input id="q" type="search" autocomplete="off" placeholder="Digite seu bairro ou sua rua"></label>
 <div class="chips" role="list">{chips}</div>
+<div class="abas" role="tablist" aria-label="Tipo de proposta">{abas}</div>
 <div id="painel" class="painel" aria-live="polite"><p class="sub">Carregando as propostas…</p></div>
 <noscript><p>A busca precisa de JavaScript. Você ainda pode ver cada vereador mais abaixo.</p></noscript>
 </section>"""
@@ -137,8 +145,8 @@ pessoa entender. Cada número tem link para o documento oficial.</p>
     reps_html = "".join(cartao_rep(x, i >= 6) for i, x in enumerate(reps))
     mais_reps = (f'<button type="button" class="botao" id="mais-reps">Mostrar mais ruas ({len(reps) - 6} na fila)</button>'
                  if len(reps) > 6 else "")
-    repete = f"""<section class="secao">
-<p class="sobretitulo">Cruzamento</p>
+    repete = f"""<section class="secao entra">
+<p class="sobretitulo"><span>02</span>Cruzamento</p>
 <h2>O problema que não some</h2>
 <p class="sub">Quando o mesmo assunto é pedido várias vezes para a mesma rua, pode ser sinal de que o problema
 continua lá. O site da Câmara mostra cada pedido sozinho; aqui eles são cruzados.</p>
@@ -153,8 +161,8 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
         f'<p class="sub">{esc(GRUPOS[g][1])}</p>'
         f'<button type="button" class="link" data-g="{g}">Ver todas →</button></li>'
         for g in ORDEM_GRUPOS if cont[g])
-    trabalho = f"""<section class="secao">
-<p class="sobretitulo">O trabalho da Câmara</p>
+    trabalho = f"""<section class="secao entra">
+<p class="sobretitulo"><span>03</span>O trabalho da Câmara</p>
 <h2>Homenagem ou trabalho?</h2>
 <p class="sub">São {_num(total)} propostas. Separamos em grupos com a mesma regra para todos.
 <a href="sobre.html#regra">Veja como separamos</a>.</p>
@@ -181,8 +189,8 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
                 f'<span class="link">Ver cada proposta →</span></a></li>')
     crachas = "".join(cracha(v) for v in vereadores)
     titulares = sum(v["titular"] for v in vereadores)
-    vereadores_html = f"""<section id="vereadores" class="secao">
-<p class="sobretitulo">Um por um</p>
+    vereadores_html = f"""<section id="vereadores" class="secao entra">
+<p class="sobretitulo"><span>04</span>Um por um</p>
 <h2>Os {titulares} vereadores e os suplentes que assumiram</h2>
 <p class="sub">Toque no crachá para ver cada proposta, com link para o documento oficial.</p>
 <div class="filtros">
@@ -238,7 +246,7 @@ function desenhar(){{
   var porVer={{}},porAss={{}},porBairro={{}};
   achados.forEach(function(p){{p.a.forEach(function(a){{porVer[a]=(porVer[a]||0)+1;}});p.s.forEach(function(s){{porAss[s]=(porAss[s]||0)+1;}});p.b.forEach(function(b){{porBairro[b]=(porBairro[b]||0)+1;}});}});
   var onde=qv?'que citam <b>“'+esc(qv)+'”</b>':'para <b>a cidade inteira</b>';
-  var grupo=est.g?'<button type="button" class="filtro-ativo" id="limpa-g">'+esc(D.grupos[est.g])+' ✕</button>':'';
+  var grupo='';document.querySelectorAll(".aba").forEach(function(a){{a.setAttribute("aria-selected",a.getAttribute("data-aba")===est.g?"true":"false");}});
   if(!achados.length){{out.innerHTML=grupo+'<p class="vazio">Nenhuma proposta '+(qv?'cita “'+esc(qv)+'”':'neste grupo')+'. Tente outro jeito de escrever o nome.</p>';ligar();return;}}
   var h=grupo+'<p class="grande"><b>'+num(achados.length)+'</b></p><p class="sub-grande">propostas '+onde+' até agora</p>';
   var tv=ranking(porVer,5);
@@ -254,7 +262,7 @@ function ligar(){{
   document.querySelectorAll("[data-q]").forEach(function(b){{b.onclick=function(){{ir(b.getAttribute("data-q"),"");}};}});
   document.querySelectorAll("[data-g]").forEach(function(b){{b.onclick=function(){{ir("",b.getAttribute("data-g"));}};}});
   var m=$("mais-props");if(m)m.onclick=function(){{mostrando+=10;desenhar();}};
-  var l=$("limpa-g");if(l)l.onclick=function(){{est.g="";mostrando=5;salvar();desenhar();}};
+  document.querySelectorAll(".aba").forEach(function(a){{a.onclick=function(){{est.g=a.getAttribute("data-aba");mostrando=5;salvar();desenhar();}};}});
   document.querySelectorAll(".ementa").forEach(function(e){{e.onclick=function(){{e.classList.toggle("aberta");}};e.onkeydown=function(k){{if(k.key==="Enter")e.classList.toggle("aberta");}};}});
 }}
 function salvar(){{var h=[];if(est.q)h.push("q="+encodeURIComponent(est.q));if(est.g)h.push("g="+est.g);try{{history.replaceState(null,"",h.length?"#"+h.join("&"):location.pathname);}}catch(e){{}}}}
@@ -268,6 +276,16 @@ fetch("dados.json").then(function(r){{return r.json();}}).then(function(d){{
   if(location.hash)$("busca").scrollIntoView();
 }}).catch(function(){{$("painel").innerHTML='<p class="vazio">Não foi possível carregar as propostas. Recarregue a página.</p>';}});
 ligar();
+// Números que sobem e seções que entram (respeita quem prefere menos movimento)
+var calmo=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!calmo&&"IntersectionObserver" in window){{
+  var ob=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add("visivel");ob.unobserve(e.target);}}}});}},{{rootMargin:"0px 0px -10% 0px"}});
+  document.querySelectorAll(".entra").forEach(function(x){{ob.observe(x);}});
+  document.querySelectorAll("[data-conta]").forEach(function(b){{var fim=+b.getAttribute("data-conta"),t0=null,dur=1100;
+    function passo(t){{if(!t0)t0=t;var k=Math.min(1,(t-t0)/dur);k=1-Math.pow(1-k,3);b.textContent=Math.round(fim*k).toLocaleString("pt-BR");if(k<1)requestAnimationFrame(passo);}}
+    requestAnimationFrame(passo);}});
+}}else document.querySelectorAll(".entra").forEach(function(x){{x.classList.add("visivel");}});
+setTimeout(function(){{document.querySelectorAll(".entra").forEach(function(x){{x.classList.add("visivel");}});}},4000);
 // Crachás
 var lista=$("crachas"),itens=[].slice.call(lista.children);
 function crachas(){{

@@ -126,12 +126,13 @@ CABECA = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className="js"</script>
 <title>{titulo}</title>
 <meta name="description" content="{descricao}">
-<meta name="theme-color" content="#0b5d4b">
+<meta name="theme-color" content="#0a4a3f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{base}estilo.css">
 </head>
 <body>
@@ -199,7 +200,7 @@ def gerar_vereador(v, coleta):
     principal = sum(p["primeiro_autor"] for p in v["propostas"])
 
     resumo = "".join(
-        f'<li><a href="#{g}"><b>{len(por_grupo[g])}</b><span>{esc(GRUPOS[g][0])}</span></a></li>' for g in grupos)
+        f'<li><a class="g-{g}" href="#{g}"><b>{len(por_grupo[g])}</b><span>{esc(GRUPOS[g][0])}</span></a></li>' for g in grupos)
     blocos = []
     for g in grupos:
         itens = "".join(
@@ -288,14 +289,15 @@ def gerar_busca():
 
 
 ESTILO = """:root{
---tinta:#0f172a;--texto:#1e293b;--fraco:#5b6577;--linha:#e2e8f0;--fundo:#fff;--suave:#f4f6f8;
---marca:#0b5d4b;--marca-claro:#e6f2ee;--link:#0a58ca;--escuro:#0f172a;
+--tinta:#0d1b17;--texto:#1f2d29;--fraco:#55635e;--linha:#dfe6e2;--fundo:#fff;--suave:#f3f6f4;
+--marca:#0a4a3f;--marca-claro:#e3f0eb;--link:#0b5fbf;--escuro:#0a2b25;--tuiuiu:#c8202f;
+--display:"Bricolage Grotesque",Georgia,serif;
 --melhoria:#1d4ed8;--melhoria-f:#e8efff;--cobranca:#a54a00;--cobranca-f:#fff1e3;
 --homenagem:#b4235f;--homenagem-f:#fde9f1;--lei:#047857;--lei-f:#e3f6ee;--outros:#5b6577;--outros-f:#eef1f4;
 --raio:16px;--sombra:0 1px 2px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.05)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--fundo);color:var(--texto);font:17px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--fundo);color:var(--texto);font:17.5px/1.55 "Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--link)}
 img{max-width:100%}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
@@ -311,7 +313,8 @@ main,footer,.topo{max-width:1040px;margin:0 auto;padding:0 16px}
 .topo nav{display:flex;gap:16px;font-weight:600;font-size:.95rem}
 .topo nav a{color:var(--texto);text-decoration:none}
 .topo nav a:hover{color:var(--marca)}
-h1,h2,h3{color:var(--tinta);letter-spacing:-.02em;line-height:1.15}
+h1,h2,h3{color:var(--tinta);letter-spacing:-.02em;line-height:1.1;font-family:var(--display);font-weight:800}
+h3{font-family:inherit}
 h1{font-size:1.9rem;margin:20px 0 8px}
 h2{font-size:1.75rem;margin:4px 0 8px}
 h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--fraco);margin:24px 0 10px}
@@ -429,7 +432,7 @@ h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--fra
 .resumo{list-style:none;padding:0;margin:16px 0 4px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
 .resumo a{display:flex;flex-direction:column;padding:12px 14px;border-radius:14px;text-decoration:none;color:var(--tinta);height:100%;background:var(--suave);font-weight:600}
 .resumo b{font-size:1.5rem;line-height:1.1;font-weight:800}
-.resumo li:nth-child(1) a{background:var(--melhoria-f)}.resumo li:nth-child(1) b{color:var(--melhoria)}
+.resumo a.g-melhoria{background:var(--melhoria-f)}.resumo a.g-melhoria b{color:var(--melhoria)}.resumo a.g-cobranca{background:var(--cobranca-f)}.resumo a.g-cobranca b{color:var(--cobranca)}.resumo a.g-homenagem{background:var(--homenagem-f)}.resumo a.g-homenagem b{color:var(--homenagem)}.resumo a.g-lei{background:var(--lei-f)}.resumo a.g-lei b{color:var(--lei)}
 details{border-top:1px solid var(--linha)}
 summary{cursor:pointer;padding:16px 0;font-weight:700;font-size:1.08rem;color:var(--tinta)}
 .contagem{color:var(--fraco);font-weight:500}
@@ -449,6 +452,60 @@ footer{border-top:1px solid var(--linha);margin-top:48px;padding-top:16px;paddin
  .reps{grid-template-columns:repeat(2,1fr)}
 }
 @media (min-width:1000px){.crachas{grid-template-columns:repeat(3,1fr)}}
+/* ---- Identidade: jornal de bairro + radar do Pantanal ---- */
+.marca{font-family:var(--display)}
+.marca strong{color:var(--marca)}
+.icone-radar{color:var(--tuiuiu)}
+.topo{border-bottom:2px solid var(--tinta)}
+.tit-hero{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:1.02}
+.tit-hero em{font-style:normal;color:var(--marca);background:linear-gradient(transparent 62%,#ffd9dc 62%,#ffd9dc 92%,transparent 92%)}
+.sobretitulo{display:flex;align-items:center;gap:10px;color:var(--tinta)}
+.sobretitulo span{font-family:var(--display);font-size:.9rem;color:#fff;background:var(--tuiuiu);border-radius:6px;padding:2px 7px;letter-spacing:0}
+.secao{border-top:1px solid var(--linha);margin-top:28px}
+.ponto{background:var(--tuiuiu);box-shadow:0 0 0 0 rgba(200,32,47,.45);animation:pulso 2.2s infinite}
+@keyframes pulso{70%{box-shadow:0 0 0 9px rgba(200,32,47,0)}100%{box-shadow:0 0 0 0 rgba(200,32,47,0)}}
+.contador b,.grande b,.radar-num b,.grupo b,.vezes b,.total b,.destaque b,.resumo b,.ranking b,.barras b{font-family:var(--display);font-variant-numeric:tabular-nums}
+/* Radar */
+.radar-total{position:relative;display:flex;align-items:center;gap:18px;overflow:hidden;background:var(--escuro);color:#fff;border-radius:22px;padding:22px 20px;margin:22px 0 10px;
+ background-image:radial-gradient(circle at 15% 50%,rgba(76,175,145,.22),transparent 55%),repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 22px)}
+.radar{position:relative;flex:none;width:96px;height:96px;border-radius:50%;background:radial-gradient(circle,#0f3d34 0,#082520 70%);box-shadow:inset 0 0 0 1px rgba(124,214,181,.35)}
+.anel{position:absolute;inset:0;margin:auto;border-radius:50%;border:1px solid rgba(124,214,181,.35)}
+.a1{width:32%;height:32%}.a2{width:64%;height:64%}.a3{width:100%;height:100%}
+.feixe{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(124,214,181,.0) 0deg,rgba(124,214,181,.55) 50deg,rgba(124,214,181,0) 52deg);animation:varre 3.6s linear infinite}
+@keyframes varre{to{transform:rotate(360deg)}}
+.eco{position:absolute;width:7px;height:7px;border-radius:50%;background:#ff6b78;box-shadow:0 0 8px #ff6b78;animation:eco 3.6s linear infinite;opacity:0}
+.e1{left:62%;top:24%;animation-delay:.45s}.e2{left:28%;top:62%;animation-delay:1.9s}.e3{left:70%;top:66%;animation-delay:2.6s}
+@keyframes eco{0%{opacity:0}4%{opacity:1}40%{opacity:0}}
+.radar-num b{display:block;font-size:3rem;line-height:1;font-weight:800;letter-spacing:-.03em}
+.radar-num span{color:#c9dbd5;display:block;margin-top:4px;line-height:1.35}
+/* Abas */
+.abas{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:6px 0 0;padding:2px}
+.abas::-webkit-scrollbar{display:none}
+.aba{flex:none;font:inherit;font-weight:700;font-size:.92rem;padding:9px 14px;border-radius:10px;border:1px solid var(--linha);background:#fff;color:var(--texto);cursor:pointer}
+.aba[aria-selected="true"]{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.aba.g-melhoria[aria-selected="true"]{background:var(--melhoria);border-color:var(--melhoria)}
+.aba.g-cobranca[aria-selected="true"]{background:var(--cobranca);border-color:var(--cobranca)}
+.aba.g-homenagem[aria-selected="true"]{background:var(--homenagem);border-color:var(--homenagem)}
+.aba.g-lei[aria-selected="true"]{background:var(--lei);border-color:var(--lei)}
+.campo-busca{border-color:var(--marca);box-shadow:0 6px 0 -2px var(--marca-claro)}
+.painel{border-radius:22px}
+.grande b{color:var(--marca)}
+.ranking i{background:linear-gradient(90deg,var(--marca) var(--w),var(--suave) var(--w))}
+.vezes{background:var(--tuiuiu)}
+.vezes span{color:#ffe1e4}
+.botao{background:var(--marca)}
+.destaque-total,.destaque{background:var(--escuro)}
+.chip:hover,.cracha a:hover{border-color:var(--marca)}
+.cracha a{transition:transform .18s ease,box-shadow .18s ease}
+.cracha a:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(10,43,37,.12)}
+/* Entrada suave */
+.entra{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+ .js .entra{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+ .js .entra.visivel{opacity:1;transform:none}
+}
+@media (min-width:720px){.radar{width:132px;height:132px}.radar-num b{font-size:4rem}}
+@media (prefers-reduced-motion:reduce){.feixe,.eco,.ponto{animation:none}.eco{opacity:1}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 """
 
