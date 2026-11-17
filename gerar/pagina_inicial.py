@@ -204,7 +204,7 @@ def gerar(vereadores, coleta_br, esc, foto, periodo, sapl, anos, exemplos_lugar)
         f'<div class="contador g-{g}"><b data-conta="{cont[g]}">{_num(cont[g])}</b><span>{esc(rotulo)}</span></div>'
         for g, rotulo in (("melhoria", "pedidos de melhoria nos bairros"), ("cobranca", "perguntas e cobranças"),
                           ("homenagem", "homenagens"), ("lei", "projetos de lei e regras")))
-    topo = f"""<section class="hero entra" aria-labelledby="titulo-topo">
+    topo = f"""<section class="hero" aria-labelledby="titulo-topo">
 <p class="selo">Dados oficiais · última conferência em {coleta_br}</p>
 <h1 class="tit-hero" id="titulo-topo">O que cada vereador de Cáceres <em>fez</em> desde a posse.</h1>
 <p class="lead">Tudo que os vereadores apresentaram na Câmara em {" e ".join(anos)}, organizado para qualquer
@@ -223,7 +223,7 @@ pessoa entender. Cada número leva ao documento oficial.</p>
     abas = '<button type="button" class="aba" data-aba="" aria-pressed="true">Todos</button>' + "".join(
         f'<button type="button" class="aba" data-aba="{g}" aria-pressed="false">{curtos[g]}</button>'
         for g in ORDEM_GRUPOS[:4])
-    busca = f"""<section id="busca" class="secao entra">
+    busca = f"""<section id="busca" class="secao">
 <h2>O que pediram pelo seu bairro?</h2>
 <p class="sub">Digite o bairro, a rua ou a comunidade. Sem nada digitado, você vê a cidade inteira.</p>
 <label class="campo-busca"><span class="sr">Bairro, rua ou comunidade</span>
@@ -247,7 +247,7 @@ pessoa entender. Cada número leva ao documento oficial.</p>
     reps_html = "".join(cartao_rep(x, i >= 6) for i, x in enumerate(reps))
     mais_reps = (f'<button type="button" class="botao" id="mais-reps">Mostrar mais ruas ({len(reps) - 6} na fila)</button>'
                  if len(reps) > 6 else "")
-    repete = f"""<section class="secao entra">
+    repete = f"""<section class="secao">
 <h2>O problema que não some</h2>
 <p class="sub">Quando o mesmo assunto volta várias vezes para a mesma rua, pode ser sinal de que o problema
 continua lá. O site da Câmara mostra cada pedido sozinho; aqui eles são cruzados um por um.</p>
@@ -262,7 +262,7 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
         f'<p class="sub">{esc(GRUPOS[g][1])}</p>'
         f'<button type="button" class="link" data-g="{g}">Ver todas →</button></li>'
         for g in ORDEM_GRUPOS if cont[g])
-    trabalho = f"""<section class="secao entra">
+    trabalho = f"""<section class="secao">
 <h2>Homenagem ou trabalho?</h2>
 <p class="sub">São {_num(total)} propostas até agora. Toque em um grupo para ler cada uma.
 A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a>.</p>
@@ -314,7 +314,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
 
     crachas = "".join(cracha(v) for v in vereadores)
     titulares = sum(v["titular"] for v in vereadores)
-    vereadores_html = f"""<section id="vereadores" class="secao entra">
+    vereadores_html = f"""<section id="vereadores" class="secao">
 <h2>Os {titulares} vereadores</h2>
 <p class="sub">E os {len(vereadores) - titulares} suplentes que já assumiram uma vaga. Toque nos números do crachá para ver cada proposta.</p>
 <div class="filtros">
@@ -330,7 +330,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
 </section>"""
 
     sessoes_sem_oradores = "algumas"
-    fontes = f"""<section id="fontes" class="secao entra">
+    fontes = f"""<section id="fontes" class="secao">
 <h2>De onde vêm os números</h2>
 <p class="sub">Tudo sai do sistema da própria Câmara Municipal de Cáceres, o SAPL. Nada é digitado à mão.</p>
 <dl class="fontes">
@@ -431,16 +431,13 @@ fetch("dados.json").then(function(r){{return r.json();}}).then(function(d){{
   if(location.hash)$("busca").scrollIntoView();
 }}).catch(function(){{$("painel").innerHTML='<p class="vazio">Não foi possível carregar as propostas. Recarregue a página.</p>';}});
 ligar();
-// Números que sobem e seções que entram (respeita quem prefere menos movimento)
+// Números do topo que sobem ao abrir (desligado para quem prefere menos movimento)
 var calmo=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
-if(!calmo&&"IntersectionObserver" in window){{
-  var ob=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add("visivel");ob.unobserve(e.target);}}}});}},{{rootMargin:"0px 0px -10% 0px"}});
-  document.querySelectorAll(".entra").forEach(function(x){{ob.observe(x);}});
+if(!calmo){{
   document.querySelectorAll("[data-conta]").forEach(function(b){{var fim=+b.getAttribute("data-conta"),t0=null,dur=1100;
     function passo(t){{if(!t0)t0=t;var k=Math.min(1,(t-t0)/dur);k=1-Math.pow(1-k,3);b.textContent=Math.round(fim*k).toLocaleString("pt-BR");if(k<1)requestAnimationFrame(passo);}}
     requestAnimationFrame(passo);}});
-}}else document.querySelectorAll(".entra").forEach(function(x){{x.classList.add("visivel");}});
-setTimeout(function(){{document.querySelectorAll(".entra").forEach(function(x){{x.classList.add("visivel");}});}},4000);
+}}
 // Crachás
 var lista=$("crachas"),itens=[].slice.call(lista.children);
 function crachas(){{

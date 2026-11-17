@@ -430,7 +430,7 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .contador span{color:var(--md-on-surface)}
 /* Barra de busca M3 */
 .campo-busca{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 16px;margin:16px 0 12px;border-radius:var(--shape-xl);
- background:var(--md-surface-container-high);color:var(--md-on-surface-variant)}
+ background:var(--md-surface-container-high);color:var(--md-on-surface-variant);border:1px solid var(--md-outline)}
 .campo-busca:focus-within{outline:2px solid var(--md-primary);outline-offset:0}
 .campo-busca .ms{font-size:1.5rem}
 .campo-busca input{flex:1;min-width:0;border:0;background:transparent;font:400 1rem/1.5rem var(--fonte);color:var(--md-on-surface);padding:16px 0}
@@ -599,11 +599,6 @@ summary{position:relative;cursor:pointer;padding:16px 8px;margin:0 -8px;border-r
 .data{color:var(--md-on-surface-variant);font-size:.875rem;margin-left:8px}
 .glossario dt{font-weight:500;margin-top:12px}.glossario dd{margin:0;color:var(--md-on-surface-variant)}
 footer{margin-top:48px;padding-top:24px;padding-bottom:40px;border-top:1px solid var(--md-outline-variant);color:var(--md-on-surface-variant);font-size:.875rem;line-height:1.25rem}
-/* Entrada suave: só opacidade, a partir de um estado já visível */
-@media (prefers-reduced-motion:no-preference){
- .js .entra{opacity:.001;transition:opacity .5s var(--ease)}
- .js .entra.visivel{opacity:1}
-}
 @media (min-width:720px){
  .topo{position:sticky;top:0}
  h1{font-size:2.8125rem;line-height:3.25rem}
