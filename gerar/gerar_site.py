@@ -14,6 +14,7 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS, REGRA_EXPLICADA, classificar  # noqa: E402
+from assuntos import ASSUNTOS, assuntos  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRUTOS = os.path.join(RAIZ, "dados", "brutos")
@@ -125,7 +126,7 @@ CABECA = """<!doctype html>
 </head>
 <body>
 <header class="topo"><a href="{base}index.html" class="marca">Radar Cáceres</a>
-<nav><a href="{base}index.html">Vereadores</a><a href="{base}sobre.html">Como funciona</a></nav></header>
+<nav><a href="{base}index.html">Vereadores</a><a href="{base}busca.html">Buscar bairro</a><a href="{base}sobre.html">Como funciona</a></nav></header>
 <main>
 """
 
@@ -183,6 +184,8 @@ def gerar_index(vereadores, coleta):
     corpo = f"""<h1>O que fazem os vereadores de Cáceres</h1>
 <p class="lead">Propostas apresentadas na Câmara em {" e ".join(ANOS)}, por vereador.
 Toque no nome para ver cada proposta, com link para o documento oficial.</p>
+<a class="chamada" href="busca.html"><b>O que foi pedido para o seu bairro?</b>
+<span>Digite o nome do bairro, da rua ou da comunidade e veja todos os pedidos e quem fez.</span></a>
 <h2>Vereadores titulares</h2>
 <ul class="lista">{"".join(cartao(v) for v in titulares)}</ul>
 <h2>Suplentes que assumiram uma vaga</h2>
@@ -278,6 +281,86 @@ pareceria falta. Só vamos mostrar depois de conferir.</li>
     return pagina("Como funciona — Radar Cáceres", "Como o Radar Cáceres conta os dados.", corpo, "", coleta)
 
 
+def dados_busca(vereadores):
+    """Pedidos de melhoria e cobranças, com autores e assuntos, para a busca."""
+    itens = {}
+    for v in vereadores:
+        for p in v["propostas"]:
+            if p["grupo"] not in ("melhoria", "cobranca"):
+                continue
+            item = itens.setdefault(p["id"], {
+                "i": p["id"], "t": p["tipo"], "n": f'{p["numero"]}/{p["ano"]}', "d": p["data"],
+                "e": p["ementa"], "s": assuntos(p["ementa"]), "a": []})
+            item["a"].append(v["nome"])
+    return sorted(itens.values(), key=lambda x: (x["d"] or "", x["i"]), reverse=True)
+
+
+EXEMPLOS_LUGAR = ["Cavalhada", "Vila Irene", "Junco", "Espírito Santo", "Nova Cáceres",
+                  "Massa Barro", "Jardim das Oliveiras", "Vila Real", "Guanabara", "Caramujo"]
+
+
+def gerar_busca(coleta):
+    nomes = json.dumps({c: n for c, n, _ in ASSUNTOS}, ensure_ascii=False)
+    sugestoes = "".join(f'<li><button type="button">{esc(x)}</button></li>' for x in EXEMPLOS_LUGAR)
+    corpo = f"""<h1>O que foi pedido para o seu bairro</h1>
+<p class="lead">Digite o nome do bairro, da rua, da comunidade ou do distrito. Aparecem todos os pedidos
+de melhoria e todas as cobranças feitas pelos vereadores em {" e ".join(ANOS)} que citam esse lugar.</p>
+<label for="q"><b>Bairro, rua ou comunidade</b></label>
+<input id="q" class="campo" type="search" autocomplete="off" placeholder="Ex.: Cavalhada">
+<p class="sub">Exemplos:</p>
+<ul class="sugestoes">{sugestoes}</ul>
+<div id="saida" aria-live="polite"><p class="sub">Carregando os pedidos…</p></div>
+<aside class="aviso"><strong>Atenção ao ler</strong>
+Pedido repetido não prova que a Prefeitura ignorou o problema. Pode ser um problema novo no mesmo lugar,
+um serviço que precisa ser refeito, ou mais de um vereador pedindo a mesma coisa.
+A busca procura o nome digitado no resumo oficial do pedido. Se o resumo não citar o lugar, o pedido não aparece.
+O assunto de cada pedido é separado por palavras do resumo e pode errar.</aside>
+<script>
+var NOMES={nomes}, SAPL="{SAPL}", DADOS=null;
+function norm(t){{return (t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();}}
+function esc(t){{return String(t).replace(/[&<>"]/g,function(c){{return {{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}}[c];}});}}
+function dataBR(d){{return d?d.split("-").reverse().join("/"):"";}}
+function item(p){{return '<li><a href="'+SAPL+'/materia/'+p.i+'">'+esc(p.t)+' nº '+p.n+'</a><span class="data">'+dataBR(p.d)+'</span>'
+  +'<p>'+esc(p.e)+'</p><p class="autores">Pedido por: '+esc(p.a.join(", "))+'</p></li>';}}
+function buscar(){{
+  var q=norm(document.getElementById("q").value), out=document.getElementById("saida");
+  try{{history.replaceState(null,"",q?"#"+encodeURIComponent(document.getElementById("q").value):location.pathname);}}catch(e){{}}
+  if(!DADOS)return;
+  if(q.length<3){{out.innerHTML='<p class="sub">Digite pelo menos 3 letras.</p>';return;}}
+  var re=new RegExp("(^| )"+q.replace(/ /g," +")+"( |$)");
+  var achados=DADOS.filter(function(p){{return re.test(p._n);}});
+  if(!achados.length){{out.innerHTML='<p>Nenhum pedido cita “'+esc(document.getElementById("q").value)+'”. Tente outro jeito de escrever o nome.</p>';return;}}
+  var grupos={{}};
+  achados.forEach(function(p){{p.s.forEach(function(s){{(grupos[s]=grupos[s]||[]).push(p);}});}});
+  var rep=Object.keys(grupos).filter(function(s){{return grupos[s].length>=2;}}).sort(function(a,b){{return grupos[b].length-grupos[a].length;}});
+  var h='<h2>'+achados.length+' pedido'+(achados.length>1?'s':'')+' citam esse lugar</h2>';
+  if(rep.length){{
+    h+='<h2>Assuntos que voltaram mais de uma vez</h2>';
+    rep.forEach(function(s){{
+      var ps=grupos[s].slice().sort(function(a,b){{return a.d<b.d?-1:1;}});
+      var autores={{}};ps.forEach(function(p){{p.a.forEach(function(a){{autores[a]=1;}});}});
+      h+='<div class="repete"><h3>'+esc(NOMES[s])+': '+ps.length+' vezes</h3>'
+        +'<p class="datas">Primeiro pedido em '+dataBR(ps[0].d)+', último em '+dataBR(ps[ps.length-1].d)+'.</p>'
+        +'<p class="autores">Pedido por: '+esc(Object.keys(autores).join(", "))+'</p>'
+        +'<details><summary>Ver os '+ps.length+' pedidos</summary><ol class="propostas">'+ps.map(item).join("")+'</ol></details></div>';
+    }});
+  }}
+  h+='<h2>Todos os pedidos, do mais novo ao mais antigo</h2><ol class="propostas">'+achados.map(item).join("")+'</ol>';
+  out.innerHTML=h;
+}}
+document.getElementById("q").addEventListener("input",buscar);
+addEventListener("hashchange",function(){{var v=decodeURIComponent(location.hash.slice(1));if(v!==document.getElementById("q").value){{document.getElementById("q").value=v;buscar();}}}});
+document.querySelectorAll(".sugestoes button").forEach(function(b){{b.addEventListener("click",function(){{document.getElementById("q").value=b.textContent;buscar();}});}});
+fetch("busca.json").then(function(r){{return r.json();}}).then(function(d){{
+  d.forEach(function(p){{p._n=norm(p.e);}});DADOS=d;
+  if(location.hash)document.getElementById("q").value=decodeURIComponent(location.hash.slice(1));
+  if(document.getElementById("q").value)buscar();else document.getElementById("saida").innerHTML="";
+}}).catch(function(){{document.getElementById("saida").innerHTML='<p>Não foi possível carregar os pedidos. Tente recarregar a página.</p>';}});
+</script>"""
+    return pagina("Buscar por bairro — Radar Cáceres",
+                  "Veja o que os vereadores pediram para o seu bairro em Cáceres-MT.", corpo, "", coleta)
+
+
 ESTILO = """:root{--texto:#1a1a1a;--fraco:#5c5c5c;--linha:#e3e3e3;--fundo:#fff;--suave:#f5f5f5;--link:#0b57d0;--aviso:#fff7e0;--aviso-borda:#e0b400}
 *{box-sizing:border-box}
 body{margin:0;background:var(--fundo);color:var(--texto);font:17px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -318,6 +401,16 @@ summary{cursor:pointer;padding:14px 0;font-weight:700;font-size:1.05rem}
 .propostas li{padding:10px 0;border-bottom:1px solid var(--linha)}
 .propostas p{margin:4px 0 0;overflow-wrap:anywhere}
 .data{color:var(--fraco);font-size:.88rem;margin-left:8px}
+.chamada{display:block;margin:20px 0 8px;padding:14px 16px;border:2px solid var(--link);border-radius:12px;text-decoration:none;color:var(--texto)}
+.chamada b{display:block;font-size:1.1rem;color:var(--link)}.chamada span{color:var(--fraco)}
+.campo{display:block;width:100%;font:inherit;font-size:1.1rem;padding:12px 14px;border:2px solid #8a8a8a;border-radius:10px;margin:8px 0}
+.campo:focus{outline:3px solid var(--link);outline-offset:1px;border-color:var(--link)}
+.sugestoes{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 16px}
+.sugestoes button{font:inherit;font-size:.95rem;padding:6px 12px;border:1px solid var(--linha);border-radius:999px;background:var(--fundo);color:var(--link);cursor:pointer}
+.repete{border:1px solid var(--linha);border-radius:12px;padding:12px 14px;margin:8px 0}
+.repete h3{margin:0 0 4px;font-size:1.05rem}
+.repete .datas{color:var(--fraco);font-size:.9rem}
+.autores{color:var(--fraco);font-size:.9rem;margin-top:2px}
 .glossario dt{font-weight:700;margin-top:12px}.glossario dd{margin:0}
 footer{border-top:1px solid var(--linha);margin-top:32px;padding-top:12px;padding-bottom:32px;color:var(--fraco);font-size:.9rem}
 """
@@ -334,6 +427,9 @@ def main():
     escrever("estilo.css", ESTILO)
     escrever("index.html", gerar_index(vereadores, coleta))
     escrever("sobre.html", gerar_sobre(coleta))
+    escrever("busca.html", gerar_busca(coleta))
+    with open(os.path.join(SAIDA, "busca.json"), "w", encoding="utf-8") as f:
+        json.dump(dados_busca(vereadores), f, ensure_ascii=False, separators=(",", ":"))
     for v in vereadores:
         escrever(f"vereador/{v['slug']}.html", gerar_vereador(v, coleta))
     print(f"Site gerado em {SAIDA}: {len(vereadores)} vereadores")

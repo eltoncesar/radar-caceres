@@ -32,6 +32,14 @@ cobranças, homenagens, projetos de lei e regras, e outros. A regra está em
 na página "Como funciona". Em nov/2026 só 5 das 2.580 propostas de vereadores
 caíram em "Outros".
 
+## Busca por bairro
+
+A página `busca.html` procura o lugar digitado (bairro, rua, comunidade) no
+resumo oficial dos pedidos de melhoria e das cobranças. Dentro do resultado, os
+pedidos são agrupados por assunto (regra em `gerar/assuntos.py`), e o site mostra
+quando o mesmo assunto volta mais de uma vez, com as datas e quem pediu. O site
+avisa que pedido repetido não prova que a Prefeitura ignorou o problema.
+
 ## Conferência
 
 Em 17/11/2026 o total de propostas de cada um dos 21 vereadores no site foi
