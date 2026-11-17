@@ -42,8 +42,10 @@ avisa que pedido repetido não prova que a Prefeitura ignorou o problema.
 
 ## Conferência
 
-Em 17/11/2026 o total de propostas de cada um dos 21 vereadores no site foi
-comparado com a busca por autor do próprio SAPL: os 21 batem.
+Em 17/11/2026: totais de propostas dos 21 vereadores batem com o SAPL, 45 de 45
+propostas sorteadas batem com as páginas oficiais, e a presença registrada no SAPL
+bate com as 10 atas de sessões ordinárias disponíveis. Detalhes, divergências e
+estimativas em [CONFERENCIA.md](CONFERENCIA.md).
 
 ## O que existe e o que não existe (verificado em nov/2026)
 
@@ -62,11 +64,10 @@ comparado com a busca por autor do próprio SAPL: os 21 batem.
 1. **Há duas listas por sessão** (abertura e Ordem do Dia). Elas coincidem em
    75 das 84 sessões ordinárias. Regra adotada: o vereador conta como presente
    se aparecer em qualquer uma das duas.
-2. **Licenças não estão registradas.** Sequências longas de ausência (por
-   exemplo, Rubens Macedo de out/2025 a jul/2026 e Magaly de out/2025 a
-   abr/2026) coincidem com a posse de suplentes. Antes de publicar a presença,
-   esses períodos precisam ser conferidos em uma fonte oficial (atos da Mesa,
-   portarias).
+2. **Licenças não estão registradas no SAPL.** As ausências longas (Rubens
+   Macedo, Magaly, Isaías Bezerra, Valdeníria, Jorge Augusto) são licenças
+   confirmadas por notícias oficiais da Câmara (ver CONFERENCIA.md). Antes de
+   publicar a presença, falta montar a tabela de licenças com datas exatas.
 3. **As datas de mandato dos suplentes parecem não bater** com o período em que
    eles ocuparam a cadeira.
 4. Sessão sem presença registrada não conta como falta para ninguém.
