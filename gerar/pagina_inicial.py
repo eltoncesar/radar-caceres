@@ -204,9 +204,9 @@ def gerar(vereadores, coleta_br, esc, foto, periodo, sapl, anos, exemplos_lugar)
         f'<div class="contador g-{g}"><b data-conta="{cont[g]}">{_num(cont[g])}</b><span>{esc(rotulo)}</span></div>'
         for g, rotulo in (("melhoria", "pedidos de melhoria nos bairros"), ("cobranca", "perguntas e cobranças"),
                           ("homenagem", "homenagens"), ("lei", "projetos de lei e regras")))
-    topo = f"""<section class="hero entra">
+    topo = f"""<section class="hero entra" aria-labelledby="titulo-topo">
 <p class="selo">Dados oficiais · última conferência em {coleta_br}</p>
-<h1 class="tit-hero">O que cada vereador de Cáceres <em>fez</em> desde a posse.</h1>
+<h1 class="tit-hero" id="titulo-topo">O que cada vereador de Cáceres <em>fez</em> desde a posse.</h1>
 <p class="lead">Tudo que os vereadores apresentaram na Câmara em {" e ".join(anos)}, organizado para qualquer
 pessoa entender. Cada número leva ao documento oficial.</p>
 <div class="radar-total">

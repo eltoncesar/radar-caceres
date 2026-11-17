@@ -273,9 +273,9 @@ def gerar_vereador(v, coleta):
 <p class="sub">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p>
 {f'<p class="sub">Gabinete: {" · ".join(contato)}</p>' if contato else ""}
 <p class="sub"><a href="{SAPL}/parlamentar/{v["id"]}">Ficha oficial na Câmara</a></p></div></div>
-<section class="destaque"><p><b>{total}</b> propostas em {" e ".join(ANOS)}</p>
+<div class="destaque"><p><b>{total}</b> propostas em {" e ".join(ANOS)}</p>
 <p class="sub">{principal} como autor principal · {total - principal} assinadas junto com outros vereadores</p>
-{pagina_inicial.resumo_situacao(v["propostas"], esc)}</section>
+{pagina_inicial.resumo_situacao(v["propostas"], esc)}</div>
 {pagina_inicial.bloco_presenca(v, esc, data_br, SAPL)}
 {pagina_inicial.bloco_discursos(v, esc, data_br)}
 {f'<ul class="resumo">{resumo}</ul><p class="sub">Toque num grupo para ler proposta por proposta.</p>' if grupos else "<p>Nenhuma proposta registrada no período.</p>"}
@@ -576,6 +576,7 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .voltar{margin:12px 0 0}
 .voltar a{display:inline-flex;align-items:center;min-height:40px;font-weight:500;font-size:.875rem}
 .perfil{display:flex;gap:16px;align-items:flex-start;margin-top:8px}
+.perfil>div{min-width:0;overflow-wrap:anywhere}
 .perfil h1{margin-top:8px}
 .perfil .foto{width:96px;height:96px;margin-top:8px}
 .destaque{background:var(--md-primary);color:var(--md-on-primary);border-radius:var(--shape-xl);padding:20px 24px;margin:20px 0}
