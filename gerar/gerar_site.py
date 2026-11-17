@@ -429,13 +429,13 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .contador.g-lei{background:var(--g-lei-c)}.contador.g-lei b{color:var(--g-lei)}
 .contador span{color:var(--md-on-surface)}
 /* Barra de busca M3 */
-.campo-busca{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 16px;margin:16px 0 12px;border-radius:var(--shape-xl);
- background:var(--md-surface-container-high);color:var(--md-on-surface-variant);border:1px solid var(--md-outline)}
-.campo-busca:focus-within{outline:2px solid var(--md-primary);outline-offset:0}
-.campo-busca .ms{font-size:1.5rem}
-.campo-busca input{flex:1;min-width:0;border:0;background:transparent;font:400 1rem/1.5rem var(--fonte);color:var(--md-on-surface);padding:16px 0}
+.campo-busca{position:relative;display:block;margin:16px 0 12px;color:var(--md-on-surface-variant)}
+.campo-busca .ms{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:1.5rem;pointer-events:none}
+.campo-busca input{display:block;width:100%;min-height:56px;padding:0 20px 0 52px;border:1px solid var(--md-outline);border-radius:var(--shape-xl);
+ background:var(--md-surface-container-high);font:400 1rem/1.5rem var(--fonte);color:var(--md-on-surface)}
 .campo-busca input::placeholder{color:var(--md-on-surface-variant)}
-.campo-busca input:focus{outline:none}
+.campo-busca input:hover{border-color:var(--md-on-surface)}
+.campo-busca input:focus{outline:2px solid var(--md-primary);outline-offset:0;border-color:var(--md-primary)}
 /* Chips M3 (sugestão e filtro) */
 .chips,.abas{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 2px 6px;margin:0 -2px}
 .chips::-webkit-scrollbar,.abas::-webkit-scrollbar{display:none}
