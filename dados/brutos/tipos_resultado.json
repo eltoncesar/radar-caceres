@@ -1,0 +1,82 @@
+[
+{
+"id": 1,
+"__str__": "Aprovado(a)",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/1",
+"metadata": {},
+"nome": "Aprovado(a)",
+"natureza": "A"
+},
+{
+"id": 2,
+"__str__": "Aprovado por maioria simples",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/2",
+"metadata": {},
+"nome": "Aprovado por maioria simples",
+"natureza": "A"
+},
+{
+"id": 3,
+"__str__": "Aprovado por maioria absoluta",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/3",
+"metadata": {},
+"nome": "Aprovado por maioria absoluta",
+"natureza": "A"
+},
+{
+"id": 4,
+"__str__": "Rejeitado(a)",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/4",
+"metadata": {},
+"nome": "Rejeitado(a)",
+"natureza": "R"
+},
+{
+"id": 5,
+"__str__": "Veto Mantido",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/5",
+"metadata": {},
+"nome": "Veto Mantido",
+"natureza": "R"
+},
+{
+"id": 6,
+"__str__": "Veto Rejeitado",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/6",
+"metadata": {},
+"nome": "Veto Rejeitado",
+"natureza": "A"
+},
+{
+"id": 7,
+"__str__": "Reprovado(a)",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/7",
+"metadata": {},
+"nome": "Reprovado(a)",
+"natureza": "R"
+},
+{
+"id": 8,
+"__str__": "Pedido de Vista",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/8",
+"metadata": {},
+"nome": "Pedido de Vista",
+"natureza": "A"
+},
+{
+"id": 9,
+"__str__": "Aprovado(a) por unanimidade",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/9",
+"metadata": {},
+"nome": "Aprovado(a) por unanimidade",
+"natureza": "A"
+},
+{
+"id": 10,
+"__str__": "Anulado",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-resultado-votacao/10",
+"metadata": {},
+"nome": "Anulado",
+"natureza": ""
+}
+]

@@ -1,0 +1,38 @@
+[
+{
+"id": 2,
+"__str__": "Extraordinária",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo/2",
+"metadata": {},
+"nome": "Extraordinária",
+"quorum_minimo": 8,
+"tipo_numeracao": 11
+},
+{
+"id": 4,
+"__str__": "Itinerante",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo/4",
+"metadata": {},
+"nome": "Itinerante",
+"quorum_minimo": 8,
+"tipo_numeracao": 11
+},
+{
+"id": 1,
+"__str__": "Ordinária",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo/1",
+"metadata": {},
+"nome": "Ordinária",
+"quorum_minimo": 8,
+"tipo_numeracao": 11
+},
+{
+"id": 3,
+"__str__": "Solene",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo/3",
+"metadata": {},
+"nome": "Solene",
+"quorum_minimo": 8,
+"tipo_numeracao": 11
+}
+]
