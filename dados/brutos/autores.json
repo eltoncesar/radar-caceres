@@ -1,35 +1,22 @@
 [
 {
-"id": 116,
-"__str__": "AGENCIA DE PREVIDENCA SOCIAL - INSS",
-"link_detail_backend": "/sistema/autor/116",
+"id": 1,
+"__str__": "VALDENÍRIA",
+"link_detail_backend": "/sistema/autor/1",
 "metadata": {},
 "autor_related": {
-"value": 46,
-"text": "AGENCIA DE PREVIDENCA SOCIAL - INSS"
+"value": 2,
+"text": "VALDENÍRIA"
 },
-"object_id": 46,
-"nome": "AGENCIA DE PREVIDENCA SOCIAL - INSS",
+"object_id": 2,
+"nome": "VALDENÍRIA",
 "cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 114,
-"__str__": "AGÊNCIA FLUVIAL DE CÁCERES (MARINHA) - AFCM",
-"link_detail_backend": "/sistema/autor/114",
-"metadata": {},
-"autor_related": {
-"value": 44,
-"text": "AGÊNCIA FLUVIAL DE CÁCERES (MARINHA) - AFCM"
-},
-"object_id": 44,
-"nome": "AGÊNCIA FLUVIAL DE CÁCERES (MARINHA) - AFCM",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+14,
+78
+]
 },
 {
 "id": 2,
@@ -47,1517 +34,6 @@
 "content_type": 27,
 "operadores": [
 32
-]
-},
-{
-"id": 128,
-"__str__": "ALEX LEAL",
-"link_detail_backend": "/sistema/autor/128",
-"metadata": {},
-"autor_related": {
-"value": 48,
-"text": "ALEX LEAL"
-},
-"object_id": 48,
-"nome": "ALEX LEAL",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-128,
-102
-]
-},
-{
-"id": 79,
-"__str__": "Antônia Eliene Liberato Dias - Prefeita",
-"link_detail_backend": "/sistema/autor/79",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "Antônia Eliene Liberato Dias",
-"cargo": "Prefeita",
-"tipo": 7,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 97,
-"__str__": "ANTÔNIO MAMEDES",
-"link_detail_backend": "/sistema/autor/97",
-"metadata": {},
-"autor_related": {
-"value": 36,
-"text": "ANTÔNIO MAMEDES"
-},
-"object_id": 36,
-"nome": "ANTÔNIO MAMEDES",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-54
-]
-},
-{
-"id": 40,
-"__str__": "ARQUIVO - ARQ",
-"link_detail_backend": "/sistema/autor/40",
-"metadata": {},
-"autor_related": {
-"value": 14,
-"text": "ARQUIVO - ARQ"
-},
-"object_id": 14,
-"nome": "ARQUIVO - ARQ",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 23,
-"__str__": "ASSEMBLÉIA LEGISLATIVA DO ESTADO DE MATO GROSSO",
-"link_detail_backend": "/sistema/autor/23",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "ASSEMBLÉIA LEGISLATIVA DO ESTADO DE MATO GROSSO",
-"cargo": "",
-"tipo": 11,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 105,
-"__str__": "ASSESSOR DE PLANEJAMENTO E ORÇAMENTO - APO",
-"link_detail_backend": "/sistema/autor/105",
-"metadata": {},
-"autor_related": {
-"value": 37,
-"text": "ASSESSOR DE PLANEJAMENTO E ORÇAMENTO - APO"
-},
-"object_id": 37,
-"nome": "ASSESSOR DE PLANEJAMENTO E ORÇAMENTO - APO",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 25,
-"__str__": "AUTARQUIA ÁGUAS DO PANTANAL - AAP",
-"link_detail_backend": "/sistema/autor/25",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "AUTARQUIA ÁGUAS DO PANTANAL - AAP",
-"cargo": "",
-"tipo": 10,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 98,
-"__str__": "BIRA SOM",
-"link_detail_backend": "/sistema/autor/98",
-"metadata": {},
-"autor_related": {
-"value": 37,
-"text": "BIRA SOM"
-},
-"object_id": 37,
-"nome": "BIRA SOM",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-57
-]
-},
-{
-"id": 26,
-"__str__": "CÂMARA DOS DEPUTADOS FEDERAIS",
-"link_detail_backend": "/sistema/autor/26",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "CÂMARA DOS DEPUTADOS FEDERAIS",
-"cargo": "",
-"tipo": 14,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 32,
-"__str__": "CÂMARA MUNICIPAL DE CÁCERES-MT - CMCMT",
-"link_detail_backend": "/sistema/autor/32",
-"metadata": {},
-"autor_related": {
-"value": 9,
-"text": "CÂMARA MUNICIPAL DE CÁCERES-MT - CMCMT"
-},
-"object_id": 9,
-"nome": "CÂMARA MUNICIPAL DE CÁCERES-MT - CMCMT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": [
-1
-]
-},
-{
-"id": 123,
-"__str__": "CARTÓRIO DO 2º OFÍCIO DO REGISTRO CIVIL E TABEIONATO DE NOTAS E REGISTROS - CSOCC",
-"link_detail_backend": "/sistema/autor/123",
-"metadata": {},
-"autor_related": {
-"value": 49,
-"text": "CARTÓRIO DO 2º OFÍCIO DO REGISTRO CIVIL E TABEIONATO DE NOTAS E REGISTROS - CSOCC"
-},
-"object_id": 49,
-"nome": "CARTÓRIO DO 2º OFÍCIO DO REGISTRO CIVIL E TABEIONATO DE NOTAS E REGISTROS - CSOCC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 104,
-"__str__": "CARTÓRIO ELEITORAL DE CÁCERES (06ª ZONA ELEITORAL) - 6°ZE/TRE-MT",
-"link_detail_backend": "/sistema/autor/104",
-"metadata": {},
-"autor_related": {
-"value": 36,
-"text": "CARTÓRIO ELEITORAL DE CÁCERES (06ª ZONA ELEITORAL) - 6°ZE/TRE-MT"
-},
-"object_id": 36,
-"nome": "CARTÓRIO ELEITORAL DE CÁCERES (06ª ZONA ELEITORAL) - 6°ZE/TRE-MT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 35,
-"__str__": "CCJ - CONSTITUIÇÃO, JUSTIÇA, TRABALHO E REDAÇÃO",
-"link_detail_backend": "/sistema/autor/35",
-"metadata": {},
-"autor_related": {
-"value": 1,
-"text": "CCJ - CONSTITUIÇÃO, JUSTIÇA, TRABALHO E REDAÇÃO"
-},
-"object_id": 1,
-"nome": "CCJ - CONSTITUIÇÃO, JUSTIÇA, TRABALHO E REDAÇÃO",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 91,
-"__str__": "CE - COMISSÃO ESPECIAL",
-"link_detail_backend": "/sistema/autor/91",
-"metadata": {},
-"autor_related": {
-"value": 14,
-"text": "CE - COMISSÃO ESPECIAL"
-},
-"object_id": 14,
-"nome": "CE - COMISSÃO ESPECIAL",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 4,
-"__str__": "CLAUDIO HENRIQUE",
-"link_detail_backend": "/sistema/autor/4",
-"metadata": {},
-"autor_related": {
-"value": 3,
-"text": "CLAUDIO HENRIQUE"
-},
-"object_id": 3,
-"nome": "CLAUDIO HENRIQUE",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-5
-]
-},
-{
-"id": 130,
-"__str__": "CLÓVIS SALVADOR",
-"link_detail_backend": "/sistema/autor/130",
-"metadata": {},
-"autor_related": {
-"value": 50,
-"text": "CLÓVIS SALVADOR"
-},
-"object_id": 50,
-"nome": "CLÓVIS SALVADOR",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-136
-]
-},
-{
-"id": 18,
-"__str__": "CM - COMISSÃO MISTA",
-"link_detail_backend": "/sistema/autor/18",
-"metadata": {},
-"autor_related": {
-"value": 8,
-"text": "CM - COMISSÃO MISTA"
-},
-"object_id": 8,
-"nome": "CM - COMISSÃO MISTA",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 133,
-"__str__": "COMISSÃO ESPECIAL - CE",
-"link_detail_backend": "/sistema/autor/133",
-"metadata": {},
-"autor_related": {
-"value": 55,
-"text": "COMISSÃO ESPECIAL - CE"
-},
-"object_id": 55,
-"nome": "COMISSÃO ESPECIAL - CE",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 132,
-"__str__": "COMISSÃO MISTA - CM",
-"link_detail_backend": "/sistema/autor/132",
-"metadata": {},
-"autor_related": {
-"value": 54,
-"text": "COMISSÃO MISTA - CM"
-},
-"object_id": 54,
-"nome": "COMISSÃO MISTA - CM",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 134,
-"__str__": "COMISSÃO PARLAMENTAR DE INQUÉRITO - CPI",
-"link_detail_backend": "/sistema/autor/134",
-"metadata": {},
-"autor_related": {
-"value": 56,
-"text": "COMISSÃO PARLAMENTAR DE INQUÉRITO - CPI"
-},
-"object_id": 56,
-"nome": "COMISSÃO PARLAMENTAR DE INQUÉRITO - CPI",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 110,
-"__str__": "COMPANHIA MATOGROSSENSE DE MINERAÇÃO DO ESTADO DE MATO GROSSO - METAMAT",
-"link_detail_backend": "/sistema/autor/110",
-"metadata": {},
-"autor_related": {
-"value": 40,
-"text": "COMPANHIA MATOGROSSENSE DE MINERAÇÃO DO ESTADO DE MATO GROSSO - METAMAT"
-},
-"object_id": 40,
-"nome": "COMPANHIA MATOGROSSENSE DE MINERAÇÃO DO ESTADO DE MATO GROSSO - METAMAT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 84,
-"__str__": "TELEFONIA - CONCESSIONÁRIA",
-"link_detail_backend": "/sistema/autor/84",
-"metadata": {},
-"autor_related": {
-"value": 31,
-"text": "TELEFONIA - CONCESSIONÁRIA"
-},
-"object_id": 31,
-"nome": "CONCESSIONÁRIAS - CONC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 49,
-"__str__": "UNIDADE DE CONTROLE INTERNO - UCI",
-"link_detail_backend": "/sistema/autor/49",
-"metadata": {},
-"autor_related": {
-"value": 22,
-"text": "UNIDADE DE CONTROLE INTERNO - UCI"
-},
-"object_id": 22,
-"nome": "CONTROLADORIA - CONT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 131,
-"__str__": "CPI - COMISSÃO PARLAMENTAR DE INQUÉRITO",
-"link_detail_backend": "/sistema/autor/131",
-"metadata": {},
-"autor_related": {
-"value": 15,
-"text": "CPI - COMISSÃO PARLAMENTAR DE INQUÉRITO"
-},
-"object_id": 15,
-"nome": "CPI - COMISSÃO PARLAMENTAR DE INQUÉRITO",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 5,
-"__str__": "CREUDE DA AREEIRA",
-"link_detail_backend": "/sistema/autor/5",
-"metadata": {},
-"autor_related": {
-"value": 15,
-"text": "CREUDE DA AREEIRA"
-},
-"object_id": 15,
-"nome": "CREUDE DA AREEIRA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-6
-]
-},
-{
-"id": 103,
-"__str__": "DANILO DO CARAMUJO",
-"link_detail_backend": "/sistema/autor/103",
-"metadata": {},
-"autor_related": {
-"value": 41,
-"text": "DANILO DO CARAMUJO"
-},
-"object_id": 41,
-"nome": "DANILO DO CARAMUJO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-62
-]
-},
-{
-"id": 6,
-"__str__": "DENIS MACIEL HOSPITAL",
-"link_detail_backend": "/sistema/autor/6",
-"metadata": {},
-"autor_related": {
-"value": 12,
-"text": "DENIS MACIEL HOSPITAL"
-},
-"object_id": 12,
-"nome": "DENIS MACIEL HOSPITAL",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-7
-]
-},
-{
-"id": 90,
-"__str__": "DEPARTAMENTO NACIONAL DE INFRAESTRUTURA DE TRANSPORTES - DNIT",
-"link_detail_backend": "/sistema/autor/90",
-"metadata": {},
-"autor_related": {
-"value": 34,
-"text": "DEPARTAMENTO NACIONAL DE INFRAESTRUTURA DE TRANSPORTES - DNIT"
-},
-"object_id": 34,
-"nome": "DEPARTAMENTO NACIONAL DE INFRAESTRUTURA DE TRANSPORTES - DNIT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 7,
-"__str__": "DONA ELZA DA COLONIA",
-"link_detail_backend": "/sistema/autor/7",
-"metadata": {},
-"autor_related": {
-"value": 7,
-"text": "DONA ELZA DA COLONIA"
-},
-"object_id": 7,
-"nome": "DONA ELZA DA COLONIA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-8
-]
-},
-{
-"id": 33,
-"__str__": "EDMILSON TAVARES",
-"link_detail_backend": "/sistema/autor/33",
-"metadata": {},
-"autor_related": {
-"value": 19,
-"text": "EDMILSON TAVARES"
-},
-"object_id": 19,
-"nome": "Edmilson Tavares",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": []
-},
-{
-"id": 34,
-"__str__": "EFP - ECONOMIA, FINANÇAS E PLANEJAMENTO",
-"link_detail_backend": "/sistema/autor/34",
-"metadata": {},
-"autor_related": {
-"value": 2,
-"text": "EFP - ECONOMIA, FINANÇAS E PLANEJAMENTO"
-},
-"object_id": 2,
-"nome": "EFP - ECONOMIA, FINANÇAS E PLANEJAMENTO",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 8,
-"__str__": "ELIAS PEREIRA",
-"link_detail_backend": "/sistema/autor/8",
-"metadata": {},
-"autor_related": {
-"value": 13,
-"text": "ELIAS PEREIRA"
-},
-"object_id": 13,
-"nome": "ELIAS PEREIRA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-9
-]
-},
-{
-"id": 142,
-"__str__": "ELIEL DA ROCHA",
-"link_detail_backend": "/sistema/autor/142",
-"metadata": {},
-"autor_related": {
-"value": 51,
-"text": "ELIEL DA ROCHA"
-},
-"object_id": 51,
-"nome": "ELIEL DA ROCHA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-142
-]
-},
-{
-"id": 119,
-"__str__": "ELIS ENFERMEIRA",
-"link_detail_backend": "/sistema/autor/119",
-"metadata": {},
-"autor_related": {
-"value": 46,
-"text": "ELIS ENFERMEIRA"
-},
-"object_id": 46,
-"nome": "ELIS ENFERMEIRA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-113,
-108,
-112,
-154,
-140,
-122
-]
-},
-{
-"id": 124,
-"__str__": "EMPRESA BRASILEIRA DE CORREISO E TELÉGRAFOS (ECT). - EBCT",
-"link_detail_backend": "/sistema/autor/124",
-"metadata": {},
-"autor_related": {
-"value": 50,
-"text": "EMPRESA BRASILEIRA DE CORREISO E TELÉGRAFOS (ECT). - EBCT"
-},
-"object_id": 50,
-"nome": "EMPRESA BRASILEIRA DE CORREISO E TELÉGRAFOS (ECT). - EBCT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 126,
-"__str__": "EMPRESA CENTRO AMÉRICA COMÉRCIO, SERVIÇO, GESTÃO E TECNOLOGIA LTDA - ECACSGT",
-"link_detail_backend": "/sistema/autor/126",
-"metadata": {},
-"autor_related": {
-"value": 52,
-"text": "EMPRESA CENTRO AMÉRICA COMÉRCIO, SERVIÇO, GESTÃO E TECNOLOGIA LTDA - ECACSGT"
-},
-"object_id": 52,
-"nome": "EMPRESA CENTRO AMÉRICA COMÉRCIO, SERVIÇO, GESTÃO E TECNOLOGIA LTDA - ECACSGT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 113,
-"__str__": "EMPRESAS DE ECONOMIA PRIVADA/MISTA - EEPM",
-"link_detail_backend": "/sistema/autor/113",
-"metadata": {},
-"autor_related": {
-"value": 43,
-"text": "EMPRESAS DE ECONOMIA PRIVADA/MISTA - EEPM"
-},
-"object_id": 43,
-"nome": "EMPRESAS DE ECONOMIA PRIVADA/MISTA - EEPM",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 115,
-"__str__": "EMPRESAS DO SISTEMA \"S\" (SENAI, SESC, SESI, SENAC, SEBRAE, ...) - ESS",
-"link_detail_backend": "/sistema/autor/115",
-"metadata": {},
-"autor_related": {
-"value": 45,
-"text": "EMPRESAS DO SISTEMA \"S\" (SENAI, SESC, SESI, SENAC, SEBRAE, ...) - ESS"
-},
-"object_id": 45,
-"nome": "EMPRESAS DO SISTEMA \"S\" (SENAI, SESC, SESI, SENAC, SEBRAE, ...) - ESS",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 85,
-"__str__": "EMPRESA PRIVADA - EMP",
-"link_detail_backend": "/sistema/autor/85",
-"metadata": {},
-"autor_related": {
-"value": 32,
-"text": "EMPRESA PRIVADA - EMP"
-},
-"object_id": 32,
-"nome": "EMPRESAS PRIVADAS - EMP.PRIV.",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 28,
-"__str__": "ENERGISA",
-"link_detail_backend": "/sistema/autor/28",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "ENERGISA",
-"cargo": "",
-"tipo": 13,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 69,
-"__str__": "ENGENHEIRO CELSO SILVA",
-"link_detail_backend": "/sistema/autor/69",
-"metadata": {},
-"autor_related": {
-"value": 24,
-"text": "ENGENHEIRO CELSO SILVA"
-},
-"object_id": 24,
-"nome": "ENGENHEIRO CELSO SILVA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-36,
-82,
-88
-]
-},
-{
-"id": 129,
-"__str__": "ENGENHEIRO WESLEY LOPES",
-"link_detail_backend": "/sistema/autor/129",
-"metadata": {},
-"autor_related": {
-"value": 49,
-"text": "ENGENHEIRO WESLEY LOPES"
-},
-"object_id": 49,
-"nome": "ENGENHEIRO WESLEY LOPES",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-132
-]
-},
-{
-"id": 27,
-"__str__": "EXECUTIVO ESTADUAL - EE",
-"link_detail_backend": "/sistema/autor/27",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "EXECUTIVO ESTADUAL - EE",
-"cargo": "",
-"tipo": 9,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 56,
-"__str__": "FC - FISCALIZAÇÃO E CONTROLE",
-"link_detail_backend": "/sistema/autor/56",
-"metadata": {},
-"autor_related": {
-"value": 7,
-"text": "FC - FISCALIZAÇÃO E CONTROLE"
-},
-"object_id": 7,
-"nome": "FC - FISCALIZAÇÃO E CONTROLE",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 71,
-"__str__": "FLÁVIO NEGAÇÃO",
-"link_detail_backend": "/sistema/autor/71",
-"metadata": {},
-"autor_related": {
-"value": 21,
-"text": "FLÁVIO NEGAÇÃO"
-},
-"object_id": 21,
-"nome": "FLÁVIO NEGAÇÃO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-38,
-84,
-86,
-94,
-92,
-93,
-98,
-123,
-143,
-114,
-150
-]
-},
-{
-"id": 22,
-"__str__": "FRANCIS MARIS CRUZ - Prefeito Municipal de Cáceres",
-"link_detail_backend": "/sistema/autor/22",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "FRANCIS MARIS CRUZ",
-"cargo": "Prefeito Municipal de Cáceres",
-"tipo": 7,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 29,
-"__str__": "FRANCO VALÉRIO",
-"link_detail_backend": "/sistema/autor/29",
-"metadata": {},
-"autor_related": {
-"value": 17,
-"text": "FRANCO VALÉRIO"
-},
-"object_id": 17,
-"nome": "FRANCO VALÉRIO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-81,
-83,
-89,
-135,
-133,
-121,
-25,
-146
-]
-},
-{
-"id": 38,
-"__str__": "GABINETE DA PRESIDÊNCIA - GPRES",
-"link_detail_backend": "/sistema/autor/38",
-"metadata": {},
-"autor_related": {
-"value": 12,
-"text": "GABINETE DA PRESIDÊNCIA - GPRES"
-},
-"object_id": 12,
-"nome": "GABINETE DA PRESIDÊNCIA - GPRES",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 81,
-"__str__": "GABINETE PARLAMENTAR - GPARL",
-"link_detail_backend": "/sistema/autor/81",
-"metadata": {},
-"autor_related": {
-"value": 29,
-"text": "GABINETE PARLAMENTAR - GPARL"
-},
-"object_id": 29,
-"nome": "GABINETE PARLAMENTAR - GP",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 82,
-"__str__": "GOVERNO FEDERAL",
-"link_detail_backend": "/sistema/autor/82",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "GOVERNO FEDERAL",
-"cargo": "",
-"tipo": 19,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 83,
-"__str__": "GOVERNO FEDERAL - GOVFED",
-"link_detail_backend": "/sistema/autor/83",
-"metadata": {},
-"autor_related": {
-"value": 30,
-"text": "GOVERNO FEDERAL - GOVFED"
-},
-"object_id": 30,
-"nome": "GOVERNO FEDERAL - GOVFED",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 125,
-"__str__": "HOSPITAL REGIONAL DE CÁCERES - HRC",
-"link_detail_backend": "/sistema/autor/125",
-"metadata": {},
-"autor_related": {
-"value": 51,
-"text": "HOSPITAL REGIONAL DE CÁCERES - HRC"
-},
-"object_id": 51,
-"nome": "HOSPITAL REGIONAL DE CÁCERES - HRC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 112,
-"__str__": "INSTITUIÇÃO FILANTRÓPICA/ULTILIDDE PÚBLICA - IFUP",
-"link_detail_backend": "/sistema/autor/112",
-"metadata": {},
-"autor_related": {
-"value": 42,
-"text": "INSTITUIÇÃO FILANTRÓPICA/ULTILIDDE PÚBLICA - IFUP"
-},
-"object_id": 42,
-"nome": "INSTITUIÇÃO FILANTRÓPICA/ULTILIDDE PÚBLICA - IFUP",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 117,
-"__str__": "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL - IPHAN",
-"link_detail_backend": "/sistema/autor/117",
-"metadata": {},
-"autor_related": {
-"value": 47,
-"text": "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL - IPHAN"
-},
-"object_id": 47,
-"nome": "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL - IPHAN",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 144,
-"__str__": "INSTITUTO MUNICIPAL DE PREVIDENCIA SOCIAL DOS SERVIDORES DE CÁCERES - PREVICÁCERES",
-"link_detail_backend": "/sistema/autor/144",
-"metadata": {},
-"autor_related": {
-"value": 64,
-"text": "INSTITUTO MUNICIPAL DE PREVIDENCIA SOCIAL DOS SERVIDORES DE CÁCERES - PREVICÁCERES"
-},
-"object_id": 64,
-"nome": "INSTITUTO MUNICIPAL DE PREVIDENCIA SOCIAL DOS SERVIDORES DE CÁCERES - PREVICÁCERES",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 109,
-"__str__": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA",
-"link_detail_backend": "/sistema/autor/109",
-"metadata": {},
-"autor_related": {
-"value": 39,
-"text": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA"
-},
-"object_id": 39,
-"nome": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 100,
-"__str__": "INVESTIGADORA CIDINHA",
-"link_detail_backend": "/sistema/autor/100",
-"metadata": {},
-"autor_related": {
-"value": 39,
-"text": "INVESTIGADORA CIDINHA"
-},
-"object_id": 39,
-"nome": "INVESTIGADORA CIDINHA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-59
-]
-},
-{
-"id": 75,
-"__str__": "ISAÍAS BEZERRA",
-"link_detail_backend": "/sistema/autor/75",
-"metadata": {},
-"autor_related": {
-"value": 26,
-"text": "ISAÍAS BEZERRA"
-},
-"object_id": 26,
-"nome": "ISAÍAS BEZERRA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-42,
-77,
-100
-]
-},
-{
-"id": 9,
-"__str__": "JERÔNIMO GONÇALVES",
-"link_detail_backend": "/sistema/autor/9",
-"metadata": {},
-"autor_related": {
-"value": 11,
-"text": "JERÔNIMO GONÇALVES"
-},
-"object_id": 11,
-"nome": "JERÔNIMO GONÇALVES",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-10,
-103,
-104,
-117
-]
-},
-{
-"id": 31,
-"__str__": "JOÃO REZENDE",
-"link_detail_backend": "/sistema/autor/31",
-"metadata": {},
-"autor_related": {
-"value": 18,
-"text": "JOÃO REZENDE"
-},
-"object_id": 18,
-"nome": "JOÃO REZENDE",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-56
-]
-},
-{
-"id": 121,
-"__str__": "JORGE AUGUSTO",
-"link_detail_backend": "/sistema/autor/121",
-"metadata": {},
-"autor_related": {
-"value": 45,
-"text": "JORGE AUGUSTO"
-},
-"object_id": 45,
-"nome": "JORGE AUGUSTO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-96,
-120
-]
-},
-{
-"id": 143,
-"__str__": "JUDSON PRATA",
-"link_detail_backend": "/sistema/autor/143",
-"metadata": {},
-"autor_related": {
-"value": 52,
-"text": "JUDSON PRATA"
-},
-"object_id": 52,
-"nome": "JUDSON PRATA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-144
-]
-},
-{
-"id": 68,
-"__str__": "LACERDA DO AKI",
-"link_detail_backend": "/sistema/autor/68",
-"metadata": {},
-"autor_related": {
-"value": 29,
-"text": "LACERDA DO AKI"
-},
-"object_id": 29,
-"nome": "LACERDA DO AKI",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-37,
-75
-]
-},
-{
-"id": 107,
-"__str__": "LORIVAL MOTTA",
-"link_detail_backend": "/sistema/autor/107",
-"metadata": {},
-"autor_related": {
-"value": 43,
-"text": "LORIVAL MOTTA"
-},
-"object_id": 43,
-"nome": "LORIVAL MOTTA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-68
-]
-},
-{
-"id": 72,
-"__str__": "LUIZ LANDIM",
-"link_detail_backend": "/sistema/autor/72",
-"metadata": {},
-"autor_related": {
-"value": 22,
-"text": "LUIZ LANDIM"
-},
-"object_id": 22,
-"nome": "LUIZ LANDIM",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-39,
-63
-]
-},
-{
-"id": 120,
-"__str__": "MAGALY",
-"link_detail_backend": "/sistema/autor/120",
-"metadata": {},
-"autor_related": {
-"value": 47,
-"text": "MAGALY"
-},
-"object_id": 47,
-"nome": "MAGALY",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-126,
-147,
-148,
-137,
-153,
-149
-]
-},
-{
-"id": 74,
-"__str__": "MANGA ROSA",
-"link_detail_backend": "/sistema/autor/74",
-"metadata": {},
-"autor_related": {
-"value": 25,
-"text": "MANGA ROSA"
-},
-"object_id": 25,
-"nome": "MANGA ROSA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-71,
-73,
-41,
-101
-]
-},
-{
-"id": 99,
-"__str__": "MARCELO RENATO DO JARDIM UNIÃO",
-"link_detail_backend": "/sistema/autor/99",
-"metadata": {},
-"autor_related": {
-"value": 38,
-"text": "MARCELO RENATO DO JARDIM UNIÃO"
-},
-"object_id": 38,
-"nome": "MARCELO RENATO DO JARDIM UNIÃO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-58
-]
-},
-{
-"id": 70,
-"__str__": "MARCOS RIBEIRO",
-"link_detail_backend": "/sistema/autor/70",
-"metadata": {},
-"autor_related": {
-"value": 20,
-"text": "MARCOS RIBEIRO"
-},
-"object_id": 20,
-"nome": "MARCOS RIBEIRO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-35,
-76,
-106,
-116,
-155,
-151
-]
-},
-{
-"id": 95,
-"__str__": "MÁRILSI DA SAÚDE",
-"link_detail_backend": "/sistema/autor/95",
-"metadata": {},
-"autor_related": {
-"value": 33,
-"text": "MÁRILSI DA SAÚDE"
-},
-"object_id": 33,
-"nome": "MÁRILSI DA SAÚDE",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-51
-]
-},
-{
-"id": 77,
-"__str__": "MAZÉH SILVA",
-"link_detail_backend": "/sistema/autor/77",
-"metadata": {},
-"autor_related": {
-"value": 28,
-"text": "MAZÉH SILVA"
-},
-"object_id": 28,
-"nome": "MAZÉH SILVA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-79,
-44
-]
-},
-{
-"id": 108,
-"__str__": "MENSAGEIRO CÂMARA MUNICIPAL DE CÁCERES - MCMC",
-"link_detail_backend": "/sistema/autor/108",
-"metadata": {},
-"autor_related": {
-"value": 38,
-"text": "MENSAGEIRO CÂMARA MUNICIPAL DE CÁCERES - MCMC"
-},
-"object_id": 38,
-"nome": "MENSAGEIRO CÂMARA MUNICIPAL DE CÁCERES - MCMC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 30,
-"__str__": "MESA DIRETORA - MESA DIRETORA",
-"link_detail_backend": "/sistema/autor/30",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "MESA DIRETORA",
-"cargo": "MESA DIRETORA",
-"tipo": 8,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 57,
-"__str__": "MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES - MDCMC",
-"link_detail_backend": "/sistema/autor/57",
-"metadata": {},
-"autor_related": {
-"value": 28,
-"text": "MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES - MDCMC"
-},
-"object_id": 28,
-"nome": "MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES-MT - MDCMC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 111,
-"__str__": "MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO - MAPA",
-"link_detail_backend": "/sistema/autor/111",
-"metadata": {},
-"autor_related": {
-"value": 41,
-"text": "MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO - MAPA"
-},
-"object_id": 41,
-"nome": "MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO - MAPA",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 137,
-"__str__": "MINISTÉRIO DA EDUCAÇÃO - MEC",
-"link_detail_backend": "/sistema/autor/137",
-"metadata": {},
-"autor_related": {
-"value": 59,
-"text": "MINISTÉRIO DA EDUCAÇÃO - MEC"
-},
-"object_id": 59,
-"nome": "MINISTÉRIO DA EDUCAÇÃO - MEC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 140,
-"__str__": "MINISTÉRIO DA PESCA E AQUICULTURA - MPA",
-"link_detail_backend": "/sistema/autor/140",
-"metadata": {},
-"autor_related": {
-"value": 62,
-"text": "MINISTÉRIO DA PESCA E AQUICULTURA - MPA"
-},
-"object_id": 62,
-"nome": "MINISTÉRIO DA PESCA E AQUICULTURA - MPA",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 135,
-"__str__": "MINISTÉRIO DA SAÚDE (GOVERNO FEDERAL) - MS",
-"link_detail_backend": "/sistema/autor/135",
-"metadata": {},
-"autor_related": {
-"value": 57,
-"text": "MINISTÉRIO DA SAÚDE (GOVERNO FEDERAL) - MS"
-},
-"object_id": 57,
-"nome": "MINISTÉRIO DA SAÚDE (GOVERNO FEDERAL) - MS",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 136,
-"__str__": "MINISTÉRIO DO DESENVOLVIMENTO E ASSISTÊNCIA SOCIAL, FAMILIAR E COMBATE À FOME - MDS",
-"link_detail_backend": "/sistema/autor/136",
-"metadata": {},
-"autor_related": {
-"value": 58,
-"text": "MINISTÉRIO DO DESENVOLVIMENTO E ASSISTÊNCIA SOCIAL, FAMILIAR E COMBATE À FOME - MDS"
-},
-"object_id": 58,
-"nome": "MINISTÉRIO DO DESENVOLVIMENTO E ASSISTÊNCIA SOCIAL, FAMILIAR E COMBATE À FOME - MDS",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 94,
-"__str__": "MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO - MPMT",
-"link_detail_backend": "/sistema/autor/94",
-"metadata": {},
-"autor_related": {
-"value": 35,
-"text": "MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO - MPMT"
-},
-"object_id": 35,
-"nome": "MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO - MPMT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 118,
-"__str__": "NAEL SONAQUE",
-"link_detail_backend": "/sistema/autor/118",
-"metadata": {},
-"autor_related": {
-"value": 44,
-"text": "NAEL SONAQUE"
-},
-"object_id": 44,
-"nome": "NAEL SONAQUE",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-91
-]
-},
-{
-"id": 21,
-"__str__": "NILSON MAGALHÃES",
-"link_detail_backend": "/sistema/autor/21",
-"metadata": {},
-"autor_related": {
-"value": 16,
-"text": "NILSON MAGALHÃES"
-},
-"object_id": 16,
-"nome": "NILSON MAGALHÃES",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": []
-},
-{
-"id": 139,
-"__str__": "OBSERVATÓRIO MUNICIPAL DA VIOLÊNCIA CONTRA A MULHER DE CÁCERES - OMVCM",
-"link_detail_backend": "/sistema/autor/139",
-"metadata": {},
-"autor_related": {
-"value": 61,
-"text": "OBSERVATÓRIO MUNICIPAL DA VIOLÊNCIA CONTRA A MULHER DE CÁCERES - OMVCM"
-},
-"object_id": 61,
-"nome": "OBSERVATÓRIO MUNICIPAL DA VIOLÊNCIA CONTRA A MULHER DE CÁCERES - OMVCM",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 102,
-"__str__": "Odenilson José da Silva - Vice-Prefeito",
-"link_detail_backend": "/sistema/autor/102",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "Odenilson José da Silva",
-"cargo": "Vice-Prefeito",
-"tipo": 7,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 96,
-"__str__": "ODENIR NERY GÁS E ÁGUA",
-"link_detail_backend": "/sistema/autor/96",
-"metadata": {},
-"autor_related": {
-"value": 34,
-"text": "ODENIR NERY GÁS E ÁGUA"
-},
-"object_id": 34,
-"nome": "ODENIR NERY GÁS E ÁGUA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-52
-]
-},
-{
-"id": 88,
-"__str__": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT",
-"link_detail_backend": "/sistema/autor/88",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT",
-"cargo": "",
-"tipo": 12,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 87,
-"__str__": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT - OABMT",
-"link_detail_backend": "/sistema/autor/87",
-"metadata": {},
-"autor_related": {
-"value": 33,
-"text": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT - OABMT"
-},
-"object_id": 33,
-"nome": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT - OABMT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 47,
-"__str__": "OUVIDORIA LEGISLATIVA - OUV",
-"link_detail_backend": "/sistema/autor/47",
-"metadata": {},
-"autor_related": {
-"value": 20,
-"text": "OUVIDORIA LEGISLATIVA - OUV"
-},
-"object_id": 20,
-"nome": "OUVIDORIA - OUV",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 86,
-"__str__": "PACHECO CABELEIREIRO",
-"link_detail_backend": "/sistema/autor/86",
-"metadata": {},
-"autor_related": {
-"value": 30,
-"text": "PACHECO CABELEIREIRO"
-},
-"object_id": 30,
-"nome": "PACHECO CABELEIREIRO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-46,
-109,
-110,
-125
 ]
 },
 {
@@ -1583,92 +59,115 @@
 ]
 },
 {
-"id": 76,
-"__str__": "PASTOR JÚNIOR",
-"link_detail_backend": "/sistema/autor/76",
+"id": 4,
+"__str__": "CLAUDIO HENRIQUE",
+"link_detail_backend": "/sistema/autor/4",
 "metadata": {},
 "autor_related": {
-"value": 27,
-"text": "PASTOR JÚNIOR"
+"value": 3,
+"text": "CLAUDIO HENRIQUE"
 },
-"object_id": 27,
-"nome": "PASTOR JÚNIOR",
+"object_id": 3,
+"nome": "CLAUDIO HENRIQUE",
 "cargo": "",
 "tipo": 1,
 "content_type": 27,
 "operadores": [
-129,
-43,
-74,
-115,
-107
+5
 ]
 },
 {
-"id": 106,
-"__str__": "PEDRINHO DO SINDICATO",
-"link_detail_backend": "/sistema/autor/106",
+"id": 5,
+"__str__": "CREUDE DA AREEIRA",
+"link_detail_backend": "/sistema/autor/5",
 "metadata": {},
 "autor_related": {
-"value": 42,
-"text": "PEDRINHO DO SINDICATO"
+"value": 15,
+"text": "CREUDE DA AREEIRA"
 },
-"object_id": 42,
-"nome": "PEDRINHO DO SINDICATO",
+"object_id": 15,
+"nome": "CREUDE DA AREEIRA",
 "cargo": "",
 "tipo": 1,
 "content_type": 27,
 "operadores": [
-66
+6
 ]
 },
 {
-"id": 39,
-"__str__": "PLENÁRIO - PLEN",
-"link_detail_backend": "/sistema/autor/39",
+"id": 6,
+"__str__": "DENIS MACIEL HOSPITAL",
+"link_detail_backend": "/sistema/autor/6",
+"metadata": {},
+"autor_related": {
+"value": 12,
+"text": "DENIS MACIEL HOSPITAL"
+},
+"object_id": 12,
+"nome": "DENIS MACIEL HOSPITAL",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+7
+]
+},
+{
+"id": 7,
+"__str__": "DONA ELZA DA COLONIA",
+"link_detail_backend": "/sistema/autor/7",
+"metadata": {},
+"autor_related": {
+"value": 7,
+"text": "DONA ELZA DA COLONIA"
+},
+"object_id": 7,
+"nome": "DONA ELZA DA COLONIA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+8
+]
+},
+{
+"id": 8,
+"__str__": "ELIAS PEREIRA",
+"link_detail_backend": "/sistema/autor/8",
 "metadata": {},
 "autor_related": {
 "value": 13,
-"text": "PLENÁRIO - PLEN"
+"text": "ELIAS PEREIRA"
 },
 "object_id": 13,
-"nome": "PLENÁRIO - PLEN",
+"nome": "ELIAS PEREIRA",
 "cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+9
+]
 },
 {
-"id": 52,
-"__str__": "PODER JUDICIÁRIO DO ESTADO DE MATO GROSSO - PJMT",
-"link_detail_backend": "/sistema/autor/52",
+"id": 9,
+"__str__": "JERÔNIMO GONÇALVES",
+"link_detail_backend": "/sistema/autor/9",
 "metadata": {},
 "autor_related": {
-"value": 25,
-"text": "PODER JUDICIÁRIO DO ESTADO DE MATO GROSSO - PJMT"
+"value": 11,
+"text": "JERÔNIMO GONÇALVES"
 },
-"object_id": 25,
-"nome": "Poder Judiciário do Estado de Mato Grosso - PJMT",
+"object_id": 11,
+"nome": "JERÔNIMO GONÇALVES",
 "cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 45,
-"__str__": "PROCURADORIA LEGISLATIVA - PROCLEG",
-"link_detail_backend": "/sistema/autor/45",
-"metadata": {},
-"autor_related": {
-"value": 18,
-"text": "PROCURADORIA LEGISLATIVA - PROCLEG"
-},
-"object_id": 18,
-"nome": "PROCURADORIA JURÍDICA DO LEGISLATIVO - PJL",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+10,
+103,
+104,
+117
+]
 },
 {
 "id": 10,
@@ -1692,76 +191,6 @@
 ]
 },
 {
-"id": 73,
-"__str__": "PROFESSOR LEANDRO SANTOS",
-"link_detail_backend": "/sistema/autor/73",
-"metadata": {},
-"autor_related": {
-"value": 23,
-"text": "PROFESSOR LEANDRO SANTOS"
-},
-"object_id": 23,
-"nome": "PROFESSOR LEANDRO SANTOS",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-40,
-80,
-85
-]
-},
-{
-"id": 101,
-"__str__": "PROFESSOR MARQUINHOS",
-"link_detail_backend": "/sistema/autor/101",
-"metadata": {},
-"autor_related": {
-"value": 40,
-"text": "PROFESSOR MARQUINHOS"
-},
-"object_id": 40,
-"nome": "PROFESSOR MARQUINHOS",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-60
-]
-},
-{
-"id": 36,
-"__str__": "PROGRAMA DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON",
-"link_detail_backend": "/sistema/autor/36",
-"metadata": {},
-"autor_related": {
-"value": 10,
-"text": "PROGRAMA DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON"
-},
-"object_id": 10,
-"nome": "Programa de Proteção e Defesa do Consumidor - PROCON",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 37,
-"__str__": "PROTOCOLO - PROTOC",
-"link_detail_backend": "/sistema/autor/37",
-"metadata": {},
-"autor_related": {
-"value": 11,
-"text": "PROTOCOLO - PROTOC"
-},
-"object_id": 11,
-"nome": "PROTOCOLO CMC - PROTOC",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
 "id": 11,
 "__str__": "ROSINEI NEVES",
 "link_detail_backend": "/sistema/autor/11",
@@ -1778,19 +207,6 @@
 "operadores": [
 12
 ]
-},
-{
-"id": 24,
-"__str__": "ROTARY CLUB - RC",
-"link_detail_backend": "/sistema/autor/24",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "ROTARY CLUB - RC",
-"cargo": "",
-"tipo": 12,
-"content_type": null,
-"operadores": []
 },
 {
 "id": 12,
@@ -1810,282 +226,6 @@
 13,
 72,
 87
-]
-},
-{
-"id": 44,
-"__str__": "SECRETARIA ADMINISTRATIVA - SA/RH",
-"link_detail_backend": "/sistema/autor/44",
-"metadata": {},
-"autor_related": {
-"value": 17,
-"text": "SECRETARIA ADMINISTRATIVA - SA/RH"
-},
-"object_id": 17,
-"nome": "SECRETARIA ADMINISTRATIVA - SA/RH",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 42,
-"__str__": "SECRETARIA DE AQUISICAO, LICITACAO, CONTRATOS E PATRIMONIO - SALCP",
-"link_detail_backend": "/sistema/autor/42",
-"metadata": {},
-"autor_related": {
-"value": 15,
-"text": "SECRETARIA DE AQUISICAO, LICITACAO, CONTRATOS E PATRIMONIO - SALCP"
-},
-"object_id": 15,
-"nome": "SECRETARIA DE AQUISICAO, LICITACAO, CONTRATOS E PATRIMONIO - SALCP",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 43,
-"__str__": "SECRETARIA DE CONTABILIDADE E FINANÇAS - SCF",
-"link_detail_backend": "/sistema/autor/43",
-"metadata": {},
-"autor_related": {
-"value": 16,
-"text": "SECRETARIA DE CONTABILIDADE E FINANÇAS - SCF"
-},
-"object_id": 16,
-"nome": "SECRETARIA DE CONTABILIDADE E FINANÇAS - SCF",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 138,
-"__str__": "SECRETARIA DE ESTADO DE AGRICULTURA FAMILIAR DE MATO GROSSO - SEAF",
-"link_detail_backend": "/sistema/autor/138",
-"metadata": {},
-"autor_related": {
-"value": 60,
-"text": "SECRETARIA DE ESTADO DE AGRICULTURA FAMILIAR DE MATO GROSSO - SEAF"
-},
-"object_id": 60,
-"nome": "SECRETARIA DE ESTADO DE AGRICULTURA FAMILIAR DE MATO GROSSO - SEAF",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 127,
-"__str__": "SECRETARIA DE ESTADO DE INFRAESTRUTURA E LOGÍSTICA DE MATO GROSSO - SINFRA",
-"link_detail_backend": "/sistema/autor/127",
-"metadata": {},
-"autor_related": {
-"value": 53,
-"text": "SECRETARIA DE ESTADO DE INFRAESTRUTURA E LOGÍSTICA DE MATO GROSSO - SINFRA"
-},
-"object_id": 53,
-"nome": "SECRETARIA DE ESTADO DE INFRAESTRUTURA E LOGÍSTICA DE MATO GROSSO - SINFRA",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 141,
-"__str__": "SECRETARIA DE ESTADO DE SAÚDE DE MATO GROSSO - SES/MT",
-"link_detail_backend": "/sistema/autor/141",
-"metadata": {},
-"autor_related": {
-"value": 63,
-"text": "SECRETARIA DE ESTADO DE SAÚDE DE MATO GROSSO - SES/MT"
-},
-"object_id": 63,
-"nome": "SECRETARIA DE ESTADO DE SAÚDE DE MATO GROSSO - SES/MT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 46,
-"__str__": "SECRETARIA DE IMPRENSA - SI",
-"link_detail_backend": "/sistema/autor/46",
-"metadata": {},
-"autor_related": {
-"value": 19,
-"text": "SECRETARIA DE IMPRENSA - SI"
-},
-"object_id": 19,
-"nome": "SECRETARIA DE IMPRENSA - SI",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 48,
-"__str__": "SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO - STI",
-"link_detail_backend": "/sistema/autor/48",
-"metadata": {},
-"autor_related": {
-"value": 21,
-"text": "SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO - STI"
-},
-"object_id": 21,
-"nome": "SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO - STI",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 50,
-"__str__": "SECRETARIA GERAL - SG",
-"link_detail_backend": "/sistema/autor/50",
-"metadata": {},
-"autor_related": {
-"value": 23,
-"text": "SECRETARIA GERAL - SG"
-},
-"object_id": 23,
-"nome": "SECRETARIA GERAL - SG",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 17,
-"__str__": "SENADO FEDERAL",
-"link_detail_backend": "/sistema/autor/17",
-"metadata": {},
-"autor_related": null,
-"object_id": null,
-"nome": "SENADO FEDERAL",
-"cargo": "",
-"tipo": 15,
-"content_type": null,
-"operadores": []
-},
-{
-"id": 53,
-"__str__": "SENADO FEDERAL - SF",
-"link_detail_backend": "/sistema/autor/53",
-"metadata": {},
-"autor_related": {
-"value": 26,
-"text": "SENADO FEDERAL - SF"
-},
-"object_id": 26,
-"nome": "SENADO FEDERAL - SF",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 41,
-"__str__": "SHPS - SAÚDE, HIGIENE E PROMOÇÃO SOCIAL",
-"link_detail_backend": "/sistema/autor/41",
-"metadata": {},
-"autor_related": {
-"value": 3,
-"text": "SHPS - SAÚDE, HIGIENE E PROMOÇÃO SOCIAL"
-},
-"object_id": 3,
-"nome": "SHPS - SAÚDE, HIGIENE E PROMOÇÃO SOCIAL",
-"cargo": "",
-"tipo": 3,
-"content_type": 38,
-"operadores": []
-},
-{
-"id": 122,
-"__str__": "SINDICATO / ASSOCIAÇÃO - SIND",
-"link_detail_backend": "/sistema/autor/122",
-"metadata": {},
-"autor_related": {
-"value": 48,
-"text": "SINDICATO / ASSOCIAÇÃO - SIND"
-},
-"object_id": 48,
-"nome": "SINDICATO / ASSOCIAÇÃO - SIND",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 92,
-"__str__": "THOMAS CANELLAS",
-"link_detail_backend": "/sistema/autor/92",
-"metadata": {},
-"autor_related": {
-"value": 31,
-"text": "THOMAS CANELLAS"
-},
-"object_id": 31,
-"nome": "THOMAS CANELLAS",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-48
-]
-},
-{
-"id": 54,
-"__str__": "TRIBUNAL DE CONTAS DO ESTADO DE MATO GROSSO - TCEMT",
-"link_detail_backend": "/sistema/autor/54",
-"metadata": {},
-"autor_related": {
-"value": 27,
-"text": "TRIBUNAL DE CONTAS DO ESTADO DE MATO GROSSO - TCEMT"
-},
-"object_id": 27,
-"nome": "TRIBUNAL DE CONTAS DO ESTADO DE MATO GROSSO - TCEMT",
-"cargo": "",
-"tipo": 4,
-"content_type": 57,
-"operadores": []
-},
-{
-"id": 93,
-"__str__": "VALDEIR DO CARAMUJO",
-"link_detail_backend": "/sistema/autor/93",
-"metadata": {},
-"autor_related": {
-"value": 32,
-"text": "VALDEIR DO CARAMUJO"
-},
-"object_id": 32,
-"nome": "VALDEIR DO CARAMUJO",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-49
-]
-},
-{
-"id": 1,
-"__str__": "VALDENÍRIA",
-"link_detail_backend": "/sistema/autor/1",
-"metadata": {},
-"autor_related": {
-"value": 2,
-"text": "VALDENÍRIA"
-},
-"object_id": 2,
-"nome": "VALDENÍRIA",
-"cargo": "",
-"tipo": 1,
-"content_type": 27,
-"operadores": [
-14,
-78
 ]
 },
 {
@@ -2141,5 +281,1865 @@
 "operadores": [
 17
 ]
+},
+{
+"id": 17,
+"__str__": "SENADO FEDERAL",
+"link_detail_backend": "/sistema/autor/17",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "SENADO FEDERAL",
+"cargo": "",
+"tipo": 15,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 18,
+"__str__": "CM - COMISSÃO MISTA",
+"link_detail_backend": "/sistema/autor/18",
+"metadata": {},
+"autor_related": {
+"value": 8,
+"text": "CM - COMISSÃO MISTA"
+},
+"object_id": 8,
+"nome": "CM - COMISSÃO MISTA",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 21,
+"__str__": "NILSON MAGALHÃES",
+"link_detail_backend": "/sistema/autor/21",
+"metadata": {},
+"autor_related": {
+"value": 16,
+"text": "NILSON MAGALHÃES"
+},
+"object_id": 16,
+"nome": "NILSON MAGALHÃES",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": []
+},
+{
+"id": 22,
+"__str__": "FRANCIS MARIS CRUZ - Prefeito Municipal de Cáceres",
+"link_detail_backend": "/sistema/autor/22",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "FRANCIS MARIS CRUZ",
+"cargo": "Prefeito Municipal de Cáceres",
+"tipo": 7,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 23,
+"__str__": "ASSEMBLÉIA LEGISLATIVA DO ESTADO DE MATO GROSSO",
+"link_detail_backend": "/sistema/autor/23",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "ASSEMBLÉIA LEGISLATIVA DO ESTADO DE MATO GROSSO",
+"cargo": "",
+"tipo": 11,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 24,
+"__str__": "ROTARY CLUB - RC",
+"link_detail_backend": "/sistema/autor/24",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "ROTARY CLUB - RC",
+"cargo": "",
+"tipo": 12,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 25,
+"__str__": "AUTARQUIA ÁGUAS DO PANTANAL - AAP",
+"link_detail_backend": "/sistema/autor/25",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "AUTARQUIA ÁGUAS DO PANTANAL - AAP",
+"cargo": "",
+"tipo": 10,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 26,
+"__str__": "CÂMARA DOS DEPUTADOS FEDERAIS",
+"link_detail_backend": "/sistema/autor/26",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "CÂMARA DOS DEPUTADOS FEDERAIS",
+"cargo": "",
+"tipo": 14,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 27,
+"__str__": "EXECUTIVO ESTADUAL - EE",
+"link_detail_backend": "/sistema/autor/27",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "EXECUTIVO ESTADUAL - EE",
+"cargo": "",
+"tipo": 9,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 28,
+"__str__": "ENERGISA",
+"link_detail_backend": "/sistema/autor/28",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "ENERGISA",
+"cargo": "",
+"tipo": 13,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 29,
+"__str__": "FRANCO VALÉRIO",
+"link_detail_backend": "/sistema/autor/29",
+"metadata": {},
+"autor_related": {
+"value": 17,
+"text": "FRANCO VALÉRIO"
+},
+"object_id": 17,
+"nome": "FRANCO VALÉRIO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+81,
+83,
+89,
+135,
+133,
+121,
+25,
+146
+]
+},
+{
+"id": 30,
+"__str__": "MESA DIRETORA - MESA DIRETORA",
+"link_detail_backend": "/sistema/autor/30",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "MESA DIRETORA",
+"cargo": "MESA DIRETORA",
+"tipo": 8,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 31,
+"__str__": "JOÃO REZENDE",
+"link_detail_backend": "/sistema/autor/31",
+"metadata": {},
+"autor_related": {
+"value": 18,
+"text": "JOÃO REZENDE"
+},
+"object_id": 18,
+"nome": "JOÃO REZENDE",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+56
+]
+},
+{
+"id": 32,
+"__str__": "CÂMARA MUNICIPAL DE CÁCERES-MT - CMCMT",
+"link_detail_backend": "/sistema/autor/32",
+"metadata": {},
+"autor_related": {
+"value": 9,
+"text": "CÂMARA MUNICIPAL DE CÁCERES-MT - CMCMT"
+},
+"object_id": 9,
+"nome": "CÂMARA MUNICIPAL DE CÁCERES-MT - CMCMT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": [
+1
+]
+},
+{
+"id": 33,
+"__str__": "EDMILSON TAVARES",
+"link_detail_backend": "/sistema/autor/33",
+"metadata": {},
+"autor_related": {
+"value": 19,
+"text": "EDMILSON TAVARES"
+},
+"object_id": 19,
+"nome": "Edmilson Tavares",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": []
+},
+{
+"id": 34,
+"__str__": "EFP - ECONOMIA, FINANÇAS E PLANEJAMENTO",
+"link_detail_backend": "/sistema/autor/34",
+"metadata": {},
+"autor_related": {
+"value": 2,
+"text": "EFP - ECONOMIA, FINANÇAS E PLANEJAMENTO"
+},
+"object_id": 2,
+"nome": "EFP - ECONOMIA, FINANÇAS E PLANEJAMENTO",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 35,
+"__str__": "CCJ - CONSTITUIÇÃO, JUSTIÇA, TRABALHO E REDAÇÃO",
+"link_detail_backend": "/sistema/autor/35",
+"metadata": {},
+"autor_related": {
+"value": 1,
+"text": "CCJ - CONSTITUIÇÃO, JUSTIÇA, TRABALHO E REDAÇÃO"
+},
+"object_id": 1,
+"nome": "CCJ - CONSTITUIÇÃO, JUSTIÇA, TRABALHO E REDAÇÃO",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 36,
+"__str__": "PROGRAMA DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON",
+"link_detail_backend": "/sistema/autor/36",
+"metadata": {},
+"autor_related": {
+"value": 10,
+"text": "PROGRAMA DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON"
+},
+"object_id": 10,
+"nome": "Programa de Proteção e Defesa do Consumidor - PROCON",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 37,
+"__str__": "PROTOCOLO - PROTOC",
+"link_detail_backend": "/sistema/autor/37",
+"metadata": {},
+"autor_related": {
+"value": 11,
+"text": "PROTOCOLO - PROTOC"
+},
+"object_id": 11,
+"nome": "PROTOCOLO CMC - PROTOC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 38,
+"__str__": "GABINETE DA PRESIDÊNCIA - GPRES",
+"link_detail_backend": "/sistema/autor/38",
+"metadata": {},
+"autor_related": {
+"value": 12,
+"text": "GABINETE DA PRESIDÊNCIA - GPRES"
+},
+"object_id": 12,
+"nome": "GABINETE DA PRESIDÊNCIA - GPRES",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 39,
+"__str__": "PLENÁRIO - PLEN",
+"link_detail_backend": "/sistema/autor/39",
+"metadata": {},
+"autor_related": {
+"value": 13,
+"text": "PLENÁRIO - PLEN"
+},
+"object_id": 13,
+"nome": "PLENÁRIO - PLEN",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 40,
+"__str__": "ARQUIVO - ARQ",
+"link_detail_backend": "/sistema/autor/40",
+"metadata": {},
+"autor_related": {
+"value": 14,
+"text": "ARQUIVO - ARQ"
+},
+"object_id": 14,
+"nome": "ARQUIVO - ARQ",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 41,
+"__str__": "SHPS - SAÚDE, HIGIENE E PROMOÇÃO SOCIAL",
+"link_detail_backend": "/sistema/autor/41",
+"metadata": {},
+"autor_related": {
+"value": 3,
+"text": "SHPS - SAÚDE, HIGIENE E PROMOÇÃO SOCIAL"
+},
+"object_id": 3,
+"nome": "SHPS - SAÚDE, HIGIENE E PROMOÇÃO SOCIAL",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 42,
+"__str__": "SECRETARIA DE AQUISICAO, LICITACAO, CONTRATOS E PATRIMONIO - SALCP",
+"link_detail_backend": "/sistema/autor/42",
+"metadata": {},
+"autor_related": {
+"value": 15,
+"text": "SECRETARIA DE AQUISICAO, LICITACAO, CONTRATOS E PATRIMONIO - SALCP"
+},
+"object_id": 15,
+"nome": "SECRETARIA DE AQUISICAO, LICITACAO, CONTRATOS E PATRIMONIO - SALCP",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 43,
+"__str__": "SECRETARIA DE CONTABILIDADE E FINANÇAS - SCF",
+"link_detail_backend": "/sistema/autor/43",
+"metadata": {},
+"autor_related": {
+"value": 16,
+"text": "SECRETARIA DE CONTABILIDADE E FINANÇAS - SCF"
+},
+"object_id": 16,
+"nome": "SECRETARIA DE CONTABILIDADE E FINANÇAS - SCF",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 44,
+"__str__": "SECRETARIA ADMINISTRATIVA - SA/RH",
+"link_detail_backend": "/sistema/autor/44",
+"metadata": {},
+"autor_related": {
+"value": 17,
+"text": "SECRETARIA ADMINISTRATIVA - SA/RH"
+},
+"object_id": 17,
+"nome": "SECRETARIA ADMINISTRATIVA - SA/RH",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 45,
+"__str__": "PROCURADORIA LEGISLATIVA - PROCLEG",
+"link_detail_backend": "/sistema/autor/45",
+"metadata": {},
+"autor_related": {
+"value": 18,
+"text": "PROCURADORIA LEGISLATIVA - PROCLEG"
+},
+"object_id": 18,
+"nome": "PROCURADORIA JURÍDICA DO LEGISLATIVO - PJL",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 46,
+"__str__": "SECRETARIA DE IMPRENSA - SI",
+"link_detail_backend": "/sistema/autor/46",
+"metadata": {},
+"autor_related": {
+"value": 19,
+"text": "SECRETARIA DE IMPRENSA - SI"
+},
+"object_id": 19,
+"nome": "SECRETARIA DE IMPRENSA - SI",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 47,
+"__str__": "OUVIDORIA LEGISLATIVA - OUV",
+"link_detail_backend": "/sistema/autor/47",
+"metadata": {},
+"autor_related": {
+"value": 20,
+"text": "OUVIDORIA LEGISLATIVA - OUV"
+},
+"object_id": 20,
+"nome": "OUVIDORIA - OUV",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 48,
+"__str__": "SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO - STI",
+"link_detail_backend": "/sistema/autor/48",
+"metadata": {},
+"autor_related": {
+"value": 21,
+"text": "SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO - STI"
+},
+"object_id": 21,
+"nome": "SECRETARIA DE TECNOLOGIA DA INFORMAÇÃO - STI",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 49,
+"__str__": "UNIDADE DE CONTROLE INTERNO - UCI",
+"link_detail_backend": "/sistema/autor/49",
+"metadata": {},
+"autor_related": {
+"value": 22,
+"text": "UNIDADE DE CONTROLE INTERNO - UCI"
+},
+"object_id": 22,
+"nome": "CONTROLADORIA - CONT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 50,
+"__str__": "SECRETARIA GERAL - SG",
+"link_detail_backend": "/sistema/autor/50",
+"metadata": {},
+"autor_related": {
+"value": 23,
+"text": "SECRETARIA GERAL - SG"
+},
+"object_id": 23,
+"nome": "SECRETARIA GERAL - SG",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 52,
+"__str__": "PODER JUDICIÁRIO DO ESTADO DE MATO GROSSO - PJMT",
+"link_detail_backend": "/sistema/autor/52",
+"metadata": {},
+"autor_related": {
+"value": 25,
+"text": "PODER JUDICIÁRIO DO ESTADO DE MATO GROSSO - PJMT"
+},
+"object_id": 25,
+"nome": "Poder Judiciário do Estado de Mato Grosso - PJMT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 53,
+"__str__": "SENADO FEDERAL - SF",
+"link_detail_backend": "/sistema/autor/53",
+"metadata": {},
+"autor_related": {
+"value": 26,
+"text": "SENADO FEDERAL - SF"
+},
+"object_id": 26,
+"nome": "SENADO FEDERAL - SF",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 54,
+"__str__": "TRIBUNAL DE CONTAS DO ESTADO DE MATO GROSSO - TCEMT",
+"link_detail_backend": "/sistema/autor/54",
+"metadata": {},
+"autor_related": {
+"value": 27,
+"text": "TRIBUNAL DE CONTAS DO ESTADO DE MATO GROSSO - TCEMT"
+},
+"object_id": 27,
+"nome": "TRIBUNAL DE CONTAS DO ESTADO DE MATO GROSSO - TCEMT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 56,
+"__str__": "FC - FISCALIZAÇÃO E CONTROLE",
+"link_detail_backend": "/sistema/autor/56",
+"metadata": {},
+"autor_related": {
+"value": 7,
+"text": "FC - FISCALIZAÇÃO E CONTROLE"
+},
+"object_id": 7,
+"nome": "FC - FISCALIZAÇÃO E CONTROLE",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 57,
+"__str__": "MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES - MDCMC",
+"link_detail_backend": "/sistema/autor/57",
+"metadata": {},
+"autor_related": {
+"value": 28,
+"text": "MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES - MDCMC"
+},
+"object_id": 28,
+"nome": "MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES-MT - MDCMC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 68,
+"__str__": "LACERDA DO AKI",
+"link_detail_backend": "/sistema/autor/68",
+"metadata": {},
+"autor_related": {
+"value": 29,
+"text": "LACERDA DO AKI"
+},
+"object_id": 29,
+"nome": "LACERDA DO AKI",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+37,
+75
+]
+},
+{
+"id": 69,
+"__str__": "ENGENHEIRO CELSO SILVA",
+"link_detail_backend": "/sistema/autor/69",
+"metadata": {},
+"autor_related": {
+"value": 24,
+"text": "ENGENHEIRO CELSO SILVA"
+},
+"object_id": 24,
+"nome": "ENGENHEIRO CELSO SILVA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+36,
+82,
+88
+]
+},
+{
+"id": 70,
+"__str__": "MARCOS RIBEIRO",
+"link_detail_backend": "/sistema/autor/70",
+"metadata": {},
+"autor_related": {
+"value": 20,
+"text": "MARCOS RIBEIRO"
+},
+"object_id": 20,
+"nome": "MARCOS RIBEIRO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+35,
+76,
+106,
+116,
+155,
+151
+]
+},
+{
+"id": 71,
+"__str__": "FLÁVIO NEGAÇÃO",
+"link_detail_backend": "/sistema/autor/71",
+"metadata": {},
+"autor_related": {
+"value": 21,
+"text": "FLÁVIO NEGAÇÃO"
+},
+"object_id": 21,
+"nome": "FLÁVIO NEGAÇÃO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+38,
+84,
+86,
+94,
+92,
+93,
+98,
+123,
+143,
+114,
+150
+]
+},
+{
+"id": 72,
+"__str__": "LUIZ LANDIM",
+"link_detail_backend": "/sistema/autor/72",
+"metadata": {},
+"autor_related": {
+"value": 22,
+"text": "LUIZ LANDIM"
+},
+"object_id": 22,
+"nome": "LUIZ LANDIM",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+39,
+63
+]
+},
+{
+"id": 73,
+"__str__": "PROFESSOR LEANDRO SANTOS",
+"link_detail_backend": "/sistema/autor/73",
+"metadata": {},
+"autor_related": {
+"value": 23,
+"text": "PROFESSOR LEANDRO SANTOS"
+},
+"object_id": 23,
+"nome": "PROFESSOR LEANDRO SANTOS",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+40,
+80,
+85
+]
+},
+{
+"id": 74,
+"__str__": "MANGA ROSA",
+"link_detail_backend": "/sistema/autor/74",
+"metadata": {},
+"autor_related": {
+"value": 25,
+"text": "MANGA ROSA"
+},
+"object_id": 25,
+"nome": "MANGA ROSA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+71,
+73,
+41,
+101
+]
+},
+{
+"id": 75,
+"__str__": "ISAÍAS BEZERRA",
+"link_detail_backend": "/sistema/autor/75",
+"metadata": {},
+"autor_related": {
+"value": 26,
+"text": "ISAÍAS BEZERRA"
+},
+"object_id": 26,
+"nome": "ISAÍAS BEZERRA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+42,
+77,
+100
+]
+},
+{
+"id": 76,
+"__str__": "PASTOR JÚNIOR",
+"link_detail_backend": "/sistema/autor/76",
+"metadata": {},
+"autor_related": {
+"value": 27,
+"text": "PASTOR JÚNIOR"
+},
+"object_id": 27,
+"nome": "PASTOR JÚNIOR",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+129,
+43,
+74,
+115,
+107
+]
+},
+{
+"id": 77,
+"__str__": "MAZÉH SILVA",
+"link_detail_backend": "/sistema/autor/77",
+"metadata": {},
+"autor_related": {
+"value": 28,
+"text": "MAZÉH SILVA"
+},
+"object_id": 28,
+"nome": "MAZÉH SILVA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+79,
+44
+]
+},
+{
+"id": 79,
+"__str__": "Antônia Eliene Liberato Dias - Prefeita",
+"link_detail_backend": "/sistema/autor/79",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "Antônia Eliene Liberato Dias",
+"cargo": "Prefeita",
+"tipo": 7,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 81,
+"__str__": "GABINETE PARLAMENTAR - GPARL",
+"link_detail_backend": "/sistema/autor/81",
+"metadata": {},
+"autor_related": {
+"value": 29,
+"text": "GABINETE PARLAMENTAR - GPARL"
+},
+"object_id": 29,
+"nome": "GABINETE PARLAMENTAR - GP",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 82,
+"__str__": "GOVERNO FEDERAL",
+"link_detail_backend": "/sistema/autor/82",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "GOVERNO FEDERAL",
+"cargo": "",
+"tipo": 19,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 83,
+"__str__": "GOVERNO FEDERAL - GOVFED",
+"link_detail_backend": "/sistema/autor/83",
+"metadata": {},
+"autor_related": {
+"value": 30,
+"text": "GOVERNO FEDERAL - GOVFED"
+},
+"object_id": 30,
+"nome": "GOVERNO FEDERAL - GOVFED",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 84,
+"__str__": "TELEFONIA - CONCESSIONÁRIA",
+"link_detail_backend": "/sistema/autor/84",
+"metadata": {},
+"autor_related": {
+"value": 31,
+"text": "TELEFONIA - CONCESSIONÁRIA"
+},
+"object_id": 31,
+"nome": "CONCESSIONÁRIAS - CONC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 85,
+"__str__": "EMPRESA PRIVADA - EMP",
+"link_detail_backend": "/sistema/autor/85",
+"metadata": {},
+"autor_related": {
+"value": 32,
+"text": "EMPRESA PRIVADA - EMP"
+},
+"object_id": 32,
+"nome": "EMPRESAS PRIVADAS - EMP.PRIV.",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 86,
+"__str__": "PACHECO CABELEIREIRO",
+"link_detail_backend": "/sistema/autor/86",
+"metadata": {},
+"autor_related": {
+"value": 30,
+"text": "PACHECO CABELEIREIRO"
+},
+"object_id": 30,
+"nome": "PACHECO CABELEIREIRO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+46,
+109,
+110,
+125
+]
+},
+{
+"id": 87,
+"__str__": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT - OABMT",
+"link_detail_backend": "/sistema/autor/87",
+"metadata": {},
+"autor_related": {
+"value": 33,
+"text": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT - OABMT"
+},
+"object_id": 33,
+"nome": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT - OABMT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 88,
+"__str__": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT",
+"link_detail_backend": "/sistema/autor/88",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "ORDEM DOS ADVOGADOS DO BRASIL - OAB - MT",
+"cargo": "",
+"tipo": 12,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 90,
+"__str__": "DEPARTAMENTO NACIONAL DE INFRAESTRUTURA DE TRANSPORTES - DNIT",
+"link_detail_backend": "/sistema/autor/90",
+"metadata": {},
+"autor_related": {
+"value": 34,
+"text": "DEPARTAMENTO NACIONAL DE INFRAESTRUTURA DE TRANSPORTES - DNIT"
+},
+"object_id": 34,
+"nome": "DEPARTAMENTO NACIONAL DE INFRAESTRUTURA DE TRANSPORTES - DNIT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 91,
+"__str__": "CE - COMISSÃO ESPECIAL",
+"link_detail_backend": "/sistema/autor/91",
+"metadata": {},
+"autor_related": {
+"value": 14,
+"text": "CE - COMISSÃO ESPECIAL"
+},
+"object_id": 14,
+"nome": "CE - COMISSÃO ESPECIAL",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 92,
+"__str__": "THOMAS CANELLAS",
+"link_detail_backend": "/sistema/autor/92",
+"metadata": {},
+"autor_related": {
+"value": 31,
+"text": "THOMAS CANELLAS"
+},
+"object_id": 31,
+"nome": "THOMAS CANELLAS",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+48
+]
+},
+{
+"id": 93,
+"__str__": "VALDEIR DO CARAMUJO",
+"link_detail_backend": "/sistema/autor/93",
+"metadata": {},
+"autor_related": {
+"value": 32,
+"text": "VALDEIR DO CARAMUJO"
+},
+"object_id": 32,
+"nome": "VALDEIR DO CARAMUJO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+49
+]
+},
+{
+"id": 94,
+"__str__": "MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO - MPMT",
+"link_detail_backend": "/sistema/autor/94",
+"metadata": {},
+"autor_related": {
+"value": 35,
+"text": "MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO - MPMT"
+},
+"object_id": 35,
+"nome": "MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO - MPMT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 95,
+"__str__": "MÁRILSI DA SAÚDE",
+"link_detail_backend": "/sistema/autor/95",
+"metadata": {},
+"autor_related": {
+"value": 33,
+"text": "MÁRILSI DA SAÚDE"
+},
+"object_id": 33,
+"nome": "MÁRILSI DA SAÚDE",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+51
+]
+},
+{
+"id": 96,
+"__str__": "ODENIR NERY GÁS E ÁGUA",
+"link_detail_backend": "/sistema/autor/96",
+"metadata": {},
+"autor_related": {
+"value": 34,
+"text": "ODENIR NERY GÁS E ÁGUA"
+},
+"object_id": 34,
+"nome": "ODENIR NERY GÁS E ÁGUA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+52
+]
+},
+{
+"id": 97,
+"__str__": "ANTÔNIO MAMEDES",
+"link_detail_backend": "/sistema/autor/97",
+"metadata": {},
+"autor_related": {
+"value": 36,
+"text": "ANTÔNIO MAMEDES"
+},
+"object_id": 36,
+"nome": "ANTÔNIO MAMEDES",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+54
+]
+},
+{
+"id": 98,
+"__str__": "BIRA SOM",
+"link_detail_backend": "/sistema/autor/98",
+"metadata": {},
+"autor_related": {
+"value": 37,
+"text": "BIRA SOM"
+},
+"object_id": 37,
+"nome": "BIRA SOM",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+57
+]
+},
+{
+"id": 99,
+"__str__": "MARCELO RENATO DO JARDIM UNIÃO",
+"link_detail_backend": "/sistema/autor/99",
+"metadata": {},
+"autor_related": {
+"value": 38,
+"text": "MARCELO RENATO DO JARDIM UNIÃO"
+},
+"object_id": 38,
+"nome": "MARCELO RENATO DO JARDIM UNIÃO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+58
+]
+},
+{
+"id": 100,
+"__str__": "INVESTIGADORA CIDINHA",
+"link_detail_backend": "/sistema/autor/100",
+"metadata": {},
+"autor_related": {
+"value": 39,
+"text": "INVESTIGADORA CIDINHA"
+},
+"object_id": 39,
+"nome": "INVESTIGADORA CIDINHA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+59
+]
+},
+{
+"id": 101,
+"__str__": "PROFESSOR MARQUINHOS",
+"link_detail_backend": "/sistema/autor/101",
+"metadata": {},
+"autor_related": {
+"value": 40,
+"text": "PROFESSOR MARQUINHOS"
+},
+"object_id": 40,
+"nome": "PROFESSOR MARQUINHOS",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+60
+]
+},
+{
+"id": 102,
+"__str__": "Odenilson José da Silva - Vice-Prefeito",
+"link_detail_backend": "/sistema/autor/102",
+"metadata": {},
+"autor_related": null,
+"object_id": null,
+"nome": "Odenilson José da Silva",
+"cargo": "Vice-Prefeito",
+"tipo": 7,
+"content_type": null,
+"operadores": []
+},
+{
+"id": 103,
+"__str__": "DANILO DO CARAMUJO",
+"link_detail_backend": "/sistema/autor/103",
+"metadata": {},
+"autor_related": {
+"value": 41,
+"text": "DANILO DO CARAMUJO"
+},
+"object_id": 41,
+"nome": "DANILO DO CARAMUJO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+62
+]
+},
+{
+"id": 104,
+"__str__": "CARTÓRIO ELEITORAL DE CÁCERES (06ª ZONA ELEITORAL) - 6°ZE/TRE-MT",
+"link_detail_backend": "/sistema/autor/104",
+"metadata": {},
+"autor_related": {
+"value": 36,
+"text": "CARTÓRIO ELEITORAL DE CÁCERES (06ª ZONA ELEITORAL) - 6°ZE/TRE-MT"
+},
+"object_id": 36,
+"nome": "CARTÓRIO ELEITORAL DE CÁCERES (06ª ZONA ELEITORAL) - 6°ZE/TRE-MT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 105,
+"__str__": "ASSESSOR DE PLANEJAMENTO E ORÇAMENTO - APO",
+"link_detail_backend": "/sistema/autor/105",
+"metadata": {},
+"autor_related": {
+"value": 37,
+"text": "ASSESSOR DE PLANEJAMENTO E ORÇAMENTO - APO"
+},
+"object_id": 37,
+"nome": "ASSESSOR DE PLANEJAMENTO E ORÇAMENTO - APO",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 106,
+"__str__": "PEDRINHO DO SINDICATO",
+"link_detail_backend": "/sistema/autor/106",
+"metadata": {},
+"autor_related": {
+"value": 42,
+"text": "PEDRINHO DO SINDICATO"
+},
+"object_id": 42,
+"nome": "PEDRINHO DO SINDICATO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+66
+]
+},
+{
+"id": 107,
+"__str__": "LORIVAL MOTTA",
+"link_detail_backend": "/sistema/autor/107",
+"metadata": {},
+"autor_related": {
+"value": 43,
+"text": "LORIVAL MOTTA"
+},
+"object_id": 43,
+"nome": "LORIVAL MOTTA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+68
+]
+},
+{
+"id": 108,
+"__str__": "MENSAGEIRO CÂMARA MUNICIPAL DE CÁCERES - MCMC",
+"link_detail_backend": "/sistema/autor/108",
+"metadata": {},
+"autor_related": {
+"value": 38,
+"text": "MENSAGEIRO CÂMARA MUNICIPAL DE CÁCERES - MCMC"
+},
+"object_id": 38,
+"nome": "MENSAGEIRO CÂMARA MUNICIPAL DE CÁCERES - MCMC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 109,
+"__str__": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA",
+"link_detail_backend": "/sistema/autor/109",
+"metadata": {},
+"autor_related": {
+"value": 39,
+"text": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA"
+},
+"object_id": 39,
+"nome": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 110,
+"__str__": "COMPANHIA MATOGROSSENSE DE MINERAÇÃO DO ESTADO DE MATO GROSSO - METAMAT",
+"link_detail_backend": "/sistema/autor/110",
+"metadata": {},
+"autor_related": {
+"value": 40,
+"text": "COMPANHIA MATOGROSSENSE DE MINERAÇÃO DO ESTADO DE MATO GROSSO - METAMAT"
+},
+"object_id": 40,
+"nome": "COMPANHIA MATOGROSSENSE DE MINERAÇÃO DO ESTADO DE MATO GROSSO - METAMAT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 111,
+"__str__": "MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO - MAPA",
+"link_detail_backend": "/sistema/autor/111",
+"metadata": {},
+"autor_related": {
+"value": 41,
+"text": "MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO - MAPA"
+},
+"object_id": 41,
+"nome": "MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO - MAPA",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 112,
+"__str__": "INSTITUIÇÃO FILANTRÓPICA/ULTILIDDE PÚBLICA - IFUP",
+"link_detail_backend": "/sistema/autor/112",
+"metadata": {},
+"autor_related": {
+"value": 42,
+"text": "INSTITUIÇÃO FILANTRÓPICA/ULTILIDDE PÚBLICA - IFUP"
+},
+"object_id": 42,
+"nome": "INSTITUIÇÃO FILANTRÓPICA/ULTILIDDE PÚBLICA - IFUP",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 113,
+"__str__": "EMPRESAS DE ECONOMIA PRIVADA/MISTA - EEPM",
+"link_detail_backend": "/sistema/autor/113",
+"metadata": {},
+"autor_related": {
+"value": 43,
+"text": "EMPRESAS DE ECONOMIA PRIVADA/MISTA - EEPM"
+},
+"object_id": 43,
+"nome": "EMPRESAS DE ECONOMIA PRIVADA/MISTA - EEPM",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 114,
+"__str__": "AGÊNCIA FLUVIAL DE CÁCERES (MARINHA) - AFCM",
+"link_detail_backend": "/sistema/autor/114",
+"metadata": {},
+"autor_related": {
+"value": 44,
+"text": "AGÊNCIA FLUVIAL DE CÁCERES (MARINHA) - AFCM"
+},
+"object_id": 44,
+"nome": "AGÊNCIA FLUVIAL DE CÁCERES (MARINHA) - AFCM",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 115,
+"__str__": "EMPRESAS DO SISTEMA \"S\" (SENAI, SESC, SESI, SENAC, SEBRAE, ...) - ESS",
+"link_detail_backend": "/sistema/autor/115",
+"metadata": {},
+"autor_related": {
+"value": 45,
+"text": "EMPRESAS DO SISTEMA \"S\" (SENAI, SESC, SESI, SENAC, SEBRAE, ...) - ESS"
+},
+"object_id": 45,
+"nome": "EMPRESAS DO SISTEMA \"S\" (SENAI, SESC, SESI, SENAC, SEBRAE, ...) - ESS",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 116,
+"__str__": "AGENCIA DE PREVIDENCA SOCIAL - INSS",
+"link_detail_backend": "/sistema/autor/116",
+"metadata": {},
+"autor_related": {
+"value": 46,
+"text": "AGENCIA DE PREVIDENCA SOCIAL - INSS"
+},
+"object_id": 46,
+"nome": "AGENCIA DE PREVIDENCA SOCIAL - INSS",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 117,
+"__str__": "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL - IPHAN",
+"link_detail_backend": "/sistema/autor/117",
+"metadata": {},
+"autor_related": {
+"value": 47,
+"text": "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL - IPHAN"
+},
+"object_id": 47,
+"nome": "INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL - IPHAN",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 118,
+"__str__": "NAEL SONAQUE",
+"link_detail_backend": "/sistema/autor/118",
+"metadata": {},
+"autor_related": {
+"value": 44,
+"text": "NAEL SONAQUE"
+},
+"object_id": 44,
+"nome": "NAEL SONAQUE",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+91
+]
+},
+{
+"id": 119,
+"__str__": "ELIS ENFERMEIRA",
+"link_detail_backend": "/sistema/autor/119",
+"metadata": {},
+"autor_related": {
+"value": 46,
+"text": "ELIS ENFERMEIRA"
+},
+"object_id": 46,
+"nome": "ELIS ENFERMEIRA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+113,
+108,
+112,
+154,
+140,
+122
+]
+},
+{
+"id": 120,
+"__str__": "MAGALY",
+"link_detail_backend": "/sistema/autor/120",
+"metadata": {},
+"autor_related": {
+"value": 47,
+"text": "MAGALY"
+},
+"object_id": 47,
+"nome": "MAGALY",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+126,
+147,
+148,
+137,
+153,
+149
+]
+},
+{
+"id": 121,
+"__str__": "JORGE AUGUSTO",
+"link_detail_backend": "/sistema/autor/121",
+"metadata": {},
+"autor_related": {
+"value": 45,
+"text": "JORGE AUGUSTO"
+},
+"object_id": 45,
+"nome": "JORGE AUGUSTO",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+96,
+120
+]
+},
+{
+"id": 122,
+"__str__": "SINDICATO / ASSOCIAÇÃO - SIND",
+"link_detail_backend": "/sistema/autor/122",
+"metadata": {},
+"autor_related": {
+"value": 48,
+"text": "SINDICATO / ASSOCIAÇÃO - SIND"
+},
+"object_id": 48,
+"nome": "SINDICATO / ASSOCIAÇÃO - SIND",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 123,
+"__str__": "CARTÓRIO DO 2º OFÍCIO DO REGISTRO CIVIL E TABEIONATO DE NOTAS E REGISTROS - CSOCC",
+"link_detail_backend": "/sistema/autor/123",
+"metadata": {},
+"autor_related": {
+"value": 49,
+"text": "CARTÓRIO DO 2º OFÍCIO DO REGISTRO CIVIL E TABEIONATO DE NOTAS E REGISTROS - CSOCC"
+},
+"object_id": 49,
+"nome": "CARTÓRIO DO 2º OFÍCIO DO REGISTRO CIVIL E TABEIONATO DE NOTAS E REGISTROS - CSOCC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 124,
+"__str__": "EMPRESA BRASILEIRA DE CORREISO E TELÉGRAFOS (ECT). - EBCT",
+"link_detail_backend": "/sistema/autor/124",
+"metadata": {},
+"autor_related": {
+"value": 50,
+"text": "EMPRESA BRASILEIRA DE CORREISO E TELÉGRAFOS (ECT). - EBCT"
+},
+"object_id": 50,
+"nome": "EMPRESA BRASILEIRA DE CORREISO E TELÉGRAFOS (ECT). - EBCT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 125,
+"__str__": "HOSPITAL REGIONAL DE CÁCERES - HRC",
+"link_detail_backend": "/sistema/autor/125",
+"metadata": {},
+"autor_related": {
+"value": 51,
+"text": "HOSPITAL REGIONAL DE CÁCERES - HRC"
+},
+"object_id": 51,
+"nome": "HOSPITAL REGIONAL DE CÁCERES - HRC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 126,
+"__str__": "EMPRESA CENTRO AMÉRICA COMÉRCIO, SERVIÇO, GESTÃO E TECNOLOGIA LTDA - ECACSGT",
+"link_detail_backend": "/sistema/autor/126",
+"metadata": {},
+"autor_related": {
+"value": 52,
+"text": "EMPRESA CENTRO AMÉRICA COMÉRCIO, SERVIÇO, GESTÃO E TECNOLOGIA LTDA - ECACSGT"
+},
+"object_id": 52,
+"nome": "EMPRESA CENTRO AMÉRICA COMÉRCIO, SERVIÇO, GESTÃO E TECNOLOGIA LTDA - ECACSGT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 127,
+"__str__": "SECRETARIA DE ESTADO DE INFRAESTRUTURA E LOGÍSTICA DE MATO GROSSO - SINFRA",
+"link_detail_backend": "/sistema/autor/127",
+"metadata": {},
+"autor_related": {
+"value": 53,
+"text": "SECRETARIA DE ESTADO DE INFRAESTRUTURA E LOGÍSTICA DE MATO GROSSO - SINFRA"
+},
+"object_id": 53,
+"nome": "SECRETARIA DE ESTADO DE INFRAESTRUTURA E LOGÍSTICA DE MATO GROSSO - SINFRA",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 128,
+"__str__": "ALEX LEAL",
+"link_detail_backend": "/sistema/autor/128",
+"metadata": {},
+"autor_related": {
+"value": 48,
+"text": "ALEX LEAL"
+},
+"object_id": 48,
+"nome": "ALEX LEAL",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+128,
+102
+]
+},
+{
+"id": 129,
+"__str__": "ENGENHEIRO WESLEY LOPES",
+"link_detail_backend": "/sistema/autor/129",
+"metadata": {},
+"autor_related": {
+"value": 49,
+"text": "ENGENHEIRO WESLEY LOPES"
+},
+"object_id": 49,
+"nome": "ENGENHEIRO WESLEY LOPES",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+132
+]
+},
+{
+"id": 130,
+"__str__": "CLÓVIS SALVADOR",
+"link_detail_backend": "/sistema/autor/130",
+"metadata": {},
+"autor_related": {
+"value": 50,
+"text": "CLÓVIS SALVADOR"
+},
+"object_id": 50,
+"nome": "CLÓVIS SALVADOR",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+136
+]
+},
+{
+"id": 131,
+"__str__": "CPI - COMISSÃO PARLAMENTAR DE INQUÉRITO",
+"link_detail_backend": "/sistema/autor/131",
+"metadata": {},
+"autor_related": {
+"value": 15,
+"text": "CPI - COMISSÃO PARLAMENTAR DE INQUÉRITO"
+},
+"object_id": 15,
+"nome": "CPI - COMISSÃO PARLAMENTAR DE INQUÉRITO",
+"cargo": "",
+"tipo": 3,
+"content_type": 38,
+"operadores": []
+},
+{
+"id": 132,
+"__str__": "COMISSÃO MISTA - CM",
+"link_detail_backend": "/sistema/autor/132",
+"metadata": {},
+"autor_related": {
+"value": 54,
+"text": "COMISSÃO MISTA - CM"
+},
+"object_id": 54,
+"nome": "COMISSÃO MISTA - CM",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 133,
+"__str__": "COMISSÃO ESPECIAL - CE",
+"link_detail_backend": "/sistema/autor/133",
+"metadata": {},
+"autor_related": {
+"value": 55,
+"text": "COMISSÃO ESPECIAL - CE"
+},
+"object_id": 55,
+"nome": "COMISSÃO ESPECIAL - CE",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 134,
+"__str__": "COMISSÃO PARLAMENTAR DE INQUÉRITO - CPI",
+"link_detail_backend": "/sistema/autor/134",
+"metadata": {},
+"autor_related": {
+"value": 56,
+"text": "COMISSÃO PARLAMENTAR DE INQUÉRITO - CPI"
+},
+"object_id": 56,
+"nome": "COMISSÃO PARLAMENTAR DE INQUÉRITO - CPI",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 135,
+"__str__": "MINISTÉRIO DA SAÚDE (GOVERNO FEDERAL) - MS",
+"link_detail_backend": "/sistema/autor/135",
+"metadata": {},
+"autor_related": {
+"value": 57,
+"text": "MINISTÉRIO DA SAÚDE (GOVERNO FEDERAL) - MS"
+},
+"object_id": 57,
+"nome": "MINISTÉRIO DA SAÚDE (GOVERNO FEDERAL) - MS",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 136,
+"__str__": "MINISTÉRIO DO DESENVOLVIMENTO E ASSISTÊNCIA SOCIAL, FAMILIAR E COMBATE À FOME - MDS",
+"link_detail_backend": "/sistema/autor/136",
+"metadata": {},
+"autor_related": {
+"value": 58,
+"text": "MINISTÉRIO DO DESENVOLVIMENTO E ASSISTÊNCIA SOCIAL, FAMILIAR E COMBATE À FOME - MDS"
+},
+"object_id": 58,
+"nome": "MINISTÉRIO DO DESENVOLVIMENTO E ASSISTÊNCIA SOCIAL, FAMILIAR E COMBATE À FOME - MDS",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 137,
+"__str__": "MINISTÉRIO DA EDUCAÇÃO - MEC",
+"link_detail_backend": "/sistema/autor/137",
+"metadata": {},
+"autor_related": {
+"value": 59,
+"text": "MINISTÉRIO DA EDUCAÇÃO - MEC"
+},
+"object_id": 59,
+"nome": "MINISTÉRIO DA EDUCAÇÃO - MEC",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 138,
+"__str__": "SECRETARIA DE ESTADO DE AGRICULTURA FAMILIAR DE MATO GROSSO - SEAF",
+"link_detail_backend": "/sistema/autor/138",
+"metadata": {},
+"autor_related": {
+"value": 60,
+"text": "SECRETARIA DE ESTADO DE AGRICULTURA FAMILIAR DE MATO GROSSO - SEAF"
+},
+"object_id": 60,
+"nome": "SECRETARIA DE ESTADO DE AGRICULTURA FAMILIAR DE MATO GROSSO - SEAF",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 139,
+"__str__": "OBSERVATÓRIO MUNICIPAL DA VIOLÊNCIA CONTRA A MULHER DE CÁCERES - OMVCM",
+"link_detail_backend": "/sistema/autor/139",
+"metadata": {},
+"autor_related": {
+"value": 61,
+"text": "OBSERVATÓRIO MUNICIPAL DA VIOLÊNCIA CONTRA A MULHER DE CÁCERES - OMVCM"
+},
+"object_id": 61,
+"nome": "OBSERVATÓRIO MUNICIPAL DA VIOLÊNCIA CONTRA A MULHER DE CÁCERES - OMVCM",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 140,
+"__str__": "MINISTÉRIO DA PESCA E AQUICULTURA - MPA",
+"link_detail_backend": "/sistema/autor/140",
+"metadata": {},
+"autor_related": {
+"value": 62,
+"text": "MINISTÉRIO DA PESCA E AQUICULTURA - MPA"
+},
+"object_id": 62,
+"nome": "MINISTÉRIO DA PESCA E AQUICULTURA - MPA",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 141,
+"__str__": "SECRETARIA DE ESTADO DE SAÚDE DE MATO GROSSO - SES/MT",
+"link_detail_backend": "/sistema/autor/141",
+"metadata": {},
+"autor_related": {
+"value": 63,
+"text": "SECRETARIA DE ESTADO DE SAÚDE DE MATO GROSSO - SES/MT"
+},
+"object_id": 63,
+"nome": "SECRETARIA DE ESTADO DE SAÚDE DE MATO GROSSO - SES/MT",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
+},
+{
+"id": 142,
+"__str__": "ELIEL DA ROCHA",
+"link_detail_backend": "/sistema/autor/142",
+"metadata": {},
+"autor_related": {
+"value": 51,
+"text": "ELIEL DA ROCHA"
+},
+"object_id": 51,
+"nome": "ELIEL DA ROCHA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+142
+]
+},
+{
+"id": 143,
+"__str__": "JUDSON PRATA",
+"link_detail_backend": "/sistema/autor/143",
+"metadata": {},
+"autor_related": {
+"value": 52,
+"text": "JUDSON PRATA"
+},
+"object_id": 52,
+"nome": "JUDSON PRATA",
+"cargo": "",
+"tipo": 1,
+"content_type": 27,
+"operadores": [
+144
+]
+},
+{
+"id": 144,
+"__str__": "INSTITUTO MUNICIPAL DE PREVIDENCIA SOCIAL DOS SERVIDORES DE CÁCERES - PREVICÁCERES",
+"link_detail_backend": "/sistema/autor/144",
+"metadata": {},
+"autor_related": {
+"value": 64,
+"text": "INSTITUTO MUNICIPAL DE PREVIDENCIA SOCIAL DOS SERVIDORES DE CÁCERES - PREVICÁCERES"
+},
+"object_id": 64,
+"nome": "INSTITUTO MUNICIPAL DE PREVIDENCIA SOCIAL DOS SERVIDORES DE CÁCERES - PREVICÁCERES",
+"cargo": "",
+"tipo": 4,
+"content_type": 57,
+"operadores": []
 }
 ]

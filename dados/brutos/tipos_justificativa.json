@@ -1,101 +1,10 @@
 [
 {
-"id": 4,
-"__str__": "Alistamento eleitoral",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/4",
-"metadata": {},
-"descricao": "Alistamento eleitoral"
-},
-{
-"id": 18,
-"__str__": "Atraso Justificado",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/18",
-"metadata": {},
-"descricao": "Atraso Justificado"
-},
-{
-"id": 7,
-"__str__": "Ausência justificada",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/7",
-"metadata": {},
-"descricao": "Ausência justificada"
-},
-{
-"id": 13,
-"__str__": "Casamento",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/13",
-"metadata": {},
-"descricao": "Casamento"
-},
-{
-"id": 3,
-"__str__": "Doação de sangue",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/3",
-"metadata": {},
-"descricao": "Doação de sangue"
-},
-{
 "id": 1,
 "__str__": "Falecimento do cônjuge, ascendente, descendente, irmão ou dependente",
 "link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/1",
 "metadata": {},
 "descricao": "Falecimento do cônjuge, ascendente, descendente, irmão ou dependente"
-},
-{
-"id": 12,
-"__str__": "Licença a/ao adotante",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/12",
-"metadata": {},
-"descricao": "Licença a/ao adotante"
-},
-{
-"id": 11,
-"__str__": "Licença a gestante",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/11",
-"metadata": {},
-"descricao": "Licença a gestante"
-},
-{
-"id": 9,
-"__str__": "Licença para amamentar o próprio filho",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/9",
-"metadata": {},
-"descricao": "Licença para amamentar o próprio filho"
-},
-{
-"id": 17,
-"__str__": "Licença Parlamentar",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/17",
-"metadata": {},
-"descricao": "Licença Parlamentar"
-},
-{
-"id": 10,
-"__str__": "Licença paternidade/maternidade",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/10",
-"metadata": {},
-"descricao": "Licença paternidade/maternidade"
-},
-{
-"id": 14,
-"__str__": "Maternidade ou aborto",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/14",
-"metadata": {},
-"descricao": "Maternidade ou aborto"
-},
-{
-"id": 8,
-"__str__": "Motivo de doença",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/8",
-"metadata": {},
-"descricao": "Motivo de doença"
-},
-{
-"id": 16,
-"__str__": "Motivo de gala (cônjuge, pai, mãe ou filho)",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/16",
-"metadata": {},
-"descricao": "Motivo de gala (cônjuge, pai, mãe ou filho)"
 },
 {
 "id": 2,
@@ -105,11 +14,18 @@
 "descricao": "Servindo ao Tribunal do Júri"
 },
 {
-"id": 6,
-"__str__": "Tratamento de saúde",
-"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/6",
+"id": 3,
+"__str__": "Doação de sangue",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/3",
 "metadata": {},
-"descricao": "Tratamento de saúde"
+"descricao": "Doação de sangue"
+},
+{
+"id": 4,
+"__str__": "Alistamento eleitoral",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/4",
+"metadata": {},
+"descricao": "Alistamento eleitoral"
 },
 {
 "id": 5,
@@ -119,10 +35,94 @@
 "descricao": "Tratar de assuntos particulares."
 },
 {
+"id": 6,
+"__str__": "Tratamento de saúde",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/6",
+"metadata": {},
+"descricao": "Tratamento de saúde"
+},
+{
+"id": 7,
+"__str__": "Ausência justificada",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/7",
+"metadata": {},
+"descricao": "Ausência justificada"
+},
+{
+"id": 8,
+"__str__": "Motivo de doença",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/8",
+"metadata": {},
+"descricao": "Motivo de doença"
+},
+{
+"id": 9,
+"__str__": "Licença para amamentar o próprio filho",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/9",
+"metadata": {},
+"descricao": "Licença para amamentar o próprio filho"
+},
+{
+"id": 10,
+"__str__": "Licença paternidade/maternidade",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/10",
+"metadata": {},
+"descricao": "Licença paternidade/maternidade"
+},
+{
+"id": 11,
+"__str__": "Licença a gestante",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/11",
+"metadata": {},
+"descricao": "Licença a gestante"
+},
+{
+"id": 12,
+"__str__": "Licença a/ao adotante",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/12",
+"metadata": {},
+"descricao": "Licença a/ao adotante"
+},
+{
+"id": 13,
+"__str__": "Casamento",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/13",
+"metadata": {},
+"descricao": "Casamento"
+},
+{
+"id": 14,
+"__str__": "Maternidade ou aborto",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/14",
+"metadata": {},
+"descricao": "Maternidade ou aborto"
+},
+{
 "id": 15,
 "__str__": "Vestibular",
 "link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/15",
 "metadata": {},
 "descricao": "Vestibular"
+},
+{
+"id": 16,
+"__str__": "Motivo de gala (cônjuge, pai, mãe ou filho)",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/16",
+"metadata": {},
+"descricao": "Motivo de gala (cônjuge, pai, mãe ou filho)"
+},
+{
+"id": 17,
+"__str__": "Licença Parlamentar",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/17",
+"metadata": {},
+"descricao": "Licença Parlamentar"
+},
+{
+"id": 18,
+"__str__": "Atraso Justificado",
+"link_detail_backend": "/sistema/sessao-plenaria/tipo-justificativa/18",
+"metadata": {},
+"descricao": "Atraso Justificado"
 }
 ]

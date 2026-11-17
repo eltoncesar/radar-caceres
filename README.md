@@ -14,8 +14,20 @@ Para coletar de novo:
 python3 coleta/coletar.py
 ```
 
-Os arquivos ficam em `dados/brutos/`. Se a coleta vier vazia ou bem menor que a
-anterior, o script para sem gravar nada.
+Os arquivos ficam em `dados/brutos/` e as fotos em `dados/fotos/`. Se a coleta
+vier vazia, com linhas repetidas ou bem menor que a anterior, o script para sem
+gravar nada. Precisa do Pillow (`pip install pillow`) para reduzir as fotos.
+
+Para gerar o site na pasta `site/`:
+
+```
+python3 gerar/gerar_site.py
+```
+
+## Conferência
+
+Em 17/11/2026 o total de propostas de cada um dos 21 vereadores no site foi
+comparado com a busca por autor do próprio SAPL: os 21 batem.
 
 ## O que existe e o que não existe (verificado em nov/2026)
 
@@ -31,12 +43,14 @@ anterior, o script para sem gravar nada.
 
 ## Ressalvas sobre presença
 
-1. **Há duas listas por sessão** (abertura e Ordem do Dia), e elas raramente
-   coincidem. Regra adotada: o vereador conta como presente se aparecer em
-   qualquer uma das duas.
-2. **Licenças não estão registradas.** Sequências longas de ausência coincidem
-   com a posse de suplentes. Antes de publicar a presença, esses períodos
-   precisam ser conferidos em uma fonte oficial (atos da Mesa, portarias).
+1. **Há duas listas por sessão** (abertura e Ordem do Dia). Elas coincidem em
+   75 das 84 sessões ordinárias. Regra adotada: o vereador conta como presente
+   se aparecer em qualquer uma das duas.
+2. **Licenças não estão registradas.** Sequências longas de ausência (por
+   exemplo, Rubens Macedo de out/2025 a jul/2026 e Magaly de out/2025 a
+   abr/2026) coincidem com a posse de suplentes. Antes de publicar a presença,
+   esses períodos precisam ser conferidos em uma fonte oficial (atos da Mesa,
+   portarias).
 3. **As datas de mandato dos suplentes parecem não bater** com o período em que
    eles ocuparam a cadeira.
 4. Sessão sem presença registrada não conta como falta para ninguém.

@@ -1,65 +1,5 @@
 [
 {
-"id": 22,
-"__str__": "Proposta de Emenda à Lei Orgânica (Executivo)",
-"link_detail_backend": "/sistema/materia/tipo/22",
-"metadata": {},
-"sigla": "ELOE",
-"descricao": "Proposta de Emenda à Lei Orgânica (Executivo)",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "A",
-"sequencia_regimental": 1
-},
-{
-"id": 7,
-"__str__": "Proposta de Emenda à Lei Orgânica",
-"link_detail_backend": "/sistema/materia/tipo/7",
-"metadata": {},
-"sigla": "ELO",
-"descricao": "Proposta de Emenda à Lei Orgânica",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "A",
-"sequencia_regimental": 2
-},
-{
-"id": 15,
-"__str__": "Projeto de Lei Complementar (Executivo)",
-"link_detail_backend": "/sistema/materia/tipo/15",
-"metadata": {},
-"sigla": "PLCE",
-"descricao": "Projeto de Lei Complementar (Executivo)",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "A",
-"sequencia_regimental": 3
-},
-{
-"id": 13,
-"__str__": "Projeto de Lei Complementar",
-"link_detail_backend": "/sistema/materia/tipo/13",
-"metadata": {},
-"sigla": "PLC",
-"descricao": "Projeto de Lei Complementar",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "A",
-"sequencia_regimental": 4
-},
-{
-"id": 14,
-"__str__": "Projeto de Lei (Executivo)",
-"link_detail_backend": "/sistema/materia/tipo/14",
-"metadata": {},
-"sigla": "PLE",
-"descricao": "Projeto de Lei (Executivo)",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "A",
-"sequencia_regimental": 5
-},
-{
 "id": 1,
 "__str__": "Projeto de Lei",
 "link_detail_backend": "/sistema/materia/tipo/1",
@@ -70,42 +10,6 @@
 "quorum_minimo_votacao": null,
 "sequencia_numeracao": "A",
 "sequencia_regimental": 6
-},
-{
-"id": 20,
-"__str__": "Emenda Executivo Municipal",
-"link_detail_backend": "/sistema/materia/tipo/20",
-"metadata": {},
-"sigla": "EE",
-"descricao": "Emenda Executivo Municipal",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "U",
-"sequencia_regimental": 7
-},
-{
-"id": 8,
-"__str__": "Emenda Parlamentar",
-"link_detail_backend": "/sistema/materia/tipo/8",
-"metadata": {},
-"sigla": "EP",
-"descricao": "Emenda Parlamentar",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "U",
-"sequencia_regimental": 8
-},
-{
-"id": 19,
-"__str__": "Veto (Executivo)",
-"link_detail_backend": "/sistema/materia/tipo/19",
-"metadata": {},
-"sigla": "VETO",
-"descricao": "Veto (Executivo)",
-"num_automatica": false,
-"quorum_minimo_votacao": null,
-"sequencia_numeracao": "A",
-"sequencia_regimental": 9
 },
 {
 "id": 2,
@@ -168,6 +72,30 @@
 "sequencia_regimental": 14
 },
 {
+"id": 7,
+"__str__": "Proposta de Emenda à Lei Orgânica",
+"link_detail_backend": "/sistema/materia/tipo/7",
+"metadata": {},
+"sigla": "ELO",
+"descricao": "Proposta de Emenda à Lei Orgânica",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "A",
+"sequencia_regimental": 2
+},
+{
+"id": 8,
+"__str__": "Emenda Parlamentar",
+"link_detail_backend": "/sistema/materia/tipo/8",
+"metadata": {},
+"sigla": "EP",
+"descricao": "Emenda Parlamentar",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "U",
+"sequencia_regimental": 8
+},
+{
 "id": 9,
 "__str__": "Portaria",
 "link_detail_backend": "/sistema/materia/tipo/9",
@@ -192,6 +120,42 @@
 "sequencia_regimental": 16
 },
 {
+"id": 13,
+"__str__": "Projeto de Lei Complementar",
+"link_detail_backend": "/sistema/materia/tipo/13",
+"metadata": {},
+"sigla": "PLC",
+"descricao": "Projeto de Lei Complementar",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "A",
+"sequencia_regimental": 4
+},
+{
+"id": 14,
+"__str__": "Projeto de Lei (Executivo)",
+"link_detail_backend": "/sistema/materia/tipo/14",
+"metadata": {},
+"sigla": "PLE",
+"descricao": "Projeto de Lei (Executivo)",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "A",
+"sequencia_regimental": 5
+},
+{
+"id": 15,
+"__str__": "Projeto de Lei Complementar (Executivo)",
+"link_detail_backend": "/sistema/materia/tipo/15",
+"metadata": {},
+"sigla": "PLCE",
+"descricao": "Projeto de Lei Complementar (Executivo)",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "A",
+"sequencia_regimental": 3
+},
+{
 "id": 17,
 "__str__": "Promulgação",
 "link_detail_backend": "/sistema/materia/tipo/17",
@@ -202,5 +166,41 @@
 "quorum_minimo_votacao": null,
 "sequencia_numeracao": "A",
 "sequencia_regimental": 17
+},
+{
+"id": 19,
+"__str__": "Veto (Executivo)",
+"link_detail_backend": "/sistema/materia/tipo/19",
+"metadata": {},
+"sigla": "VETO",
+"descricao": "Veto (Executivo)",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "A",
+"sequencia_regimental": 9
+},
+{
+"id": 20,
+"__str__": "Emenda Executivo Municipal",
+"link_detail_backend": "/sistema/materia/tipo/20",
+"metadata": {},
+"sigla": "EE",
+"descricao": "Emenda Executivo Municipal",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "U",
+"sequencia_regimental": 7
+},
+{
+"id": 22,
+"__str__": "Proposta de Emenda à Lei Orgânica (Executivo)",
+"link_detail_backend": "/sistema/materia/tipo/22",
+"metadata": {},
+"sigla": "ELOE",
+"descricao": "Proposta de Emenda à Lei Orgânica (Executivo)",
+"num_automatica": false,
+"quorum_minimo_votacao": null,
+"sequencia_numeracao": "A",
+"sequencia_regimental": 1
 }
 ]

@@ -59,7 +59,9 @@ def baixar_json(url):
 
 def baixar_tudo(caminho):
     sep = "&" if "?" in caminho else "?"
-    url = f"{API}{caminho}{sep}page_size=100"
+    # "o=id" fixa a ordem: sem isso o SAPL embaralha as páginas e a coleta
+    # repete umas linhas e perde outras.
+    url = f"{API}{caminho}{sep}page_size=100&o=id"
     itens = []
     while url:
         dados = baixar_json(url)
@@ -84,6 +86,8 @@ def main():
         arquivo = os.path.join(destino, f"{nome}.json")
         if not itens and nome != "votos_nominais":
             problemas.append(f"{nome} veio vazio")
+        elif len({i["id"] for i in itens}) != len(itens):
+            problemas.append(f"{nome} veio com linhas repetidas")
         elif os.path.exists(arquivo):
             anterior = len(json.load(open(arquivo, encoding="utf-8")))
             if len(itens) < anterior * 0.9:
@@ -96,6 +100,41 @@ def main():
         with open(os.path.join(destino, f"{nome}.json"), "w", encoding="utf-8") as f:
             json.dump(itens, f, ensure_ascii=False, indent=0)
     print(f"Gravado em {destino}")
+
+    baixar_fotos(novos, os.path.join(os.path.dirname(os.path.abspath(destino)), "fotos"))
+
+
+def baixar_fotos(dados, pasta):
+    """Baixa e reduz a foto oficial de quem tem mandato na legislatura atual."""
+    import io
+    from PIL import Image
+
+    os.makedirs(pasta, exist_ok=True)
+    com_mandato = {m["parlamentar"] for m in dados["mandatos"]}
+    for p in dados["parlamentares"]:
+        if p["id"] not in com_mandato or not p.get("fotografia"):
+            continue
+        url = p["fotografia"].replace("http://", "https://")
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                img = Image.open(io.BytesIO(resp.read())).convert("RGB")
+        except Exception as erro:
+            print(f"  foto de {p['nome_parlamentar']} falhou: {erro}", file=sys.stderr)
+            continue
+        # O SAPL guarda o recorte do rosto escolhido pela Câmara ("x1,y1,x2,y2").
+        try:
+            caixa = tuple(int(n) for n in (p.get("cropping") or "").split(","))
+            if len(caixa) == 4 and caixa[2] > caixa[0] and caixa[3] > caixa[1]:
+                img = img.crop(caixa)
+        except ValueError:
+            pass
+        lado = min(img.size)
+        esq, topo = (img.width - lado) // 2, (img.height - lado) // 2
+        img = img.crop((esq, topo, esq + lado, topo + lado)).resize((176, 176), Image.LANCZOS)
+        img.save(os.path.join(pasta, f"{p['id']}.jpg"), "JPEG", quality=82, optimize=True)
+        time.sleep(0.5)
+    print(f"Fotos em {pasta}")
 
 
 if __name__ == "__main__":

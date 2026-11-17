@@ -1,53 +1,23 @@
 [
 {
-"id": 28,
-"__str__": "ALENCAR BICICLETAS - PTB - PARTIDO TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/28",
+"id": 1,
+"__str__": "PASTORELLO - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+"link_detail_backend": "/parlamentar/filiacao/1",
 "metadata": {},
-"data": "2020-04-03",
-"data_desfiliacao": null,
-"parlamentar": 8,
-"partido": 2
+"data": "2015-04-28",
+"data_desfiliacao": "2018-04-03",
+"parlamentar": 1,
+"partido": 8
 },
 {
-"id": 8,
-"__str__": "ALENCAR BICICLETAS - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/8",
+"id": 2,
+"__str__": "VALDENÍRIA - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+"link_detail_backend": "/parlamentar/filiacao/2",
 "metadata": {},
-"data": "2007-09-20",
-"data_desfiliacao": "2020-03-30",
-"parlamentar": 8,
-"partido": 16
-},
-{
-"id": 76,
-"__str__": "ALEX LEAL - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/76",
-"metadata": {},
-"data": "2020-04-03",
-"data_desfiliacao": null,
-"parlamentar": 48,
-"partido": 7
-},
-{
-"id": 51,
-"__str__": "ANTÔNIO MAMEDES - REPUBLICANOS - REPUBLICANOS",
-"link_detail_backend": "/parlamentar/filiacao/51",
-"metadata": {},
-"data": "2020-12-16",
-"data_desfiliacao": null,
-"parlamentar": 36,
-"partido": 25
-},
-{
-"id": 52,
-"__str__": "BIRA SOM - PRTB - PARTIDO RENOVADOR TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/52",
-"metadata": {},
-"data": "2020-03-25",
-"data_desfiliacao": null,
-"parlamentar": 37,
-"partido": 19
+"data": "2016-03-28",
+"data_desfiliacao": "2020-03-31",
+"parlamentar": 2,
+"partido": 8
 },
 {
 "id": 3,
@@ -60,74 +30,34 @@
 "partido": 8
 },
 {
-"id": 78,
-"__str__": "CLÓVIS SALVADOR - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/78",
-"metadata": {},
-"data": "2024-03-11",
-"data_desfiliacao": null,
-"parlamentar": 50,
-"partido": 16
-},
-{
-"id": 23,
-"__str__": "CREUDE DA AREEIRA - REPUBLICANOS - REPUBLICANOS",
-"link_detail_backend": "/parlamentar/filiacao/23",
-"metadata": {},
-"data": "2020-03-11",
-"data_desfiliacao": null,
-"parlamentar": 15,
-"partido": 25
-},
-{
-"id": 15,
-"__str__": "CREUDE DA AREEIRA - PODE - PODEMOS",
-"link_detail_backend": "/parlamentar/filiacao/15",
+"id": 4,
+"__str__": "ZÉ EDUARDO TORRES - PSC - PARTIDO SOCIAL CRISTÃO",
+"link_detail_backend": "/parlamentar/filiacao/4",
 "metadata": {},
 "data": "2016-04-01",
-"data_desfiliacao": "2020-03-10",
-"parlamentar": 15,
-"partido": 23
+"data_desfiliacao": null,
+"parlamentar": 4,
+"partido": 10
 },
 {
-"id": 57,
-"__str__": "DANILO DO CARAMUJO - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
-"link_detail_backend": "/parlamentar/filiacao/57",
+"id": 5,
+"__str__": "RUBENS MACEDO - PTB - PARTIDO TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/5",
 "metadata": {},
-"data": "2020-03-30",
-"data_desfiliacao": null,
-"parlamentar": 41,
-"partido": 8
-},
-{
-"id": 26,
-"__str__": "DENIS MACIEL HOSPITAL - PTB - PARTIDO TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/26",
-"metadata": {},
-"data": "2020-04-03",
-"data_desfiliacao": null,
-"parlamentar": 12,
+"data": "2003-09-19",
+"data_desfiliacao": "2024-04-04",
+"parlamentar": 5,
 "partido": 2
 },
 {
-"id": 12,
-"__str__": "DENIS MACIEL HOSPITAL - AVANTE - AVANTE",
-"link_detail_backend": "/parlamentar/filiacao/12",
+"id": 6,
+"__str__": "WAGNER BARONE - PODE - PODEMOS",
+"link_detail_backend": "/parlamentar/filiacao/6",
 "metadata": {},
-"data": "2011-10-06",
-"data_desfiliacao": "2020-04-02",
-"parlamentar": 12,
-"partido": 15
-},
-{
-"id": 25,
-"__str__": "DONA ELZA DA COLONIA - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/25",
-"metadata": {},
-"data": "2020-04-30",
-"data_desfiliacao": null,
-"parlamentar": 7,
-"partido": 7
+"data": "2011-09-05",
+"data_desfiliacao": "2020-04-28",
+"parlamentar": 6,
+"partido": 23
 },
 {
 "id": 7,
@@ -140,24 +70,54 @@
 "partido": 28
 },
 {
-"id": 19,
-"__str__": "EDMILSON TAVARES - PR - PARTIDO DA REPÚBLICA",
-"link_detail_backend": "/parlamentar/filiacao/19",
+"id": 8,
+"__str__": "ALENCAR BICICLETAS - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/8",
 "metadata": {},
-"data": "2016-07-01",
-"data_desfiliacao": null,
-"parlamentar": 19,
-"partido": 27
+"data": "2007-09-20",
+"data_desfiliacao": "2020-03-30",
+"parlamentar": 8,
+"partido": 16
 },
 {
-"id": 27,
-"__str__": "ELIAS PEREIRA - PTB - PARTIDO TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/27",
+"id": 9,
+"__str__": "VALTER ZACARKIM - PTB - PARTIDO TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/9",
 "metadata": {},
-"data": "2020-04-03",
+"data": "2016-03-17",
 "data_desfiliacao": null,
-"parlamentar": 13,
+"parlamentar": 9,
 "partido": 2
+},
+{
+"id": 10,
+"__str__": "PROFESSOR DOMINGOS - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/10",
+"metadata": {},
+"data": "2016-03-16",
+"data_desfiliacao": null,
+"parlamentar": 10,
+"partido": 7
+},
+{
+"id": 11,
+"__str__": "JERÔNIMO GONÇALVES - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/11",
+"metadata": {},
+"data": "2015-10-02",
+"data_desfiliacao": "2024-04-01",
+"parlamentar": 11,
+"partido": 7
+},
+{
+"id": 12,
+"__str__": "DENIS MACIEL HOSPITAL - AVANTE - AVANTE",
+"link_detail_backend": "/parlamentar/filiacao/12",
+"metadata": {},
+"data": "2011-10-06",
+"data_desfiliacao": "2020-04-02",
+"parlamentar": 12,
+"partido": 15
 },
 {
 "id": 13,
@@ -170,84 +130,34 @@
 "partido": 15
 },
 {
-"id": 79,
-"__str__": "ELIEL DA ROCHA - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/79",
+"id": 14,
+"__str__": "ROSINEI NEVES - PV - PARTIDO VERDE",
+"link_detail_backend": "/parlamentar/filiacao/14",
 "metadata": {},
-"data": "2024-03-11",
+"data": "2016-03-28",
+"data_desfiliacao": "2020-04-14",
+"parlamentar": 14,
+"partido": 14
+},
+{
+"id": 15,
+"__str__": "CREUDE DA AREEIRA - PODE - PODEMOS",
+"link_detail_backend": "/parlamentar/filiacao/15",
+"metadata": {},
+"data": "2016-04-01",
+"data_desfiliacao": "2020-03-10",
+"parlamentar": 15,
+"partido": 23
+},
+{
+"id": 16,
+"__str__": "NILSON MAGALHÃES - AVANTE - AVANTE",
+"link_detail_backend": "/parlamentar/filiacao/16",
+"metadata": {},
+"data": "2015-09-30",
 "data_desfiliacao": null,
-"parlamentar": 51,
-"partido": 16
-},
-{
-"id": 71,
-"__str__": "ELIS ENFERMEIRA - PL - PARTIDO LIBERAL",
-"link_detail_backend": "/parlamentar/filiacao/71",
-"metadata": {},
-"data": "2024-04-03",
-"data_desfiliacao": null,
-"parlamentar": 46,
-"partido": 37
-},
-{
-"id": 31,
-"__str__": "ENGENHEIRO CELSO SILVA - REPUBLICANOS - REPUBLICANOS",
-"link_detail_backend": "/parlamentar/filiacao/31",
-"metadata": {},
-"data": "2020-04-03",
-"data_desfiliacao": null,
-"parlamentar": 24,
-"partido": 25
-},
-{
-"id": 77,
-"__str__": "ENGENHEIRO WESLEY LOPES - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/77",
-"metadata": {},
-"data": "2024-04-04",
-"data_desfiliacao": null,
-"parlamentar": 49,
-"partido": 36
-},
-{
-"id": 69,
-"__str__": "FLÁVIO NEGAÇÃO - MDB - MOVIMENTO DEMOCRÁTICO BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/69",
-"metadata": {},
-"data": "2024-04-04",
-"data_desfiliacao": null,
-"parlamentar": 21,
-"partido": 1
-},
-{
-"id": 35,
-"__str__": "FLÁVIO NEGAÇÃO - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/35",
-"metadata": {},
-"data": "2020-02-21",
-"data_desfiliacao": "2024-04-03",
-"parlamentar": 21,
-"partido": 36
-},
-{
-"id": 64,
-"__str__": "FRANCO VALÉRIO - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/64",
-"metadata": {},
-"data": "2024-04-01",
-"data_desfiliacao": null,
-"parlamentar": 17,
-"partido": 7
-},
-{
-"id": 29,
-"__str__": "FRANCO VALÉRIO - PROS - PARTIDO REPUBLICANO DA ORDEM SOCIAL",
-"link_detail_backend": "/parlamentar/filiacao/29",
-"metadata": {},
-"data": "2020-04-04",
-"data_desfiliacao": "2024-03-31",
-"parlamentar": 17,
-"partido": 30
+"parlamentar": 16,
+"partido": 15
 },
 {
 "id": 17,
@@ -260,23 +170,143 @@
 "partido": 14
 },
 {
-"id": 54,
-"__str__": "INVESTIGADORA CIDINHA - CIDADANIA - CIDADANIA",
-"link_detail_backend": "/parlamentar/filiacao/54",
+"id": 18,
+"__str__": "JOÃO REZENDE - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/18",
 "metadata": {},
-"data": "2019-11-05",
-"data_desfiliacao": null,
-"parlamentar": 39,
-"partido": 35
+"data": "2016-01-04",
+"data_desfiliacao": "2020-04-01",
+"parlamentar": 18,
+"partido": 7
 },
 {
-"id": 63,
-"__str__": "ISAÍAS BEZERRA - REPUBLICANOS - REPUBLICANOS",
-"link_detail_backend": "/parlamentar/filiacao/63",
+"id": 19,
+"__str__": "EDMILSON TAVARES - PR - PARTIDO DA REPÚBLICA",
+"link_detail_backend": "/parlamentar/filiacao/19",
 "metadata": {},
-"data": "2024-03-11",
+"data": "2016-07-01",
 "data_desfiliacao": null,
-"parlamentar": 26,
+"parlamentar": 19,
+"partido": 27
+},
+{
+"id": 20,
+"__str__": "PASTORELLO - SOLIDARIEDADE - SOLIDARIEDADE",
+"link_detail_backend": "/parlamentar/filiacao/20",
+"metadata": {},
+"data": "2018-04-07",
+"data_desfiliacao": "2023-02-15",
+"parlamentar": 1,
+"partido": 31
+},
+{
+"id": 21,
+"__str__": "VALDENÍRIA - PSC - PARTIDO SOCIAL CRISTÃO",
+"link_detail_backend": "/parlamentar/filiacao/21",
+"metadata": {},
+"data": "2020-04-01",
+"data_desfiliacao": "2022-03-31",
+"parlamentar": 2,
+"partido": 10
+},
+{
+"id": 22,
+"__str__": "ROSINEI NEVES - PSC - PARTIDO SOCIAL CRISTÃO",
+"link_detail_backend": "/parlamentar/filiacao/22",
+"metadata": {},
+"data": "2020-04-14",
+"data_desfiliacao": null,
+"parlamentar": 14,
+"partido": 10
+},
+{
+"id": 23,
+"__str__": "CREUDE DA AREEIRA - REPUBLICANOS - REPUBLICANOS",
+"link_detail_backend": "/parlamentar/filiacao/23",
+"metadata": {},
+"data": "2020-03-11",
+"data_desfiliacao": null,
+"parlamentar": 15,
+"partido": 25
+},
+{
+"id": 24,
+"__str__": "WAGNER BARONE - PTB - PARTIDO TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/24",
+"metadata": {},
+"data": "2020-04-28",
+"data_desfiliacao": null,
+"parlamentar": 6,
+"partido": 2
+},
+{
+"id": 25,
+"__str__": "DONA ELZA DA COLONIA - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/25",
+"metadata": {},
+"data": "2020-04-30",
+"data_desfiliacao": null,
+"parlamentar": 7,
+"partido": 7
+},
+{
+"id": 26,
+"__str__": "DENIS MACIEL HOSPITAL - PTB - PARTIDO TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/26",
+"metadata": {},
+"data": "2020-04-03",
+"data_desfiliacao": null,
+"parlamentar": 12,
+"partido": 2
+},
+{
+"id": 27,
+"__str__": "ELIAS PEREIRA - PTB - PARTIDO TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/27",
+"metadata": {},
+"data": "2020-04-03",
+"data_desfiliacao": null,
+"parlamentar": 13,
+"partido": 2
+},
+{
+"id": 28,
+"__str__": "ALENCAR BICICLETAS - PTB - PARTIDO TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/28",
+"metadata": {},
+"data": "2020-04-03",
+"data_desfiliacao": null,
+"parlamentar": 8,
+"partido": 2
+},
+{
+"id": 29,
+"__str__": "FRANCO VALÉRIO - PROS - PARTIDO REPUBLICANO DA ORDEM SOCIAL",
+"link_detail_backend": "/parlamentar/filiacao/29",
+"metadata": {},
+"data": "2020-04-04",
+"data_desfiliacao": "2024-03-31",
+"parlamentar": 17,
+"partido": 30
+},
+{
+"id": 30,
+"__str__": "MANGA ROSA - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/30",
+"metadata": {},
+"data": "2020-03-30",
+"data_desfiliacao": null,
+"parlamentar": 25,
+"partido": 7
+},
+{
+"id": 31,
+"__str__": "ENGENHEIRO CELSO SILVA - REPUBLICANOS - REPUBLICANOS",
+"link_detail_backend": "/parlamentar/filiacao/31",
+"metadata": {},
+"data": "2020-04-03",
+"data_desfiliacao": null,
+"parlamentar": 24,
 "partido": 25
 },
 {
@@ -290,106 +320,6 @@
 "partido": 35
 },
 {
-"id": 73,
-"__str__": "JERÔNIMO GONÇALVES - PL - PARTIDO LIBERAL",
-"link_detail_backend": "/parlamentar/filiacao/73",
-"metadata": {},
-"data": "2024-04-02",
-"data_desfiliacao": null,
-"parlamentar": 11,
-"partido": 37
-},
-{
-"id": 11,
-"__str__": "JERÔNIMO GONÇALVES - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/11",
-"metadata": {},
-"data": "2015-10-02",
-"data_desfiliacao": "2024-04-01",
-"parlamentar": 11,
-"partido": 7
-},
-{
-"id": 55,
-"__str__": "JOÃO REZENDE - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
-"link_detail_backend": "/parlamentar/filiacao/55",
-"metadata": {},
-"data": "2020-04-03",
-"data_desfiliacao": null,
-"parlamentar": 18,
-"partido": 8
-},
-{
-"id": 18,
-"__str__": "JOÃO REZENDE - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/18",
-"metadata": {},
-"data": "2016-01-04",
-"data_desfiliacao": "2020-04-01",
-"parlamentar": 18,
-"partido": 7
-},
-{
-"id": 72,
-"__str__": "JORGE AUGUSTO - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/72",
-"metadata": {},
-"data": "2024-03-11",
-"data_desfiliacao": null,
-"parlamentar": 45,
-"partido": 16
-},
-{
-"id": 81,
-"__str__": "JUDSON PRATA - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/81",
-"metadata": {},
-"data": "2015-09-01",
-"data_desfiliacao": null,
-"parlamentar": 52,
-"partido": 16
-},
-{
-"id": 65,
-"__str__": "LACERDA DO AKI - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
-"link_detail_backend": "/parlamentar/filiacao/65",
-"metadata": {},
-"data": "2024-04-05",
-"data_desfiliacao": null,
-"parlamentar": 29,
-"partido": 8
-},
-{
-"id": 36,
-"__str__": "LACERDA DO AKI - PRTB - PARTIDO RENOVADOR TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/36",
-"metadata": {},
-"data": "2020-03-25",
-"data_desfiliacao": "2024-04-04",
-"parlamentar": 29,
-"partido": 19
-},
-{
-"id": 60,
-"__str__": "LORIVAL MOTTA - PT - PARTIDO DOS TRABALHADORES",
-"link_detail_backend": "/parlamentar/filiacao/60",
-"metadata": {},
-"data": "2020-12-16",
-"data_desfiliacao": null,
-"parlamentar": 43,
-"partido": 4
-},
-{
-"id": 66,
-"__str__": "LUIZ LANDIM - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/66",
-"metadata": {},
-"data": "2024-04-05",
-"data_desfiliacao": null,
-"parlamentar": 22,
-"partido": 36
-},
-{
 "id": 33,
 "__str__": "LUIZ LANDIM - PV - PARTIDO VERDE",
 "link_detail_backend": "/parlamentar/filiacao/33",
@@ -398,66 +328,6 @@
 "data_desfiliacao": "2024-04-04",
 "parlamentar": 22,
 "partido": 14
-},
-{
-"id": 74,
-"__str__": "MAGALY - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/74",
-"metadata": {},
-"data": "2024-03-11",
-"data_desfiliacao": null,
-"parlamentar": 47,
-"partido": 16
-},
-{
-"id": 30,
-"__str__": "MANGA ROSA - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/30",
-"metadata": {},
-"data": "2020-03-30",
-"data_desfiliacao": null,
-"parlamentar": 25,
-"partido": 7
-},
-{
-"id": 53,
-"__str__": "MARCELO RENATO DO JARDIM UNIÃO - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/53",
-"metadata": {},
-"data": "2020-02-10",
-"data_desfiliacao": null,
-"parlamentar": 38,
-"partido": 36
-},
-{
-"id": 61,
-"__str__": "MARCOS RIBEIRO - PSD - PARTIDO SOCIAL DEMOCRÁTICO",
-"link_detail_backend": "/parlamentar/filiacao/61",
-"metadata": {},
-"data": "2024-03-22",
-"data_desfiliacao": null,
-"parlamentar": 20,
-"partido": 28
-},
-{
-"id": 38,
-"__str__": "MARCOS RIBEIRO - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
-"link_detail_backend": "/parlamentar/filiacao/38",
-"metadata": {},
-"data": "2020-03-23",
-"data_desfiliacao": "2024-03-21",
-"parlamentar": 20,
-"partido": 8
-},
-{
-"id": 48,
-"__str__": "MÁRILSI DA SAÚDE - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/48",
-"metadata": {},
-"data": "2020-12-16",
-"data_desfiliacao": null,
-"parlamentar": 33,
-"partido": 36
 },
 {
 "id": 34,
@@ -470,94 +340,24 @@
 "partido": 4
 },
 {
-"id": 70,
-"__str__": "NAEL SONAQUE - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/70",
+"id": 35,
+"__str__": "FLÁVIO NEGAÇÃO - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/35",
 "metadata": {},
-"data": "2020-03-03",
-"data_desfiliacao": null,
-"parlamentar": 44,
+"data": "2020-02-21",
+"data_desfiliacao": "2024-04-03",
+"parlamentar": 21,
 "partido": 36
 },
 {
-"id": 16,
-"__str__": "NILSON MAGALHÃES - AVANTE - AVANTE",
-"link_detail_backend": "/parlamentar/filiacao/16",
+"id": 36,
+"__str__": "LACERDA DO AKI - PRTB - PARTIDO RENOVADOR TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/36",
 "metadata": {},
-"data": "2015-09-30",
-"data_desfiliacao": null,
-"parlamentar": 16,
-"partido": 15
-},
-{
-"id": 46,
-"__str__": "ODENIR NERY GÁS E ÁGUA - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/46",
-"metadata": {},
-"data": "2020-03-14",
-"data_desfiliacao": null,
-"parlamentar": 34,
-"partido": 36
-},
-{
-"id": 75,
-"__str__": "PACHECO CABELEIREIRO - PP - PARTIDO PROGRESSISTA",
-"link_detail_backend": "/parlamentar/filiacao/75",
-"metadata": {},
-"data": "2024-03-12",
-"data_desfiliacao": null,
-"parlamentar": 30,
-"partido": 16
-},
-{
-"id": 39,
-"__str__": "PACHECO CABELEIREIRO - PV - PARTIDO VERDE",
-"link_detail_backend": "/parlamentar/filiacao/39",
-"metadata": {},
-"data": "2019-04-09",
-"data_desfiliacao": "2024-03-11",
-"parlamentar": 30,
-"partido": 14
-},
-{
-"id": 58,
-"__str__": "PASTORELLO - PT - PARTIDO DOS TRABALHADORES",
-"link_detail_backend": "/parlamentar/filiacao/58",
-"metadata": {},
-"data": "2023-02-16",
-"data_desfiliacao": null,
-"parlamentar": 1,
-"partido": 4
-},
-{
-"id": 20,
-"__str__": "PASTORELLO - SOLIDARIEDADE - SOLIDARIEDADE",
-"link_detail_backend": "/parlamentar/filiacao/20",
-"metadata": {},
-"data": "2018-04-07",
-"data_desfiliacao": "2023-02-15",
-"parlamentar": 1,
-"partido": 31
-},
-{
-"id": 1,
-"__str__": "PASTORELLO - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
-"link_detail_backend": "/parlamentar/filiacao/1",
-"metadata": {},
-"data": "2015-04-28",
-"data_desfiliacao": "2018-04-03",
-"parlamentar": 1,
-"partido": 8
-},
-{
-"id": 68,
-"__str__": "PASTOR JÚNIOR - PL - PARTIDO LIBERAL",
-"link_detail_backend": "/parlamentar/filiacao/68",
-"metadata": {},
-"data": "2024-04-02",
-"data_desfiliacao": null,
-"parlamentar": 27,
-"partido": 37
+"data": "2020-03-25",
+"data_desfiliacao": "2024-04-04",
+"parlamentar": 29,
+"partido": 19
 },
 {
 "id": 37,
@@ -570,44 +370,24 @@
 "partido": 35
 },
 {
-"id": 59,
-"__str__": "PEDRINHO DO SINDICATO - PT - PARTIDO DOS TRABALHADORES",
-"link_detail_backend": "/parlamentar/filiacao/59",
+"id": 38,
+"__str__": "MARCOS RIBEIRO - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+"link_detail_backend": "/parlamentar/filiacao/38",
 "metadata": {},
-"data": "2020-03-27",
-"data_desfiliacao": null,
-"parlamentar": 42,
-"partido": 4
-},
-{
-"id": 10,
-"__str__": "PROFESSOR DOMINGOS - PSB - PARTIDO SOCIALISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/10",
-"metadata": {},
-"data": "2016-03-16",
-"data_desfiliacao": null,
-"parlamentar": 10,
-"partido": 7
-},
-{
-"id": 62,
-"__str__": "PROFESSOR LEANDRO SANTOS - PSD - PARTIDO SOCIAL DEMOCRÁTICO",
-"link_detail_backend": "/parlamentar/filiacao/62",
-"metadata": {},
-"data": "2024-03-22",
-"data_desfiliacao": null,
-"parlamentar": 23,
-"partido": 28
-},
-{
-"id": 47,
-"__str__": "PROFESSOR LEANDRO SANTOS - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/47",
-"metadata": {},
-"data": "2022-03-31",
+"data": "2020-03-23",
 "data_desfiliacao": "2024-03-21",
-"parlamentar": 23,
-"partido": 36
+"parlamentar": 20,
+"partido": 8
+},
+{
+"id": 39,
+"__str__": "PACHECO CABELEIREIRO - PV - PARTIDO VERDE",
+"link_detail_backend": "/parlamentar/filiacao/39",
+"metadata": {},
+"data": "2019-04-09",
+"data_desfiliacao": "2024-03-11",
+"parlamentar": 30,
+"partido": 14
 },
 {
 "id": 40,
@@ -618,56 +398,6 @@
 "data_desfiliacao": "2022-03-31",
 "parlamentar": 23,
 "partido": 5
-},
-{
-"id": 56,
-"__str__": "PROFESSOR MARQUINHOS - PROS - PARTIDO REPUBLICANO DA ORDEM SOCIAL",
-"link_detail_backend": "/parlamentar/filiacao/56",
-"metadata": {},
-"data": "2020-04-04",
-"data_desfiliacao": null,
-"parlamentar": 40,
-"partido": 30
-},
-{
-"id": 22,
-"__str__": "ROSINEI NEVES - PSC - PARTIDO SOCIAL CRISTÃO",
-"link_detail_backend": "/parlamentar/filiacao/22",
-"metadata": {},
-"data": "2020-04-14",
-"data_desfiliacao": null,
-"parlamentar": 14,
-"partido": 10
-},
-{
-"id": 14,
-"__str__": "ROSINEI NEVES - PV - PARTIDO VERDE",
-"link_detail_backend": "/parlamentar/filiacao/14",
-"metadata": {},
-"data": "2016-03-28",
-"data_desfiliacao": "2020-04-14",
-"parlamentar": 14,
-"partido": 14
-},
-{
-"id": 67,
-"__str__": "RUBENS MACEDO - UB - UNIÃO BRASIL",
-"link_detail_backend": "/parlamentar/filiacao/67",
-"metadata": {},
-"data": "2024-04-05",
-"data_desfiliacao": null,
-"parlamentar": 5,
-"partido": 36
-},
-{
-"id": 5,
-"__str__": "RUBENS MACEDO - PTB - PARTIDO TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/5",
-"metadata": {},
-"data": "2003-09-19",
-"data_desfiliacao": "2024-04-04",
-"parlamentar": 5,
-"partido": 2
 },
 {
 "id": 41,
@@ -690,16 +420,6 @@
 "partido": 19
 },
 {
-"id": 80,
-"__str__": "VALDENÍRIA - PODE - PODEMOS",
-"link_detail_backend": "/parlamentar/filiacao/80",
-"metadata": {},
-"data": "2025-10-24",
-"data_desfiliacao": null,
-"parlamentar": 2,
-"partido": 23
-},
-{
 "id": 45,
 "__str__": "VALDENÍRIA - PSB - PARTIDO SOCIALISTA BRASILEIRO",
 "link_detail_backend": "/parlamentar/filiacao/45",
@@ -710,63 +430,343 @@
 "partido": 7
 },
 {
-"id": 21,
-"__str__": "VALDENÍRIA - PSC - PARTIDO SOCIAL CRISTÃO",
-"link_detail_backend": "/parlamentar/filiacao/21",
+"id": 46,
+"__str__": "ODENIR NERY GÁS E ÁGUA - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/46",
 "metadata": {},
-"data": "2020-04-01",
-"data_desfiliacao": "2022-03-31",
-"parlamentar": 2,
-"partido": 10
+"data": "2020-03-14",
+"data_desfiliacao": null,
+"parlamentar": 34,
+"partido": 36
 },
 {
-"id": 2,
-"__str__": "VALDENÍRIA - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
-"link_detail_backend": "/parlamentar/filiacao/2",
+"id": 47,
+"__str__": "PROFESSOR LEANDRO SANTOS - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/47",
 "metadata": {},
-"data": "2016-03-28",
-"data_desfiliacao": "2020-03-31",
-"parlamentar": 2,
+"data": "2022-03-31",
+"data_desfiliacao": "2024-03-21",
+"parlamentar": 23,
+"partido": 36
+},
+{
+"id": 48,
+"__str__": "MÁRILSI DA SAÚDE - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/48",
+"metadata": {},
+"data": "2020-12-16",
+"data_desfiliacao": null,
+"parlamentar": 33,
+"partido": 36
+},
+{
+"id": 51,
+"__str__": "ANTÔNIO MAMEDES - REPUBLICANOS - REPUBLICANOS",
+"link_detail_backend": "/parlamentar/filiacao/51",
+"metadata": {},
+"data": "2020-12-16",
+"data_desfiliacao": null,
+"parlamentar": 36,
+"partido": 25
+},
+{
+"id": 52,
+"__str__": "BIRA SOM - PRTB - PARTIDO RENOVADOR TRABALHISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/52",
+"metadata": {},
+"data": "2020-03-25",
+"data_desfiliacao": null,
+"parlamentar": 37,
+"partido": 19
+},
+{
+"id": 53,
+"__str__": "MARCELO RENATO DO JARDIM UNIÃO - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/53",
+"metadata": {},
+"data": "2020-02-10",
+"data_desfiliacao": null,
+"parlamentar": 38,
+"partido": 36
+},
+{
+"id": 54,
+"__str__": "INVESTIGADORA CIDINHA - CIDADANIA - CIDADANIA",
+"link_detail_backend": "/parlamentar/filiacao/54",
+"metadata": {},
+"data": "2019-11-05",
+"data_desfiliacao": null,
+"parlamentar": 39,
+"partido": 35
+},
+{
+"id": 55,
+"__str__": "JOÃO REZENDE - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+"link_detail_backend": "/parlamentar/filiacao/55",
+"metadata": {},
+"data": "2020-04-03",
+"data_desfiliacao": null,
+"parlamentar": 18,
 "partido": 8
 },
 {
-"id": 9,
-"__str__": "VALTER ZACARKIM - PTB - PARTIDO TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/9",
+"id": 56,
+"__str__": "PROFESSOR MARQUINHOS - PROS - PARTIDO REPUBLICANO DA ORDEM SOCIAL",
+"link_detail_backend": "/parlamentar/filiacao/56",
 "metadata": {},
-"data": "2016-03-17",
+"data": "2020-04-04",
 "data_desfiliacao": null,
-"parlamentar": 9,
-"partido": 2
+"parlamentar": 40,
+"partido": 30
 },
 {
-"id": 24,
-"__str__": "WAGNER BARONE - PTB - PARTIDO TRABALHISTA BRASILEIRO",
-"link_detail_backend": "/parlamentar/filiacao/24",
+"id": 57,
+"__str__": "DANILO DO CARAMUJO - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+"link_detail_backend": "/parlamentar/filiacao/57",
 "metadata": {},
-"data": "2020-04-28",
+"data": "2020-03-30",
 "data_desfiliacao": null,
-"parlamentar": 6,
-"partido": 2
+"parlamentar": 41,
+"partido": 8
 },
 {
-"id": 6,
-"__str__": "WAGNER BARONE - PODE - PODEMOS",
-"link_detail_backend": "/parlamentar/filiacao/6",
+"id": 58,
+"__str__": "PASTORELLO - PT - PARTIDO DOS TRABALHADORES",
+"link_detail_backend": "/parlamentar/filiacao/58",
 "metadata": {},
-"data": "2011-09-05",
-"data_desfiliacao": "2020-04-28",
-"parlamentar": 6,
+"data": "2023-02-16",
+"data_desfiliacao": null,
+"parlamentar": 1,
+"partido": 4
+},
+{
+"id": 59,
+"__str__": "PEDRINHO DO SINDICATO - PT - PARTIDO DOS TRABALHADORES",
+"link_detail_backend": "/parlamentar/filiacao/59",
+"metadata": {},
+"data": "2020-03-27",
+"data_desfiliacao": null,
+"parlamentar": 42,
+"partido": 4
+},
+{
+"id": 60,
+"__str__": "LORIVAL MOTTA - PT - PARTIDO DOS TRABALHADORES",
+"link_detail_backend": "/parlamentar/filiacao/60",
+"metadata": {},
+"data": "2020-12-16",
+"data_desfiliacao": null,
+"parlamentar": 43,
+"partido": 4
+},
+{
+"id": 61,
+"__str__": "MARCOS RIBEIRO - PSD - PARTIDO SOCIAL DEMOCRÁTICO",
+"link_detail_backend": "/parlamentar/filiacao/61",
+"metadata": {},
+"data": "2024-03-22",
+"data_desfiliacao": null,
+"parlamentar": 20,
+"partido": 28
+},
+{
+"id": 62,
+"__str__": "PROFESSOR LEANDRO SANTOS - PSD - PARTIDO SOCIAL DEMOCRÁTICO",
+"link_detail_backend": "/parlamentar/filiacao/62",
+"metadata": {},
+"data": "2024-03-22",
+"data_desfiliacao": null,
+"parlamentar": 23,
+"partido": 28
+},
+{
+"id": 63,
+"__str__": "ISAÍAS BEZERRA - REPUBLICANOS - REPUBLICANOS",
+"link_detail_backend": "/parlamentar/filiacao/63",
+"metadata": {},
+"data": "2024-03-11",
+"data_desfiliacao": null,
+"parlamentar": 26,
+"partido": 25
+},
+{
+"id": 64,
+"__str__": "FRANCO VALÉRIO - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/64",
+"metadata": {},
+"data": "2024-04-01",
+"data_desfiliacao": null,
+"parlamentar": 17,
+"partido": 7
+},
+{
+"id": 65,
+"__str__": "LACERDA DO AKI - PSDB - PARTIDO DA SOCIAL DEMOCRACIA BRASILEIRA",
+"link_detail_backend": "/parlamentar/filiacao/65",
+"metadata": {},
+"data": "2024-04-05",
+"data_desfiliacao": null,
+"parlamentar": 29,
+"partido": 8
+},
+{
+"id": 66,
+"__str__": "LUIZ LANDIM - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/66",
+"metadata": {},
+"data": "2024-04-05",
+"data_desfiliacao": null,
+"parlamentar": 22,
+"partido": 36
+},
+{
+"id": 67,
+"__str__": "RUBENS MACEDO - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/67",
+"metadata": {},
+"data": "2024-04-05",
+"data_desfiliacao": null,
+"parlamentar": 5,
+"partido": 36
+},
+{
+"id": 68,
+"__str__": "PASTOR JÚNIOR - PL - PARTIDO LIBERAL",
+"link_detail_backend": "/parlamentar/filiacao/68",
+"metadata": {},
+"data": "2024-04-02",
+"data_desfiliacao": null,
+"parlamentar": 27,
+"partido": 37
+},
+{
+"id": 69,
+"__str__": "FLÁVIO NEGAÇÃO - MDB - MOVIMENTO DEMOCRÁTICO BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/69",
+"metadata": {},
+"data": "2024-04-04",
+"data_desfiliacao": null,
+"parlamentar": 21,
+"partido": 1
+},
+{
+"id": 70,
+"__str__": "NAEL SONAQUE - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/70",
+"metadata": {},
+"data": "2020-03-03",
+"data_desfiliacao": null,
+"parlamentar": 44,
+"partido": 36
+},
+{
+"id": 71,
+"__str__": "ELIS ENFERMEIRA - PL - PARTIDO LIBERAL",
+"link_detail_backend": "/parlamentar/filiacao/71",
+"metadata": {},
+"data": "2024-04-03",
+"data_desfiliacao": null,
+"parlamentar": 46,
+"partido": 37
+},
+{
+"id": 72,
+"__str__": "JORGE AUGUSTO - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/72",
+"metadata": {},
+"data": "2024-03-11",
+"data_desfiliacao": null,
+"parlamentar": 45,
+"partido": 16
+},
+{
+"id": 73,
+"__str__": "JERÔNIMO GONÇALVES - PL - PARTIDO LIBERAL",
+"link_detail_backend": "/parlamentar/filiacao/73",
+"metadata": {},
+"data": "2024-04-02",
+"data_desfiliacao": null,
+"parlamentar": 11,
+"partido": 37
+},
+{
+"id": 74,
+"__str__": "MAGALY - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/74",
+"metadata": {},
+"data": "2024-03-11",
+"data_desfiliacao": null,
+"parlamentar": 47,
+"partido": 16
+},
+{
+"id": 75,
+"__str__": "PACHECO CABELEIREIRO - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/75",
+"metadata": {},
+"data": "2024-03-12",
+"data_desfiliacao": null,
+"parlamentar": 30,
+"partido": 16
+},
+{
+"id": 76,
+"__str__": "ALEX LEAL - PSB - PARTIDO SOCIALISTA BRASILEIRO",
+"link_detail_backend": "/parlamentar/filiacao/76",
+"metadata": {},
+"data": "2020-04-03",
+"data_desfiliacao": null,
+"parlamentar": 48,
+"partido": 7
+},
+{
+"id": 77,
+"__str__": "ENGENHEIRO WESLEY LOPES - UB - UNIÃO BRASIL",
+"link_detail_backend": "/parlamentar/filiacao/77",
+"metadata": {},
+"data": "2024-04-04",
+"data_desfiliacao": null,
+"parlamentar": 49,
+"partido": 36
+},
+{
+"id": 78,
+"__str__": "CLÓVIS SALVADOR - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/78",
+"metadata": {},
+"data": "2024-03-11",
+"data_desfiliacao": null,
+"parlamentar": 50,
+"partido": 16
+},
+{
+"id": 79,
+"__str__": "ELIEL DA ROCHA - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/79",
+"metadata": {},
+"data": "2024-03-11",
+"data_desfiliacao": null,
+"parlamentar": 51,
+"partido": 16
+},
+{
+"id": 80,
+"__str__": "VALDENÍRIA - PODE - PODEMOS",
+"link_detail_backend": "/parlamentar/filiacao/80",
+"metadata": {},
+"data": "2025-10-24",
+"data_desfiliacao": null,
+"parlamentar": 2,
 "partido": 23
 },
 {
-"id": 4,
-"__str__": "ZÉ EDUARDO TORRES - PSC - PARTIDO SOCIAL CRISTÃO",
-"link_detail_backend": "/parlamentar/filiacao/4",
+"id": 81,
+"__str__": "JUDSON PRATA - PP - PARTIDO PROGRESSISTA",
+"link_detail_backend": "/parlamentar/filiacao/81",
 "metadata": {},
-"data": "2016-04-01",
+"data": "2015-09-01",
 "data_desfiliacao": null,
-"parlamentar": 4,
-"partido": 10
+"parlamentar": 52,
+"partido": 16
 }
 ]
