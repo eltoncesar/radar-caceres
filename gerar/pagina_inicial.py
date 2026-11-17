@@ -125,6 +125,38 @@ def resumo_situacao(propostas, esc):
     return f'<p class="sub">{esc(" · ".join(partes))}.</p>' if partes else ""
 
 
+def texto_presenca(pr):
+    if not pr or not pr["sessoes"]:
+        return ""
+    pct = round(100 * pr["presente"] / pr["sessoes"])
+    j, f = len(pr["justificadas"]), len(pr["faltas"])
+    return pct, (f'{pr["presente"]} de {pr["sessoes"]} {"sessão" if pr["sessoes"] == 1 else "sessões"} até agora',
+                 f'{j} ausência{"s" if j != 1 else ""} justificada{"s" if j != 1 else ""} · {f} falta{"s" if f != 1 else ""}')
+
+
+def bloco_presenca(v, esc, data_br, sapl):
+    pr = v.get("presenca")
+    t = texto_presenca(pr)
+    if not t:
+        return ""
+    pct, (linha1, linha2) = t
+    faltas = "".join(f'<li><a href="{sapl}/sessao/{sid}">{data_br(d)}</a></li>' for sid, d in pr["faltas"])
+    justif = "".join(f'<li><a href="{sapl}/sessao/{sid}">{data_br(d)}</a></li>' for sid, d in pr["justificadas"])
+    def normas(item):
+        return ", ".join(f'<a href="{sapl}/norma/{nid}">{esc(nome)}</a>' if nid else esc(nome) for nome, nid in item["normas"].items())
+    lic = "".join(f'<li>{data_br(l["inicio"])} a {data_br(l["fim"])}: {esc(l["motivo"])} ({normas(l)})</li>' for l in pr["licencas"])
+    ex = pr.get("exercicio")
+    ex_html = (f'<p class="sub">Em exercício por convocação: {normas(ex)}.'
+               f'{(" " + esc(ex["obs"])) if ex.get("obs") else ""}</p>') if ex else ""
+    return f"""<section class="presenca" id="presenca"><h2>Presença nas sessões ordinárias</h2>
+<p class="pct"><b>{pct}%</b> <span>{esc(linha1)}</span></p><p class="sub">{esc(linha2)}</p>
+{f'<h3>Faltas</h3><ul class="datas">{faltas}</ul>' if faltas else ""}
+{f'<h3>Ausências justificadas</h3><ul class="datas">{justif}</ul>' if justif else ""}
+{f'<h3>Licenças (não contam como falta)</h3><ul class="lic">{lic}</ul>' if lic else ""}{ex_html}
+<p class="nota">Presente na lista de abertura ou na da Ordem do Dia conta como presente. Sessões em licença não contam.
+<a href="../index.html#fontes">Como contamos</a>.</p></section>"""
+
+
 def nome_proprio(nome):
     """'ELIS FERNANDA DE MELO SILVA' -> 'Elis Fernanda de Melo Silva'."""
     pequenas = {"da", "de", "do", "das", "dos", "e"}
@@ -232,16 +264,25 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
             f'<li class="g-{g}"><a href="vereador/{v["slug"]}.html#{g}"><span>{esc(GRUPOS[g][0])}</span><b>{c[g]}</b>'
             f'<i style="--w:{100 * c[g] / maior:.0f}%"></i></a></li>' for g in ORDEM_GRUPOS if c[g] or g != "outros")
         dados = " ".join(f'data-{g}="{c[g]}"' for g in ORDEM_GRUPOS)
-        dados += f' data-viraram="{contas_situacao(v["propostas"])[2]}"'
+        dados += f' data-viraram="{contas_situacao(v["propostas"])[2]}" data-faltas="{len(v["presenca"]["faltas"])}"'
         return (f'<li class="cracha" data-nome="{esc(v["nome"].lower())}" data-partido="{esc(v["partido"])}" '
                 f'data-total="{len(v["propostas"])}" data-titular="{1 if v["titular"] else 0}" {dados}>'
                 f'<div class="cab">{foto(v, "")}<div><h3 class="nome"><a href="vereador/{v["slug"]}.html">{esc(v["nome"])}</a></h3>'
                 f'<p class="sub">{esc(nome_proprio(v["nome_completo"]))}</p>'
                 f'<p class="partido">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p>'
                 f'{f"""<p class="cargo">{esc(v["cargo"])}</p>""" if v["cargo"] else ""}</div></div>'
+                f'{presenca_cracha(v)}'
                 f'<p class="total"><b>{len(v["propostas"])}</b> propostas até agora</p>'
                 f'<p class="rot">O que propôs</p><ul class="barras">{linhas}</ul>{resultado(v)}'
                 f'<a class="ficha" href="{sapl}/parlamentar/{v["id"]}">Ficha oficial na Câmara{icone("open_in_new")}</a></li>')
+    def presenca_cracha(v):
+        t = texto_presenca(v.get("presenca"))
+        if not t:
+            return ""
+        pct, (l1, l2) = t
+        return (f'<a class="pres" href="vereador/{v["slug"]}.html#presenca"><b>{pct}%</b>'
+                f'<span>de presença · {esc(l1)}</span><span class="sub">{esc(l2)}</span></a>')
+
     def resultado(v):
         resp, ped, viraram, leis = contas_situacao(v["propostas"])
         itens = []
@@ -264,7 +305,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
 <label>Ordenar por<select id="f-ordem">
 <option value="nome">Titulares primeiro (A–Z)</option><option value="total">Mais propostas</option>
 <option value="melhoria">Mais pedidos de melhoria</option><option value="cobranca">Mais perguntas e cobranças</option>
-<option value="lei">Mais projetos de lei</option><option value="viraram">Mais projetos que viraram lei</option><option value="homenagem">Mais homenagens</option></select></label>
+<option value="lei">Mais projetos de lei</option><option value="viraram">Mais projetos que viraram lei</option><option value="faltas">Quem mais faltou</option><option value="homenagem">Mais homenagens</option></select></label>
 </div>
 <p class="sub" id="f-conta"></p>
 <ul class="crachas" id="crachas">{crachas}</ul>
@@ -281,8 +322,9 @@ Pode errar em casos raros. <a href="sobre.html#regra">Veja a regra</a>.</dd></di
 <div><dt>Bairros e ruas</dt><dd>Lidos do resumo oficial de cada pedido. Se o resumo não cita o lugar, o pedido não aparece na busca.</dd></div>
 <div><dt>Respostas da Prefeitura</dt><dd>Vêm da tramitação oficial de cada pedido: a Câmara registra quando manda o ofício
 e quando recebe a resposta. Resposta recebida não quer dizer problema resolvido. Conferimos 12 propostas sorteadas com o SAPL: todas batem.</dd></div>
-<div><dt>Presença</dt><dd>Ainda não mostramos. A lista de presença do SAPL bate com as atas, mas as licenças dos vereadores só aparecem
-nas Portarias da Câmara. Licença não é falta, então vamos cruzar uma por uma antes de publicar.</dd></div>
+<div><dt>Presença</dt><dd>Conta as sessões ordinárias. Vem das listas de presença do SAPL, que conferimos com as atas: batem.
+Licença não é falta: os períodos de licença saem das Portarias da Câmara, revisadas uma a uma, com link em cada vereador.
+Ausência justificada é a que a Câmara registrou como justificada.</dd></div>
 <div><dt>Votos</dt><dd>A Câmara não registra o voto de cada vereador desde agosto de 2020. Só aparece o resultado geral,
 como “aprovado por unanimidade”. Por isso não há como mostrar quem votou contra.</dd></div>
 <div><dt>Salário</dt><dd>Não mostramos estimativas. Só entra no site o que tiver fonte oficial.</dd></div>

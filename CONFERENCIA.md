@@ -39,7 +39,7 @@ Feita em 17/11/2026, antes de publicar o site.
 - **Grupos e assuntos** são definidos por uma regra automática a partir do tipo e do resumo. Podem errar em casos raros, e o site diz isso.
 - **A busca por bairro** só encontra pedidos cujo resumo cita o lugar.
 - **Voto de cada vereador:** não existe no SAPL desde agosto de 2020. Não há o que conferir.
-- **Presença:** os registros do SAPL batem com as atas, mas só vamos publicar depois de montar a tabela de licenças com as datas exatas de início e fim, a partir de fontes oficiais (atos da Mesa, termos de posse, notícias da Câmara). Até lá, o site não mostra presença.
+- **Presença:** publicada a partir de 17/11/2026. As licenças e os períodos de exercício dos suplentes estão em `dados/licencas.json`, montados à mão a partir das Portarias (com link para cada uma). As datas vêm do texto das Portarias; quando a Portaria não traz a data de retorno, usamos a do ato seguinte ou a notícia oficial, como anotado no arquivo. Com essa tabela, todas as ausências longas são licenças e restam poucas faltas avulsas. No dia da posse, a ausência do suplente não conta como falta.
 
 ## Falta você fazer
 

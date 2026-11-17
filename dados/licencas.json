@@ -1,0 +1,221 @@
+{
+ "_sobre": "Períodos de licença dos titulares e de exercício dos suplentes na 20ª legislatura, montados à mão a partir das Portarias da Câmara Municipal de Cáceres (SAPL, normas jurídicas) e das notícias oficiais da Câmara. O SAPL não registra licenças e as datas de mandato dos suplentes nele não batem com as Portarias. 'fim' é o último dia fora (licença) ou o último dia em exercício (suplente). Revisado em 17/11/2026. Para suplentes, o primeiro dia de cada período é o da posse; nesse dia, a ausência não conta como falta, porque a posse pode ser depois da sessão.",
+ "licencas": [
+  {
+   "parlamentar": 2,
+   "nome": "VALDENÍRIA",
+   "inicio": "2025-07-07",
+   "fim": "2025-08-13",
+   "motivo": "Assumiu mandato de deputada estadual",
+   "portarias": [
+    "Portaria 195/2025",
+    "Portaria 212/2025"
+   ],
+   "obs": "Data de retorno pelo fim do exercício do suplente Alex Leal; ela volta às sessões em 19/08/2025.",
+   "normas": {
+    "Portaria 195/2025": 1862,
+    "Portaria 212/2025": 1882
+   }
+  },
+  {
+   "parlamentar": 26,
+   "nome": "ISAÍAS BEZERRA",
+   "inicio": "2025-08-13",
+   "fim": "2025-10-02",
+   "motivo": "Licença de saúde",
+   "portarias": [
+    "Portaria 217/2025",
+    "Portaria 252/2025"
+   ],
+   "normas": {
+    "Portaria 217/2025": 1890,
+    "Portaria 252/2025": 1987
+   }
+  },
+  {
+   "parlamentar": 5,
+   "nome": "RUBENS MACEDO",
+   "inicio": "2025-09-08",
+   "fim": "2026-07-30",
+   "motivo": "Secretário municipal",
+   "portarias": [
+    "Portaria 233/2025",
+    "Portaria 4/2026",
+    "Portaria 178/2026",
+    "Portaria 198/2026",
+    "Portaria 208/2026"
+   ],
+   "obs": "A Portaria 224/2025 foi anulada pela 228/2025 e substituída pela 233/2025. Retorno a partir de 31/07/2026 (Portaria 208/2026).",
+   "normas": {
+    "Portaria 233/2025": 1914,
+    "Portaria 4/2026": 2083,
+    "Portaria 178/2026": 2368,
+    "Portaria 198/2026": 2387,
+    "Portaria 208/2026": 2400
+   }
+  },
+  {
+   "parlamentar": 47,
+   "nome": "MAGALY",
+   "inicio": "2025-09-23",
+   "fim": "2026-04-15",
+   "motivo": "Secretária municipal e depois interesse particular",
+   "portarias": [
+    "Portaria 244/2025",
+    "Portaria 17/2026",
+    "Portaria 93/2026",
+    "Portaria 103/2026"
+   ],
+   "obs": "Reconduzida por decisão judicial pela Portaria 103/2026, de 16/04/2026.",
+   "normas": {
+    "Portaria 244/2025": 1976,
+    "Portaria 17/2026": 2096,
+    "Portaria 93/2026": 2282,
+    "Portaria 103/2026": 2292
+   }
+  },
+  {
+   "parlamentar": 45,
+   "nome": "JORGE AUGUSTO",
+   "inicio": "2026-03-27",
+   "fim": "2026-04-21",
+   "motivo": "Licença de saúde",
+   "portarias": [
+    "Portaria 83/2026",
+    "Ato da Presidência 2/2026",
+    "Portaria 107/2026"
+   ],
+   "normas": {
+    "Portaria 83/2026": 2214,
+    "Ato da Presidência 2/2026": 2217,
+    "Portaria 107/2026": 2296
+   }
+  }
+ ],
+ "suplentes": [
+  {
+   "parlamentar": 48,
+   "nome": "ALEX LEAL",
+   "periodos": [
+    [
+     "2025-07-10",
+     "2025-08-13"
+    ]
+   ],
+   "no_lugar_de": "VALDENÍRIA",
+   "portarias": [
+    "Portaria 195/2025"
+   ],
+   "normas": {
+    "Portaria 195/2025": 1862
+   }
+  },
+  {
+   "parlamentar": 24,
+   "nome": "ENGENHEIRO CELSO SILVA",
+   "periodos": [
+    [
+     "2025-08-22",
+     "2025-08-31"
+    ]
+   ],
+   "no_lugar_de": "ISAÍAS BEZERRA",
+   "portarias": [
+    "Portaria 217/2025",
+    "Portaria 228/2025"
+   ],
+   "obs": "A convocação e a posse foram anuladas pela Portaria 228/2025, de 01/09/2025.",
+   "normas": {
+    "Portaria 217/2025": 1890,
+    "Portaria 228/2025": 1909
+   }
+  },
+  {
+   "parlamentar": 49,
+   "nome": "ENGENHEIRO WESLEY LOPES",
+   "periodos": [
+    [
+     "2025-09-12",
+     "2026-07-30"
+    ]
+   ],
+   "no_lugar_de": "RUBENS MACEDO",
+   "portarias": [
+    "Portaria 233/2025",
+    "Portaria 198/2026",
+    "Portaria 208/2026"
+   ],
+   "normas": {
+    "Portaria 233/2025": 1914,
+    "Portaria 198/2026": 2387,
+    "Portaria 208/2026": 2400
+   }
+  },
+  {
+   "parlamentar": 50,
+   "nome": "CLÓVIS SALVADOR",
+   "periodos": [
+    [
+     "2025-09-29",
+     "2026-02-03"
+    ],
+    [
+     "2026-04-20",
+     "2026-04-21"
+    ]
+   ],
+   "no_lugar_de": "MAGALY; depois JORGE AUGUSTO",
+   "portarias": [
+    "Portaria 245/2025",
+    "Portaria 7/2026",
+    "Portaria 48/2026",
+    "Portaria 106/2026"
+   ],
+   "obs": "Licença de saúde a contar de 04/02/2026 (Portaria 48/2026). Reassume em 20/04/2026 na vaga de Jorge Augusto (Portaria 106/2026).",
+   "normas": {
+    "Portaria 245/2025": 1977,
+    "Portaria 7/2026": 2086,
+    "Portaria 48/2026": 2138,
+    "Portaria 106/2026": 2295
+   }
+  },
+  {
+   "parlamentar": 51,
+   "nome": "ELIEL DA ROCHA",
+   "periodos": [
+    [
+     "2026-02-23",
+     "2026-04-15"
+    ]
+   ],
+   "no_lugar_de": "MAGALY",
+   "portarias": [
+    "Portaria 48/2026",
+    "Portaria 103/2026"
+   ],
+   "normas": {
+    "Portaria 48/2026": 2138,
+    "Portaria 103/2026": 2292
+   }
+  },
+  {
+   "parlamentar": 52,
+   "nome": "JUDSON PRATA",
+   "periodos": [
+    [
+     "2026-04-06",
+     "2026-04-19"
+    ]
+   ],
+   "no_lugar_de": "JORGE AUGUSTO",
+   "portarias": [
+    "Portaria 83/2026",
+    "Portaria 106/2026"
+   ],
+   "normas": {
+    "Portaria 83/2026": 2214,
+    "Portaria 106/2026": 2295
+   }
+  }
+ ]
+}

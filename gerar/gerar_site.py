@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS, REGRA_EXPLICADA, classificar  # noqa: E402
 import pagina_inicial  # noqa: E402
 import situacao as sit  # noqa: E402
+import presenca  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRUTOS = os.path.join(RAIZ, "dados", "brutos")
@@ -110,6 +111,15 @@ def montar_dados():
     mesa_atual = max(m["id"] for m in carregar("mesas"))
     cargo = {c["parlamentar"]: cargos_mesa[c["cargo"]] for c in carregar("composicao_mesa") if c["mesa_diretora"] == mesa_atual}
 
+    with open(os.path.join(RAIZ, "dados", "licencas.json"), encoding="utf-8") as f:
+        licencas = json.load(f)
+    with open(os.path.join(BRUTOS, "_coleta.json"), encoding="utf-8") as f:
+        hoje = json.load(f)["data"]
+    tipos_sessao = {t["id"]: t["nome"] for t in carregar("tipos_sessao")}
+    pres = presenca.calcular(carregar("sessoes"), tipos_sessao,
+                             [carregar("presenca_abertura"), carregar("presenca_ordem_dia")],
+                             carregar("justificativas_ausencia"), carregar("mandatos"), licencas, hoje)
+
     vereadores = []
     for mand in carregar("mandatos"):
         p = parlamentares[mand["parlamentar"]]
@@ -131,6 +141,7 @@ def montar_dados():
             "telefone": (p.get("telefone") or "").strip(),
             "propostas": lista,
             "cargo": rotulo_cargo(cargo.get(p["id"], "")),
+            "presenca": pres[p["id"]],
         })
     vereadores.sort(key=lambda v: (not v["titular"], v["nome"]))
     return vereadores
@@ -190,9 +201,12 @@ def foto(v, base):
 def periodo(v):
     if v["titular"]:
         return "Titular"
-    # As datas de mandato dos suplentes no SAPL não batem com as Portarias da Câmara
-    # (ver CONFERENCIA.md). Até cruzarmos as Portarias, não mostramos o período.
-    return "Suplente que assumiu uma vaga"
+    # Períodos tirados das Portarias (dados/licencas.json), não do SAPL, cujas datas não batem.
+    ex = v.get("presenca", {}).get("exercicio")
+    if not ex:
+        return "Suplente que assumiu uma vaga"
+    trechos = " e ".join(f"{data_br(a)} a {data_br(b)}" for a, b in ex["periodos"])
+    return f"Suplente em exercício de {trechos}, no lugar de {ex['no_lugar_de'].title().replace('; Depois', '; depois')}"
 
 
 AVISO_VOTO = """<aside class="aviso"><strong>Por que não mostramos como cada vereador votou?</strong>
@@ -250,6 +264,7 @@ def gerar_vereador(v, coleta):
 <section class="destaque"><p><b>{total}</b> propostas em {" e ".join(ANOS)}</p>
 <p class="sub">{principal} como autor principal · {total - principal} assinadas junto com outros vereadores</p>
 {pagina_inicial.resumo_situacao(v["propostas"], esc)}</section>
+{pagina_inicial.bloco_presenca(v, esc, data_br, SAPL)}
 {f'<ul class="resumo">{resumo}</ul><p class="sub">Toque num grupo para ler proposta por proposta.</p>' if grupos else "<p>Nenhuma proposta registrada no período.</p>"}
 {"".join(blocos)}
 {AVISO_VOTO}
@@ -520,6 +535,17 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .resultado b{font-weight:500;font-variant-numeric:tabular-nums}
 .resultado i{grid-column:1/-1;height:4px;border-radius:var(--shape-full);background:linear-gradient(90deg,var(--g-lei) var(--w),var(--md-surface-container-high) var(--w))}
 .propostas .sit{margin-left:8px;vertical-align:middle}
+/* Presença */
+.pres{position:relative;display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:center;margin:16px 0 0;padding:12px 16px;border-radius:var(--shape-m);background:var(--md-surface-container-low);color:var(--md-on-surface);text-decoration:none;overflow:hidden}
+.pres b{grid-row:span 2;font-size:2rem;line-height:2.5rem;font-weight:500;color:var(--md-primary);font-variant-numeric:tabular-nums}
+.pres span{font-size:.875rem;line-height:1.25rem}.pres .sub{margin:0}
+.pres::after{content:"";position:absolute;inset:0;background:currentColor;opacity:0;transition:opacity .2s var(--ease)}.pres:hover::after{opacity:.08}
+.presenca{margin:24px 0}
+.pct{margin:4px 0 0}.pct b{font-size:2.8125rem;line-height:3.25rem;font-weight:500;color:var(--md-primary);font-variant-numeric:tabular-nums}
+.pct span{font-size:1rem;margin-left:8px}
+.datas{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.datas a{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border:1px solid var(--md-outline);border-radius:var(--shape-s);font-size:.875rem;text-decoration:none}
+.lic{margin:0;padding-left:20px}.lic li{margin:6px 0}
 /* De onde vêm os números */
 .fontes{display:grid;gap:12px;margin:16px 0 0}
 .fontes div{border-radius:var(--shape-m);padding:16px;background:var(--md-surface-container-low)}

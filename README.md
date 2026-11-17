@@ -77,8 +77,8 @@ estimativas em [CONFERENCIA.md](CONFERENCIA.md).
    se aparecer em qualquer uma das duas.
 2. **Licenças não estão registradas no SAPL.** As ausências longas (Rubens
    Macedo, Magaly, Isaías Bezerra, Valdeníria, Jorge Augusto) são licenças
-   confirmadas por notícias oficiais da Câmara (ver CONFERENCIA.md). Antes de
-   publicar a presença, falta montar a tabela de licenças com datas exatas.
+   confirmadas nas Portarias da Câmara. A tabela de licenças fica em
+   `dados/licencas.json` e é revisada à mão (ver CONFERENCIA.md).
 3. **As datas de mandato dos suplentes parecem não bater** com o período em que
    eles ocuparam a cadeira.
 4. Sessão sem presença registrada não conta como falta para ninguém.
