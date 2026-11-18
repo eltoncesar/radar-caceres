@@ -184,7 +184,7 @@ CABECA = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,play_circle,record_voice_over,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,help,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,play_circle,record_voice_over,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
 <link rel="stylesheet" href="{base}estilo.css">
 </head>
 <body>
@@ -287,6 +287,9 @@ def gerar_vereador(v, coleta):
 {pagina_inicial.bloco_discursos(v, esc, data_br)}
 {f'<ul class="resumo">{resumo}</ul><p class="sub">Toque num grupo para ler proposta por proposta.</p>' if grupos else "<p>Nenhuma proposta registrada no período.</p>"}
 {"".join(blocos)}
+<details class="legenda"><summary>O que quer dizer cada situação</summary><dl class="glossario">
+{"".join(f"<dt>{esc(sit.ROTULO[k])}</dt><dd>{esc(sit.EXPLICA[k])}</dd>" for k in (sit.RESPONDIDO, sit.AGUARDANDO, sit.TRAMITANDO, sit.VIROU_NORMA, sit.NAO_AVANCOU, sit.ENCERRADO))}
+</dl></details>
 {AVISO_VOTO}
 <script>
 function abrir(){{var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==="DETAILS"){{d.open=true;d.scrollIntoView();}}}}
@@ -584,6 +587,17 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .mais{border-top:1px solid var(--md-outline-variant);margin-top:8px}
 .mais summary{font-size:.875rem;line-height:1.25rem;padding:12px 8px;color:var(--md-primary)}
 .ementa.aberta{background:var(--md-surface-container-low);border-radius:var(--shape-s);padding:8px;margin:-8px -8px 0}
+/* Termos que se explicam com um toque */
+.termo{position:relative;display:inline-flex;align-items:center;gap:4px;min-height:32px;padding:4px 10px;border:1px solid var(--md-outline-variant);border-radius:var(--shape-s);
+ background:var(--md-surface);color:var(--md-on-surface-variant);font:500 .75rem/1rem var(--fonte);letter-spacing:.03em;cursor:pointer;overflow:hidden}
+.termo .ms{font-size:1rem}
+.termo .ms:last-child{color:var(--md-primary)}
+.termo::after{content:"";position:absolute;inset:0;background:currentColor;opacity:0;transition:opacity .2s var(--ease)}.termo:hover::after{opacity:.08}
+.termo[aria-expanded="true"]{border-color:var(--md-primary);color:var(--md-on-surface)}
+.sit.termo.s-respondido,.sit.termo.s-virou_norma{background:var(--g-lei-c);border-color:var(--g-lei-c);color:var(--g-lei-on)}
+.sit.termo.s-aguardando{background:var(--g-cobranca-c);border-color:var(--g-cobranca-c);color:var(--g-cobranca-on)}
+.explica-termo{margin:0 0 10px;padding:10px 12px;border-radius:var(--shape-s);background:var(--md-surface-container-low);font-size:.875rem;line-height:1.25rem;color:var(--md-on-surface)}
+.legenda{margin:8px 0 24px}.legenda summary{font-size:1rem}
 /* De onde vêm os números */
 .fontes{display:grid;gap:12px;margin:16px 0 0}
 .fontes div{border-radius:var(--shape-m);padding:16px;background:var(--md-surface-container-low)}
@@ -637,6 +651,7 @@ footer{margin-top:48px;padding-top:24px;padding-bottom:40px;border-top:1px solid
 
 
 def main():
+    pagina_inicial.EXPLICA_TIPO.update(EXPLICA_TIPO)
     vereadores = montar_dados()
     with open(os.path.join(BRUTOS, "_coleta.json"), encoding="utf-8") as f:
         coleta = data_br(json.load(f)["data"])

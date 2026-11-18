@@ -76,12 +76,18 @@ def repetidos(lista, rotulos_rua, rotulos_bairro):
     return saida
 
 
+# Explicação em linguagem simples de cada tipo (mesma do glossário em "Como funciona").
+EXPLICA_TIPO = {}
+
+
 def dados_json(vereadores, coleta):
     lista, rr, rb = montar(vereadores)
     return {
         "coleta": coleta,
         "grupos": {g: GRUPOS[g][0] for g in ORDEM_GRUPOS},
         "assuntos": NOME_ASSUNTO,
+        "explica_tipo": EXPLICA_TIPO,
+        "explica_situacao": sit.EXPLICA,
         "icones": {**ICONE_ASSUNTO, **{"g_" + g: i for g, i in ICONE_GRUPO.items()},
                    **{"x_" + k: i for k, i in sit.ICONE.items()}},
         "ruas": rr,
@@ -393,8 +399,10 @@ function cartao(p){{
   var autores=p.a.slice(0,3).map(function(a){{var v=D.vereadores[a];return '<a class="autor" href="vereador/'+v.slug+'.html">'+avatar(a)+esc(v.nome)+'</a>';}}).join("")+(p.a.length>3?'<span class="mais-aut">+'+(p.a.length-3)+'</span>':'');
   var ic=p.s.length?D.icones[p.s[0]]:D.icones["g_"+p.g];
   return '<li class="prop"><span class="ms ic-prop g-'+p.g+'" aria-hidden="true">'+ic+'</span><div class="prop-corpo"><p class="ementa" tabindex="0" role="button" aria-expanded="false" data-curto="'+esc(p.rs||p.e||"Sem resumo no sistema oficial.")+'" data-longo="'+esc(p.e||"")+'">'+esc(p.rs||p.e||"Sem resumo no sistema oficial.")+'</p>'
-    +'<p class="meta">'+tags+'<span>'+data(p.d)+' · '+esc(p.t)+' '+p.n+'</span></p>'
-    +(p.x?'<p class="meta"><span class="sit s-'+p.x+'" title="Última movimentação oficial: '+esc(p.xs)+'"><span class="ms" aria-hidden="true">'+D.icones["x_"+p.x]+'</span>'+esc(p.xr)+'</span></p>':'')
+    +'<p class="meta">'+tags+'<span>'+data(p.d)+'</span></p>'
+    +'<p class="meta">'+(D.explica_tipo[p.tn]?'<button type="button" class="termo" aria-expanded="false" data-explica="'+esc(D.explica_tipo[p.tn])+'">'+esc(p.tn)+' nº '+p.n+'<span class="ms" aria-hidden="true">help</span></button>':'<span>'+esc(p.tn)+' nº '+p.n+'</span>')
+    +(p.x?'<button type="button" class="sit termo s-'+p.x+'" aria-expanded="false" data-explica="'+esc(D.explica_situacao[p.x]+' Última movimentação oficial: '+p.xs+'.')+'"><span class="ms" aria-hidden="true">'+D.icones["x_"+p.x]+'</span>'+esc(p.xr)+'<span class="ms" aria-hidden="true">help</span></button>':'')+'</p>'
+    +'<p class="explica-termo" hidden></p>'
     +'<div class="autores">'+autores+'</div><a class="link" href="'+SAPL+'/materia/'+p.i+'">Abrir na Câmara<span class="ms" aria-hidden="true">open_in_new</span><span class="sr"> (abre o site oficial)</span></a></div></li>';
 }}
 function barras(titulo,itens,max){{
@@ -427,6 +435,11 @@ function ligar(){{
   document.querySelectorAll("[data-g]").forEach(function(b){{b.onclick=function(){{ir("",b.getAttribute("data-g"));}};}});
   var m=$("mais-props");if(m)m.onclick=function(){{mostrando+=10;desenhar();}};
   document.querySelectorAll(".aba").forEach(function(a){{a.onclick=function(){{est.g=a.getAttribute("data-aba");mostrando=5;salvar();desenhar();}};}});
+  document.querySelectorAll(".termo").forEach(function(b){{b.onclick=function(){{
+    var caixa=b.closest(".prop-corpo").querySelector(".explica-termo"),aberto=b.getAttribute("aria-expanded")==="true";
+    b.closest(".prop-corpo").querySelectorAll(".termo").forEach(function(o){{o.setAttribute("aria-expanded","false");}});
+    if(aberto){{caixa.hidden=true;return;}}
+    b.setAttribute("aria-expanded","true");caixa.textContent=b.dataset.explica;caixa.hidden=false;}};}});
   document.querySelectorAll(".ementa").forEach(function(e){{function t(){{var a=e.classList.toggle("aberta");e.setAttribute("aria-expanded",a?"true":"false");e.textContent=a?(e.dataset.longo||e.dataset.curto):e.dataset.curto;}}e.onclick=t;e.onkeydown=function(k){{if(k.key==="Enter"||k.key===" "){{k.preventDefault();t();}}}};}});
 }}
 function salvar(){{var h=[];if(est.q)h.push("q="+encodeURIComponent(est.q));if(est.g)h.push("g="+est.g);try{{history.replaceState(null,"",h.length?"#"+h.join("&"):location.pathname);}}catch(e){{}}}}

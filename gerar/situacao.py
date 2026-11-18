@@ -23,6 +23,14 @@ ROTULO = {
     TRAMITANDO: "Em tramitação",
     ENCERRADO: "Encerrado sem resposta",
 }
+EXPLICA = {
+    RESPONDIDO: "A Câmara recebeu a resposta da Prefeitura por escrito. Isso não quer dizer que o problema foi resolvido: abra na Câmara para ler a resposta.",
+    AGUARDANDO: "A Câmara já mandou o pedido à Prefeitura e ainda espera a resposta por escrito.",
+    TRAMITANDO: "A proposta ainda está correndo dentro da Câmara: leitura em plenário, análise nas comissões ou votação.",
+    VIROU_NORMA: "Foi aprovada e publicada. Projetos de lei viram lei; títulos e regras da Câmara viram decreto ou resolução.",
+    NAO_AVANCOU: "Foi arquivada, rejeitada ou retirada pelo autor.",
+    ENCERRADO: "O pedido foi arquivado ou retirado sem resposta da Prefeitura registrada.",
+}
 ICONE = {RESPONDIDO: "mark_email_read", AGUARDANDO: "schedule", VIROU_NORMA: "gavel",
          NAO_AVANCOU: "block", TRAMITANDO: "pending", ENCERRADO: "block"}
 
