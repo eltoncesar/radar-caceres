@@ -42580,7 +42580,7 @@
 "observacao": "Ofício Interno 3.665/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11706/projeto_de_lei_incentivo_iptu_animal.pdf",
-"data_ultima_atualizacao": "2026-11-16T08:24:27.164546-04:00",
+"data_ultima_atualizacao": "2026-11-18T12:11:19.328540-04:00",
 "ultima_edicao": null,
 "tipo": 1,
 "regime_tramitacao": 4,
@@ -45701,7 +45701,7 @@
 "observacao": "",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11773/substitutivo_ao_projeto_de_lei_complementar__n__003_de_fevereiro_2026.pdf",
-"data_ultima_atualizacao": "2026-09-30T08:29:51.573668-04:00",
+"data_ultima_atualizacao": "2026-11-18T12:19:51.594305-04:00",
 "ultima_edicao": "2026-09-24T12:43:57.356423-04:00",
 "tipo": 20,
 "regime_tramitacao": 4,
@@ -48161,7 +48161,7 @@
 "observacao": "Protocolo 1.177/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11825/prot_25756_2026___of_1427_veto_parcial.pdf",
-"data_ultima_atualizacao": "2026-11-16T08:10:36.663121-04:00",
+"data_ultima_atualizacao": "2026-11-18T12:23:05.668924-04:00",
 "ultima_edicao": "2026-10-21T14:56:10.566445-04:00",
 "tipo": 19,
 "regime_tramitacao": 4,
@@ -51518,7 +51518,7 @@
 "observacao": "Protocolo 1.247/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11896/projeto_de_lei_complementar_n_12_de_20_outubro_2026.pdf",
-"data_ultima_atualizacao": "2026-11-04T10:05:33.315457-04:00",
+"data_ultima_atualizacao": "2026-11-18T12:22:10.717771-04:00",
 "ultima_edicao": "2026-11-04T09:44:32.375060-04:00",
 "tipo": 15,
 "regime_tramitacao": 4,
@@ -54882,7 +54882,7 @@
 "ano": 2026,
 "numero_protocolo": 1172,
 "data_apresentacao": "2026-11-12",
-"tipo_apresentacao": "",
+"tipo_apresentacao": "E",
 "data_publicacao": null,
 "numero_origem_externa": "",
 "ano_origem_externa": null,
@@ -54899,8 +54899,8 @@
 "observacao": "",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11964/emissao_287bfae3fa55abd3d60209b3_oficio-interno-5.120-2026_assinado_versaoimpressao.pdf",
-"data_ultima_atualizacao": "2026-11-12T12:26:15.090439-04:00",
-"ultima_edicao": null,
+"data_ultima_atualizacao": "2026-11-18T12:07:00.792571-04:00",
+"ultima_edicao": "2026-11-18T12:04:27.333435-04:00",
 "tipo": 13,
 "regime_tramitacao": 4,
 "tipo_origem_externa": null,
@@ -55725,18 +55725,7 @@
 "link_detail_backend": "/materia/11982",
 "metadata": {
 "signs": {
-"texto_original": {
-"admin": [],
-"autores": [
-[
-"Camara Municipal Caceres",
-[
-"2026-11-17T13:50:37Z",
-"ICP-Brasil - AC SyngularID Multipla"
-]
-]
-]
-}
+"texto_original": {}
 }
 },
 "numero": 700,
@@ -55755,13 +55744,13 @@
 "polemica": false,
 "objeto": "",
 "complementar": false,
-"ementa": "Indica ao Executivo Municipal com cópia a\nSecretaria Municipal de Saúde (SMS) realização de\nestudos técnicos, administrativos e financeiro visando\nà criação da Coordenação Municipal de Autismo e\nneurodivirgentes no município de Cáceres-MT",
+"ementa": "Indica ao Executivo Municipal com cópia aSecretaria Municipal de Saúde (SMS) realização de estudos técnicos, administrativos e financeiro visando à criação da Coordenação Municipal de Autismo e neurodivirgentes no município de Cáceres-MT",
 "indexacao": "",
 "observacao": "",
 "resultado": "",
-"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11982/emissao_0313e2b69529b6a4d05e33af_oficio-interno-5.189-2026_assinado_versaoimpressao.pdf",
-"data_ultima_atualizacao": "2026-11-17T09:58:27.962311-04:00",
-"ultima_edicao": null,
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11982/indicacao_de_coordenacao_de_autismo_e_neurodivigentes.pdf",
+"data_ultima_atualizacao": "2026-11-18T09:29:35.244250-04:00",
+"ultima_edicao": "2026-11-18T09:29:35.088507-04:00",
 "tipo": 5,
 "regime_tramitacao": 4,
 "tipo_origem_externa": null,
@@ -55858,6 +55847,273 @@
 "anexadas": [],
 "autores": [
 1
+]
+},
+{
+"id": 11985,
+"__str__": "Indicação nº 702 de 2026",
+"link_detail_backend": "/materia/11985",
+"metadata": {},
+"numero": 702,
+"ano": 2026,
+"numero_protocolo": 1193,
+"data_apresentacao": "2026-11-18",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indicação a Excelentíssima Senhora Prefeita Municipal de Cáceres, com cópias à Secretaria Municipal de Fazenda, solicitando com a máxima urgência, a instalação de placa de identificação na Rua Crispim Geraldo da Silva, localizada no Bairro Jardim São Luiz da Ponte, conforme o Projeto de Lei nº 69/2023, de autoria deste parlamentar, que alterou oficialmente a nomenclatura da referida rua.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11985/indicacao_a_prefeita_municipal_de_caceres_com_copia_para_a_sec_de_fazenda_instalacao_de_placa_de_identificacao_na_rua_crispim_geraldo_da_silva.pdf",
+"data_ultima_atualizacao": "2026-11-18T08:48:47.093890-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+71
+]
+},
+{
+"id": 11986,
+"__str__": "Indicação nº 703 de 2026",
+"link_detail_backend": "/materia/11986",
+"metadata": {},
+"numero": 703,
+"ano": 2026,
+"numero_protocolo": 1194,
+"data_apresentacao": "2026-11-18",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indicação a Excelentíssima Senhora Prefeita Municipal de Cáceres, com cópias à Secretaria Municipal de Infraestrutura, solicitando a instalação de um redutor de velocidade (quebra-molas) na Rua Santo Antônio, no bairro Cavalhada II, tendo como ponto de referência o acesso próximo à Lotérica Super Sorte, virando à direita, neste município de Cáceres – MT.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11986/indicacao_a_prefeita_municipal_de_caceres_com_copia_para_a_secretaria_de_infraestrutura_solicitando_quebra_molas_na_rua_santo_antonio_no_bairro_cavalhada_2__proximo_a_loterica.pdf",
+"data_ultima_atualizacao": "2026-11-18T08:50:28.676093-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+71
+]
+},
+{
+"id": 11987,
+"__str__": "Indicação nº 704 de 2026",
+"link_detail_backend": "/materia/11987",
+"metadata": {},
+"numero": 704,
+"ano": 2026,
+"numero_protocolo": 1195,
+"data_apresentacao": "2026-11-18",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indicação a Excelentíssima Senhora Prefeita Municipal de Cáceres, com cópias à Secretaria Municipal de Infraestrutura, solicitando a instalação de redutores de velocidade (quebra-molas) na Avenida Tancredo Neves, nas proximidades da Lotérica Super Sorte, neste município de Cáceres – MT.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11987/indicacao_a_prefeita_municipal_de_caceres_com_copia_para_a_secretaria_de_infraestrutura_solicitando_quebra_molas_no_av_tancredo_neves_proximo_a_loterica_e_acougue.pdf",
+"data_ultima_atualizacao": "2026-11-18T08:52:25.387165-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+71
+]
+},
+{
+"id": 11988,
+"__str__": "Indicação nº 705 de 2026",
+"link_detail_backend": "/materia/11988",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-18T13:33:46Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 705,
+"ano": 2026,
+"numero_protocolo": 1196,
+"data_apresentacao": "2026-11-18",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O Vereador Pastor Júnior, no uso de suas atribuições legais e\nregimentais, vem, respeitosamente, indicar ao Poder Executivo Municipal, com cópia à\nsecretaria competente, que seja realizada a instalação de câmeras de segurança e\nvideomonitoramento na Praça do bairro Cohab Nova, com o objetivo de reforçar a\nsegurança dos moradores e frequentadores, inibir atos de vandalismo e práticas\ncriminosas, preservar o patrimônio público e proporcionar maior tranquilidade à\npopulação que utiliza o espaço para lazer e convivência social.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11988/indicacao_instalacao_de_cameras_de_seguranca_e_videomonitoramento_na_praca_do_bairro_cohab_nova.pdf",
+"data_ultima_atualizacao": "2026-11-18T09:50:30.470899-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
+]
+},
+{
+"id": 11989,
+"__str__": "Indicação nº 706 de 2026",
+"link_detail_backend": "/materia/11989",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-18T13:43:00Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 706,
+"ano": 2026,
+"numero_protocolo": 1197,
+"data_apresentacao": "2026-11-18",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O Vereador Pastor Júnior, no uso de suas atribuições legais e regimentais, vem, respeitosamente, indicar ao Poder Executivo Municipal, com cópia à secretaria competente, que sejam adotadas as providências necessárias para a reforma da Praça do Bairro Cohab Nova.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11989/indicacao_reforma_da_praca_do_bairro_cohab_nova..pdf",
+"data_ultima_atualizacao": "2026-11-18T09:52:45.311564-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
+]
+},
+{
+"id": 11990,
+"__str__": "Indicação nº 707 de 2026",
+"link_detail_backend": "/materia/11990",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-18T14:08:46Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 707,
+"ano": 2026,
+"numero_protocolo": 1198,
+"data_apresentacao": "2026-11-18",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O Vereador Pastor Júnior, no uso de suas atribuições legais e\nregimentais, vem, respeitosamente, indicar ao Poder Executivo Municipal, com cópia à\nsecretaria competente, aos setores competentes a realização de estudos técnicos e a\nadoção das providências necessárias, junto ao (DNIT), visando à implantação de uma\npassarela elevada para pedestres na Avenida São Luiz (BR-070), em ponto estratégico\na ser definido mediante avaliação técnica, considerando o intenso fluxo de veículos e a\ncirculação de pedestres na região.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11990/indicacao_visando_a_implantacao_de_uma_passarela_elevada_para_pedestres_na_avenida_sao_luiz_br-070.pdf",
+"data_ultima_atualizacao": "2026-11-18T10:29:01.572331-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
 ]
 }
 ]

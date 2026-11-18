@@ -156517,5 +156517,59 @@
 "primeiro_autor": true,
 "autor": 1,
 "materia": 11984
+},
+{
+"id": 17789,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Indicação nº 702 de 2026",
+"link_detail_backend": "/materia/autoria/17789",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 11985
+},
+{
+"id": 17790,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Indicação nº 703 de 2026",
+"link_detail_backend": "/materia/autoria/17790",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 11986
+},
+{
+"id": 17791,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Indicação nº 704 de 2026",
+"link_detail_backend": "/materia/autoria/17791",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 11987
+},
+{
+"id": 17792,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 705 de 2026",
+"link_detail_backend": "/materia/autoria/17792",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 11988
+},
+{
+"id": 17793,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 706 de 2026",
+"link_detail_backend": "/materia/autoria/17793",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 11989
+},
+{
+"id": 17794,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 707 de 2026",
+"link_detail_backend": "/materia/autoria/17794",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 11990
 }
 ]
