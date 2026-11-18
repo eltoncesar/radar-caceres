@@ -79,7 +79,7 @@ kbd{background:var(--sup);border:1px solid var(--contorno2);border-radius:6px;pa
 #raiox-rot{flex:1}#raiox-num{white-space:nowrap}
 #raiox-num{font-weight:700}
 .barra-empilhada{display:flex;gap:3px;height:32px;padding:3px;border-radius:var(--r-p);background:var(--sup-media);overflow:hidden}
-.seg{min-width:10px;border:0;border-radius:6px;cursor:pointer;transition:transform var(--t),opacity var(--t)}
+.seg{min-width:24px;border:0;border-radius:6px;cursor:pointer;transition:transform var(--t),opacity var(--t)}
 .seg:first-child{border-radius:var(--r-p) 6px 6px var(--r-p)}.seg:last-child{border-radius:6px var(--r-p) var(--r-p) 6px}
 .seg:hover,.seg.ativo{transform:scaleY(1.1)}
 .barra-empilhada.destaque .seg:not(.ativo){opacity:.35}
