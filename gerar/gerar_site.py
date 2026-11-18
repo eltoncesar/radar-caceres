@@ -184,7 +184,7 @@ CABECA = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,cleaning_services,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,help,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,play_circle,record_voice_over,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add_road,arrow_back,arrow_forward,block,celebration,check,chevron_right,cleaning_services,close,construction,contact_support,directions_bus,expand_more,flood,forest,gavel,help,landscape,lightbulb,local_hospital,location_on,mark_email_read,more_horiz,open_in_new,park,pending,play_circle,record_voice_over,schedule,school,search,traffic,water_drop&display=block" rel="stylesheet">
 <link rel="stylesheet" href="{base}estilo.css">
 </head>
 <body>
@@ -598,9 +598,36 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .sit.termo.s-aguardando{background:var(--g-cobranca-c);border-color:var(--g-cobranca-c);color:var(--g-cobranca-on)}
 .explica-termo{margin:0 0 10px;padding:10px 12px;border-radius:var(--shape-s);background:var(--md-surface-container-low);font-size:.875rem;line-height:1.25rem;color:var(--md-on-surface)}
 .legenda{margin:8px 0 24px}.legenda summary{font-size:1rem}
+/* O que clica parece clicável; o que não clica, não */
+.clicavel{position:relative;cursor:pointer}
+.clicavel::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--md-on-surface);opacity:0;transition:opacity .2s var(--ease);pointer-events:none}
+.clicavel:hover::after{opacity:.06}.clicavel:active::after{opacity:.1}
+.clicavel .esticado,.clicavel .link.esticado{position:static}
+.esticado::before{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
+.clicavel .link.esticado::after{display:none}
+.esticado:not(.link){background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;text-decoration:none;cursor:pointer}
+.esticado:focus-visible{outline:none}
+.clicavel:has(.esticado:focus-visible){outline:3px solid var(--md-primary);outline-offset:2px}
+.seta{font-size:1.25rem;color:var(--md-primary);margin-left:2px}
+.ranking li.clicavel{border-radius:var(--shape-s);margin:0 -8px;padding-left:8px;padding-right:8px}
+.ranking li.clicavel+li.clicavel{border-top:0;margin-top:2px}
+.ranking b{display:inline-flex;align-items:center}
+.ranking .r-nome .esticado{display:inline-flex;align-items:center;gap:12px}
+.ranking .r-nome button.esticado{color:var(--md-on-surface)}
+a.contador{display:block;color:inherit;text-decoration:none;overflow:hidden}
+a.contador .seta{position:absolute;right:10px;top:12px}
+.rep.clicavel{cursor:pointer}.grupo.clicavel{cursor:pointer}
+.grupo .link,.rep .link{margin-top:8px}
+.tag.filtro{position:relative;border:0;cursor:pointer;font-family:var(--fonte);overflow:hidden;min-height:28px;padding:4px 10px}
+.tag.filtro::after{content:"";position:absolute;inset:0;background:currentColor;opacity:0;transition:opacity .2s var(--ease)}.tag.filtro:hover::after{opacity:.1}
+.filtros-ativos{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.chip.ativo{background:var(--md-secondary-container);border-color:var(--md-secondary-container);color:var(--md-on-secondary-container);padding-left:12px;padding-right:8px}
+.chip.ativo .ms{font-size:1.125rem;color:inherit}
+.atalhos-x{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.atalhos-x .chip{padding-left:12px}
 /* De onde vêm os números */
 .fontes{display:grid;gap:12px;margin:16px 0 0}
-.fontes div{border-radius:var(--shape-m);padding:16px;background:var(--md-surface-container-low)}
+.fontes div{padding:14px 0 4px;border-top:1px solid var(--md-outline-variant)}
 .fontes dt{font-size:1.125rem;line-height:1.5rem;font-weight:500;color:var(--md-on-surface)}
 .fontes dd{margin:6px 0 0;color:var(--md-on-surface-variant);max-width:62ch}
 /* Avisos */

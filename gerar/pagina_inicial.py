@@ -209,7 +209,8 @@ def gerar(vereadores, coleta_br, esc, foto, periodo, sapl, anos, exemplos_lugar)
 
     # ---------- Topo ----------
     contadores = "".join(
-        f'<div class="contador g-{g}"><b data-conta="{cont[g]}">{_num(cont[g])}</b><span>{esc(rotulo)}</span></div>'
+        f'<a class="contador clicavel g-{g}" href="#busca" data-g="{g}"><b data-conta="{cont[g]}">{_num(cont[g])}</b>'
+        f'<span>{esc(rotulo)}</span>{icone("chevron_right", "seta")}</a>'
         for g, rotulo in (("melhoria", "pedidos de melhoria nos bairros"), ("cobranca", "perguntas e cobranças"),
                           ("homenagem", "homenagens"), ("lei", "projetos de lei e regras")))
     topo = f"""<section class="hero" aria-labelledby="titulo-topo">
@@ -248,10 +249,11 @@ pessoa entender. Cada número leva ao documento oficial.</p>
         lugar = f'<span class="bairro">{esc(x["bairro"])}</span>' if x["bairro"] else ""
         periodo_txt = (f'de {mes_ano(x["de"])} a {mes_ano(x["ate"])}' if mes_ano(x["de"]) != mes_ano(x["ate"])
                        else f'em {mes_ano(x["de"])}')
-        return (f'<li class="rep{" oculto" if escondido else ""}"><div class="vezes"><b>{x["vezes"]}</b><span>vezes</span></div>'
+        return (f'<li class="rep clicavel{" oculto" if escondido else ""}"><div class="vezes"><b>{x["vezes"]}</b><span>vezes</span></div>'
                 f'<div><p class="rua">{esc(x["rua"])}</p>{lugar}<span class="tag">{icone(x["icone"])}{esc(x["assunto"])}</span>'
                 f'<p class="meta">{x["autores"]} vereador{"es" if x["autores"] > 1 else ""} pediram · {periodo_txt}</p>'
-                f'<button type="button" class="link" data-q="{esc(x["rua"])}">Ver os pedidos →</button></div></li>')
+                f'<button type="button" class="link esticado" data-q="{esc(x["rua"])}" aria-label="Ver os {x["vezes"]} pedidos de {esc(x["assunto"])} na {esc(x["rua"])}">'
+                f'Ver os pedidos{icone("chevron_right")}</button></div></li>')
     reps_html = "".join(cartao_rep(x, i >= 6) for i, x in enumerate(reps))
     mais_reps = (f'<button type="button" class="botao" id="mais-reps">Mostrar mais ruas ({len(reps) - 6} na fila)</button>'
                  if len(reps) > 6 else "")
@@ -266,9 +268,10 @@ um serviço que precisou ser refeito ou vereadores diferentes pedindo a mesma co
 
     # ---------- Homenagem ou trabalho ----------
     cartoes_grupo = "".join(
-        f'<li class="grupo g-{g}">{icone(ICONE_GRUPO[g], "ic-grupo")}<b>{_num(cont[g])}</b><p class="nome-grupo">{esc(GRUPOS[g][0])}</p>'
+        f'<li class="grupo clicavel g-{g}">{icone(ICONE_GRUPO[g], "ic-grupo")}<b>{_num(cont[g])}</b><p class="nome-grupo">{esc(GRUPOS[g][0])}</p>'
         f'<p class="sub">{esc(GRUPOS[g][1])}</p>'
-        f'<button type="button" class="link" data-g="{g}">Ver todas →</button></li>'
+        f'<button type="button" class="link esticado" data-g="{g}" aria-label="Ver as {_num(cont[g])} propostas: {esc(GRUPOS[g][0])}">'
+        f'Ver todas{icone("chevron_right")}</button></li>'
         for g in ORDEM_GRUPOS if cont[g])
     trabalho = f"""<section class="secao">
 <h2>Homenagem ou trabalho?</h2>
@@ -381,7 +384,7 @@ Vamos publicar a presença depois de cruzar cada licença, para não contar lice
 
     script = f"""<script>
 (function(){{
-var SAPL="{sapl}",D=null,est={{q:"",g:""}},mostrando=5;
+var SAPL="{sapl}",D=null,est={{q:"",g:"",s:"",x:""}},mostrando=5;
 var MES=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 function norm(t){{return (t||"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();}}
 function esc(t){{return String(t).replace(/[&<>"]/g,function(c){{return {{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}}[c];}});}}
@@ -390,12 +393,13 @@ function data(d){{if(!d)return"";var p=d.split("-");return +p[2]+" "+MES[+p[1]-1
 function $(id){{return document.getElementById(id);}}
 function filtrar(){{
   var q=norm(est.q),re=q?new RegExp("(^| )"+q.replace(/ /g," +")+"( |$)"):null;
-  return D.propostas.filter(function(p){{return (!est.g||p.g===est.g)&&(!re||re.test(p._n));}});
+  return D.propostas.filter(function(p){{return (!est.g||p.g===est.g)&&(!est.s||p.s.indexOf(est.s)>=0)&&(!est.x||p.x===est.x)&&(!re||re.test(p._n));}});
 }}
 function ranking(contagem,n){{return Object.keys(contagem).sort(function(a,b){{return contagem[b]-contagem[a];}}).slice(0,n);}}
 function avatar(id){{var v=D.vereadores[id];return v&&v.foto?'<img src="fotos/'+id+'.jpg" alt="" width="28" height="28">':'<span class="av"></span>';}}
 function cartao(p){{
-  var tags='<span class="tag g-'+p.g+'">'+esc(D.grupos[p.g])+'</span>'+p.s.slice(0,2).map(function(s){{return '<span class="tag">'+esc(D.assuntos[s])+'</span>';}}).join("");
+  var tags='<button type="button" class="tag filtro g-'+p.g+'" data-g="'+p.g+'" aria-label="Filtrar: '+esc(D.grupos[p.g])+'">'+esc(D.grupos[p.g])+'</button>'
+    +p.s.slice(0,2).map(function(s){{return '<button type="button" class="tag filtro" data-s="'+s+'" aria-label="Filtrar pelo assunto '+esc(D.assuntos[s])+'">'+esc(D.assuntos[s])+'</button>';}}).join("");
   var autores=p.a.slice(0,3).map(function(a){{var v=D.vereadores[a];return '<a class="autor" href="vereador/'+v.slug+'.html">'+avatar(a)+esc(v.nome)+'</a>';}}).join("")+(p.a.length>3?'<span class="mais-aut">+'+(p.a.length-3)+'</span>':'');
   var ic=p.s.length?D.icones[p.s[0]]:D.icones["g_"+p.g];
   return '<li class="prop"><span class="ms ic-prop g-'+p.g+'" aria-hidden="true">'+ic+'</span><div class="prop-corpo"><p class="ementa" tabindex="0" role="button" aria-expanded="false" data-curto="'+esc(p.rs||p.e||"Sem resumo no sistema oficial.")+'" data-longo="'+esc(p.e||"")+'">'+esc(p.rs||p.e||"Sem resumo no sistema oficial.")+'</p>'
@@ -405,34 +409,47 @@ function cartao(p){{
     +'<p class="explica-termo" hidden></p>'
     +'<div class="autores">'+autores+'</div><a class="link" href="'+SAPL+'/materia/'+p.i+'">Abrir na Câmara<span class="ms" aria-hidden="true">open_in_new</span><span class="sr"> (abre o site oficial)</span></a></div></li>';
 }}
+var SETA='<span class="ms seta" aria-hidden="true">chevron_right</span>';
 function barras(titulo,itens,max){{
   if(!itens.length)return"";
   return '<h3>'+titulo+'</h3><ol class="ranking">'+itens.map(function(x){{
-    return '<li><span class="r-nome">'+x[0]+'</span><b>'+num(x[1])+'</b><i style="--w:'+Math.round(100*x[1]/max)+'%"></i></li>';}}).join("")+'</ol>';
+    return '<li class="clicavel"><span class="r-nome">'+x[0]+'</span><b>'+num(x[1])+SETA+'</b><i style="--w:'+Math.round(100*x[1]/max)+'%"></i></li>';}}).join("")+'</ol>';
+}}
+var NOME_X={{respondido:"Prefeitura respondeu",aguardando:"Aguardando resposta"}};
+function ativos(){{
+  var c=[];
+  if(est.s)c.push('<button type="button" class="chip ativo" data-limpa="s" aria-label="Tirar o filtro de assunto '+esc(D.assuntos[est.s])+'">Assunto: '+esc(D.assuntos[est.s])+'<span class="ms" aria-hidden="true">close</span></button>');
+  if(est.x)c.push('<button type="button" class="chip ativo" data-limpa="x" aria-label="Tirar o filtro de situação">Situação: '+esc(NOME_X[est.x]||est.x)+'<span class="ms" aria-hidden="true">close</span></button>');
+  return c.length?'<div class="filtros-ativos">'+c.join("")+'</div>':'';
 }}
 function desenhar(){{
   var achados=filtrar(),out=$("painel"),qv=est.q.trim();
   var porVer={{}},porAss={{}},porBairro={{}};
   achados.forEach(function(p){{p.a.forEach(function(a){{porVer[a]=(porVer[a]||0)+1;}});p.s.forEach(function(s){{porAss[s]=(porAss[s]||0)+1;}});p.b.forEach(function(b){{porBairro[b]=(porBairro[b]||0)+1;}});}});
-  var onde=qv?'que citam <b>“'+esc(qv)+'”</b>':'para <b>a cidade inteira</b>';
-  var grupo='';document.querySelectorAll(".aba").forEach(function(a){{a.setAttribute("aria-pressed",a.getAttribute("data-aba")===est.g?"true":"false");}});
-  if(!achados.length){{out.innerHTML=grupo+'<p class="vazio">Nenhuma proposta '+(qv?'cita “'+esc(qv)+'”':'neste grupo')+'. Tente outro jeito de escrever o nome.</p>';ligar();return;}}
+  var onde=(est.g?'de <b>'+esc(D.grupos[est.g].toLowerCase())+'</b> ':'')+(qv?'que citam <b>“'+esc(qv)+'”</b>':'para <b>a cidade inteira</b>');
+  var grupo=ativos();document.querySelectorAll(".aba").forEach(function(a){{a.setAttribute("aria-pressed",a.getAttribute("data-aba")===est.g?"true":"false");}});
+  if(!achados.length){{out.innerHTML=grupo+'<p class="vazio">Nenhuma proposta '+(qv?'cita “'+esc(qv)+'”':'com esses filtros')+'. Tente outro jeito de escrever o nome ou tire um filtro.</p>';ligar();return;}}
   var h=grupo+'<p class="grande"><b>'+num(achados.length)+'</b></p><p class="sub-grande">propostas '+onde+' até agora</p>';
   var ped=achados.filter(function(p){{return p.tn==="Indicação"||p.tn==="Requerimento";}}),resp=ped.filter(function(p){{return p.x==="respondido";}}).length,agu=ped.filter(function(p){{return p.x==="aguardando";}}).length;
   if(ped.length)h+='<div class="respostas"><p><b>'+num(resp)+'</b> de '+num(ped.length)+' pedidos já têm resposta escrita da Prefeitura'+(agu?' · <b>'+num(agu)+'</b> aguardando':'')+'.</p>'
-    +'<i style="--w:'+Math.round(100*resp/ped.length)+'%"></i><p class="sub">Resposta recebida não quer dizer que o problema foi resolvido: abra o pedido na Câmara para ler a resposta.</p></div>';
+    +'<i style="--w:'+Math.round(100*resp/ped.length)+'%"></i><p class="sub">Resposta recebida não quer dizer que o problema foi resolvido: abra o pedido na Câmara para ler a resposta.</p>'
+    +'<div class="atalhos-x">'+(resp&&est.x!=="respondido"?'<button type="button" class="chip" data-x="respondido">Ver os respondidos ('+num(resp)+')</button>':'')
+    +(agu&&est.x!=="aguardando"?'<button type="button" class="chip" data-x="aguardando">Ver os que aguardam ('+num(agu)+')</button>':'')+'</div></div>';
   var tv=ranking(porVer,5);
-  h+=barras("Quem mais propôs",tv.map(function(a){{var v=D.vereadores[a];return [avatar(a)+esc(v.nome)+(v.partido?' <small>· '+esc(v.partido)+'</small>':''),porVer[a]];}}),porVer[tv[0]]||1);
+  h+=barras("Quem mais propôs",tv.map(function(a){{var v=D.vereadores[a];return ['<a class="esticado" href="vereador/'+v.slug+'.html">'+avatar(a)+esc(v.nome)+'</a>'+(v.partido?' <small>· '+esc(v.partido)+'</small>':''),porVer[a]];}}),porVer[tv[0]]||1);
   var ta=ranking(porAss,5);
-  h+=barras("O que mais pedem",ta.map(function(s){{return [esc(D.assuntos[s]),porAss[s]];}}),porAss[ta[0]]||1);
-  if(!qv){{var tb=ranking(porBairro,5);h+=barras("Bairros mais citados",tb.map(function(b){{return ['<button type="button" class="link" data-q="'+esc(D.bairros[b])+'">'+esc(D.bairros[b])+'</button>',porBairro[b]];}}),porBairro[tb[0]]||1);}}
+  if(!est.s)h+=barras("O que mais pedem",ta.map(function(s){{return ['<button type="button" class="esticado" data-s="'+s+'">'+esc(D.assuntos[s])+'</button>',porAss[s]];}}),porAss[ta[0]]||1);
+  if(!qv){{var tb=ranking(porBairro,5);h+=barras("Bairros mais citados",tb.map(function(b){{return ['<button type="button" class="esticado" data-q="'+esc(D.bairros[b])+'">'+esc(D.bairros[b])+'</button>',porBairro[b]];}}),porBairro[tb[0]]||1);}}
   h+='<h3>'+(qv?'Propostas que citam esse lugar':'As propostas mais recentes')+'</h3><ol class="props">'+achados.slice(0,mostrando).map(cartao).join("")+'</ol>';
   if(achados.length>mostrando)h+='<button type="button" class="botao" id="mais-props">Mostrar mais '+Math.min(10,achados.length-mostrando)+' de '+num(achados.length-mostrando)+'</button>';
   out.innerHTML=h;ligar();
 }}
 function ligar(){{
-  document.querySelectorAll("[data-q]").forEach(function(b){{b.onclick=function(){{ir(b.getAttribute("data-q"),"");}};}});
-  document.querySelectorAll("[data-g]").forEach(function(b){{b.onclick=function(){{ir("",b.getAttribute("data-g"));}};}});
+  document.querySelectorAll("[data-q]").forEach(function(b){{b.onclick=function(ev){{ev.preventDefault();ir({{q:b.getAttribute("data-q"),g:"",s:"",x:""}});}};}});
+  document.querySelectorAll("[data-g]").forEach(function(b){{b.onclick=function(ev){{ev.preventDefault();var g=b.getAttribute("data-g");ir(b.closest("#painel")?{{g:g}}:{{q:"",g:g,s:"",x:""}});}};}});
+  document.querySelectorAll("[data-s]").forEach(function(b){{b.onclick=function(){{ir({{s:b.getAttribute("data-s")}});}};}});
+  document.querySelectorAll("[data-x]").forEach(function(b){{b.onclick=function(){{ir({{x:b.getAttribute("data-x")}});}};}});
+  document.querySelectorAll("[data-limpa]").forEach(function(b){{b.onclick=function(){{var m={{}};m[b.getAttribute("data-limpa")]="";ir(m);}};}});
   var m=$("mais-props");if(m)m.onclick=function(){{mostrando+=10;desenhar();}};
   document.querySelectorAll(".aba").forEach(function(a){{a.onclick=function(){{est.g=a.getAttribute("data-aba");mostrando=5;salvar();desenhar();}};}});
   document.querySelectorAll(".termo").forEach(function(b){{b.onclick=function(){{
@@ -442,9 +459,9 @@ function ligar(){{
     b.setAttribute("aria-expanded","true");caixa.textContent=b.dataset.explica;caixa.hidden=false;}};}});
   document.querySelectorAll(".ementa").forEach(function(e){{function t(){{var a=e.classList.toggle("aberta");e.setAttribute("aria-expanded",a?"true":"false");e.textContent=a?(e.dataset.longo||e.dataset.curto):e.dataset.curto;}}e.onclick=t;e.onkeydown=function(k){{if(k.key==="Enter"||k.key===" "){{k.preventDefault();t();}}}};}});
 }}
-function salvar(){{var h=[];if(est.q)h.push("q="+encodeURIComponent(est.q));if(est.g)h.push("g="+est.g);try{{history.replaceState(null,"",h.length?"#"+h.join("&"):location.pathname);}}catch(e){{}}}}
-function ir(q,g){{est.q=q;est.g=g;$("q").value=q;mostrando=5;salvar();desenhar();$("busca").scrollIntoView({{behavior:"smooth"}});}}
-function lerHash(){{var h=location.hash.slice(1);if(!h)return;if(h.indexOf("=")<0){{est.q=decodeURIComponent(h);return;}}h.split("&").forEach(function(x){{var p=x.split("=");if(p[0]==="q")est.q=decodeURIComponent(p[1]||"");if(p[0]==="g")est.g=p[1]||"";}});}}
+function salvar(){{var h=[];if(est.q)h.push("q="+encodeURIComponent(est.q));["g","s","x"].forEach(function(k){{if(est[k])h.push(k+"="+est[k]);}});try{{history.replaceState(null,"",h.length?"#"+h.join("&"):location.pathname);}}catch(e){{}}}}
+function ir(m){{for(var k in m)est[k]=m[k];$("q").value=est.q;mostrando=5;salvar();desenhar();$("busca").scrollIntoView({{behavior:"smooth"}});}}
+function lerHash(){{var h=location.hash.slice(1);if(!h)return;if(h.indexOf("=")<0){{est.q=decodeURIComponent(h);return;}}h.split("&").forEach(function(x){{var p=x.split("=");if(p[0]==="q")est.q=decodeURIComponent(p[1]||"");if(p[0]==="g"||p[0]==="s"||p[0]==="x")est[p[0]]=p[1]||"";}});}}
 $("q").addEventListener("input",function(){{est.q=$("q").value;mostrando=5;salvar();if(D)desenhar();}});
 document.querySelectorAll("[data-q],[data-g]").forEach(function(){{}});
 var mr=$("mais-reps");if(mr)mr.onclick=function(){{document.querySelectorAll(".rep.oculto").forEach(function(x,i){{if(i<6)x.classList.remove("oculto");}});var r=document.querySelectorAll(".rep.oculto").length;if(r)mr.textContent="Mostrar mais ruas ("+r+" na fila)";else mr.remove();}};
