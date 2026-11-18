@@ -13,6 +13,7 @@ import sys
 import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from resumo import resumo as resumo_legivel  # noqa: E402
 from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS, REGRA_EXPLICADA, classificar  # noqa: E402
 import pagina_inicial  # noqa: E402
 import situacao as sit  # noqa: E402
@@ -61,6 +62,12 @@ def esc(texto):
 
 def data_br(iso):
     return datetime.date.fromisoformat(iso).strftime("%d/%m/%Y") if iso else ""
+
+
+def nome_exibicao(nome):
+    """'PASTOR JÚNIOR' -> 'Pastor Júnior'. O SAPL guarda os nomes em caixa alta."""
+    pequenas = {"da", "de", "do", "das", "dos", "e"}
+    return " ".join(p if p in pequenas else p[:1].upper() + p[1:] for p in (nome or "").lower().split())
 
 
 def rotulo_cargo(c):
@@ -138,7 +145,7 @@ def montar_dados():
         lista = sorted(propostas[p["id"]], key=lambda x: (x["data"] or "", x["id"]), reverse=True)
         vereadores.append({
             "id": p["id"],
-            "nome": p["nome_parlamentar"],
+            "nome": nome_exibicao(p["nome_parlamentar"]),
             "nome_completo": p["nome_completo"],
             "slug": slug(p["nome_parlamentar"]),
             "partido": filiacao_atual.get(p["id"], ""),
@@ -255,7 +262,7 @@ def gerar_vereador(v, coleta):
             f'<li><a href="{SAPL}/materia/{p["id"]}">{esc(p["tipo"])} nº {p["numero"]}/{p["ano"]}</a>'
             f'<span class="data">{data_br(p["data"])}{"" if p["primeiro_autor"] else " · coautor"}</span>'
             f'{pagina_inicial.etiqueta_situacao(p, esc)}'
-            f'<p>{esc(p["ementa"]) or "<em>Sem resumo no sistema oficial.</em>"}</p></li>'
+            f'<p>{esc(resumo_legivel(p["ementa"])) or "<em>Sem resumo no sistema oficial.</em>"}</p></li>'
             for p in por_grupo[g])
         blocos.append(f'<details id="{g}"><summary>{esc(GRUPOS[g][0])} <span class="contagem">{len(por_grupo[g])}</span></summary>'
                       f'<p class="explica">{esc(GRUPOS[g][1])} <a href="../sobre.html#regra">Como separamos</a>.</p>'
@@ -380,6 +387,11 @@ b{font-weight:700}
 .atalhos kbd{font:inherit;opacity:.8;margin-left:6px}
 :focus-visible{outline:3px solid var(--md-primary);outline-offset:2px;border-radius:var(--shape-xs)}
 main,footer{max-width:1040px;margin:0 auto;padding:0 16px}
+/* Medida de leitura e quebras de linha */
+p,dd,li{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance}
+.sub,.lead,.nota,.aviso-curto,.fontes dd,.grupo .sub,.explica,.propostas p,.aviso{max-width:68ch}
+main>p,main>ul,main>dl,main>section>p,.ementa,.respostas p{max-width:68ch}
 /* Tipografia M3 */
 h1,h2,h3{font-family:var(--fonte);color:var(--md-on-surface);margin:0}
 h1{font-size:2rem;line-height:2.5rem;font-weight:500;margin:20px 0 8px}
@@ -562,6 +574,16 @@ h3{font-size:.875rem;line-height:1.25rem;font-weight:500;letter-spacing:.006em;c
 .tribuna{position:relative;display:flex;align-items:center;gap:8px;min-height:40px;margin:8px 0 0;color:var(--md-on-surface);font-size:.875rem;text-decoration:none}
 .tribuna .ms{color:var(--md-primary)}.tribuna b{font-weight:600;font-variant-numeric:tabular-nums}.tribuna:hover{text-decoration:underline}
 .datas .ms{font-size:1rem;margin-left:4px;color:var(--md-primary)}
+/* Crachá compacto */
+.numeros{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0 4px}
+.numeros a{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:72px;padding:10px 12px;border-radius:var(--shape-m);background:var(--md-surface-container-low);color:var(--md-on-surface);text-decoration:none;overflow:hidden}
+.numeros a::after{content:"";position:absolute;inset:0;background:currentColor;opacity:0;transition:opacity .2s var(--ease)}.numeros a:hover::after{opacity:.08}
+.numeros b{font-size:1.5rem;line-height:2rem;font-weight:500;color:var(--md-primary);font-variant-numeric:tabular-nums}
+.numeros span{font-size:.75rem;line-height:1rem;color:var(--md-on-surface-variant)}
+.cracha>.sub{font-size:.875rem;margin:4px 0 0}
+.mais{border-top:1px solid var(--md-outline-variant);margin-top:8px}
+.mais summary{font-size:.875rem;line-height:1.25rem;padding:12px 8px;color:var(--md-primary)}
+.ementa.aberta{background:var(--md-surface-container-low);border-radius:var(--shape-s);padding:8px;margin:-8px -8px 0}
 /* De onde vêm os números */
 .fontes{display:grid;gap:12px;margin:16px 0 0}
 .fontes div{border-radius:var(--shape-m);padding:16px;background:var(--md-surface-container-low)}

@@ -6,6 +6,7 @@ from assuntos import ASSUNTOS, assuntos
 from classificar import GRUPOS, ORDEM as ORDEM_GRUPOS
 from locais import Rotulos, bairros, ruas
 import situacao as sit
+from resumo import resumo
 
 SIGLA = {
     "Indicação": "IND", "Requerimento": "REQ", "Moção": "MOC", "Projeto de Lei": "PL",
@@ -40,6 +41,7 @@ def montar(vereadores):
                     "n": f'{p["numero"]}/{p["ano"]}', "d": p["data"], "e": p["ementa"], "g": p["grupo"],
                     "s": assuntos(p["ementa"]) if eh_pedido else [],
                     "x": p.get("situacao") or "", "xr": rotulo_situacao(p), "xs": p.get("status", ""),
+                    **({"rs": resumo(p["ementa"])} if resumo(p["ementa"]) != p["ementa"] else {}),
                     "r": rr.anotar(ruas(p["ementa"])) if eh_pedido else [],
                     "b": rb.anotar(bairros(p["ementa"])) if eh_pedido else [],
                     "a": [],
@@ -279,19 +281,26 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
         linhas = "".join(
             f'<li class="g-{g}"><a href="vereador/{v["slug"]}.html#{g}"><span>{esc(GRUPOS[g][0])}</span><b>{c[g]}</b>'
             f'<i style="--w:{100 * c[g] / maior:.0f}%"></i></a></li>' for g in ORDEM_GRUPOS if c[g] or g != "outros")
+        resp, ped, _, _ = contas_situacao(v["propostas"])
         dados = " ".join(f'data-{g}="{c[g]}"' for g in ORDEM_GRUPOS)
         dados += f' data-viraram="{contas_situacao(v["propostas"])[2]}" data-faltas="{len(v["presenca"]["faltas"])}" data-discursos="{len(v["discursos"])}"'
+        pr = texto_presenca(v.get("presenca"))
+        n_disc = len(v["discursos"])
+        numeros = (
+            (f'<a href="vereador/{v["slug"]}.html#presenca"><b>{pr[0]}%</b><span>presença</span></a>' if pr else "")
+            + f'<a href="vereador/{v["slug"]}.html"><b>{len(v["propostas"])}</b><span>propostas</span></a>'
+            + (f'<a href="vereador/{v["slug"]}.html#melhoria"><b>{round(100 * resp / ped)}%</b><span>pedidos respondidos</span></a>' if ped else ""))
+        detalhe_pres = f'<p class="sub">{esc(pr[1][0])} · {esc(pr[1][1])}</p>' if pr else ""
         return (f'<li class="cracha" data-nome="{esc(v["nome"].lower())}" data-partido="{esc(v["partido"])}" '
                 f'data-total="{len(v["propostas"])}" data-titular="{1 if v["titular"] else 0}" {dados}>'
                 f'<div class="cab">{foto(v, "")}<div><h3 class="nome"><a href="vereador/{v["slug"]}.html">{esc(v["nome"])}</a></h3>'
-                f'<p class="sub">{esc(nome_proprio(v["nome_completo"]))}</p>'
                 f'<p class="partido">{esc(v["partido"])}{" · " if v["partido"] else ""}{esc(periodo(v))}</p>'
                 f'{f"""<p class="cargo">{esc(v["cargo"])}</p>""" if v["cargo"] else ""}</div></div>'
-                f'{presenca_cracha(v)}'
+                f'<div class="numeros">{numeros}</div>{detalhe_pres}'
                 f'<a class="tribuna" href="vereador/{v["slug"]}.html#tribuna">{icone("record_voice_over")}'
-                f'Falou na tribuna <b>{len(v["discursos"])}</b> {"vez" if len(v["discursos"]) == 1 else "vezes"}</a>'
-                f'<p class="total"><b>{len(v["propostas"])}</b> propostas até agora</p>'
-                f'<p class="rot">O que propôs</p><ul class="barras">{linhas}</ul>{resultado(v)}'
+                f'Falou na tribuna <b>{n_disc}</b> {"vez" if n_disc == 1 else "vezes"}</a>'
+                f'<details class="mais"><summary>O que propôs e o que aconteceu</summary>'
+                f'<ul class="barras">{linhas}</ul>{resultado(v)}</details>'
                 f'<a class="ficha" href="{sapl}/parlamentar/{v["id"]}">Ficha oficial na Câmara{icone("open_in_new")}</a></li>')
     def presenca_cracha(v):
         t = texto_presenca(v.get("presenca"))
@@ -316,7 +325,7 @@ A regra é a mesma para todos: <a href="sobre.html#regra">veja como separamos</a
     titulares = sum(v["titular"] for v in vereadores)
     vereadores_html = f"""<section id="vereadores" class="secao">
 <h2>Os {titulares} vereadores</h2>
-<p class="sub">E os {len(vereadores) - titulares} suplentes que já assumiram uma vaga. Toque nos números do crachá para ver cada proposta.</p>
+<p class="sub">E os {len(vereadores) - titulares} suplentes que já assumiram uma vaga. Toque no nome ou nos números para ver os detalhes.</p>
 <div class="filtros">
 <label>Buscar por nome<input id="f-nome" type="search" autocomplete="off"></label>
 <label>Partido<select id="f-partido"><option value="">Todos</option>{opcoes_partido}</select></label>
@@ -383,7 +392,7 @@ function cartao(p){{
   var tags='<span class="tag g-'+p.g+'">'+esc(D.grupos[p.g])+'</span>'+p.s.slice(0,2).map(function(s){{return '<span class="tag">'+esc(D.assuntos[s])+'</span>';}}).join("");
   var autores=p.a.slice(0,3).map(function(a){{var v=D.vereadores[a];return '<a class="autor" href="vereador/'+v.slug+'.html">'+avatar(a)+esc(v.nome)+'</a>';}}).join("")+(p.a.length>3?'<span class="mais-aut">+'+(p.a.length-3)+'</span>':'');
   var ic=p.s.length?D.icones[p.s[0]]:D.icones["g_"+p.g];
-  return '<li class="prop"><span class="ms ic-prop g-'+p.g+'" aria-hidden="true">'+ic+'</span><div class="prop-corpo"><p class="ementa" tabindex="0" title="Toque para ler tudo">'+esc(p.e||"Sem resumo no sistema oficial.")+'</p>'
+  return '<li class="prop"><span class="ms ic-prop g-'+p.g+'" aria-hidden="true">'+ic+'</span><div class="prop-corpo"><p class="ementa" tabindex="0" role="button" aria-expanded="false" data-curto="'+esc(p.rs||p.e||"Sem resumo no sistema oficial.")+'" data-longo="'+esc(p.e||"")+'">'+esc(p.rs||p.e||"Sem resumo no sistema oficial.")+'</p>'
     +'<p class="meta">'+tags+'<span>'+data(p.d)+' · '+esc(p.t)+' '+p.n+'</span></p>'
     +(p.x?'<p class="meta"><span class="sit s-'+p.x+'" title="Última movimentação oficial: '+esc(p.xs)+'"><span class="ms" aria-hidden="true">'+D.icones["x_"+p.x]+'</span>'+esc(p.xr)+'</span></p>':'')
     +'<div class="autores">'+autores+'</div><a class="link" href="'+SAPL+'/materia/'+p.i+'">Abrir na Câmara<span class="ms" aria-hidden="true">open_in_new</span><span class="sr"> (abre o site oficial)</span></a></div></li>';
@@ -418,7 +427,7 @@ function ligar(){{
   document.querySelectorAll("[data-g]").forEach(function(b){{b.onclick=function(){{ir("",b.getAttribute("data-g"));}};}});
   var m=$("mais-props");if(m)m.onclick=function(){{mostrando+=10;desenhar();}};
   document.querySelectorAll(".aba").forEach(function(a){{a.onclick=function(){{est.g=a.getAttribute("data-aba");mostrando=5;salvar();desenhar();}};}});
-  document.querySelectorAll(".ementa").forEach(function(e){{e.onclick=function(){{e.classList.toggle("aberta");}};e.onkeydown=function(k){{if(k.key==="Enter")e.classList.toggle("aberta");}};}});
+  document.querySelectorAll(".ementa").forEach(function(e){{function t(){{var a=e.classList.toggle("aberta");e.setAttribute("aria-expanded",a?"true":"false");e.textContent=a?(e.dataset.longo||e.dataset.curto):e.dataset.curto;}}e.onclick=t;e.onkeydown=function(k){{if(k.key==="Enter"||k.key===" "){{k.preventDefault();t();}}}};}});
 }}
 function salvar(){{var h=[];if(est.q)h.push("q="+encodeURIComponent(est.q));if(est.g)h.push("g="+est.g);try{{history.replaceState(null,"",h.length?"#"+h.join("&"):location.pathname);}}catch(e){{}}}}
 function ir(q,g){{est.q=q;est.g=g;$("q").value=q;mostrando=5;salvar();desenhar();$("busca").scrollIntoView({{behavior:"smooth"}});}}
