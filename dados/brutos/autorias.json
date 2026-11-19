@@ -156571,5 +156571,194 @@
 "primeiro_autor": true,
 "autor": 76,
 "materia": 11990
+},
+{
+"id": 17795,
+"__str__": "Autoria: MARCOS RIBEIRO - Projeto de Lei nº 42 de 2026",
+"link_detail_backend": "/materia/autoria/17795",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 70,
+"materia": 11991
+},
+{
+"id": 17796,
+"__str__": "Autoria: VALDENÍRIA - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17796",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 1,
+"materia": 11992
+},
+{
+"id": 17797,
+"__str__": "Autoria: ELIS ENFERMEIRA - Indicação nº 709 de 2026",
+"link_detail_backend": "/materia/autoria/17797",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 119,
+"materia": 11993
+},
+{
+"id": 17798,
+"__str__": "Autoria: ISAÍAS BEZERRA - Indicação nº 692 de 2026",
+"link_detail_backend": "/materia/autoria/17798",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 75,
+"materia": 11972
+},
+{
+"id": 17799,
+"__str__": "Autoria: ISAÍAS BEZERRA - Indicação nº 693 de 2026",
+"link_detail_backend": "/materia/autoria/17799",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 75,
+"materia": 11973
+},
+{
+"id": 17800,
+"__str__": "Autoria: Antônia Eliene Liberato Dias - Prefeita - Projeto de Lei (Executivo) nº 36 de 2026",
+"link_detail_backend": "/materia/autoria/17800",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 79,
+"materia": 11994
+},
+{
+"id": 17801,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 696 de 2026",
+"link_detail_backend": "/materia/autoria/17801",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 76,
+"materia": 11976
+},
+{
+"id": 17802,
+"__str__": "Autoria: FRANCO VALÉRIO - Indicação nº 697 de 2026",
+"link_detail_backend": "/materia/autoria/17802",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 29,
+"materia": 11978
+},
+{
+"id": 17803,
+"__str__": "Autoria: MANGA ROSA - Indicação nº 697 de 2026",
+"link_detail_backend": "/materia/autoria/17803",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 74,
+"materia": 11978
+},
+{
+"id": 17804,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 697 de 2026",
+"link_detail_backend": "/materia/autoria/17804",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 76,
+"materia": 11978
+},
+{
+"id": 17805,
+"__str__": "Autoria: PROFESSOR DOMINGOS - Indicação nº 697 de 2026",
+"link_detail_backend": "/materia/autoria/17805",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 10,
+"materia": 11978
+},
+{
+"id": 17806,
+"__str__": "Autoria: ELIS ENFERMEIRA - Indicação nº 701 de 2026",
+"link_detail_backend": "/materia/autoria/17806",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 119,
+"materia": 11984
+},
+{
+"id": 17807,
+"__str__": "Autoria: RUBENS MACEDO - Indicação nº 701 de 2026",
+"link_detail_backend": "/materia/autoria/17807",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 12,
+"materia": 11984
+},
+{
+"id": 17808,
+"__str__": "Autoria: MAGALY - Indicação nº 710 de 2026",
+"link_detail_backend": "/materia/autoria/17808",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 120,
+"materia": 11995
+},
+{
+"id": 17809,
+"__str__": "Autoria: FRANCO VALÉRIO - Requerimento nº 180 de 2026",
+"link_detail_backend": "/materia/autoria/17809",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 11996
+},
+{
+"id": 17810,
+"__str__": "Autoria: FRANCO VALÉRIO - Indicação nº 711 de 2026",
+"link_detail_backend": "/materia/autoria/17810",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 11997
+},
+{
+"id": 17811,
+"__str__": "Autoria: PASTORELLO - Requerimento nº 181 de 2026",
+"link_detail_backend": "/materia/autoria/17811",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 11998
+},
+{
+"id": 17812,
+"__str__": "Autoria: PASTORELLO - Requerimento nº 182 de 2026",
+"link_detail_backend": "/materia/autoria/17812",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 11999
+},
+{
+"id": 17813,
+"__str__": "Autoria: PASTORELLO - Indicação nº 712 de 2026",
+"link_detail_backend": "/materia/autoria/17813",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 12000
+},
+{
+"id": 17814,
+"__str__": "Autoria: FRANCO VALÉRIO - Requerimento nº 183 de 2026",
+"link_detail_backend": "/materia/autoria/17814",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 12001
+},
+{
+"id": 17815,
+"__str__": "Autoria: PASTORELLO - Projeto de Lei nº 43 de 2026",
+"link_detail_backend": "/materia/autoria/17815",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 12002
 }
 ]

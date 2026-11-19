@@ -4058,5 +4058,33 @@
 "sessao_legislativa": 12,
 "legislatura": 3,
 "correspondencias": []
+},
+{
+"id": 664,
+"__str__": "85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura",
+"link_detail_backend": "/sessao/664",
+"metadata": {},
+"cod_andamento_sessao": null,
+"painel_aberto": false,
+"data_inicio": "2026-11-23",
+"hora_inicio": "08:00",
+"hora_fim": "",
+"numero": 85,
+"data_fim": "2026-11-23",
+"url_audio": "",
+"url_video": "",
+"upload_pauta": null,
+"upload_ata": null,
+"upload_anexo": null,
+"iniciada": false,
+"finalizada": false,
+"interativa": false,
+"tema_solene": "",
+"data_ultima_atualizacao": "2026-11-19T09:15:40.419123-04:00",
+"publicar_pauta": true,
+"tipo": 1,
+"sessao_legislativa": 12,
+"legislatura": 3,
+"correspondencias": []
 }
 ]
