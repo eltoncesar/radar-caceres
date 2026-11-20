@@ -156760,5 +156760,23 @@
 "primeiro_autor": true,
 "autor": 3,
 "materia": 12002
+},
+{
+"id": 17816,
+"__str__": "Autoria: JERÔNIMO GONÇALVES - Requerimento nº 184 de 2026",
+"link_detail_backend": "/materia/autoria/17816",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 9,
+"materia": 12003
+},
+{
+"id": 17817,
+"__str__": "Autoria: MARCOS RIBEIRO - Indicação nº 713 de 2026",
+"link_detail_backend": "/materia/autoria/17817",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 70,
+"materia": 12004
 }
 ]

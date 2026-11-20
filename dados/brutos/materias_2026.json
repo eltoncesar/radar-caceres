@@ -56623,5 +56623,146 @@
 "autores": [
 29
 ]
+},
+{
+"id": 12002,
+"__str__": "Projeto de Lei nº 43 de 2026",
+"link_detail_backend": "/materia/12002",
+"metadata": {},
+"numero": 43,
+"ano": 2026,
+"numero_protocolo": 1210,
+"data_apresentacao": "2026-11-19",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Institui a Política Municipal de Compras da Agricultura Familiar (PMCAF) no âmbito do Município de Cáceres – MT e dá outras providências.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12002/pl_-_2026_12_-_compras_agricultura_familiar.pdf",
+"data_ultima_atualizacao": "2026-11-19T12:42:47.340505-04:00",
+"ultima_edicao": null,
+"tipo": 1,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+3
+]
+},
+{
+"id": 12003,
+"__str__": "Requerimento nº 184 de 2026",
+"link_detail_backend": "/materia/12003",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-19T16:38:02Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 184,
+"ano": 2026,
+"numero_protocolo": 1211,
+"data_apresentacao": "2026-11-19",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Solicita informações sobre o cumprimento da Lei Municipal nº 3.270/2024, que institui o Censo de Inclusão de crianças e estudantes com Transtorno do Espectro Autista (TEA) nas unidades escolares do Município de Cáceres.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12003/requerimento_lei_censo_tea.pdf",
+"data_ultima_atualizacao": "2026-11-19T12:44:47.000393-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+9
+]
+},
+{
+"id": 12004,
+"__str__": "Indicação nº 713 de 2026",
+"link_detail_backend": "/materia/12004",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-19T16:43:04Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 713,
+"ano": 2026,
+"numero_protocolo": 1212,
+"data_apresentacao": "2026-11-19",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "INDICAÇÃO AO GOVERNO DO ESTADO DE \nMATO GROSSO\nAssunto: Solicita a inclusão do Município de Cáceres-MT no Projeto MT \nUrbaniza, com a disponibilização e instalação de playgrounds acessíveis e \ninclusivos em espaços públicos de lazer e convivência",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12004/indica_projeto_mt_urbaniza.pdf",
+"data_ultima_atualizacao": "2026-11-19T12:51:23.685743-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+70
+]
 }
 ]

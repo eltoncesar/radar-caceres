@@ -1,5 +1,5 @@
 {
- "data": "2026-11-19",
+ "data": "2026-11-20",
  "totais": {
   "parlamentares": 51,
   "mandatos": 21,
@@ -10,10 +10,10 @@
   "tipos_sessao": 4,
   "tipos_resultado": 10,
   "tipos_justificativa": 18,
-  "sessoes": 146,
+  "sessoes": 147,
   "materias_2025": 1515,
-  "materias_2026": 1206,
-  "autorias": 17418,
+  "materias_2026": 1209,
+  "autorias": 17420,
   "presenca_abertura": 7061,
   "presenca_ordem_dia": 7167,
   "justificativas_ausencia": 78,

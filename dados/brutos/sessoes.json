@@ -4086,5 +4086,33 @@
 "sessao_legislativa": 12,
 "legislatura": 3,
 "correspondencias": []
+},
+{
+"id": 665,
+"__str__": "14ª Solene da 2ª Sessão Legislativa da 20ª Legislatura",
+"link_detail_backend": "/sessao/665",
+"metadata": {},
+"cod_andamento_sessao": null,
+"painel_aberto": false,
+"data_inicio": "2026-11-19",
+"hora_inicio": "19:00",
+"hora_fim": "",
+"numero": 14,
+"data_fim": "2026-11-19",
+"url_audio": "",
+"url_video": "",
+"upload_pauta": null,
+"upload_ata": null,
+"upload_anexo": null,
+"iniciada": false,
+"finalizada": false,
+"interativa": false,
+"tema_solene": "Sessão Solene referente ao Dia do Vereador para a entrega dos Diplomas de CIDADÃO CACERENSE.",
+"data_ultima_atualizacao": "2026-11-19T13:46:01.916696-04:00",
+"publicar_pauta": true,
+"tipo": 3,
+"sessao_legislativa": 12,
+"legislatura": 3,
+"correspondencias": []
 }
 ]
