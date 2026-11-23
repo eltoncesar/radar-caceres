@@ -41557,12 +41557,12 @@
 "polemica": false,
 "objeto": "",
 "complementar": false,
-"ementa": "“Dispõe sobre a regulamentação de procedimentos e prazos para a operacionalização das emendas parlamentares individuais impositivas no Município \r\nde Cáceres-MT.”",
+"ementa": "“Dispõe sobre a regulamentação de procedimentos e prazos para a operacionalização das emendas parlamentares individuais impositivas no Município \nde Cáceres-MT.”",
 "indexacao": "",
 "observacao": "Protocolo 992/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11681/projeto_de_lei_n_26_de_05_de_agosto_de_2026.pdf",
-"data_ultima_atualizacao": "2026-09-24T09:13:45.045103-04:00",
+"data_ultima_atualizacao": "2026-11-23T07:59:41.024058-04:00",
 "ultima_edicao": "2026-08-26T07:36:04.407285-04:00",
 "tipo": 14,
 "regime_tramitacao": 4,
@@ -42582,7 +42582,7 @@
 "observacao": "Ofício Interno 3.665/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11706/projeto_de_lei_incentivo_iptu_animal.pdf",
-"data_ultima_atualizacao": "2026-11-18T12:11:19.328540-04:00",
+"data_ultima_atualizacao": "2026-11-23T07:33:02.903079-04:00",
 "ultima_edicao": null,
 "tipo": 1,
 "regime_tramitacao": 4,
@@ -45700,11 +45700,11 @@
 "complementar": false,
 "ementa": "SUBSTITUTIVO AO PROJETO DE LEI COMPLEMENTAR N.º 003, DE FEVEREIRO DE 2026, que “Institui o Programa de Desenvolvimento Econômico Sustentável de Cáceres dá outras providências”, acompanhado de respectiva Mensagem, em apenso.",
 "indexacao": "",
-"observacao": "",
+"observacao": "Protocolo 1.126/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11773/substitutivo_ao_projeto_de_lei_complementar__n__003_de_fevereiro_2026.pdf",
-"data_ultima_atualizacao": "2026-11-18T12:19:51.594305-04:00",
-"ultima_edicao": "2026-09-24T12:43:57.356423-04:00",
+"data_ultima_atualizacao": "2026-11-23T12:20:44.093373-04:00",
+"ultima_edicao": "2026-11-23T12:20:43.653901-04:00",
 "tipo": 20,
 "regime_tramitacao": 4,
 "tipo_origem_externa": null,
@@ -47501,7 +47501,9 @@
 "regime_tramitacao": 4,
 "tipo_origem_externa": null,
 "local_origem_externa": null,
-"anexadas": [],
+"anexadas": [
+12008
+],
 "autores": [
 79
 ]
@@ -48163,7 +48165,7 @@
 "observacao": "Protocolo 1.177/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11825/prot_25756_2026___of_1427_veto_parcial.pdf",
-"data_ultima_atualizacao": "2026-11-18T12:23:05.668924-04:00",
+"data_ultima_atualizacao": "2026-11-23T07:29:58.903807-04:00",
 "ultima_edicao": "2026-10-21T14:56:10.566445-04:00",
 "tipo": 19,
 "regime_tramitacao": 4,
@@ -51520,7 +51522,7 @@
 "observacao": "Protocolo 1.247/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11896/projeto_de_lei_complementar_n_12_de_20_outubro_2026.pdf",
-"data_ultima_atualizacao": "2026-11-18T12:22:10.717771-04:00",
+"data_ultima_atualizacao": "2026-11-23T08:06:20.786776-04:00",
 "ultima_edicao": "2026-11-04T09:44:32.375060-04:00",
 "tipo": 15,
 "regime_tramitacao": 4,
@@ -55708,17 +55710,17 @@
 "apelido": "",
 "dias_prazo": null,
 "data_fim_prazo": null,
-"em_tramitacao": false,
+"em_tramitacao": true,
 "polemica": false,
 "objeto": "",
 "complementar": false,
 "ementa": "(nova redação) do Projeto de Lei n.º 26, de 05 de agosto de 2026, que “Dispõe sobre a regulamentação de procedimentos e prazos para a operacionalização das emendas parlamentares individuais impositivas no Município de Cáceres-MT.",
 "indexacao": "",
-"observacao": "",
+"observacao": "Protocolo 1.339/2026 - 1Doc;\nProtocolo 1.350/2026 - 1Doc.",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11981/emenda_projeto_26_2026_05_agosto_2026.pdf",
-"data_ultima_atualizacao": "2026-11-18T12:32:22.256506-04:00",
-"ultima_edicao": "2026-11-16T09:11:50.922437-04:00",
+"data_ultima_atualizacao": "2026-11-23T12:34:47.897225-04:00",
+"ultima_edicao": "2026-11-23T12:34:47.746715-04:00",
 "tipo": 20,
 "regime_tramitacao": 4,
 "tipo_origem_externa": null,
@@ -56306,11 +56308,11 @@
 "complementar": false,
 "ementa": "Altera a Lei Municipal nº 3.159, de 26 de abril de 2023, que institui o Serviço de Acolhimento em Família Acolhedora - SFA no Município de Cáceres/MT, para adequação ao Estatuto da Criança e do Adolescente e dá outras providências.",
 "indexacao": "",
-"observacao": "",
+"observacao": "Protocolo 1.353/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11994/projeto_de_lei_26_de_outubro_2026.pdf",
-"data_ultima_atualizacao": "2026-11-19T08:49:55.026307-04:00",
-"ultima_edicao": "2026-11-19T08:48:22.128680-04:00",
+"data_ultima_atualizacao": "2026-11-23T12:02:22.419339-04:00",
+"ultima_edicao": "2026-11-23T12:02:19.710280-04:00",
 "tipo": 14,
 "regime_tramitacao": 4,
 "tipo_origem_externa": null,
@@ -56763,6 +56765,340 @@
 "anexadas": [],
 "autores": [
 70
+]
+},
+{
+"id": 12005,
+"__str__": "Indicação nº 714 de 2026",
+"link_detail_backend": "/materia/12005",
+"metadata": {},
+"numero": 714,
+"ano": 2026,
+"numero_protocolo": 1213,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indicação a Excelentíssima Senhora Prefeita Municipal de Cáceres, com cópias à Secretaria Municipal de Infraestrutura, solicitando a necessidade de instalação de duas lombadas (redutores de velocidade) na Rua Pedro Alexandrino, no Residencial Dom Máximo, sendo uma na entrada do bairro e outra no final da rua, próximo ao Residencial Tarumã.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12005/indicacao_a_prefeita_municipal_de_caceres_com_copia_para_a_sec_de_infraestrutra_instalacao_de_duas_lombadas_na_rua_pedro_alexandrino_residencial_dom_maximo.pdf",
+"data_ultima_atualizacao": "2026-11-23T07:57:56.722873-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+71
+]
+},
+{
+"id": 12006,
+"__str__": "Requerimento nº 185 de 2026",
+"link_detail_backend": "/materia/12006",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-23T12:06:45Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 185,
+"ano": 2026,
+"numero_protocolo": 1214,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Assunto: Solicitação de informações detalhadas sobre os recursos financeiros recebidos e sua aplicação pela Secretaria Municipal de Assistência Social de Cáceres-MT, referentes aos exercícios de 2025 e 2026.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12006/requerimento.assistente.social.pdf",
+"data_ultima_atualizacao": "2026-11-23T08:15:00.871216-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+70
+]
+},
+{
+"id": 12007,
+"__str__": "Indicação nº 715 de 2026",
+"link_detail_backend": "/materia/12007",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-23T12:46:29Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 715,
+"ano": 2026,
+"numero_protocolo": 1215,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": ": Indica ao Governo do Estado de Mato Grosso a destinação de recursos \npara implantação da Vila do Aconchego no município de Cáceres-MT, tomando como \nreferência o modelo implantado em Jaciara-MT, mediante utilização de recursos \ndestinados à habitação de interesse social, previstos na Lei Estadual nº 13.589/2026.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12007/indicacao_vila_do_aconchego_pdf_assinado.pdf",
+"data_ultima_atualizacao": "2026-11-23T09:40:30.692261-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+86
+]
+},
+{
+"id": 12008,
+"__str__": "Emenda Executivo Municipal nº 11 de 2026",
+"link_detail_backend": "/materia/12008",
+"metadata": {},
+"numero": 11,
+"ano": 2026,
+"numero_protocolo": 1216,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "E",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Supressão do art. 4º e dos Anexos I, II e III do Projeto de Lei Complementar nº 009, de 1º de outubro de 2026, exclusivamente quanto à redefinição do \nperímetro urbano, com os ajustes de redação e de remissões correspondentes",
+"indexacao": "",
+"observacao": "Protocolo 1.364/2026 - 1Doc",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12008/oficio_n_1_602_2026_gp.pdf",
+"data_ultima_atualizacao": "2026-11-23T12:04:39.954295-04:00",
+"ultima_edicao": "2026-11-23T12:04:39.821398-04:00",
+"tipo": 20,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+79
+]
+},
+{
+"id": 12009,
+"__str__": "Requerimento nº 186 de 2026",
+"link_detail_backend": "/materia/12009",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-23T14:55:55Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 186,
+"ano": 2026,
+"numero_protocolo": 1217,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O vereador Pastor Júnior requer à Secretaria Municipal de Agricultura o encaminhamento de informações detalhadas acerca dos maquinários e implementos agrícolas disponíveis para atender aos produtores rurais do Município.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12009/requerimento__secretaria_municipal_de_agricultura.pdf",
+"data_ultima_atualizacao": "2026-11-23T12:47:03.208988-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
+]
+},
+{
+"id": 12010,
+"__str__": "Indicação nº 716 de 2026",
+"link_detail_backend": "/materia/12010",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-23T16:21:56Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 716,
+"ano": 2026,
+"numero_protocolo": 1218,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O Vereador Pastor Júnior, no uso de suas atribuições legais e\nregimentais, vem, respeitosamente, indicar ao Poder Executivo Municipal, com cópia à\nà Autarquia Águas do Pantanal, solicitando a realização de estudo de viabilidade\ntécnica para implantação de QR Code nas faturas de água, possibilitando aos\nconsumidores maior facilidade, agilidade e praticidade na realização dos pagamentos",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12010/indicacao_implantacao_de_qr_code_nas_faturas_de_agua_possibilitando_aos_consumidores_maior_facilidade_agilidade_e_praticidade_na_realizacao_dos_pagamentos.pdf",
+"data_ultima_atualizacao": "2026-11-23T12:49:51.434358-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
+]
+},
+{
+"id": 12011,
+"__str__": "Indicação nº 717 de 2026",
+"link_detail_backend": "/materia/12011",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-23T16:41:40Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 717,
+"ano": 2026,
+"numero_protocolo": 1219,
+"data_apresentacao": "2026-11-23",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O Vereador Pastor Júnior, no uso de suas atribuições legais e\nregimentais, vem, respeitosamente, indicar ao Poder Executivo Municipal, com cópia à\nsecretaria competente, que seja estudada a possibilidade de destinar o Centro\nComunitário do Jardim Padre Paulo à Secretaria Municipal de Saúde, para que o\nespaço possa ser utilizado na ampliação da Unidade Básica de Saúde (UBS) do bairro.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12011/indicacao_destinar_o_centro_comunitario_do_jardim_padre_paulo_a_secretaria_municipal_de_saude.pdf",
+"data_ultima_atualizacao": "2026-11-23T12:52:31.832374-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
 ]
 }
 ]

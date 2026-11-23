@@ -1709,5 +1709,32 @@
 "materias_da_ordem_do_dia": [
 8697
 ]
+},
+{
+"id": 82,
+"__str__": "Justificativa de Ausência",
+"link_detail_backend": "/sessao/justificativaausencia/82",
+"metadata": {},
+"data": "2026-11-23",
+"hora": "10:00",
+"observacao": "",
+"ausencia": 1,
+"upload_anexo": null,
+"parlamentar": 25,
+"sessao_plenaria": 664,
+"tipo_ausencia": 7,
+"materias_do_expediente": [],
+"materias_da_ordem_do_dia": [
+9860,
+9861,
+9862,
+9863,
+9864,
+9865,
+9866,
+9867,
+9868,
+9869
+]
 }
 ]

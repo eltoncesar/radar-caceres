@@ -57334,5 +57334,117 @@
 "metadata": {},
 "sessao_plenaria": 663,
 "parlamentar": 30
+},
+{
+"id": 12033,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: PASTORELLO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 1
+},
+{
+"id": 12034,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: VALDENÍRIA",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 2
+},
+{
+"id": 12035,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: RUBENS MACEDO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 5
+},
+{
+"id": 12036,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: PROFESSOR DOMINGOS",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 10
+},
+{
+"id": 12037,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: JERÔNIMO GONÇALVES",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 11
+},
+{
+"id": 12038,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: JORGE AUGUSTO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 45
+},
+{
+"id": 12039,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: ELIS ENFERMEIRA",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 46
+},
+{
+"id": 12040,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: MAGALY",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 47
+},
+{
+"id": 12041,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: FRANCO VALÉRIO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 17
+},
+{
+"id": 12042,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: MARCOS RIBEIRO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 20
+},
+{
+"id": 12043,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: FLÁVIO NEGAÇÃO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 21
+},
+{
+"id": 12045,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: ISAÍAS BEZERRA",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 26
+},
+{
+"id": 12046,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: PASTOR JÚNIOR",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 27
+},
+{
+"id": 12047,
+"__str__": "Sessão: 85ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura Parlamentar: PACHECO CABELEIREIRO",
+"link_detail_backend": "",
+"metadata": {},
+"sessao_plenaria": 664,
+"parlamentar": 30
 }
 ]

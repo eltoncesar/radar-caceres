@@ -156778,5 +156778,68 @@
 "primeiro_autor": true,
 "autor": 70,
 "materia": 12004
+},
+{
+"id": 17818,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Indicação nº 714 de 2026",
+"link_detail_backend": "/materia/autoria/17818",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12005
+},
+{
+"id": 17819,
+"__str__": "Autoria: MARCOS RIBEIRO - Requerimento nº 185 de 2026",
+"link_detail_backend": "/materia/autoria/17819",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 70,
+"materia": 12006
+},
+{
+"id": 17820,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Indicação nº 715 de 2026",
+"link_detail_backend": "/materia/autoria/17820",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 86,
+"materia": 12007
+},
+{
+"id": 17821,
+"__str__": "Autoria: Antônia Eliene Liberato Dias - Prefeita - Emenda Executivo Municipal nº 11 de 2026",
+"link_detail_backend": "/materia/autoria/17821",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 79,
+"materia": 12008
+},
+{
+"id": 17822,
+"__str__": "Autoria: PASTOR JÚNIOR - Requerimento nº 186 de 2026",
+"link_detail_backend": "/materia/autoria/17822",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 12009
+},
+{
+"id": 17823,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 716 de 2026",
+"link_detail_backend": "/materia/autoria/17823",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 12010
+},
+{
+"id": 17824,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 717 de 2026",
+"link_detail_backend": "/materia/autoria/17824",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 12011
 }
 ]
