@@ -14384,7 +14384,7 @@
 "apelido": "",
 "dias_prazo": null,
 "data_fim_prazo": null,
-"em_tramitacao": true,
+"em_tramitacao": false,
 "polemica": false,
 "objeto": "",
 "complementar": false,
@@ -14393,7 +14393,7 @@
 "observacao": "Ofício Interno 1.388/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11099/projeto_de_lei_empresa_amiga_com_parecer_por_dr_emerson.pdf",
-"data_ultima_atualizacao": "2026-09-15T10:48:21.623949-04:00",
+"data_ultima_atualizacao": "2026-11-24T08:16:20.432212-04:00",
 "ultima_edicao": "2026-04-13T18:22:00.923829-04:00",
 "tipo": 1,
 "regime_tramitacao": 4,
@@ -43176,7 +43176,7 @@
 "apelido": "",
 "dias_prazo": null,
 "data_fim_prazo": null,
-"em_tramitacao": true,
+"em_tramitacao": false,
 "polemica": false,
 "objeto": "",
 "complementar": false,
@@ -43185,7 +43185,7 @@
 "observacao": "Protocolo 1.032/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11719/projeto_de_lei_n_30_de_27_de_agosto_de_2026..pdf",
-"data_ultima_atualizacao": "2026-11-13T11:21:44.561000-04:00",
+"data_ultima_atualizacao": "2026-11-24T11:18:07.737130-04:00",
 "ultima_edicao": "2026-09-21T08:03:44.718481-04:00",
 "tipo": 14,
 "regime_tramitacao": 4,
@@ -48156,7 +48156,7 @@
 "apelido": "",
 "dias_prazo": null,
 "data_fim_prazo": null,
-"em_tramitacao": true,
+"em_tramitacao": false,
 "polemica": false,
 "objeto": "",
 "complementar": false,
@@ -48165,7 +48165,7 @@
 "observacao": "Protocolo 1.177/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11825/prot_25756_2026___of_1427_veto_parcial.pdf",
-"data_ultima_atualizacao": "2026-11-23T07:29:58.903807-04:00",
+"data_ultima_atualizacao": "2026-11-24T08:15:17.953469-04:00",
 "ultima_edicao": "2026-10-21T14:56:10.566445-04:00",
 "tipo": 19,
 "regime_tramitacao": 4,
@@ -51513,7 +51513,7 @@
 "apelido": "",
 "dias_prazo": null,
 "data_fim_prazo": null,
-"em_tramitacao": true,
+"em_tramitacao": false,
 "polemica": false,
 "objeto": "",
 "complementar": false,
@@ -51522,7 +51522,7 @@
 "observacao": "Protocolo 1.247/2026 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11896/projeto_de_lei_complementar_n_12_de_20_outubro_2026.pdf",
-"data_ultima_atualizacao": "2026-11-23T08:06:20.786776-04:00",
+"data_ultima_atualizacao": "2026-11-24T08:19:19.631055-04:00",
 "ultima_edicao": "2026-11-04T09:44:32.375060-04:00",
 "tipo": 15,
 "regime_tramitacao": 4,
@@ -57099,6 +57099,162 @@
 "anexadas": [],
 "autores": [
 76
+]
+},
+{
+"id": 12012,
+"__str__": "Requerimento nº 187 de 2026",
+"link_detail_backend": "/materia/12012",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-24T15:46:58Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 187,
+"ano": 2026,
+"numero_protocolo": 1220,
+"data_apresentacao": "2026-11-24",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Requer ao Executivo Municipal, com cópia à Secretaria Municipal de Assistência Social, informações referentes aos critérios, requisitos, procedimentos, quantidade de benefícios concedidos e valores gastos com a distribuição de cestas básicas e a concessão de auxílio-funeral no Município de Cáceres-MT.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12012/requerimento_cesta_basica_e_auxilio_funeral.pdf",
+"data_ultima_atualizacao": "2026-11-24T11:55:26.008224-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+119
+]
+},
+{
+"id": 12013,
+"__str__": "Indicação nº 718 de 2026",
+"link_detail_backend": "/materia/12013",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-24T16:29:47Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 718,
+"ano": 2026,
+"numero_protocolo": 1221,
+"data_apresentacao": "2026-11-24",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "O Vereador Pastor Júnior, no uso de suas atribuições legais e regimentais,\nvem, respeitosamente, indicar ao Poder Executivo Municipal que encaminhe a esta\nCasa de Leis Projeto de Lei Complementar que regulamente, no âmbito do Município\nde Cáceres, a aplicação dos recursos da Contribuição para o Custeio do Serviço de\nIluminação Pública (COSIP) em sistemas de monitoramento para segurança e\npreservação de logradouros públicos.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12013/indicacao_cosip_monitoramento_logradouros_publicos.pdf",
+"data_ultima_atualizacao": "2026-11-24T12:38:48.978503-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+76
+]
+},
+{
+"id": 12014,
+"__str__": "Indicação nº 719 de 2026",
+"link_detail_backend": "/materia/12014",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-24T16:52:38Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 719,
+"ano": 2026,
+"numero_protocolo": 1222,
+"data_apresentacao": "2026-11-24",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "´´Indica ao Executivo Municipal com cópia\na secretaria Municipal de saúde o\nfortalecimento, a ampliação e a ampla\ndivulgação do Projeto “Cuidando de Quem\nCuida”, destinado ao atendimento e\nacolhimento de pais, responsáveis e\nfamiliares de pessoas autistas,\nneurodivergentes e pessoas com deficiencia\n´´",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12014/emissao_17ab3ccadfdfe371c0989801_oficio-interno-5.324-2026_assinado_versaoimpressao.pdf",
+"data_ultima_atualizacao": "2026-11-24T12:56:33.890201-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+119
 ]
 }
 ]

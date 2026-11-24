@@ -156841,5 +156841,32 @@
 "primeiro_autor": true,
 "autor": 76,
 "materia": 12011
+},
+{
+"id": 17825,
+"__str__": "Autoria: ELIS ENFERMEIRA - Requerimento nº 187 de 2026",
+"link_detail_backend": "/materia/autoria/17825",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 119,
+"materia": 12012
+},
+{
+"id": 17826,
+"__str__": "Autoria: PASTOR JÚNIOR - Indicação nº 718 de 2026",
+"link_detail_backend": "/materia/autoria/17826",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 76,
+"materia": 12013
+},
+{
+"id": 17827,
+"__str__": "Autoria: ELIS ENFERMEIRA - Indicação nº 719 de 2026",
+"link_detail_backend": "/materia/autoria/17827",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 119,
+"materia": 12014
 }
 ]
