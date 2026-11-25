@@ -141013,5 +141013,20 @@
 "materia": 12007,
 "ordem": 9871,
 "expediente": null
+},
+{
+"id": 10000,
+"__str__": "Expediente: Ordem do Dia/Expediente: 15 - Moção nº 80 de 2026 em 69ª Ordinária da 2ª Sessão Legislativa da 20ª Legislatura - Votação: Aprovado(a)",
+"link_detail_backend": "",
+"metadata": {},
+"numero_votos_sim": 14,
+"numero_votos_nao": 0,
+"numero_abstencoes": 0,
+"observacao": "",
+"data_hora": "2026-11-25T07:37:17.459511-04:00",
+"tipo_resultado_votacao": 1,
+"materia": 11586,
+"ordem": null,
+"expediente": 2210
 }
 ]

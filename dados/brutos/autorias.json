@@ -156868,5 +156868,194 @@
 "primeiro_autor": true,
 "autor": 119,
 "materia": 12014
+},
+{
+"id": 17828,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Indicação nº 702 de 2026",
+"link_detail_backend": "/materia/autoria/17828",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 86,
+"materia": 11985
+},
+{
+"id": 17829,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Indicação nº 703 de 2026",
+"link_detail_backend": "/materia/autoria/17829",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 86,
+"materia": 11986
+},
+{
+"id": 17830,
+"__str__": "Autoria: ELIS ENFERMEIRA - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17830",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 119,
+"materia": 11992
+},
+{
+"id": 17831,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17831",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 71,
+"materia": 11992
+},
+{
+"id": 17832,
+"__str__": "Autoria: MAGALY - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17832",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 120,
+"materia": 11992
+},
+{
+"id": 17833,
+"__str__": "Autoria: MARCOS RIBEIRO - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17833",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 70,
+"materia": 11992
+},
+{
+"id": 17834,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17834",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 86,
+"materia": 11992
+},
+{
+"id": 17835,
+"__str__": "Autoria: PROFESSOR DOMINGOS - Indicação nº 708 de 2026",
+"link_detail_backend": "/materia/autoria/17835",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 10,
+"materia": 11992
+},
+{
+"id": 17836,
+"__str__": "Autoria: ELIS ENFERMEIRA - Indicação nº 711 de 2026",
+"link_detail_backend": "/materia/autoria/17836",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 119,
+"materia": 11997
+},
+{
+"id": 17837,
+"__str__": "Autoria: ISAÍAS BEZERRA - Indicação nº 720 de 2026",
+"link_detail_backend": "/materia/autoria/17837",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 75,
+"materia": 12015
+},
+{
+"id": 17838,
+"__str__": "Autoria: VALDENÍRIA - Requerimento nº 185 de 2026",
+"link_detail_backend": "/materia/autoria/17838",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 1,
+"materia": 12006
+},
+{
+"id": 17839,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Indicação nº 714 de 2026",
+"link_detail_backend": "/materia/autoria/17839",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 86,
+"materia": 12005
+},
+{
+"id": 17840,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Decreto Legislativo nº 102 de 2026",
+"link_detail_backend": "/materia/autoria/17840",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12016
+},
+{
+"id": 17841,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Decreto Legislativo nº 103 de 2026",
+"link_detail_backend": "/materia/autoria/17841",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12017
+},
+{
+"id": 17842,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Decreto Legislativo nº 104 de 2026",
+"link_detail_backend": "/materia/autoria/17842",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12018
+},
+{
+"id": 17843,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Decreto Legislativo nº 105 de 2026",
+"link_detail_backend": "/materia/autoria/17843",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12019
+},
+{
+"id": 17844,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Decreto Legislativo nº 106 de 2026",
+"link_detail_backend": "/materia/autoria/17844",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12020
+},
+{
+"id": 17845,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Decreto Legislativo nº 107 de 2026",
+"link_detail_backend": "/materia/autoria/17845",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12021
+},
+{
+"id": 17846,
+"__str__": "Autoria: MARCOS RIBEIRO - Indicação nº 721 de 2026",
+"link_detail_backend": "/materia/autoria/17846",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 70,
+"materia": 12022
+},
+{
+"id": 17847,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Indicação nº 722 de 2026",
+"link_detail_backend": "/materia/autoria/17847",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 71,
+"materia": 12023
+},
+{
+"id": 17848,
+"__str__": "Autoria: MAGALY - Projeto de Lei nº 44 de 2026",
+"link_detail_backend": "/materia/autoria/17848",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 120,
+"materia": 12024
 }
 ]
