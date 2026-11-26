@@ -25620,5 +25620,33 @@
 "orgao": null,
 "assuntos": [],
 "autores": []
+},
+{
+"id": 2535,
+"__str__": "Lei Ordinária nº 3.441, de 24 de novembro de 2026",
+"link_detail_backend": "/norma/2535",
+"metadata": {},
+"texto_integral": "http://sapl.caceres.mt.leg.br/media/sapl/public/normajuridica/2026/2535/lei_n_3.441_de_24_de_novembro_de_2026..pdf",
+"numero": "3441",
+"ano": 2026,
+"esfera_federacao": "M",
+"data": "2026-11-24",
+"data_publicacao": "2026-11-26",
+"veiculo_publicacao": "https://amm.diariomunicipal.org/publicacao/1948767/",
+"pagina_inicio_publicacao": 213,
+"pagina_fim_publicacao": 214,
+"ementa": "“Dispõe sobre a criação, a estrutura e o funcionamento da Procuradoria da Mulher no âmbito da Câmara Municipal de Cáceres/MT, estabelece que suas funções diretivas serão exercidas exclusivamente por vereadoras no exercício do mandato, e dá outras providências.”",
+"indexacao": "",
+"observacao": "",
+"complemento": false,
+"data_vigencia": null,
+"timestamp": "2026-11-26T09:18:59.163691-04:00",
+"data_ultima_atualizacao": "2026-11-26T09:19:00.473802-04:00",
+"ultima_edicao": "2026-11-26T09:16:52.037234-04:00",
+"tipo": 1,
+"materia": 11785,
+"orgao": null,
+"assuntos": [],
+"autores": []
 }
 ]

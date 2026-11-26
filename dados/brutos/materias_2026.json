@@ -46258,7 +46258,7 @@
 "apelido": "",
 "dias_prazo": null,
 "data_fim_prazo": null,
-"em_tramitacao": true,
+"em_tramitacao": false,
 "polemica": false,
 "objeto": "",
 "complementar": false,
@@ -46267,7 +46267,7 @@
 "observacao": "Ofício Interno 6.039/2025 - 1Doc",
 "resultado": "",
 "texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/11785/projeto_de_lei_que_cria_a_procuradoria_da_mulher.pdf",
-"data_ultima_atualizacao": "2026-11-13T11:26:40.354285-04:00",
+"data_ultima_atualizacao": "2026-11-26T09:20:08.324817-04:00",
 "ultima_edicao": "2026-10-27T11:52:00.066698-04:00",
 "tipo": 1,
 "regime_tramitacao": 4,
@@ -57681,6 +57681,308 @@
 "anexadas": [],
 "autores": [
 120
+]
+},
+{
+"id": 12025,
+"__str__": "Indicação nº 723 de 2026",
+"link_detail_backend": "/materia/12025",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-26T14:42:03Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 723,
+"ano": 2026,
+"numero_protocolo": 1233,
+"data_apresentacao": "2026-11-26",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indica ao Executivo Municipal a realização de limpeza do campo de futebol do Bairro Jardim Panorama.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12025/indicacao_limpeza_campo_panorama.pdf",
+"data_ultima_atualizacao": "2026-11-26T11:24:57.858525-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+9
+]
+},
+{
+"id": 12026,
+"__str__": "Requerimento nº 188 de 2026",
+"link_detail_backend": "/materia/12026",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-26T15:20:57Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 188,
+"ano": 2026,
+"numero_protocolo": 1234,
+"data_apresentacao": "2026-11-26",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Requer informações, esclarecimentos e providências urgentes acerca das \nnotificações para regularização de fossas sépticas, sumidouros e ligações irregulares de \nefluentes, bem como a revisão dos prazos concedidos aos moradores e a adoção de \nmedidas de assistência às famílias em situação de vulnerabilidade socioeconômica no \nMunicípio de Cáceres-MT",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12026/requerimento_pedido_de_informacao_fossas_septicas_pdf.pdf",
+"data_ultima_atualizacao": "2026-11-26T11:42:24.968474-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+86
+]
+},
+{
+"id": 12027,
+"__str__": "Indicação nº 724 de 2026",
+"link_detail_backend": "/materia/12027",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-26T15:05:32Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 724,
+"ano": 2026,
+"numero_protocolo": 1235,
+"data_apresentacao": "2026-11-26",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indica ao Poder Executivo Municipal, com cópia à Secretaria Municipal de Saúde, a implantação do Programa Municipal de Saúde do Homem, com a realização de mutirões de consultas médicas, exames preventivos e atendimentos especializados durante a campanha Novembro Azul, visando ampliar o acesso à prevenção, promover o diagnóstico precoce de doenças e garantir mais saúde, qualidade de vida e valorização da vida masculina no município.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12027/indicacao_programa_saude_do_homem_-_novembro_azul.pdf",
+"data_ultima_atualizacao": "2026-11-26T11:44:45.707268-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+1
+]
+},
+{
+"id": 12028,
+"__str__": "Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/12028",
+"metadata": {},
+"numero": 15,
+"ano": 2026,
+"numero_protocolo": 1236,
+"data_apresentacao": "2026-11-26",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Regulamenta o funcionamento, os procedimentos internos e o fluxo de atendimento e encaminhamento de denúncias da Procuradoria da Mulher da Câmara Municipal de Cáceres/MT.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12028/projeto_de_resolucao_regulamenta_o_funcionamento_os_procedimentos_internos_e_fluxo_de_atendimento_da_procuradoria_da_mulher_da_camara_municipal_de_caceres.pdf",
+"data_ultima_atualizacao": "2026-11-26T13:10:28.130633-04:00",
+"ultima_edicao": null,
+"tipo": 3,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+119,
+71,
+75,
+57,
+86,
+3
+]
+},
+{
+"id": 12029,
+"__str__": "Indicação nº 725 de 2026",
+"link_detail_backend": "/materia/12029",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-26T15:50:20Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 725,
+"ano": 2026,
+"numero_protocolo": 1237,
+"data_apresentacao": "2026-11-26",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indica ao Poder Executivo Municipal, com cópia à Secretaria Municipal de Infraestrutura e Logística, a realização de serviços de nivelamento e adequação do pavimento nos cruzamentos das vias urbanas com a BR-070, especialmente no cruzamento semaforizado localizado nas proximidades da FAPAN, visando melhorar a fluidez do trânsito, garantir maior segurança viária e evitar danos aos veículos.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12029/indicacao_nivelamento_cruzamento_da_fapan.pdf",
+"data_ultima_atualizacao": "2026-11-26T11:57:34.954817-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+1
+]
+},
+{
+"id": 12030,
+"__str__": "Indicação nº 726 de 2026",
+"link_detail_backend": "/materia/12030",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-26T16:12:13Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 726,
+"ano": 2026,
+"numero_protocolo": 1238,
+"data_apresentacao": "2026-11-26",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indica à Excelentíssima Senhora Prefeita Municipal de Cáceres, Antônia Eliene Liberato Dias, a elaboração e o encaminhamento à Câmara Municipal de Projeto de Lei Complementar que altere o artigo 179 da Lei Complementar nº 25, de 27 de novembro de 1997 (Estatuto dos Servidores Públicos Municipais), a fim de permitir que servidores públicos municipais ocupantes de cargos efetivos exerçam atividades como Microempreendedores Individuais (MEI), fora do horário de expediente, observadas as restrições legais e a inexistência de conflito de interesses com a Administração Pública.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12030/indicacao_elaboracao_de_projeto_de_lei_-_mei_para_servidores_efetivos.pdf",
+"data_ultima_atualizacao": "2026-11-26T12:22:12.336041-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+1
 ]
 }
 ]

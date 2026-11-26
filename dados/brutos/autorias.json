@@ -157057,5 +157057,104 @@
 "primeiro_autor": true,
 "autor": 120,
 "materia": 12024
+},
+{
+"id": 17849,
+"__str__": "Autoria: JERÔNIMO GONÇALVES - Indicação nº 723 de 2026",
+"link_detail_backend": "/materia/autoria/17849",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 9,
+"materia": 12025
+},
+{
+"id": 17850,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Requerimento nº 188 de 2026",
+"link_detail_backend": "/materia/autoria/17850",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 86,
+"materia": 12026
+},
+{
+"id": 17851,
+"__str__": "Autoria: VALDENÍRIA - Indicação nº 724 de 2026",
+"link_detail_backend": "/materia/autoria/17851",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 1,
+"materia": 12027
+},
+{
+"id": 17852,
+"__str__": "Autoria: FLÁVIO NEGAÇÃO - Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/autoria/17852",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 71,
+"materia": 12028
+},
+{
+"id": 17853,
+"__str__": "Autoria: MESA DIRETORA DA CÂMARA MUNICIPAL DE CÁCERES - MDCMC - Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/autoria/17853",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 57,
+"materia": 12028
+},
+{
+"id": 17854,
+"__str__": "Autoria: ELIS ENFERMEIRA - Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/autoria/17854",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 119,
+"materia": 12028
+},
+{
+"id": 17855,
+"__str__": "Autoria: ISAÍAS BEZERRA - Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/autoria/17855",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 75,
+"materia": 12028
+},
+{
+"id": 17856,
+"__str__": "Autoria: PACHECO CABELEIREIRO - Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/autoria/17856",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 86,
+"materia": 12028
+},
+{
+"id": 17857,
+"__str__": "Autoria: PASTORELLO - Projeto de Resolução nº 15 de 2026",
+"link_detail_backend": "/materia/autoria/17857",
+"metadata": {},
+"primeiro_autor": false,
+"autor": 3,
+"materia": 12028
+},
+{
+"id": 17858,
+"__str__": "Autoria: VALDENÍRIA - Indicação nº 725 de 2026",
+"link_detail_backend": "/materia/autoria/17858",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 1,
+"materia": 12029
+},
+{
+"id": 17859,
+"__str__": "Autoria: VALDENÍRIA - Indicação nº 726 de 2026",
+"link_detail_backend": "/materia/autoria/17859",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 1,
+"materia": 12030
 }
 ]
