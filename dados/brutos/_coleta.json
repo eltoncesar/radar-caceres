@@ -1,5 +1,5 @@
 {
- "data": "2026-11-26",
+ "data": "2026-11-27",
  "totais": {
   "parlamentares": 51,
   "mandatos": 21,
@@ -10,10 +10,10 @@
   "tipos_sessao": 4,
   "tipos_resultado": 10,
   "tipos_justificativa": 18,
-  "sessoes": 147,
+  "sessoes": 148,
   "materias_2025": 1515,
-  "materias_2026": 1235,
-  "autorias": 17462,
+  "materias_2026": 1249,
+  "autorias": 17476,
   "presenca_abertura": 7076,
   "presenca_ordem_dia": 7181,
   "justificativas_ausencia": 79,
@@ -23,9 +23,9 @@
   "composicao_mesa": 52,
   "cargos_mesa": 20,
   "status_tramitacao": 54,
-  "tramitacoes": 16004,
+  "tramitacoes": 16018,
   "oradores": 945,
   "tipos_norma": 11,
-  "normas": 915
+  "normas": 916
  }
 }

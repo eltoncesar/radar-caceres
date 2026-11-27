@@ -57984,5 +57984,688 @@
 "autores": [
 1
 ]
+},
+{
+"id": 12031,
+"__str__": "Indicação nº 727 de 2026",
+"link_detail_backend": "/materia/12031",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T03:11:50Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 727,
+"ano": 2026,
+"numero_protocolo": 1239,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Indica ao Governo do Estado de Mato Grosso, por intermédio da Secretaria de Estado de Infraestrutura e Logística (SINFRA) e da Secretaria de Estado de Meio Ambiente (SEMA), a realização de estudos técnicos e a adoção de providências para implantação de estruturas de travessia segura de animais silvestres nas rodovias estaduais, contemplando passagens subterrâneas de fauna, cercamentos direcionadores e pontes aéreas para animais arborícolas, especialmente na região de Cáceres e do sudoeste mato-grossense, visando à preservação da biodiversidade e à promoção da segurança viária.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12031/indicacao_-_governo_do_estado_-_programa_estadual_de_passagens_de_fauna_e_prevencao_de_atropelamentos_de_animais_silvestres_ass.pdf",
+"data_ultima_atualizacao": "2026-11-27T08:05:48.001293-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+29
+]
+},
+{
+"id": 12032,
+"__str__": "Indicação nº 728 de 2026",
+"link_detail_backend": "/materia/12032",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T03:14:14Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 728,
+"ano": 2026,
+"numero_protocolo": 1240,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Indica ao Poder Executivo Municipal de Cáceres e à Universidade do Estado de Mato Grosso (UNEMAT) a adoção de providências para viabilizar, mediante cooperação institucional e técnico-científica, a realização de estudos antropológicos, sociológicos, históricos e etno-históricos sobre os povos indígenas originários do Município de Cáceres e da região pantaneira, visando à identificação e valorização de suas referências culturais, ao reconhecimento de suas demandas sociais, à preservação da memória ancestral e ao fortalecimento das políticas públicas destinadas à efetivação de seus direitos e garantias constitucionais.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12032/indicacao_-_executivo_-_unemat-_estudos_sobre_os_povos_indigenas_originarios_de_caceres_ass.pdf",
+"data_ultima_atualizacao": "2026-11-27T08:08:14.552689-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+29
+]
+},
+{
+"id": 12033,
+"__str__": "Moção nº 95 de 2026",
+"link_detail_backend": "/materia/12033",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T03:16:25Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 95,
+"ano": 2026,
+"numero_protocolo": 1241,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Moção de Aplausos aos alunos do 5º ano A da Escola Municipal Vila Irene, à professora Edineia Natalino da S. Santos, à diretora Lucicleia Matos Sobrinho Farias e ao coordenador pedagógico José Sérgio Vicente, pelo desenvolvimento do projeto pedagógico ‘Ciência e Tecnologias e Meio Ambiente: Água que Cuida – Captação e Reutilização da Água dos Aparelhos de Ar-Condicionado.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12033/mocao_de_aplausos_-_alunos_da_escola_vila_irene_ass.pdf",
+"data_ultima_atualizacao": "2026-11-27T08:10:30.222499-04:00",
+"ultima_edicao": null,
+"tipo": 6,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+29
+]
+},
+{
+"id": 12034,
+"__str__": "Moção nº 96 de 2026",
+"link_detail_backend": "/materia/12034",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T03:18:50Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 96,
+"ano": 2026,
+"numero_protocolo": 1242,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Moção de Aplausos aos alunos do Jardim II do QI Centro Educacional, à professora Cláudia de Oliveira Santana Roca, à coordenadora escolar Katiene Aparecida da Silva Costa e ao diretor Daniel Garcia Lima, pelo desenvolvimento de atividades pedagógicas voltadas ao exercício da cidadania, ao protagonismo infantil, à valorização da cultura, à promoção da cultura de paz e à conscientização sobre a segurança no trânsito.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12034/mocao_de_aplausos_-_alunos_do_colegio_qi_ass.pdf",
+"data_ultima_atualizacao": "2026-11-27T08:13:22.847201-04:00",
+"ultima_edicao": null,
+"tipo": 6,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+29
+]
+},
+{
+"id": 12035,
+"__str__": "Moção nº 97 de 2026",
+"link_detail_backend": "/materia/12035",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T03:23:20Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 97,
+"ano": 2026,
+"numero_protocolo": 1243,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "“Moção de Aplausos à equipe de futebol feminino do bairro Nova Era, ao técnico Adilson Conceição Tomicha e aos demais integrantes da delegação cacerense, pela conquista do vice-campeonato estadual da Taça das Favelas Mato Grosso 2026, representando com dedicação e excelência o Município de Cáceres e contribuindo para a valorização do futebol feminino, a inclusão social e o fortalecimento do esporte comunitário.”",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12035/mocao_de_aplausos_-_equipe_do_bairro_nova_era_de_futebol_feminino_ass.pdf",
+"data_ultima_atualizacao": "2026-11-27T08:17:43.886565-04:00",
+"ultima_edicao": null,
+"tipo": 6,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+29
+]
+},
+{
+"id": 12036,
+"__str__": "Indicação nº 729 de 2026",
+"link_detail_backend": "/materia/12036",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T11:42:45Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 729,
+"ano": 2026,
+"numero_protocolo": 1244,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Solicita que seja encaminhado expediente ao Excelentíssimo Senhor Deputado Estadual Valmir Moretto, solicitando seu apoio e empenho na viabilização de recursos financeiros para a aquisição de um ônibus, a ser destinado à Secretaria Municipal de Saúde, com a finalidade de realizar o transporte intermunicipal de pacientes que necessitam se deslocar até Cuiabá para consultas, exames, procedimentos e demais tratamentos especializados de saúde.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12036/indicacao_onibus_para_a_saude_-_moretto.pdf",
+"data_ultima_atualizacao": "2026-11-27T08:48:19.239295-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+1
+]
+},
+{
+"id": 12037,
+"__str__": "Indicação nº 730 de 2026",
+"link_detail_backend": "/materia/12037",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T12:09:26Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 730,
+"ano": 2026,
+"numero_protocolo": 1245,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Solicita que seja encaminhado expediente ao Excelentíssimo Senhor Deputado Estadual Beto Dois a Um, solicitando seu empenho junto ao Governo do Estado de Mato Grosso e aos órgãos competentes, para viabilizar a destinação de um micro-ônibus ao município de Cáceres, com a finalidade de atender ao transporte de estudantes universitários residentes no Distrito de Caramujo e na comunidade rural Pé de Anta.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12037/indicacao_micro-onibus_educacao_-_beto_dois_a_um.pdf",
+"data_ultima_atualizacao": "2026-11-27T09:09:48.323786-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+1
+]
+},
+{
+"id": 12038,
+"__str__": "Requerimento nº 189 de 2026",
+"link_detail_backend": "/materia/12038",
+"metadata": {},
+"numero": 189,
+"ano": 2026,
+"numero_protocolo": 1246,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Requer informações técnicas, jurídicas, orçamentárias e documentais indispensáveis à instrução e análise legislativa do Projeto de Lei Complementar nº 10/2026 (Nova Planta Genérica de Valores – PGV).",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12038/r_-_2026_102-_eliene_-_pgv.pdf",
+"data_ultima_atualizacao": "2026-11-27T10:26:46.740791-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+3
+]
+},
+{
+"id": 12039,
+"__str__": "Requerimento nº 190 de 2026",
+"link_detail_backend": "/materia/12039",
+"metadata": {},
+"numero": 190,
+"ano": 2026,
+"numero_protocolo": 1247,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Requer ao Poder Executivo informações sobre a previsão orçamentária na LOA 2027, o Plano de Metas (Lei nº 14.889/2024) e o Plano de Ação entregue ao TCE-MT voltados ao enfrentamento à violência contra a mulher.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12039/r_-_2026_103-_eliene_-_loa_-_violencia_contra_a_mulher.pdf",
+"data_ultima_atualizacao": "2026-11-27T10:29:37.497022-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+3
+]
+},
+{
+"id": 12040,
+"__str__": "Requerimento nº 191 de 2026",
+"link_detail_backend": "/materia/12040",
+"metadata": {},
+"numero": 191,
+"ano": 2026,
+"numero_protocolo": 1248,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Requer ao Poder Executivo relatório detalhado dos contratos por secretaria, valores empenhados, liquidados mês a mês, pagos e eventuais passivos não empenhados referentes às empresas terceirizadas no exercício de 2026.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12040/r_-_2026_104-_eliene_-_divida_vs_empenho.pdf",
+"data_ultima_atualizacao": "2026-11-27T10:41:09.878327-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+3
+]
+},
+{
+"id": 12041,
+"__str__": "Indicação nº 731 de 2026",
+"link_detail_backend": "/materia/12041",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T14:52:50Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 731,
+"ano": 2026,
+"numero_protocolo": 1249,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Indica à Excelentíssima Prefeita Municipal, Senhora Antônia Eliene Liberato Dias, com cópia à Secretaria Municipal de Infraestrutura e Logística, a necessidade de realização de limpeza, roçagem e retirada da vegetação excessiva na área próxima à Estação Elevatória de Água, no Bairro Jardim Marajoara, entre a Rua dos Professores e a Rua Padre Cassemiro, neste Município de Cáceres-MT.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12041/emissao_f6bb2447dacc5165e4d431d4_oficio-interno-38--3.032-2026_assinado_versaoimpressao.pdf",
+"data_ultima_atualizacao": "2026-11-27T11:12:48.934310-04:00",
+"ultima_edicao": null,
+"tipo": 5,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+120
+]
+},
+{
+"id": 12042,
+"__str__": "Requerimento nº 192 de 2026",
+"link_detail_backend": "/materia/12042",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T14:57:21Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 192,
+"ano": 2026,
+"numero_protocolo": 1250,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Requer informações e documentos acerca da situação fiscal e financeira do Município de Cáceres e dos fundamentos técnicos que motivaram o anúncio de medidas de contenção de despesas pelo Poder Executivo Municipal.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12042/requerimento.doc.fiscal.financeira..pdf",
+"data_ultima_atualizacao": "2026-11-27T11:14:42.525710-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+70
+]
+},
+{
+"id": 12043,
+"__str__": "Requerimento nº 193 de 2026",
+"link_detail_backend": "/materia/12043",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T16:18:54Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 193,
+"ano": 2026,
+"numero_protocolo": 1251,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "Solicita a Excelentíssima Senhora Prefeita Eliene Liberato a complementação da resposta ao Requerimento nº 122/2026, encaminhada pelo Ofício nº 1.671/2026-GP/PMC, de 26 de novembro de 2026, no Protocolo nº 22186/2026, conforme os pedidos discriminados no anexo integrante deste requerimento sobre a piscina do CER.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12043/requerimento_complemento_cer.pdf",
+"data_ultima_atualizacao": "2026-11-27T12:24:20.280491-04:00",
+"ultima_edicao": null,
+"tipo": 4,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+9
+]
+},
+{
+"id": 12044,
+"__str__": "Emenda Parlamentar nº 24 de 2026",
+"link_detail_backend": "/materia/12044",
+"metadata": {
+"signs": {
+"texto_original": {
+"admin": [],
+"autores": [
+[
+"Camara Municipal Caceres",
+[
+"2026-11-27T16:55:21Z",
+"ICP-Brasil - AC SyngularID Multipla"
+]
+]
+]
+}
+}
+},
+"numero": 24,
+"ano": 2026,
+"numero_protocolo": 1252,
+"data_apresentacao": "2026-11-27",
+"tipo_apresentacao": "",
+"data_publicacao": null,
+"numero_origem_externa": "",
+"ano_origem_externa": null,
+"data_origem_externa": null,
+"apelido": "",
+"dias_prazo": null,
+"data_fim_prazo": null,
+"em_tramitacao": true,
+"polemica": false,
+"objeto": "",
+"complementar": false,
+"ementa": "A Emenda Impositiva de autoria do Vereador Isaías Bezerra destina recursos, no exercício financeiro de 2027, para a realização de exames diagnósticos no âmbito do Sistema Único de Saúde (SUS), bem como para a promoção e realização de eventos culturais e esportivos no Município de Cáceres-MT.",
+"indexacao": "",
+"observacao": "",
+"resultado": "",
+"texto_original": "http://sapl.caceres.mt.leg.br/media/sapl/public/materialegislativa/2026/12044/emenda_palarmentar_ass_impositiva.pdf",
+"data_ultima_atualizacao": "2026-11-27T13:03:15.364031-04:00",
+"ultima_edicao": null,
+"tipo": 8,
+"regime_tramitacao": 4,
+"tipo_origem_externa": null,
+"local_origem_externa": null,
+"anexadas": [],
+"autores": [
+75
+]
 }
 ]

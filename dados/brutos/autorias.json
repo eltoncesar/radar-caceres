@@ -157156,5 +157156,131 @@
 "primeiro_autor": true,
 "autor": 1,
 "materia": 12030
+},
+{
+"id": 17860,
+"__str__": "Autoria: FRANCO VALÉRIO - Indicação nº 727 de 2026",
+"link_detail_backend": "/materia/autoria/17860",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 12031
+},
+{
+"id": 17861,
+"__str__": "Autoria: FRANCO VALÉRIO - Indicação nº 728 de 2026",
+"link_detail_backend": "/materia/autoria/17861",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 12032
+},
+{
+"id": 17862,
+"__str__": "Autoria: FRANCO VALÉRIO - Moção nº 95 de 2026",
+"link_detail_backend": "/materia/autoria/17862",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 12033
+},
+{
+"id": 17863,
+"__str__": "Autoria: FRANCO VALÉRIO - Moção nº 96 de 2026",
+"link_detail_backend": "/materia/autoria/17863",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 12034
+},
+{
+"id": 17864,
+"__str__": "Autoria: FRANCO VALÉRIO - Moção nº 97 de 2026",
+"link_detail_backend": "/materia/autoria/17864",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 29,
+"materia": 12035
+},
+{
+"id": 17865,
+"__str__": "Autoria: VALDENÍRIA - Indicação nº 729 de 2026",
+"link_detail_backend": "/materia/autoria/17865",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 1,
+"materia": 12036
+},
+{
+"id": 17866,
+"__str__": "Autoria: VALDENÍRIA - Indicação nº 730 de 2026",
+"link_detail_backend": "/materia/autoria/17866",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 1,
+"materia": 12037
+},
+{
+"id": 17867,
+"__str__": "Autoria: PASTORELLO - Requerimento nº 189 de 2026",
+"link_detail_backend": "/materia/autoria/17867",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 12038
+},
+{
+"id": 17868,
+"__str__": "Autoria: PASTORELLO - Requerimento nº 190 de 2026",
+"link_detail_backend": "/materia/autoria/17868",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 12039
+},
+{
+"id": 17869,
+"__str__": "Autoria: PASTORELLO - Requerimento nº 191 de 2026",
+"link_detail_backend": "/materia/autoria/17869",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 3,
+"materia": 12040
+},
+{
+"id": 17870,
+"__str__": "Autoria: MAGALY - Indicação nº 731 de 2026",
+"link_detail_backend": "/materia/autoria/17870",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 120,
+"materia": 12041
+},
+{
+"id": 17871,
+"__str__": "Autoria: MARCOS RIBEIRO - Requerimento nº 192 de 2026",
+"link_detail_backend": "/materia/autoria/17871",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 70,
+"materia": 12042
+},
+{
+"id": 17872,
+"__str__": "Autoria: JERÔNIMO GONÇALVES - Requerimento nº 193 de 2026",
+"link_detail_backend": "/materia/autoria/17872",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 9,
+"materia": 12043
+},
+{
+"id": 17873,
+"__str__": "Autoria: ISAÍAS BEZERRA - Emenda Parlamentar nº 24 de 2026",
+"link_detail_backend": "/materia/autoria/17873",
+"metadata": {},
+"primeiro_autor": true,
+"autor": 75,
+"materia": 12044
 }
 ]
